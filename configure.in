@@ -57,6 +57,7 @@ Gorilla/gtk/Makefile
 Gorilla/gtk-2.0/Makefile
 Gorilla/icons/Makefile
 Gorilla/icons/scalable/Makefile
+Gorilla/icons/scalable/apps/Makefile
 Gorilla/icons/scalable/devices/Makefile
 Gorilla/icons/scalable/emblems/Makefile
 Gorilla/icons/scalable/filesystems/Makefile

@@ -4,7 +4,7 @@
 [Icon Theme]
 _Name=Gorilla
 _Comment=Vector Theme
-Directories=scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices
+Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices
 Example=gnome-theme-preview.svg
 
 [scalable/actions]
