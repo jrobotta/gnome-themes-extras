@@ -13,5 +13,6 @@ icon_DATA = \
 	gnome-dev-zipdisk.svg \
         gnome-dev-symlink.svg \
         gnome-dev-network.svg \
+	gnome-dev-scanner.svg \
         $(NULL)
 EXTRA_DIST = $(icon_DATA)
