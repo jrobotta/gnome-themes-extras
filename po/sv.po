@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras\n"
-"POT-Creation-Date: 2003-05-16 23:59+0200\n"
+"POT-Creation-Date: 2003-05-21 13:05+0200\n"
 "PO-Revision-Date: 2003-05-07 17:57+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -30,7 +30,7 @@ msgid "Gorilla"
 msgstr "Gorilla"
 
 #: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
-#: Nuvola/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
 msgid "Vector Theme"
 msgstr "Vektortema"
 
@@ -53,6 +53,14 @@ msgstr "Nuvola"
 #: Nuvola/index.theme.in.h:2
 msgid "The Blue Style Surf"
 msgstr "Den blåa bränningen"
+
+#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "Geting"
+
+#: Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "Tema i BeOS-stil"
 
 #~ msgid "Lushy SVG icons with Mandrake Galaxy"
 #~ msgstr "Grönskande SVG-ikoner med Mandrake Galaxy"
