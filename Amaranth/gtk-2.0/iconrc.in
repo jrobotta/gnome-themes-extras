@@ -93,7 +93,7 @@ style "6nome-stock-icons"
 #  stock["gtk-stock-disconnect"] = {{ "stock_disconnect.svg" }}
 #  stock["gtk-stock-reset"] = {{ "stock_reset.svg" }}
 
-        #stock ["panel-run"] =           {{"stock_run.svg"}}
+   stock ["panel-run"] =           {{"stock_run.svg"}}
         #stock ["panel-searchtool"] =    {{"stock_searchtool.svg"}}
         #stock ["panel-screenshot"] =    {{"stock_screenshot.svg"}}
    stock ["panel-lockscreen"] =    {{"stock_lockscreen.svg"}}

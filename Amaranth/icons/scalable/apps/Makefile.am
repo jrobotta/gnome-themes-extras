@@ -2,6 +2,7 @@ icondir = $(datadir)/icons/Amaranth/scalable/apps
 NULL = 
 icon_DATA = \
 	abiword_48.svg \
+	accessibility-keyboard-capplet.svg \
 	advanced-directory.svg \
 	apacheconf.svg \
 	gaim.svg \
@@ -23,10 +24,11 @@ icon_DATA = \
 	gnome-logo.svg \
 	gnome-multimedia.svg \
 	gnome-settings.svg \
+	gnome-terminal.svg \
 	gnumeric.svg \
 	gpdf.svg \
 	monitor.svg \
-	mozilla-star.svg \
+	mozilla-icon.svg \
 	my-computer.svg \
 	netscape.svg \
 	opera.svg \
@@ -44,13 +46,17 @@ install-data-local:
 	ln -sf gaim.svg gnome-gaim.svg && \
 	ln -sf gimp.svg gnome-palette.svg && \
 	ln -sf gimp.svg gnome-gimp.svg && \
-	ln -sf mozilla-star.svg redhat-web-browser.svg && \
-	ln -sf monitor.svg redhat-config-xfree86.svg
+	ln -sf mozilla-icon.svg redhat-web-browser.svg && \
+	ln -sf mozilla-icon.svg mozilla-star.svg && \
+	ln -sf monitor.svg redhat-config-xfree86.svg && \
+	ln -sf my-computer.svg gnome-starthere.svg
 	
 uninstall-local:
-	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg
-	rm -rf $(DESTDIR)$(icondir)/gnome-gaim.svg
-	rm -rf $(DESTDIR)$(icondir)/gnome-gimp.svg
-	rm -rf $(DESTDIR)$(icondir)/gnome-palette.svg
-	rm -rf $(DESTDIR)$(icondir)/redhat-web-browser.svg	
-	rm -rf $(DESTDIR)$(icondir)/redhat-config-xfree86.svg
+	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-gaim.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-gimp.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-palette.svg && \
+	rm -rf $(DESTDIR)$(icondir)/redhat-web-browser.svg && \
+	rm -rf $(DESTDIR)$(icondir)/mozilla-star.svg && \
+	rm -rf $(DESTDIR)$(icondir)/redhat-config-xfree86.svg  && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-starthere.svg

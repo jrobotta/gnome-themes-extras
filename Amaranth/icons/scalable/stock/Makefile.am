@@ -26,6 +26,7 @@ icon_DATA = \
 	stock_redo.svg \
 	stock_refresh.svg \
 	stock_reset.svg \
+	stock_run.svg \
 	stock_stop.svg \
 	stock_undo.svg \
 	$(NULL)
