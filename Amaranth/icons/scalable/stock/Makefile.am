@@ -10,6 +10,7 @@ icon_DATA = \
 	stock_floppy.svg \
 	stock_go-back.svg \
 	stock_go-forward.svg \
+	stock_go-down.svg \
 	stock_go-up.svg \
 	stock_gtk-sort-ascending.svg \
 	stock_gtk-sort-descending.svg \

@@ -1,9 +1,16 @@
+2003-08-14 Christian Schaller <Uraeus@gnome.org>
+
+	* Misc bug fixes
+	* Most important being fixin of many of the emblem names
+	  to make them more consistant with the base theme
+	* tag for 0.3 release
+
 2003-08-13 Christian Schaller <Uraeus@gnome.org>
 	
 	* Added Industrial theme engine since Gorilla needs it
 	* This makes g-t-e conflict with ximian artwork, hopefully
 	  Ximian will start to ship Industrial as a standalone package so
-	  I can obsolote that
+	  I can obsolete that
 
 2003-08-12 Christian Schaller <Uraeus@gnome.org>
 
