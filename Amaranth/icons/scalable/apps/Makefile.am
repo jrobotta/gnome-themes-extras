@@ -6,7 +6,6 @@ icon_DATA = \
 	advanced-directory.svg \
 	apacheconf.svg \
 	camera.svg \
-	downloadmanager.svg \
 	email.svg \
 	evolution.svg \
 	gaim.svg \
