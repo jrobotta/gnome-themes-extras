@@ -364,7 +364,8 @@ widget_class "*Progress*" style "infobar"
 
 style "metacity-frame"
 {
-    engine "smooth" {
+   bg[SELECTED] = "#99CCFF"
+   engine "smooth" {
         fill {
              style=gradient
              hdirection=vertical

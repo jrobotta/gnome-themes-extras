@@ -12,7 +12,7 @@
    id="svg153"
    sodipodi:version="0.32pre"
    sodipodi:docname="/home/cschalle/gnome-themes-extras/Wasp/icons/scalable/mimetypes/gnome-mime-application-vnd.sun.xml.writer.svg"
-   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Wasp/icons/scalable/mimetypes"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Wasp/icons/scalable/mimetypes/"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -237,7 +237,7 @@
   <g
      id="Layer_x0020_1"
      style="fill-rule:nonzero;clip-rule:nonzero;stroke:#FFFFFF;stroke-width:0;stroke-miterlimit:4;"
-     transform="matrix(0.0927443,-0.123238,0.152967,0.0925602,7.59149,21.4257)">
+     transform="matrix(0.27025,-0.0028744,-5.82429e-05,0.240469,26.9497,14.7966)">
     <path
        style="fill:none;stroke:none;fill-rule:evenodd;"
        d="M144,144H0V0h144v144z"

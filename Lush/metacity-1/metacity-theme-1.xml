@@ -1,10 +1,10 @@
 <metacity_theme>
 	<info>
 		<name>Lush</name>
-		<author>Uraeus and MandrakeSoft Graphic team;</author>
+		<author>Christian Schaller - uraeus@gnome.org</author>
 		<copyright>&#194; 2003 MandrakeSoft and Uraeus</copyright>
 		<date>May 16, 2003</date>
-		<description>GTK+ integrated version of Galaxy</description>
+		<description>GTK+ coloured version of Galaxy</description>
 	</info>
 	<!-- define constants -->
 	<constant name="LeftTitleTextPad" value="6"/>
@@ -76,9 +76,8 @@
 			<color value="shade/gtk:bg[PRELIGHT]/1.0"/>
 			<color value="shade/gtk:bg[SELECTED]/0.9"/>
 		</gradient>
-		<line color="shade/gtk:bg[SELECTED]/0.6" x1="0" y1="height-1" x2="width" y2="height-1"/>
-		<!-- Highlight on top edge -->
-		<line color="shade/gtk:bg[PRELIGHT]/1.2" x1="0" y1="0" x2="width" y2="0"/>
+	<!-- Highlight on top edge -->
+	<line color="shade/gtk:bg[PRELIGHT]/1.2" x1="0" y1="0" x2="width" y2="0"/>
 	</draw_ops>
 
 
@@ -356,28 +355,27 @@ height="height*0.8" alpha="0.7"/>
 
 
 	<draw_ops name="corners_unfocused">
-		<!-- corners (unfocused) -->
-		<!-- Left corner - Each piece consist of two rectangles one vertical and one horizontal -->	
-		<rectangle color="shade/gtk:bg[PRELIGHT]/1.0"
-             x="left_width-10" y="height-bottom_height-10" width="left_width+5" height="bottom_height+10" filled="true"/>
-		<rectangle color="shade/gtk:bg[PRELIGHT]/1.0"
-             x="left_width-10" y="height-bottom_height" width="left_width+15" height="bottom_height" filled="true"/>
-		
-	<!-- Right Corner -->		
-		<rectangle color="gtk:dark[INSENSITIVE]"
-             x="width-right_width" y="height-bottom_height-10" width="right_width+5" height="bottom_height+10" filled="true"/>
-		<rectangle color="gtk:dark[INSENSITIVE]"
-             x="width-right_width-10" y="height-bottom_height" width="right_width+15" height="bottom_height" filled="true"/>
+		<!-- bottom corners (unfocused) -->
+		<image filename="coin-inactive_Bas-G.png" 
+			x="0" 
+			y="height-object_height" 
+			width="object_width" 
+			height="object_height"/> 
+		<image filename="coin-inactif_Bas-D.png" 
+			x="width-object_width" 
+			y="height-object_height" 
+			width="object_width" 
+			height="object_height"/>
 	</draw_ops>
 
 	<draw_ops name="corners_focused">
-	<!-- Left corner - Each piece consist of two rectangles one vertical and one horizontal -->	
+	<!-- Left bottom corner - Each piece consist of two rectangles one vertical and one horizontal -->	
 		<rectangle color="blend/gtk:dark[SELECTED]/gtk:bg[SELECTED]/0.4"
              x="left_width-10" y="height-bottom_height-10" width="left_width+5" height="bottom_height+10" filled="true"/>
 		<rectangle color="blend/gtk:dark[SELECTED]/gtk:bg[SELECTED]/0.4"
              x="left_width-10" y="height-bottom_height" width="left_width+15" height="bottom_height" filled="true"/>
 		
-	<!-- Right Corner -->		
+	<!-- Right Bottom Corner -->		
 		<rectangle color="blend/gtk:dark[SELECTED]/gtk:bg[SELECTED]/0.4"
              x="width-right_width" y="height-bottom_height-10" width="right_width+5" height="bottom_height+10" filled="true"/>
 		<rectangle color="blend/gtk:dark[SELECTED]/gtk:bg[SELECTED]/0.4"
@@ -418,21 +416,26 @@ height="height*0.8" alpha="0.7"/>
 		<include name="corners_focused"/>
 		<include name="sides_background"/>
 		<include name="corners_focused"/>
-		
+		<!-- this section adds the small colored bit beneath the titlebar for the left sidebar -->
 		<image filename="cote_suitearrondibleu.png"
-			colorize="gtk:fg[SELECTED]"
 			alpha="0.7"
 			x="0" 
 			y="top_height" 
 			width="object_width" 
 			height="object_height"/>
+		<gradient type="vertical" 
+			x="0" 
+			y="0"
+			 width="5" height="top_height+17">
+			<color value="shade/gtk:bg[PRELIGHT]/1.0"/>
+			<color value="shade/gtk:bg[SELECTED]/0.9"/>
+		</gradient>
 		<image filename="dessousbarre-gris.png" 
 			x="width-object_width" 
 			y="top_height" 
 			width="object_width" 
 			height="object_height"/>
-			
-	</draw_ops>
+		</draw_ops>
 
 	<draw_ops name="unfocus_background">
 		<include name="sides_background"/>
@@ -603,8 +606,7 @@ parent="normal_unfocused">
 		<button function="maximize" state="normal" draw_ops="maximize_button"/>
 		<button function="menu" state="normal" draw_ops="menu_button"/>
 		<button function="close" state="normal" draw_ops="close_button"/>
-		<piece position="entire_background"
-draw_ops="focus_background"/>
+		<piece position="entire_background" draw_ops="focus_background"/>
 		<piece position="left_titlebar_edge"
 draw_ops="left_titlebar_edge_focused"/>
 <piece position="titlebar_middle" draw_ops="titlebar_middle_focused"/>

@@ -98,7 +98,7 @@ style "icon-style"
         #stock ["panel-screenshot"] =    {{"stock_screenshot.svg"}}
         #stock ["panel-lockscreen"] =    {{"stock_lockscreen.svg"}}
         #stock ["panel-logout"] =        {{"stock_logout.svg"}}
-        #stock ["panel-gnome-logo"] =    {{"stock_gnome-logo.svg"}}
+   stock ["panel-gnome-logo"] =    {{"gnome-logo.svg"}}
 
         #stock ["panel-cde"] =           {{"stock_cde-menu.svg"}}
 #TBD    stock ["panel-debian"] =        {{""}}
