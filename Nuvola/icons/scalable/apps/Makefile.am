@@ -3,9 +3,12 @@ NULL =
 icon_DATA = \
 	accessibility-directory.svg \
 	accessories.svg \
+	acroread.svg \
 	camera.svg \
+	chess.svg \
 	disks.svg \
-	evolution-1.4.svg \
+	evolution.svg \
+	file-manager.svg \
 	firefox.svg \
 	gaim.svg \
 	gcalctool.svg \
@@ -31,11 +34,16 @@ icon_DATA = \
 	gnome-mixer.svg \
 	gnome-multimedia.svg \
 	gnome-searchtool.svg \
+	gnome-settings-accessibility-keyboard.svg \
+	gnome-settings-background.svg \
+	gnome-settings-keybindings.svg \
+	gnome-settings-theme.svg \
 	gnome-system-config.svg \
 	gnome-system.svg \
 	gnome-terminal.svg \
 	go.svg \
 	hwbrowser.svg \
+	inkscape.svg \
 	kasteroids.svg \
 	mouse-capplet.svg \
 	mozilla-compose-icon.svg \
@@ -49,13 +57,18 @@ icon_DATA = \
 	ooo_impress.svg \
 	ooo_writer.svg \
 	password.svg \
+	postscript-viewer.svg \
 	printer.svg \
 	procman.svg \
 	realplayer.svg \
 	sane.svg \
+	screensaver.svg \
+	sdm.svg \
 	sodipodi.svg \
 	system-floppy.svg \
 	system-search-32.svg \
+	tsclient.svg \
+	user_icon.svg \
 	web-browser.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
@@ -63,8 +76,8 @@ EXTRA_DIST = $(icon_DATA)
 install-data-local:
 	mkdir -p $(DESTDIR)$(icondir)
 	cd $(DESTDIR)$(icondir) && \
-	ln -sf evolution-1.4.svg redhat-email.svg && \
-	ln -sf evolution-1.4.svg evolution.svg && \
+	ln -sf evolution.svg redhat-email.svg && \
+	ln -sf evolution.svg evolution-1.4.svg && \
 	ln -sf gnome-gimp.svg gnome-palette.svg && \
 	ln -sf gnome-gimp.svg wilber-icon.svg && \
 	ln -sf mozilla.svg mozilla-star.svg && \
@@ -96,7 +109,8 @@ install-data-local:
 	ln -sf ooo_writer.svg redhat-word-processor.svg && \
 	ln -sf sodipodi.svg inkscape.svg && \
 	ln -sf kasteroids.svg maelstrom.svg && \
-	ln -sf mplayer.svg mplayer-logo.svg
+	ln -sf mplayer.svg mplayer-logo.svg && \
+	ln -sf screensaver.svg xscreensaver.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
@@ -114,4 +128,5 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/inkscape.svg && \
 	rm -rf $(DESTDIR)$(icondir)/maelstrom.svg && \
 	rm -rf $(DESTDIR)$(icondir)/evolution.svg && \
-	rm -rf $(DESTDIR)$(icondir)/mplayer-logo.svg
+	rm -rf $(DESTDIR)$(icondir)/mplayer-logo.svg \
+	rm -rf $(DESTDIR)$(icondir)/xscreensaver.svg

@@ -6,7 +6,6 @@
 # A smooth blue theme modified from the Smooth-Winter theme, 
 # to match the Nuvola icon set
 
-include "iconrc"
 gtk-icon-sizes = "panel-menu=32,32"
 
 style "default" {
