@@ -1,3 +1,11 @@
+2003-01-24  Jakub Steiner <jimmac * ximian * com>
+
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-vnd.sun.xml.writer.svg,
+	gnome-mime-application-vnd.sun.xml.impress.svg,
+	gnome-mime-application-vnd.sun.xml.calc.svg,
+	gnome-mime-application-vnd.sun.xml.draw.svg, 
+	Makefile.am: StarOffice icons
+
 2003-01-23  Alex Duggan  <aldug@astrolinux.com>
 
 	* .cvsignore: Add a .cvsignore

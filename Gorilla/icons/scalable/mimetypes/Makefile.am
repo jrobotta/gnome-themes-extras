@@ -8,6 +8,10 @@ icon_DATA = \
         gnome-mime-application-x-deb.svg \
         gnome-mime-application-x-dvi.svg \
         gnome-mime-application-x-rpm.svg \
+        gnome-mime-application-vnd.sun.xml.calc.svg \
+        gnome-mime-application-vnd.sun.xml.draw.svg \
+        gnome-mime-application-vnd.sun.xml.impress.svg \
+        gnome-mime-application-vnd.sun.xml.writer.svg \
         gnome-mime-audio.svg \
         gnome-mime-font.svg \
         gnome-mime-image.svg \
