@@ -21,6 +21,7 @@ icon_DATA = \
 	gnome-logo.svg \
 	home.svg \
 	printer.svg \
+	print-preview.svg \
 	recycled.svg \
 	reload.svg \
 	stop.svg \

@@ -11,7 +11,6 @@
    xml:space="preserve"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xml="http://www.w3.org/XML/1998/namespace"
-   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg153"
@@ -60,18 +59,6 @@
          offset="1"
          style="stop-color:#666666"
          id="stop162" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#CCCCCC"
-         id="midPointStop163" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#CCCCCC"
-         id="midPointStop164" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#666666"
-         id="midPointStop165" />
     </linearGradient>
     <path
        fill="url(#XMLID_1_)"
@@ -108,18 +95,6 @@
          offset="1"
          style="stop-color:#BFBFBF"
          id="stop172" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#D9D9D9"
-         id="midPointStop173" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#D9D9D9"
-         id="midPointStop174" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#BFBFBF"
-         id="midPointStop175" />
     </linearGradient>
     <path
        fill="url(#XMLID_2_)"
@@ -166,26 +141,6 @@
          offset="1"
          style="stop-color:#D0D2D8"
          id="stop184" />
-      <a:midPointStop
-         offset="0.0056"
-         style="stop-color:#D0D2D8"
-         id="midPointStop185" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#D0D2D8"
-         id="midPointStop186" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#EDEFF6"
-         id="midPointStop187" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#EDEFF6"
-         id="midPointStop188" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#D0D2D8"
-         id="midPointStop189" />
     </linearGradient>
     <path
        fill="url(#XMLID_3_)"
@@ -222,18 +177,6 @@
          offset="1"
          style="stop-color:#BFBFBF"
          id="stop196" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#D9D9D9"
-         id="midPointStop197" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#D9D9D9"
-         id="midPointStop198" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#BFBFBF"
-         id="midPointStop199" />
     </linearGradient>
     <path
        fill="url(#XMLID_4_)"
@@ -269,26 +212,6 @@
          offset="1"
          style="stop-color:#D0D2D8"
          id="stop206" />
-      <a:midPointStop
-         offset="0.0056"
-         style="stop-color:#D0D2D8"
-         id="midPointStop207" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#D0D2D8"
-         id="midPointStop208" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#EDEFF6"
-         id="midPointStop209" />
-      <a:midPointStop
-         offset="0.4944"
-         style="stop-color:#EDEFF6"
-         id="midPointStop210" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#D0D2D8"
-         id="midPointStop211" />
     </linearGradient>
     <path
        fill="url(#XMLID_5_)"
@@ -356,18 +279,6 @@
          offset="1"
          style="stop-color:#D2DDE9"
          id="stop224" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#FFFFFF"
-         id="midPointStop225" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#FFFFFF"
-         id="midPointStop226" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#D2DDE9"
-         id="midPointStop227" />
     </linearGradient>
     <path
        fill="url(#XMLID_6_)"
@@ -402,18 +313,6 @@
          offset="1"
          style="stop-color:#0066CC"
          id="stop234" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#99CCFF"
-         id="midPointStop235" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#99CCFF"
-         id="midPointStop236" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#0066CC"
-         id="midPointStop237" />
     </linearGradient>
     <path
        fill="url(#XMLID_7_)"
@@ -435,18 +334,6 @@
          offset="1"
          style="stop-color:#3366CC"
          id="stop241" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#FFFFFF"
-         id="midPointStop242" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#FFFFFF"
-         id="midPointStop243" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#3366CC"
-         id="midPointStop244" />
     </linearGradient>
     <path
        fill="url(#XMLID_8_)"
@@ -468,18 +355,6 @@
          offset="1"
          style="stop-color:#000000"
          id="stop248" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#FFFFFF"
-         id="midPointStop249" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#FFFFFF"
-         id="midPointStop250" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#000000"
-         id="midPointStop251" />
     </linearGradient>
     <path
        fill="url(#XMLID_9_)"

@@ -16,7 +16,6 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xml="http://www.w3.org/XML/1998/namespace"
-   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs204">
@@ -35,18 +34,6 @@
          offset="1"
          style="stop-color:#FF6666"
          id="stop197" />
-      <a:midPointStop
-         offset="0.0056"
-         style="stop-color:#FFFFFF"
-         id="midPointStop198" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#FFFFFF"
-         id="midPointStop199" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#FF6666"
-         id="midPointStop200" />
     </linearGradient>
   </defs>
   <sodipodi:namedview
@@ -98,26 +85,6 @@
          offset="1"
          style="stop-color:#990000"
          id="stop164" />
-      <a:midPointStop
-         offset="0.0056"
-         style="stop-color:#FF9999"
-         id="midPointStop165" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#FF9999"
-         id="midPointStop166" />
-      <a:midPointStop
-         offset="0.5843"
-         style="stop-color:#FF0000"
-         id="midPointStop167" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#FF0000"
-         id="midPointStop168" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#990000"
-         id="midPointStop169" />
     </radialGradient>
     <path
        fill="url(#XMLID_1_)"

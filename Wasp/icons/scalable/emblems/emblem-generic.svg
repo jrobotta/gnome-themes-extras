@@ -16,7 +16,6 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xml="http://www.w3.org/XML/1998/namespace"
-   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs347" />
@@ -698,26 +697,6 @@
              offset="1"
              style="stop-color:#FF9901"
              id="stop289" />
-          <a:midPointStop
-             offset="0.0223"
-             style="stop-color:#FFFF00"
-             id="midPointStop290" />
-          <a:midPointStop
-             offset="0.5"
-             style="stop-color:#FFFF00"
-             id="midPointStop291" />
-          <a:midPointStop
-             offset="0.3669"
-             style="stop-color:#FFDE00"
-             id="midPointStop292" />
-          <a:midPointStop
-             offset="0.5"
-             style="stop-color:#FFDE00"
-             id="midPointStop293" />
-          <a:midPointStop
-             offset="1"
-             style="stop-color:#FF9901"
-             id="midPointStop294" />
         </radialGradient>
         <path
            a:adobe-blending-mode="normal"
@@ -748,26 +727,6 @@
              offset="1"
              style="stop-color:#000000"
              id="stop300" />
-          <a:midPointStop
-             offset="0.0223"
-             style="stop-color:#C2C2C2"
-             id="midPointStop301" />
-          <a:midPointStop
-             offset="0.5"
-             style="stop-color:#C2C2C2"
-             id="midPointStop302" />
-          <a:midPointStop
-             offset="0.3855"
-             style="stop-color:#FFFFFF"
-             id="midPointStop303" />
-          <a:midPointStop
-             offset="0.5"
-             style="stop-color:#FFFFFF"
-             id="midPointStop304" />
-          <a:midPointStop
-             offset="1"
-             style="stop-color:#000000"
-             id="midPointStop305" />
         </linearGradient>
         <path
            fill="url(#XMLID_2_)"
@@ -803,26 +762,6 @@
              offset="1"
              style="stop-color:#FF9901"
              id="stop312" />
-          <a:midPointStop
-             offset="0.0223"
-             style="stop-color:#FFFF00"
-             id="midPointStop313" />
-          <a:midPointStop
-             offset="0.5"
-             style="stop-color:#FFFF00"
-             id="midPointStop314" />
-          <a:midPointStop
-             offset="0.3669"
-             style="stop-color:#FFDE00"
-             id="midPointStop315" />
-          <a:midPointStop
-             offset="0.5"
-             style="stop-color:#FFDE00"
-             id="midPointStop316" />
-          <a:midPointStop
-             offset="1"
-             style="stop-color:#FF9901"
-             id="midPointStop317" />
         </radialGradient>
         <path
            a:adobe-blending-mode="normal"
@@ -856,26 +795,6 @@
              offset="1"
              style="stop-color:#FF9901"
              id="stop323" />
-          <a:midPointStop
-             offset="0.0223"
-             style="stop-color:#FFFF00"
-             id="midPointStop324" />
-          <a:midPointStop
-             offset="0.5"
-             style="stop-color:#FFFF00"
-             id="midPointStop325" />
-          <a:midPointStop
-             offset="0.3669"
-             style="stop-color:#FFDE00"
-             id="midPointStop326" />
-          <a:midPointStop
-             offset="0.5"
-             style="stop-color:#FFDE00"
-             id="midPointStop327" />
-          <a:midPointStop
-             offset="1"
-             style="stop-color:#FF9901"
-             id="midPointStop328" />
         </radialGradient>
         <path
            a:adobe-blending-mode="normal"
@@ -908,26 +827,6 @@
              offset="1"
              style="stop-color:#FF9901"
              id="stop334" />
-          <a:midPointStop
-             offset="0.0223"
-             style="stop-color:#FFFF00"
-             id="midPointStop335" />
-          <a:midPointStop
-             offset="0.5"
-             style="stop-color:#FFFF00"
-             id="midPointStop336" />
-          <a:midPointStop
-             offset="0.3669"
-             style="stop-color:#FFDE00"
-             id="midPointStop337" />
-          <a:midPointStop
-             offset="0.5"
-             style="stop-color:#FFDE00"
-             id="midPointStop338" />
-          <a:midPointStop
-             offset="1"
-             style="stop-color:#FF9901"
-             id="midPointStop339" />
         </radialGradient>
         <path
            a:adobe-blending-mode="normal"

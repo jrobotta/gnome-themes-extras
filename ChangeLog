@@ -1,3 +1,8 @@
+2003-07-08 Christian Schaller <Uraeus@gnome.org>
+
+	* Removed mid-stop point info from most icons, should reduce spew considerably
+	* Traditional Chinese translation by baddog
+
 2003-07-07 Christian Schaller <Uraeus@gnome.org>
 	
 	* Add print-preview icon to Nuvola

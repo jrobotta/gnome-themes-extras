@@ -16,7 +16,6 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xml="http://www.w3.org/XML/1998/namespace"
-   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs183" />
@@ -77,26 +76,6 @@
              offset="1"
              style="stop-color:#6566CB"
              id="stop164" />
-          <a:midPointStop
-             offset="0.0056"
-             style="stop-color:#D9D8FF"
-             id="midPointStop165" />
-          <a:midPointStop
-             offset="0.5"
-             style="stop-color:#D9D8FF"
-             id="midPointStop166" />
-          <a:midPointStop
-             offset="0.514"
-             style="stop-color:#FDFEED"
-             id="midPointStop167" />
-          <a:midPointStop
-             offset="0.5"
-             style="stop-color:#FDFEED"
-             id="midPointStop168" />
-          <a:midPointStop
-             offset="1"
-             style="stop-color:#6566CB"
-             id="midPointStop169" />
         </linearGradient>
         <path
            fill="url(#XMLID_1_)"
@@ -125,26 +104,6 @@
                offset="1"
                style="stop-color:#6566CB"
                id="stop175" />
-            <a:midPointStop
-               offset="0.0056"
-               style="stop-color:#D9D8FF"
-               id="midPointStop176" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#D9D8FF"
-               id="midPointStop177" />
-            <a:midPointStop
-               offset="0.514"
-               style="stop-color:#FDFEED"
-               id="midPointStop178" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#FDFEED"
-               id="midPointStop179" />
-            <a:midPointStop
-               offset="1"
-               style="stop-color:#6566CB"
-               id="midPointStop180" />
           </linearGradient>
           <path
              fill="url(#XMLID_2_)"

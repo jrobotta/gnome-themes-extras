@@ -16,7 +16,6 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xml="http://www.w3.org/XML/1998/namespace"
-   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs220">
@@ -36,18 +35,6 @@
          offset="1"
          style="stop-color:#CCCCCC"
          id="stop207" />
-      <a:midPointStop
-         offset="0.0056"
-         style="stop-color:#FFFFFF"
-         id="midPointStop208" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#FFFFFF"
-         id="midPointStop209" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#CCCCCC"
-         id="midPointStop210" />
     </linearGradient>
     <linearGradient
        id="XMLID_5_"
@@ -65,18 +52,6 @@
          offset="1"
          style="stop-color:#99CCFF"
          id="stop214" />
-      <a:midPointStop
-         offset="0.0056"
-         style="stop-color:#FFFFFF"
-         id="midPointStop215" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#FFFFFF"
-         id="midPointStop216" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#99CCFF"
-         id="midPointStop217" />
     </linearGradient>
   </defs>
   <sodipodi:namedview
@@ -129,26 +104,6 @@
          offset="1"
          style="stop-color:#0066CC"
          id="stop164" />
-      <a:midPointStop
-         offset="0.0056"
-         style="stop-color:#99CCFF"
-         id="midPointStop165" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#99CCFF"
-         id="midPointStop166" />
-      <a:midPointStop
-         offset="0.5843"
-         style="stop-color:#3399FF"
-         id="midPointStop167" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#3399FF"
-         id="midPointStop168" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#0066CC"
-         id="midPointStop169" />
     </radialGradient>
     <path
        fill="url(#XMLID_1_)"

@@ -15,7 +15,6 @@
    xmlns:ns="&amp;ns_vars;"
    xmlns:i="&amp;ns_ai;"
    xmlns:xml="http://www.w3.org/XML/1998/namespace"
-   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg153"
@@ -71,18 +70,6 @@
          offset="1"
          style="stop-color:#000000"
          id="stop160" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#CCCCCC"
-         id="midPointStop161" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#CCCCCC"
-         id="midPointStop162" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#000000"
-         id="midPointStop163" />
     </linearGradient>
     <path
        i:knockout="Off"
@@ -109,18 +96,6 @@
          offset="1"
          style="stop-color:#F0F0F0"
          id="stop168" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#D4D4D4"
-         id="midPointStop169" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#D4D4D4"
-         id="midPointStop170" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#F0F0F0"
-         id="midPointStop171" />
     </linearGradient>
     <path
        i:knockout="Off"
@@ -160,18 +135,6 @@
          offset="1"
          style="stop-color:#000000"
          id="stop179" />
-      <a:midPointStop
-         offset="0.8595"
-         style="stop-color:#C2C2C2"
-         id="midPointStop180" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#C2C2C2"
-         id="midPointStop181" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#000000"
-         id="midPointStop182" />
     </radialGradient>
     <path
        i:knockout="Off"
@@ -195,18 +158,6 @@
          offset="1"
          style="stop-color:#000000"
          id="stop186" />
-      <a:midPointStop
-         offset="0.8595"
-         style="stop-color:#C2C2C2"
-         id="midPointStop187" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#C2C2C2"
-         id="midPointStop188" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#000000"
-         id="midPointStop189" />
     </radialGradient>
     <path
        i:knockout="Off"
@@ -238,18 +189,6 @@
          offset="1"
          style="stop-color:#F0EBE6"
          id="stop195" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#E8E3DA"
-         id="midPointStop196" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#E8E3DA"
-         id="midPointStop197" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#F0EBE6"
-         id="midPointStop198" />
     </linearGradient>
     <path
        i:knockout="Off"
@@ -281,18 +220,6 @@
          offset="1"
          style="stop-color:#E8E3DA"
          id="stop204" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#D4CCBF"
-         id="midPointStop205" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#D4CCBF"
-         id="midPointStop206" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#E8E3DA"
-         id="midPointStop207" />
     </linearGradient>
     <path
        i:knockout="Off"
@@ -314,18 +241,6 @@
          offset="1"
          style="stop-color:#FFFFFF"
          id="stop211" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#D4CCBF"
-         id="midPointStop212" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#D4CCBF"
-         id="midPointStop213" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#FFFFFF"
-         id="midPointStop214" />
     </linearGradient>
     <path
        i:knockout="Off"
@@ -347,18 +262,6 @@
          offset="1"
          style="stop-color:#D4CCBF"
          id="stop218" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#D4CCBF"
-         id="midPointStop219" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#D4CCBF"
-         id="midPointStop220" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#D4CCBF"
-         id="midPointStop221" />
     </linearGradient>
     <path
        i:knockout="Off"
@@ -380,18 +283,6 @@
          offset="1"
          style="stop-color:#B5AC9F"
          id="stop225" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#D4CCBF"
-         id="midPointStop226" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#D4CCBF"
-         id="midPointStop227" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#B5AC9F"
-         id="midPointStop228" />
     </linearGradient>
     <path
        i:knockout="Off"
@@ -413,18 +304,6 @@
          offset="1"
          style="stop-color:#C2BAAD"
          id="stop232" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#B5AC9F"
-         id="midPointStop233" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#B5AC9F"
-         id="midPointStop234" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#C2BAAD"
-         id="midPointStop235" />
     </linearGradient>
     <path
        i:knockout="Off"
@@ -446,18 +325,6 @@
          offset="1"
          style="stop-color:#6F6754"
          id="stop239" />
-      <a:midPointStop
-         offset="0.0056"
-         style="stop-color:#D4CCBF"
-         id="midPointStop240" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#D4CCBF"
-         id="midPointStop241" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#6F6754"
-         id="midPointStop242" />
     </linearGradient>
     <path
        i:knockout="Off"
@@ -484,18 +351,6 @@
          offset="1"
          style="stop-color:#D4CCBF"
          id="stop247" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#B5AC9F"
-         id="midPointStop248" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#B5AC9F"
-         id="midPointStop249" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#D4CCBF"
-         id="midPointStop250" />
     </linearGradient>
     <path
        i:knockout="Off"

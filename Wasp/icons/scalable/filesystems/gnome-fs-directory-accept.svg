@@ -18,7 +18,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:xml="http://www.w3.org/XML/1998/namespace"
    xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
-   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:x="adobe:ns:meta/"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -118,18 +117,6 @@ Adobe Illustrator 10.0</xap:CreatorTool>
                offset="1"
                style="stop-color:#FFF24B"
                id="stop163" />
-            <a:midPointStop
-               offset="0"
-               style="stop-color:#FDFEED"
-               id="midPointStop164" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#FDFEED"
-               id="midPointStop165" />
-            <a:midPointStop
-               offset="1"
-               style="stop-color:#FFF24B"
-               id="midPointStop166" />
           </linearGradient>
           <path
              style="fill:url(#XMLID_1_);stroke:none;"
@@ -162,26 +149,6 @@ Adobe Illustrator 10.0</xap:CreatorTool>
                offset="1"
                style="stop-color:#9A99CD"
                id="stop173" />
-            <a:midPointStop
-               offset="0.0056"
-               style="stop-color:#D9D8FF"
-               id="midPointStop174" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#D9D8FF"
-               id="midPointStop175" />
-            <a:midPointStop
-               offset="0.514"
-               style="stop-color:#FDFEED"
-               id="midPointStop176" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#FDFEED"
-               id="midPointStop177" />
-            <a:midPointStop
-               offset="1"
-               style="stop-color:#9A99CD"
-               id="midPointStop178" />
           </linearGradient>
           <path
              style="fill:url(#XMLID_2_);stroke:none;"
@@ -206,18 +173,6 @@ Adobe Illustrator 10.0</xap:CreatorTool>
                offset="1"
                style="stop-color:#FFF24B"
                id="stop183" />
-            <a:midPointStop
-               offset="0"
-               style="stop-color:#FDFEED"
-               id="midPointStop184" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#FDFEED"
-               id="midPointStop185" />
-            <a:midPointStop
-               offset="1"
-               style="stop-color:#FFF24B"
-               id="midPointStop186" />
           </linearGradient>
           <path
              style="fill:url(#XMLID_3_);stroke:none;"
@@ -253,18 +208,6 @@ Adobe Illustrator 10.0</xap:CreatorTool>
                offset="1"
                style="stop-color:#000000"
                id="stop194" />
-            <a:midPointStop
-               offset="0"
-               style="stop-color:#FFFFFF"
-               id="midPointStop195" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#FFFFFF"
-               id="midPointStop196" />
-            <a:midPointStop
-               offset="1"
-               style="stop-color:#000000"
-               id="midPointStop197" />
           </linearGradient>
           <path
              a:adobe-blending-mode="multiply"
@@ -287,18 +230,6 @@ Adobe Illustrator 10.0</xap:CreatorTool>
                offset="1"
                style="stop-color:#5C5C3A"
                id="stop201" />
-            <a:midPointStop
-               offset="0"
-               style="stop-color:#D8DAA1"
-               id="midPointStop202" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#D8DAA1"
-               id="midPointStop203" />
-            <a:midPointStop
-               offset="1"
-               style="stop-color:#5C5C3A"
-               id="midPointStop204" />
           </linearGradient>
           <path
              style="fill:url(#XMLID_6_);stroke:none;"
@@ -320,18 +251,6 @@ Adobe Illustrator 10.0</xap:CreatorTool>
                offset="1"
                style="stop-color:#5C5C3A"
                id="stop208" />
-            <a:midPointStop
-               offset="0"
-               style="stop-color:#D8DAA1"
-               id="midPointStop209" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#D8DAA1"
-               id="midPointStop210" />
-            <a:midPointStop
-               offset="1"
-               style="stop-color:#5C5C3A"
-               id="midPointStop211" />
           </linearGradient>
           <path
              style="fill:url(#XMLID_7_);stroke:none;"
@@ -353,18 +272,6 @@ Adobe Illustrator 10.0</xap:CreatorTool>
                offset="1"
                style="stop-color:#5C5C3A"
                id="stop215" />
-            <a:midPointStop
-               offset="0"
-               style="stop-color:#D8DAA1"
-               id="midPointStop216" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#D8DAA1"
-               id="midPointStop217" />
-            <a:midPointStop
-               offset="1"
-               style="stop-color:#5C5C3A"
-               id="midPointStop218" />
           </linearGradient>
           <path
              style="fill:url(#XMLID_8_);stroke:none;"
@@ -411,18 +318,6 @@ Adobe Illustrator 10.0</xap:CreatorTool>
                offset="1"
                style="stop-color:#F1C779"
                id="stop228" />
-            <a:midPointStop
-               offset="0"
-               style="stop-color:#FFFFFF"
-               id="midPointStop229" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#FFFFFF"
-               id="midPointStop230" />
-            <a:midPointStop
-               offset="1"
-               style="stop-color:#F1C779"
-               id="midPointStop231" />
           </linearGradient>
           <path
              style="fill:url(#XMLID_9_);stroke:none;"
@@ -449,18 +344,6 @@ Adobe Illustrator 10.0</xap:CreatorTool>
                offset="1"
                style="stop-color:#000000"
                id="stop236" />
-            <a:midPointStop
-               offset="0"
-               style="stop-color:#FFFFFF"
-               id="midPointStop237" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#FFFFFF"
-               id="midPointStop238" />
-            <a:midPointStop
-               offset="1"
-               style="stop-color:#000000"
-               id="midPointStop239" />
           </linearGradient>
           <path
              a:adobe-blending-mode="normal"
@@ -498,42 +381,6 @@ Adobe Illustrator 10.0</xap:CreatorTool>
                offset="1"
                style="stop-color:#D7D43D"
                id="stop247" />
-            <a:midPointStop
-               offset="0"
-               style="stop-color:#FFFFFF"
-               id="midPointStop248" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#FFFFFF"
-               id="midPointStop249" />
-            <a:midPointStop
-               offset="0.648"
-               style="stop-color:#EAEB49"
-               id="midPointStop250" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#EAEB49"
-               id="midPointStop251" />
-            <a:midPointStop
-               offset="0.807"
-               style="stop-color:#E8E847"
-               id="midPointStop252" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#E8E847"
-               id="midPointStop253" />
-            <a:midPointStop
-               offset="0.9255"
-               style="stop-color:#E0DE42"
-               id="midPointStop254" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#E0DE42"
-               id="midPointStop255" />
-            <a:midPointStop
-               offset="1"
-               style="stop-color:#D7D43D"
-               id="midPointStop256" />
           </linearGradient>
           <path
              style="fill:url(#XMLID_11_);stroke:none;"
@@ -562,18 +409,6 @@ Adobe Illustrator 10.0</xap:CreatorTool>
                offset="1"
                style="stop-color:#F1C779"
                id="stop262" />
-            <a:midPointStop
-               offset="0"
-               style="stop-color:#FFFFFF"
-               id="midPointStop263" />
-            <a:midPointStop
-               offset="0.5"
-               style="stop-color:#FFFFFF"
-               id="midPointStop264" />
-            <a:midPointStop
-               offset="1"
-               style="stop-color:#F1C779"
-               id="midPointStop265" />
           </linearGradient>
           <path
              style="fill:url(#XMLID_12_);stroke:none;"
