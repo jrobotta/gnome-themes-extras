@@ -1,3 +1,10 @@
+2003-08-13 Christian Schaller <Uraeus@gnome.org>
+	
+	* Added Industrial theme engine since Gorilla needs it
+	* This makes g-t-e conflict with ximian artwork, hopefully
+	  Ximian will start to ship Industrial as a standalone package so
+	  I can obsolote that instead of the whole Ximian artwork package
+
 2003-08-12 Christian Schaller <Uraeus@gnome.org>
 
 	* Adding preview of final Amaranth Metacity theme, looks pretty ok
