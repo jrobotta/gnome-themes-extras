@@ -3,6 +3,7 @@ NULL =
 icon_DATA = \
 	evolution-1.4.svg \
 	gnome-applications.svg \
+	gnome-ccdesktop.svg \
 	gnome-envelope.svg \
 	gnome-favorites.svg \
 	gnome-gimp.svg \

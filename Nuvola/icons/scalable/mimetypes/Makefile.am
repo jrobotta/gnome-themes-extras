@@ -18,15 +18,20 @@ icon_DATA = \
 	gnome-mime-application-x-font-ttf.svg \
         gnome-mime-application-x-gnome-app-info.svg \
 	gnome-mime-application-x-iso-image.svg \
+	gnome-mime-application-x-jar.svg \
     	gnome-mime-application-x-rpm.svg \
+	gnome-mime-application-x-tgz.svg \
         gnome-mime-audio.svg \
 	gnome-mime-audio-x-midi.svg \
 	gnome-mime-audio-x-pn-realaudio.svg \
 	gnome-mime-image.svg \
 	gnome-mime-image-xcf.svg \
+	gnome-mime-image-text-html.svg \
         gnome-mime-text.svg \
+	gnome-mime-text-x-makefile.svg \
 	gnome-mime-text-x-sh.svg \
         gnome-mime-video.svg \
+	gnome-mime-x-readme.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 
