@@ -10,7 +10,6 @@ icon_DATA = \
         gnome-fs-directory-accept.icon \
         gnome-fs-directory.svg \
         gnome-fs-directory.icon \
-        gnome-fs-executable.svg \
         gnome-fs-ftp.svg \
         gnome-fs-home.svg \
         gnome-fs-loading-icon.svg \

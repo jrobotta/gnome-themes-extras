@@ -1,5 +1,11 @@
 2004-06-10  Jakub Steiner <jimmac@ximian.com>
 
+	* gnome-fs-executable -> gnome-mime-x-application-executable:
+	  symlinking accross directories seems to be a pain. However
+	  symlinking to nonexistant files hardly the solution ;)
+	
+2004-06-10  Jakub Steiner <jimmac@ximian.com>
+
 	* Gorilla/icons/scalable/filesystems/Makefile.am:
 	  fix makefile after Christian ;)
 

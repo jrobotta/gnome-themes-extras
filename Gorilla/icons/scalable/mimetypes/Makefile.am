@@ -1,44 +1,43 @@
 icondir = $(datadir)/icons/Gorilla/scalable/mimetypes
 NULL = 
 icon_DATA = \
-        gnome-compressed.svg \
-        gnome-mime-application-msword.svg \
-        gnome-mime-application-pdf.svg \
-        gnome-mime-application-pgp.svg \
-        gnome-mime-application-postscript.svg \
+	gnome-compressed.svg \
+	gnome-mime-application-msword.svg \
+	gnome-mime-application-pdf.svg \
+	gnome-mime-application-pgp.svg \
+	gnome-mime-application-postscript.svg \
 	gnome-mime-application-x-abiword.svg \
-        gnome-mime-application-x-backup.svg \
-        gnome-mime-application-x-deb.svg \
-        gnome-mime-application-x-dvi.svg \
-        5B
-        gnome-mime-application-x-executable.svg \
-        gnome-mime-application-x-gnome-app-info.svg \
-        gnome-mime-application-x-gnucash.svg \
-        gnome-mime-application-x-font.svg \
-        gnome-mime-application-x-killustrator.svg \
-        gnome-mime-application-x-kpresenter.svg \
-        gnome-mime-application-x-kspread.svg \
-        gnome-mime-application-x-kword.svg \
-        gnome-mime-application-x-rpm.svg \
+	gnome-mime-application-x-backup.svg \
+	gnome-mime-application-x-deb.svg \
+	gnome-mime-application-x-dvi.svg \
+	gnome-mime-application-x-executable.svg \
+	gnome-mime-application-x-gnome-app-info.svg \
+	gnome-mime-application-x-gnucash.svg \
+	gnome-mime-application-x-font.svg \
+	gnome-mime-application-x-killustrator.svg \
+	gnome-mime-application-x-kpresenter.svg \
+	gnome-mime-application-x-kspread.svg \
+	gnome-mime-application-x-kword.svg \
+	gnome-mime-application-x-rpm.svg \
 	gnome-mime-application-x-shared-library.svg \
-        gnome-mime-application-vnd.ms-excel.svg \
-        gnome-mime-application-vnd.ms-powerpoint.svg \
-        gnome-mime-application-vnd.rn-realmedia.svg \
-        gnome-mime-application-vnd.sun.xml.calc.svg \
-        gnome-mime-application-vnd.sun.xml.draw.svg \
-        gnome-mime-application-vnd.sun.xml.impress.svg \
-        gnome-mime-application-vnd.sun.xml.writer.svg \
-        gnome-mime-audio.svg \
-        gnome-mime-audio-x-midi.svg \
-        gnome-mime-image.svg \
-        gnome-mime-image-x-xcf.svg \
-        gnome-mime-text.svg \
-        gnome-mime-text-css.svg \
-        gnome-mime-text-html.svg \
-        gnome-mime-text-x-authors.svg \
-        gnome-mime-text-x-copying.svg \
-        gnome-mime-text-x-install.svg \
-        gnome-mime-text-x-java.svg \
+	gnome-mime-application-vnd.ms-excel.svg \
+	gnome-mime-application-vnd.ms-powerpoint.svg \
+	gnome-mime-application-vnd.rn-realmedia.svg \
+	gnome-mime-application-vnd.sun.xml.calc.svg \
+	gnome-mime-application-vnd.sun.xml.draw.svg \
+	gnome-mime-application-vnd.sun.xml.impress.svg \
+	gnome-mime-application-vnd.sun.xml.writer.svg \
+	gnome-mime-audio.svg \
+	gnome-mime-audio-x-midi.svg \
+	gnome-mime-image.svg \
+	gnome-mime-image-x-xcf.svg \
+	gnome-mime-text.svg \
+	gnome-mime-text-css.svg \
+	gnome-mime-text-html.svg \
+	gnome-mime-text-x-authors.svg \
+	gnome-mime-text-x-copying.svg \
+	gnome-mime-text-x-install.svg \
+	gnome-mime-text-x-java.svg \
 	gnome-mime-text-x-lyx.svg \
 	gnome-mime-text-x-makefile.svg \
 	gnome-mime-text-x-patch.svg \
@@ -46,7 +45,7 @@ icon_DATA = \
 	gnome-mime-text-x-sh.svg \
 	gnome-mime-text-x-sql.svg \
 	gnome-mime-text-x-troff-man.svg \
-        gnome-mime-video.svg \
+	gnome-mime-video.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 
