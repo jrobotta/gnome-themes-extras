@@ -1,3 +1,9 @@
+2004-04-18 David Vignoni <davigno@cvs.gnome.org>
+
+	* Nuvola/icons/scalable/stock/: Updated 15 icons.
+	* Nuvola/icons/scalable/stock/: Added 1 icons.
+	
+
 2004-04-10  Gareth Owen  <gowen72@yahoo.com>
 
 	* configure.in: Added en_GB to ALL_LINGUAS
@@ -11,7 +17,7 @@
 	* Added 5 icons to Amaranth
 	* Added new Nuvola icons to Makefiles
 
-2004-03-30  David Vignoni  <davigno@cvs.gnome.org>
+2004-03-30 David Vignoni  <davigno@cvs.gnome.org>
 
 	* Nuvola/icons/scalable/apps/: Updated 16 icons.
 	* Nuvola/icons/scalable/apps/: Added 3 icons.
@@ -22,7 +28,7 @@
 	* Nuvola/icons/scalable/mimetypes/: Updated 5 icons.
 	* Nuvola/icons/scalable/mimetypes/: Added 1 icon.	
 
-2004-03-29  David Vignoni <davigno@cvs.gnome.org>
+2004-03-29 David Vignoni <davigno@cvs.gnome.org>
 
 	* Nuvola/icons/scalable/mimetypes/: Updated 30 icons.
 	* Nuvola/icons/scalable/mimetypes/: Added 22 icons.
