@@ -36,9 +36,11 @@ style "icon-style"
    stock["gtk-go-down"] =	{{ "stock_go-down.svg" }}
    stock["gtk-go-forward"] =	{{ "stock_go-forward.svg" }}
    stock["gtk-go-up"] =		{{ "stock_go-up.svg" }}
+   stock["gtk-goto-first"] = 	{{ "stock_gtk-goto-first.svg" }}
+   stock["gtk-goto-last"] = 	{{ "stock_gtk-goto-last.svg" }}
   stock["gtk-help"] =		{{ "stock_help.svg" }}
   stock["gtk-home"] =		{{ "stock_home.svg" }}
-#  stock["gtk-index"] =		{{ "stock_index.svg" }}
+#  stock["gtk-index"] =stock		{{ "stock_index.svg" }}
 #  stock["gtk-italic"] =		{{ "text_italic.svg" }}
 
 #  stock["gtk-jump-to"] =	{{ "stock_jump-to.svg" }}
@@ -140,6 +142,8 @@ style "icon-style"
         stock ["volume-med"] =      	{{"stock-volume.svg"}}
         stock ["volume-max"] =      	{{"stock-volume.svg"}}
 
+	stock ["gaim-send"] =      	{{"gaim_send-im.svg"}}
+        
         #stock ["mouse-dblclck-maybe"] =    {{"double-click-maybe.svg"}}
         #stock ["mouse-dblclck-on"] =       {{"double-click-on.svg"}}
         #stock ["mouse-dblclck-off"] =      {{"double-click-off.svg"}}

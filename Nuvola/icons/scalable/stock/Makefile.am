@@ -48,6 +48,10 @@ icon_DATA = \
 	stock_undo.svg \
 	stock-volume.svg \
 	stock_dialog_info.svg \
-	stock_dialog_warning.svg
+	stock_dialog_warning.svg \
+	stock_gtk-goto-first.svg \
+	stock_gtk-goto-last.svg \
+	gaim_send-im.svg \
+	gaim_insert-smiley-small.svg
 
 EXTRA_DIST = $(icon_DATA)
