@@ -1,3 +1,11 @@
+2004-06-08  Jakub Steiner <jimmac@ximian.com>
+
+	* my-computer.svg
+	* gnome-terminal.svg: scale fixups
+
+	* accessibility-directory.svg
+	* gnome-games.svg: new panel icons
+
 2004-05-05 Christian Schaller <Uraeus@gnome.org>
 
 	* Fixing small issues in Nuvola

@@ -37,7 +37,7 @@ msgid "Vector Theme"
 msgstr "Vektorové téma"
 
 #: Gorilla/index.theme.in.h:2
-msgid "The vector mono Godess"
+msgid "The Vector Mono Goddess"
 msgstr "Monochromatická vektorová bohyně"
 
 #: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
