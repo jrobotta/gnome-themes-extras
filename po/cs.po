@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras VERSION\n"
-"POT-Creation-Date: 2003-05-16 23:59+0200\n"
-"PO-Revision-Date: 2003-05-08 14:50+0200\n"
+"POT-Creation-Date: 2003-05-18 12:28+0200\n"
+"PO-Revision-Date: 2003-05-18 14:43+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -41,7 +41,7 @@ msgstr "Svěží"
 
 #: Lush/index.theme.in.h:2
 msgid "Lushy SVG icons"
-msgstr ""
+msgstr "Svěží ikony SVG"
 
 #: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
 msgid "Nuvola"
@@ -50,6 +50,3 @@ msgstr "Nuvola"
 #: Nuvola/index.theme.in.h:2
 msgid "The Blue Style Surf"
 msgstr "Surfování v modrém stylu"
-
-#~ msgid "Lushy SVG icons with Mandrake Galaxy"
-#~ msgstr "Svěží ikony SVG s Mandrake Galaxy"
