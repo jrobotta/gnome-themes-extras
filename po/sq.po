@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-04 20:53+0200\n"
+"POT-Creation-Date: 2004-06-09 17:57+0200\n"
 "PO-Revision-Date: 2004-03-06 16:42+0100\n"
 "Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
 "Language-Team: Albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
@@ -37,7 +37,8 @@ msgid "Vector Theme"
 msgstr "Temë vektoriale"
 
 #: Gorilla/index.theme.in.h:2
-msgid "The vector mono Godess"
+#, fuzzy
+msgid "The Vector Mono Goddess"
 msgstr "The vector mono Godess"
 
 #: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1

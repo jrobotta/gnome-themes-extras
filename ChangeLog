@@ -1,3 +1,9 @@
+2004-06-09  Christian Schaller <christian@fluendo.com>
+
+	* fix emblem placements
+	* fix makefiles after Jakub :)
+	* Add gnome-fs-client to Gorilla
+
 2004-06-09  Jakub Steiner <jimmac@ximian.com>
 
 	* stock_dialog_warning.svg: Do not embed font. Fixes bug #140719

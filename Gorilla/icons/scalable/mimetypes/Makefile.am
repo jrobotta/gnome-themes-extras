@@ -6,7 +6,7 @@ icon_DATA = \
         gnome-mime-application-pdf.svg \
         gnome-mime-application-pgp.svg \
         gnome-mime-application-postscript.svg \
-		  gnome-mime-application-x-abiword.svg \
+	gnome-mime-application-x-abiword.svg \
         gnome-mime-application-x-backup.svg \
         gnome-mime-application-x-deb.svg \
         gnome-mime-application-x-dvi.svg \
@@ -18,7 +18,7 @@ icon_DATA = \
         gnome-mime-application-x-kspread.svg \
         gnome-mime-application-x-kword.svg \
         gnome-mime-application-x-rpm.svg \
-		  gnome-mime-application-x-shared-library.svg \
+	gnome-mime-application-x-shared-library.svg \
         gnome-mime-application-vnd.ms-excel.svg \
         gnome-mime-application-vnd.ms-powerpoint.svg \
         gnome-mime-application-vnd.rn-realmedia.svg \
@@ -37,13 +37,13 @@ icon_DATA = \
         gnome-mime-text-x-copying.svg \
         gnome-mime-text-x-install.svg \
         gnome-mime-text-x-java.svg \
-		  gnome-mime-text-x-lyx.svg \
-		  gnome-mime-text-x-makefile.svg \
-		  gnome-mime-text-x-patch.svg \
-		  gnome-mime-text-x-readme.svg \
-		  gnome-mime-text-x-sh.svg \
-		  gnome-mime-text-x-sql.svg \
-		  gnome-mime-text-x-troff-man.svg \
+	gnome-mime-text-x-lyx.svg \
+	gnome-mime-text-x-makefile.svg \
+	gnome-mime-text-x-patch.svg \
+	gnome-mime-text-x-readme.svg \
+	gnome-mime-text-x-sh.svg \
+	gnome-mime-text-x-sql.svg \
+	gnome-mime-text-x-troff-man.svg \
         gnome-mime-video.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
@@ -64,9 +64,8 @@ install-data-local:
 	ln -sf gnome-mime-video.svg gnome-mime-video-quicktime.svg && \
 	ln -sf gnome-mime-video.svg gnome-mime-video-x-ms-wmv.svg && \
 	ln -sf gnome-mime-video.svg gnome-mime-video-mpeg.svg && \
-	ln -sf gnome-mime-text-html.svg gnome-mime-application-x-php.svg 
-	ln -sf $(DESTDIR)$(datadir)/icons/Gorilla/scalable/filesystems/gnome-fs-executable.svg \
-	$(DESTDIR)$(icondir)/gnome-mime-application-x-executable.svg
+	ln -sf gnome-mime-text-html.svg gnome-mime-application-x-php.svg && \
+	ln -sf gnome-fs-executable.svg gnome-mime-application-x-executable.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-ttf.svg && \
@@ -78,6 +77,5 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-gnumeric.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-ogg.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-php.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-stuffit.svg \
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-stuffit.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-executable.svg
-

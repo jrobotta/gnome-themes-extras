@@ -4,6 +4,7 @@ icon_DATA = \
         gnome-fs-blockdev.svg \
         gnome-fs-bookmark-missing.svg \
         gnome-fs-bookmark.svg \
+	gnome-fs-client.svg \
         gnome-fs-chardev.svg \
         gnome-fs-directory-accept.svg \
         gnome-fs-directory-accept.icon \
@@ -29,8 +30,5 @@ EXTRA_DIST = $(icon_DATA)
 install-data-local:
 	mkdir -p $(DESTDIR)$(icondir)
 	cd $(DESTDIR)$(icondir) && \
-	ln -sf $(DESTDIR)$(datadir)/icons/Gorilla/scalable/apps/my-computer.svg \
-	$(DESTDIR)$(icondir)/gnome-fs-client.svg
 
 uninstall-local:
-	rm -rf $(DESTDIR)$(icondir)/gnome-fs-client.svg

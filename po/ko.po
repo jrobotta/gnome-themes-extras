@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-04 20:53+0200\n"
+"POT-Creation-Date: 2004-06-09 17:57+0200\n"
 "PO-Revision-Date: 2004-03-06 20:47+0900\n"
 "Last-Translator: Young-Ho, Cha <ganadist at mizi.com>\n"
 "Language-Team: GNOME Korea <gnome-kr-hackers@list.kldp.net>\n"
@@ -35,7 +35,8 @@ msgstr "벡터 테마"
 
 # thanx kz!
 #: Gorilla/index.theme.in.h:2
-msgid "The vector mono Godess"
+#, fuzzy
+msgid "The Vector Mono Goddess"
 msgstr "단색조의 아름다운 벡터테마"
 
 #: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1

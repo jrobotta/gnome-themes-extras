@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extra 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-06-04 20:53+0200\n"
+"POT-Creation-Date: 2004-06-09 17:57+0200\n"
 "PO-Revision-Date: 2003-05-20 18:29+0200\n"
 "Last-Translator: Christian Neumair <chris@gnome-de.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
@@ -41,7 +41,8 @@ msgid "Vector Theme"
 msgstr "Vektorthema"
 
 #: Gorilla/index.theme.in.h:2
-msgid "The vector mono Godess"
+#, fuzzy
+msgid "The Vector Mono Goddess"
 msgstr "Die einzig wahre Vektor-Gottheit"
 
 # Eigenname
