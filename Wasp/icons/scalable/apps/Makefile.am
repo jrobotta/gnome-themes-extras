@@ -65,6 +65,7 @@ install-data-local:
 	ln -sf gnome-audio2.svg gnome-media-player.svg && \
 	ln -sf gnome-gimp.svg gnome-palette.svg && \
 	ln -sf gnome-envelope.svg evolution-1.4.svg && \
+	ln -sf gnome-envelope.svg redhat-email.svg && \
 	ln -sf mozilla-star.svg redhat-web-browser.svg && \
 	ln -sf gnome-applications.svg redhat-office.svg && \
 	ln -sf my-computer.svg redhat-home.svg && \
@@ -84,6 +85,7 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/xmms.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-palette.svg && \
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
+	rm -rf $(DESTDIR)$(icondir)/redhat-email.svg
 	rm -rf $(DESTDIR)$(icondir)/redhat-web-browser.svg && \
 	rm -rf $(DESTDIR)$(icondir)/web-browser.svg  && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-*.svg && \
