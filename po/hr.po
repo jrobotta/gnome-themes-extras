@@ -1,11 +1,11 @@
-# Translation of gnome-themes-extras to Croatian
-# Copyright (C) Croatian team
+# Translation of gnome-themes-extras to Croatiann
+# Copyright (C) Croatiann team
 # Translators: 
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras 0\n"
-"POT-Creation-Date: 2003-11-06 18:10+0100\n"
-"PO-Revision-Date: 2003-11-10 16:52+CET\n"
+"POT-Creation-Date: 2004-02-09 17:42+0100\n"
+"PO-Revision-Date: 2004-02-09 17:42+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
 "MIME-Version: 1.0\n"
