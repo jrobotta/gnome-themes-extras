@@ -5,6 +5,7 @@ icon_DATA = \
 	applets-screenshooter.svg \
 	background-capplet.svg \
 	bluefish.svg \
+	control-center2.svg \
 	file-manager.svg \
 	file-roller.svg \
 	fonts-capplet.svg \
@@ -28,6 +29,7 @@ icon_DATA = \
 	gnome-terminal.svg \
 	gnome-util.svg \
 	gnumeric.svg \
+	hwbrowser.svg \
 	gnome-pdf.svg \
 	keyboard.svg \
 	mozilla-star.svg \
