@@ -1,0 +1,66 @@
+# translation of gnome-themes-extras to Albanian
+# This file is distributed under the same license as the gnome-themes-extras package.
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# Laurent Dhima <laurenti@alblinux.net>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-03-06 16:32+0100\n"
+"PO-Revision-Date: 2004-03-06 16:42+0100\n"
+"Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
+"Language-Team: Albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
+msgid "Amaranth"
+msgstr "Amarante"
+
+#: Amaranth/icons/index.theme.in.h:2
+msgid "Silver Vector Theme"
+msgstr "Temë vektoriale e argjentuar"
+
+#: Amaranth/index.theme.in.h:2
+msgid "Sterling Silver"
+msgstr "Argjent puro"
+
+#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "Gorilla"
+
+#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
+msgid "Vector Theme"
+msgstr "Temë vektoriale"
+
+#: Gorilla/index.theme.in.h:2
+msgid "The vector mono Godess"
+msgstr "The vector mono Godess"
+
+#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "E bollshme"
+
+#: Lush/index.theme.in.h:2
+msgid "Mild green theme"
+msgstr "Temë jeshile mesatare"
+
+#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "Nuvola"
+
+#: Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "Stili blu i shkumës së detit"
+
+#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "Grenza"
+
+#: Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "Temë në stil BeOS"
+
