@@ -28,7 +28,7 @@ icon_DATA = \
 	gnome-terminal.svg \
 	gnome-util.svg \
 	gnumeric.svg \
-	gpdf.svg \
+	gnome-pdf.svg \
 	keyboard.svg \
 	mozilla-star.svg \
 	my-computer.svg \
