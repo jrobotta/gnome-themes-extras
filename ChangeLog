@@ -1,3 +1,7 @@
+2004-07-28  Gustavo Maciel Dias Vieira  <gustavo@sagui.org>
+
+	* configure.in: Added pt_BR to ALL_LINGUAS.
+
 2004-06-18  Jakub Steiner <jimmac@ximian.com>
 
 	* gnome-fs-directory-visiting: the open folder state
