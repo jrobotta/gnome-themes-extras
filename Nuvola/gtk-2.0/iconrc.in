@@ -11,10 +11,10 @@ style "icon-style"
 #  stock["gnome-stock-book-red"] = {{ "stock_book.svg" }}
 #  stock["gnome-stock-book-yellow"] = {{ "stock_book.svg" }}
 #  stock["gnome-stock-book-open"] = {{ "stock_book-open.svg" }}
-#  stock["gtk-dialog-info"] =   {{ "stock_dialog_info.svg" }}
+   stock["gtk-dialog-info"] =   {{ "stock_dialog_info.svg" }}
 #  stock["gtk-dialog-question"] = {{ "stock_dialog_question.svg" }}
 #  stock["gtk-dialog-error"] =  {{ "stock_dialog_error.svg" }}
-#  stock["gtk-dialog-warning"] =  {{ "stock_dialog_warning.svg" }}
+   stock["gtk-dialog-warning"] =  {{ "stock_dialog_warning.svg" }}
    stock["gtk-dnd"] = {{ "filenew.svg" }} 
 #  stock["gtk-dnd-multiple"] = {{ "queue-b.svg" }} 
    stock["gtk-add"] =	       {{ "bookmark_add.svg" }}

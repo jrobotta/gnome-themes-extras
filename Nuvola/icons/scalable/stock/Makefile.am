@@ -46,6 +46,8 @@ icon_DATA = \
 	stock_run.svg \
 	stock_stop.svg \
 	stock_undo.svg \
-	stock-volume.svg
+	stock-volume.svg \
+	stock_dialog_info.svg \
+	stock_dialog_warning.svg
 
 EXTRA_DIST = $(icon_DATA)

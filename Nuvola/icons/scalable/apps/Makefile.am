@@ -35,6 +35,16 @@ icon_DATA = \
 	mozilla-compose-icon.svg \
 	network.svg \
 	procman.svg \
+	gcalctool.svg \
+	gnome-devel.svg \
+	kasteroids.svg \
+	gnome-system-config.svg \
+	gaim.svg \
+	hwbrowser.svg \
+	gnome-mixer.svg \
+	gnome-icq.svg \
+	gdict.svg \
+	disks.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 
@@ -59,7 +69,8 @@ install-data-local:
 	ln -sf gnome-ccdesktop.svg redhat-preferences.svg && \
 	ln -sf mouse-capplet.svg gnome-mouse.svg && \
 	ln -sf gnome-system-config.svg redhat-system_settings.svg && \
-	ln -sf gnome-system.svg redhat-system_tools.svg
+	ln -sf gnome-devel.svg redhat-programming.svg && \
+	ln -sf gnome-system.svg redhat-system_tools.svg 
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
