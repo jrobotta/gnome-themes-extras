@@ -5,9 +5,12 @@ icon_DATA = \
         gnome-fs-bookmark-missing.svg \
         gnome-fs-bookmark.svg \
         gnome-fs-chardev.svg \
+	gnome-fs-client.svg \
+	gnome-fs-desktop.svg \
         gnome-fs-directory-accept.svg \
         gnome-fs-directory-accept.icon \
         gnome-fs-directory.svg \
+	gnome-fs-directory-visiting.svg \
         gnome-fs-directory.icon \
         gnome-fs-executable.svg \
         gnome-fs-ftp.svg \

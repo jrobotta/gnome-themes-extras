@@ -1,3 +1,8 @@
+2004-03-21  Christian Schaller <Uraeus@gnome.org>
+
+	* Some small changes to Nuvola to make it more 2.6 friendly
+	* New Amaranth trashcan from Yishay Vadai
+
 2004-03-06  Laurent Dhima  <laurenti@alblinux.net>
 
 	* configure.in: Added "sq" to ALL_LINGUAS.

@@ -4,7 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras 0\n"
-"POT-Creation-Date: 2004-02-09 17:42+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-03-21 14:45+0100\n"
 "PO-Revision-Date: 2004-02-09 17:42+CET\n"
 "Last-Translator: auto\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -61,4 +62,3 @@ msgstr ""
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr ""
-
