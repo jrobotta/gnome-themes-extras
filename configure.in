@@ -62,6 +62,14 @@ Gorilla/icons/scalable/devices/Makefile
 Gorilla/icons/scalable/emblems/Makefile
 Gorilla/icons/scalable/filesystems/Makefile
 Gorilla/icons/scalable/mimetypes/Makefile
+Nuvola/Makefile
+Nuvola/icons/Makefile
+Nuvola/icons/scalable/Makefile
+Nuvola/icons/scalable/apps/Makefile
+Nuvola/icons/scalable/devices/Makefile
+Nuvola/icons/scalable/emblems/Makefile
+Nuvola/icons/scalable/filesystems/Makefile
+Nuvola/icons/scalable/mimetypes/Makefile
 po/Makefile.in
 ])
 

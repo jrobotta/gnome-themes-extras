@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   width="48pt"
+   height="48pt"
+   viewBox="0 0 70 60"
+   xml:space="preserve"
+   id="svg1463"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/filesystems/gnome-fs-web.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/filesystems"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs
+     id="defs1563" />
+  <sodipodi:namedview
+     id="base" />
+  <g
+     id="Layer_x0020_3"
+     style="fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;">
+    <path
+       style="fill:none;stroke:none;"
+       d="M70,60H0V0h70v60z"
+       id="path1465" />
+  </g>
+  <g
+     id="Layer_x0020_5"
+     style="fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;"
+     transform="matrix(1.65542,0,0,1.60999,-16.231,-2.56197)">
+    <radialGradient
+       id="aigrd4"
+       cx="27.5771"
+       cy="13.3384"
+       r="22.9105"
+       fx="27.5771"
+       fy="13.3384"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         style="stop-color:#2286B7"
+         id="stop1497" />
+      <stop
+         offset="1"
+         style="stop-color:#190F50"
+         id="stop1498" />
+    </radialGradient>
+    <path
+       style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#aigrd4);stroke-width:3.3747;"
+       d="M15.2,20.3c0,8.9,7.2,16.1,16.1,16.1c8.9,0,16.1-7.2,16.1-16.1c0-8.9-7.2-16.1-16.1-16.1c-8.9,0-16.1,7.2-16.1,16.1z"
+       id="path1499" />
+    <radialGradient
+       id="aigrd5"
+       cx="26.127"
+       cy="13.3188"
+       r="24.1342"
+       fx="26.127"
+       fy="13.3188"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         style="stop-color:#99BBA8"
+         id="stop1501" />
+      <stop
+         offset="4.483276e-002"
+         style="stop-color:#94B8A9"
+         id="stop1502" />
+      <stop
+         offset="9.596599e-002"
+         style="stop-color:#87B0A9"
+         id="stop1503" />
+      <stop
+         offset="0.1502"
+         style="stop-color:#72A1A9"
+         id="stop1504" />
+      <stop
+         offset="0.2065"
+         style="stop-color:#538FA8"
+         id="stop1505" />
+      <stop
+         offset="0.264"
+         style="stop-color:#2E79A7"
+         id="stop1506" />
+      <stop
+         offset="0.2865"
+         style="stop-color:#1D70A5"
+         id="stop1507" />
+      <stop
+         offset="0.8539"
+         style="stop-color:#190F50"
+         id="stop1508" />
+      <stop
+         offset="1"
+         style="stop-color:#585287"
+         id="stop1509" />
+    </radialGradient>
+    <path
+       style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#aigrd5);stroke:none;"
+       d="M15.2,20.3c0,8.9,7.2,16.1,16.1,16.1c8.9,0,16.1-7.2,16.1-16.1c0-8.9-7.2-16.1-16.1-16.1c-8.9,0-16.1,7.2-16.1,16.1z"
+       id="path1510" />
+    <radialGradient
+       id="aigrd6"
+       cx="25.5063"
+       cy="13.1895"
+       r="19.8584"
+       fx="25.5063"
+       fy="13.1895"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         style="stop-color:#D5D690"
+         id="stop1512" />
+      <stop
+         offset="0.2202"
+         style="stop-color:#CFD08C"
+         id="stop1513" />
+      <stop
+         offset="0.4404"
+         style="stop-color:#BFBF80"
+         id="stop1514" />
+      <stop
+         offset="0.6607"
+         style="stop-color:#A4A46D"
+         id="stop1515" />
+      <stop
+         offset="0.8799"
+         style="stop-color:#828257"
+         id="stop1516" />
+      <stop
+         offset="0.927"
+         style="stop-color:#7A7A52"
+         id="stop1517" />
+      <stop
+         offset="1"
+         style="stop-color:#9C9C68"
+         id="stop1518" />
+    </radialGradient>
+    <path
+       style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#aigrd6);stroke:none;"
+       d="M29.2,10.7l3.8,3.3l1.8-3.1l2.6,2.9L33,16.2l-0.6,3.9l0.9,1.6h-0.9l-1.1-1.6h-3.6l-1.4,2.4l3.6,2.1l5.2,3l-4.3,3.6v3.6l-3.3-7.5l1.3-2.2l-3.8-2.6v-3.2l-1.8-6.5l-2.1-1.2l0.2-2.3l2.8-2v2.5l5,0.7z"
+       id="path1519" />
+    <radialGradient
+       id="aigrd7"
+       cx="27.5752"
+       cy="14.5229"
+       r="17.1791"
+       fx="27.5752"
+       fy="14.5229"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         style="stop-color:#D5D690"
+         id="stop1521" />
+      <stop
+         offset="0.2202"
+         style="stop-color:#CFD08C"
+         id="stop1522" />
+      <stop
+         offset="0.4404"
+         style="stop-color:#BFBF80"
+         id="stop1523" />
+      <stop
+         offset="0.6607"
+         style="stop-color:#A4A46D"
+         id="stop1524" />
+      <stop
+         offset="0.8799"
+         style="stop-color:#828257"
+         id="stop1525" />
+      <stop
+         offset="0.927"
+         style="stop-color:#7A7A52"
+         id="stop1526" />
+      <stop
+         offset="1"
+         style="stop-color:#9C9C68"
+         id="stop1527" />
+    </radialGradient>
+    <path
+       style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#aigrd7);stroke:none;"
+       d="M40.4,8.8v2l1.2,2V16l1.8,1l0.2-2.1l-1.1-1.8h1.6l-3.7-4.3z"
+       id="path1528" />
+  </g>
+</svg>
