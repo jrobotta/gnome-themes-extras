@@ -8,6 +8,8 @@ icon_DATA = \
         gnome-fs-chardev.svg \
         gnome-fs-directory-accept.svg \
         gnome-fs-directory-accept.icon \
+        gnome-fs-directory-visiting.svg \
+        gnome-fs-directory-visiting.icon \
         gnome-fs-directory.svg \
         gnome-fs-directory.icon \
         gnome-fs-ftp.svg \

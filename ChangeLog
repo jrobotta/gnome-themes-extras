@@ -1,3 +1,7 @@
+2004-06-18  Jakub Steiner <jimmac@ximian.com>
+
+	* gnome-fs-directory-visiting: the open folder state
+
 2004-06-17  Christian Schaller <christian@fluendo.com>
 
 	* Added python mimetype icon to Lush from Nicolas Évrard
