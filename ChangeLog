@@ -5,7 +5,8 @@
 	* Gorilla/metacity-1/wm-max.svg
 	* Gorilla/metacity-1/wm-menu.svg
 	* Gorilla/metacity-1/wm-min.svg
-	* Gorilla/metacity-1/wm-restore.svg: adding Gorilla metacity theme
+	* Gorilla/metacity-1/wm-restore.svg: adding Gorilla metacity theme. gotta 
+     add autotools files
 
 2003-06-05 Christian Schaller <Uraeus@gnome.org>
 	* Commited many updated icons from David Vignoni to Nuvola
