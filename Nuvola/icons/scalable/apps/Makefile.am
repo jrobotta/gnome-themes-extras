@@ -45,6 +45,8 @@ icon_DATA = \
 	gnome-icq.svg \
 	gdict.svg \
 	disks.svg \
+	password.svg \
+	sane.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 
@@ -70,11 +72,13 @@ install-data-local:
 	ln -sf mouse-capplet.svg gnome-mouse.svg && \
 	ln -sf gnome-system-config.svg redhat-system_settings.svg && \
 	ln -sf gnome-devel.svg redhat-programming.svg && \
-	ln -sf gnome-system.svg redhat-system_tools.svg 
+	ln -sf gnome-system.svg redhat-system_tools.svg && \
+	ln -sf gnome-mixer.svg gnome-audio.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-palette.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-*.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-main-menu.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-mouse.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-mouse.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-audio.svg
