@@ -5,6 +5,8 @@ icon_DATA = \
 	accessibility-keyboard-capplet.svg \
 	advanced-directory.svg \
 	apacheconf.svg \
+	downloadmanager.svg \
+	evolution.svg \
 	gaim.svg \
 	gedit.svg \
 	gimp.svg \
@@ -23,6 +25,7 @@ icon_DATA = \
 	gnome-lockscreen.svg \
 	gnome-logo.svg \
 	gnome-media-player.svg \
+	gnome-mixer.svg \
 	gnome-multimedia.svg \
 	gnome-settings.svg \
 	gnome-terminal.svg \
@@ -53,7 +56,8 @@ install-data-local:
 	ln -sf mozilla-icon.svg mozilla-star.svg && \
         ln -sf gnome-cdplayer.svg gnome-cdplayer-icon.svg && \
 	ln -sf monitor.svg redhat-config-xfree86.svg && \
-	ln -sf my-computer.svg gnome-starthere.svg
+	ln -sf my-computer.svg gnome-starthere.svg && \
+	ln -sf evolution.svg redhat-email.svg
 	
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/system-tools-32.svg && \
@@ -65,4 +69,5 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/redhat-web-browser.svg && \
 	rm -rf $(DESTDIR)$(icondir)/mozilla-star.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-config-xfree86.svg  && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-starthere.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-starthere.svg && \
+	rm -rf $(DESTDIR)$(icondir)/redhat-email.svg
