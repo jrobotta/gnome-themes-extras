@@ -30,8 +30,8 @@ style "icon-style"
 #  stock["gtk-cut"] =	       {{ "editcut.svg" }}
 #  stock["gtk-delete"] =	       {{ "editdelete-small.svg" }}
 #  stock["gtk-execute"] =       {{ "exec-small.svg" }}
-#  stock["gtk-find"] =	       {{ "find.svg" }}
-#  stock["gtk-find-and-replace"] = {{ "stock_find-and-replace.svg" }}
+   stock["gtk-find"] =	       {{ "find.svg" }}
+   stock["gtk-find-and-replace"] = {{ "findreplace.svg" }}
   stock["gtk-floppy"] =		{{ "disk-floppy.svg" }}
   stock["gtk-go-back"] =	{{ "navigation_left.svg" }}
   stock["gtk-go-down"] =	{{ "navigation_down.svg" }}
@@ -48,12 +48,12 @@ style "icon-style"
 #  stock["gtk-justify-left"] =	{{ "text_left.svg" }}
 #  stock["gtk-justify-right"] =	{{ "text_right.svg" }}
 #  stock["gtk-missing-image"] =	{{ "stock_missing-image.svg" }}#
-#  stock["gtk-new"] =	     	{{ "filenew.svg" }}
+  stock["gtk-new"] =	     	{{ "filenew.svg" }}
 #  stock["gtk-no"] =		{{ "stock_no.svg" }} 
 #  stock["gtk-ok"] =		{{ "button_ok.svg" }}
   stock["gtk-open"] =		{{ "folder.svg" }} 
 #  stock["gtk-paste"] =		{{ "editpaste-2.1.svg" }}
-#  stock["gtk-print"] =		{{ "stock_print.svg" }}
+  stock["gtk-print"] =		{{ "print.svg" }}
 #  stock["gtk-print-preview"] =	{{ "stock_print-preview.svg" }}
 #  stock["gtk-preferences"] =	{{ "stock_preferences.svg" }}
 #  stock["gtk-properties"] =	{{ "configure-b.svg" }}
@@ -94,9 +94,9 @@ style "icon-style"
 #  stock["gtk-stock-reset"] = {{ "stock_reset.svg" }}
 
         #stock ["panel-run"] =           {{"stock_run.svg"}}
-        #stock ["panel-searchtool"] =    {{"stock_searchtool.svg"}}
+        stock ["panel-searchtool"] =    {{"stock_searchtool.svg"}}
         #stock ["panel-screenshot"] =    {{"stock_screenshot.svg"}}
-        #stock ["panel-lockscreen"] =    {{"stock_lockscreen.svg"}}
+        stock ["panel-lockscreen"] =    {{"stock_lockscreen.svg"}}
         #stock ["panel-logout"] =        {{"stock_logout.svg"}}
         #stock ["panel-gnome-logo"] =    {{"stock_gnome-logo.svg"}}
 
@@ -105,11 +105,11 @@ style "icon-style"
 #TBD    stock ["panel-kde"] =           {{""}}
 #TBD    stock ["panel-suse"] =          {{""}}
 
-	     #stock ["panel-amusements"] =    {{"stock_amusements.svg"}}
-	     #stock ["panel-accessories"] =   {{"stock_accessories.svg"}}
-        #stock ["panel-multimedia"] =    {{"stock_multimedia.svg"}}
+	stock ["panel-amusements"] =    {{"stock_amusements.svg"}}
+	stock ["panel-accessories"] =   {{"stock_accessories.svg"}}
+        stock ["panel-multimedia"] =    {{"stock_multimedia.svg"}}
 
-        #stock ["panel-internet"] =      {{"stock_internet.svg"}}
+        stock ["panel-internet"] =      {{"stock_internet.svg"}}
         #stock ["panel-utility"] =       {{"stock_gnome-util.svg"}}
 
         #stock ["panel-corner-type"] =   {{"stock_corner-panel.svg"}}

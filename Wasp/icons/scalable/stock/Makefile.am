@@ -4,6 +4,9 @@ icon_DATA = \
 	folder.svg \
 	help_book.svg \
 	disk-floppy.svg \
+	filenew.svg \
+	findreplace.svg \
+	find.svg \
 	home.svg \
 	information.svg \
 	checkmark.svg \
@@ -13,5 +16,12 @@ icon_DATA = \
 	navigation_right.svg \
 	navigation_reload.svg \
 	navigation_stop.svg \
-	stickies.svg
+	print.svg \
+	stickies.svg \
+	stock_accessories.svg \
+	stock_amusements.svg \
+	stock_internet.svg \
+	stock_lockscreen.svg \
+	stock_multimedia.svg \
+	stock_searchtool.svg
 EXTRA_DIST = $(icon_DATA)

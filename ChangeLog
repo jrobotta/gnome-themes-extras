@@ -1,3 +1,11 @@
+2003-06-10  Christian Schaller <Uraeus@gnome.org>
+
+	* Add many new stock and app icons to Wasp
+	* Change look of handle in Nuvola
+	* Add new camera emblem and new gnome logo to Nuvola
+	* Add .cvsignore files where missing
+	* A few other small tweaks I don't remember
+	
 2003-06-10  Jakub Steiner <jimmac@ximian.com>
 
 	* Gorilla/gtk-2.0/gtkrc: tweak a little to reflect engine change

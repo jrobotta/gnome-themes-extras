@@ -74,7 +74,9 @@ style "default" {
 	}
 
         grip {
-             style=bars
+             style=dots_out
+	     count=3
+	     spacing=2
              fill {
                  style=solid
              }
@@ -111,7 +113,9 @@ style "toolbar" {
 	}
 	
 	grip {
-	    style=bars
+            style=dots_out
+	    count=3
+	    spacing=2
 	    toolbar_overlap=TRUE
 	}
     }

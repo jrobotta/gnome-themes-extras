@@ -13,6 +13,7 @@ config.guess
 config.sub
 ltmain.sh
 stamp-h
+stamp-h1
 intltool-extract
 intltool-extract.in
 intltool-merge

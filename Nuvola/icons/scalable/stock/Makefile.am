@@ -3,6 +3,7 @@ icon_DATA = \
         back.svg \
 	bookmark_add.svg \
 	bookmark.svg \
+	brokenimage.svg \
 	down.svg \
 	editcopy.svg \
 	editdelete.svg \

@@ -47,7 +47,7 @@ style "icon-style"
 #  stock["gtk-justify-fill"] =	{{ "text_block.svg" }}
 #  stock["gtk-justify-left"] =	{{ "text_left.svg" }}
 #  stock["gtk-justify-right"] =	{{ "text_right.svg" }}
-#  stock["gtk-missing-image"] =	{{ "stock_missing-image.svg" }}#
+   stock["gtk-missing-image"] =	{{ "brokenimage.svg" }}
    stock["gtk-new"] =	     	{{ "filenew.svg" }}
 #  stock["gtk-no"] =		{{ "stock_no.svg" }} 
 #  stock["gtk-ok"] =		{{ "button_ok.svg" }}
