@@ -1,0 +1,62 @@
+# French translation of gnome-themes-extras.
+# This file is distributed under the same license as the gnome-themes-extras package.
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# Yann Laviolette <yann_laviolette@gnome.org>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-06-18 01:47+0200\n"
+"PO-Revision-Date: 2003-06-18 01:44+0200\n"
+"Last-Translator: Yann Laviolette <yann_laviolette@gnome.org>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.1\n"
+
+#: Galaxy/index.theme.in.h:1
+msgid "Galaxy"
+msgstr "Galaxy"
+
+#: Galaxy/index.theme.in.h:2
+msgid "Mandrake Linux theme"
+msgstr "Thème Mandrake Linux"
+
+#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "Gorilla"
+
+#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
+msgid "Vector Theme"
+msgstr "Thème Vector"
+
+#: Gorilla/index.theme.in.h:2
+msgid "The vector mono Godess"
+msgstr "Le vector mono Godess"
+
+#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "Luxuriant"
+
+#: Lush/index.theme.in.h:2
+msgid "Lushy SVG icons"
+msgstr "Luxuriant avec icônes SVG"
+
+#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "Nuvola"
+
+#: Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "Le style Bleu Surf"
+
+#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "Guêpe"
+
+#: Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "Thème Style BeOS"
