@@ -57,8 +57,7 @@ style "default"
   text[SELECTED]   = "#ffffff"
   text[ACTIVE]     = "#000000"
 
-  engine "mist" {} # just a temporary engine before XD2
-                   # http://primates.ximian.com/~dave/mist/
+  engine "industrial" {} 
 
 }
 

@@ -1,3 +1,8 @@
+2003-06-09  Jakub Steiner <jimmac@ximian.com>
+
+	* Gorilla/gtk/gtkrc:
+	* Gorilla/gtk-2.0/gtkrc: use industrial gtk engine
+	
 2003-06-08 Christian Schaller <Uraeus@gnome.org>
 	
 	* Added more stock icons to Nuvola
