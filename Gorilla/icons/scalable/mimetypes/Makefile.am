@@ -60,6 +60,10 @@ install-data-local:
 	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-afm.svg && \
 	ln -sf gnome-mime-application-vnd.ms-excel.svg gnome-mime-application-x-gnumeric.svg && \
 	ln -sf gnome-mime-audio.svg gnome-mime-application-ogg.svg && \
+	ln -sf gnome-mime-video.svg gnome-mime-video-x-msvideo.svg && \
+	ln -sf gnome-mime-video.svg gnome-mime-video-quicktime.svg && \
+	ln -sf gnome-mime-video.svg gnome-mime-video-x-ms-wmv.svg && \
+	ln -sf gnome-mime-video.svg gnome-mime-video-mpeg.svg && \
 	ln -sf gnome-mime-text-html.svg gnome-mime-application-x-php.svg 
 	ln -sf $(DESTDIR)$(datadir)/icons/Gorilla/scalable/filesystems/gnome-fs-executable.svg \
 	$(DESTDIR)$(icondir)/gnome-mime-application-x-executable.svg
