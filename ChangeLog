@@ -1,3 +1,11 @@
+2003-06-11  Christian Schaller <Uraeus@gnome.org>
+
+	* Add new Evolution and printer icons to Nuvola
+	* Ugly kludge fix to Wasp wm theme
+	* Re-instate the symlinks for Gorilla
+	* Fix so Nuvola gnome-logo pops up in menu
+	* Fix Lush applications icon no show bug 
+
 2003-06-10  Christian Schaller <Uraeus@gnome.org>
 
 	* Add many new stock and app icons to Wasp

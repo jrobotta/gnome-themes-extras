@@ -18,7 +18,9 @@ icon_DATA = \
 	folder_new.svg \
 	folder.svg \
 	forward.svg \
+	gnome-logo.svg \
 	home.svg \
+	printer.svg \
 	recycled.svg \
 	reload.svg \
 	stop.svg \

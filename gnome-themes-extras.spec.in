@@ -37,7 +37,7 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_libdir}/gtk-2.0/@GTK_BINARY_VERSION@/engines/*.so*
 %{_datadir}/icons/*
 %{_datadir}/themes/*
-%doc AUTHORS ChangeLog COPYING README
+%doc AUTHORS MAINTAINERS ChangeLog COPYING README license_dsg license_lgpl license_gpl TODO
 
 %changelog
 * Thu May 01 2003 Yanko Kaneti <yaneti@declera.com>

@@ -1,11 +1,12 @@
 icondir = $(datadir)/icons/Nuvola/scalable/apps
 NULL = 
 icon_DATA = \
+	gnome-envelope.svg \
 	gnome-gimp.svg \
 	gnome-logo.svg \
 	gnome-terminal.svg \
-	web-browser.svg \
+	my-computer.svg \
 	redhat-email.svg \
-        my-computer.svg \
-        $(NULL)
+	web-browser.svg \
+	$(NULL)
 EXTRA_DIST = $(icon_DATA)

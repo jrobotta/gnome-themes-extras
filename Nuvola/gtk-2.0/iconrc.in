@@ -53,7 +53,7 @@ style "icon-style"
 #  stock["gtk-ok"] =		{{ "button_ok.svg" }}
    stock["gtk-open"] =		{{ "fileopen.svg" }} 
    stock["gtk-paste"] =		{{ "editpaste.svg" }}
-#  stock["gtk-print"] =		{{ "stock_print.svg" }}
+   stock["gtk-print"] =		{{ "printer.svg" }}
 #  stock["gtk-print-preview"] =	{{ "stock_print-preview.svg" }}
 #  stock["gtk-preferences"] =	{{ "stock_preferences.svg" }}
 #  stock["gtk-properties"] =	{{ "configure-b.svg" }}

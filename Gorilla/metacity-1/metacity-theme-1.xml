@@ -320,6 +320,87 @@
 
   </draw_ops>
 
+ <draw_ops name="bevel_maximized">
+
+  <!-- this one is like bevel but without the outermost black border cause it gave the impression that the maximized window wasn't fully maximized. -->
+  
+    <!-- the bcg is actually lighter
+  <rectangle color="gtk:light[SELECTED]" filled="false"
+             x="2" y="2"
+             width="width"
+             height="height"/>
+    -->
+    <!--br-->
+    <rectangle color="shade/gtk:bg[SELECTED]/0.8" filled="false" x="3" y="3" width="width - 6" height="height - 6"/>
+
+             
+
+<!--
+   below the title up till bottom ; FIXME -slow
+   -->
+    <rectangle color="gtk:bg[NORMAL]" filled="true" x="3" y="3" width="width - 6" height="height - 6"/>
+
+<!-- colored corners 
+
+  <rectangle color="gtk:bg[SELECTED]" filled="true"
+             x="width - 24" y="height - 24"
+             width="22"
+             height="22"/>
+
+  <rectangle color="gtk:bg[SELECTED]" filled="true"
+             x="2" y="height - 24"
+             width="22"
+             height="22"/>
+-->
+
+  <!-- ** fancy gradient ** -->
+  <!-- too bad metacity is misbehaving when I wanna do the interlace effect here
+   -->
+    <gradient type="vertical" x="3" y="3" width="width - 6" height="4">
+	<color value="shade/gtk:bg[SELECTED]/0.95"/>
+      <color value="shade/gtk:bg[SELECTED]/0.7"/>
+    </gradient>
+
+    <gradient type="vertical" x="3" y="7" width="width - 6" height="title_height - 4">
+      <color value="shade/gtk:bg[SELECTED]/0.7"/>
+      <color value="gtk:bg[SELECTED]"/>
+    </gradient>
+
+    <gradient type="vertical" x="3" y="title_height + 3" width="width - 6" height="4">
+      <color value="gtk:bg[SELECTED]"/>
+      <color value="shade/gtk:bg[SELECTED]/0.7"/>
+    </gradient>
+
+ <!-- side gradients  -->
+    <gradient type="vertical" x="3" y="title_height + 6" width="3" height="48">
+      <color value="shade/gtk:bg[SELECTED]/0.7"/>
+      <color value="gtk:bg[NORMAL]"/>
+    </gradient>
+
+    <gradient type="vertical" x="width - 6" y="title_height + 6" width="3" height="48">
+      <color value="shade/gtk:bg[SELECTED]/0.7"/>
+      <color value="gtk:bg[NORMAL]"/>
+    </gradient>
+
+<!--
+<tile name="title_tile" tile_width="width" tile_height="2" x="3" y="3" width="width - 6" height="title_height + 1"/>
+-->
+<!-- inner black stroke -->
+
+  <!--
+  <rectangle color="shade/gtk:bg[SELECTED]/0.6" filled="false"
+       x="5" y="title_height + 6"
+       width="width - 11"
+       height="height - title_height - 11"/>
+-->
+
+  <!-- now the bottom black border -->
+    <rectangle color="#000000" filled="true" x="0" y="height - 2" width="width" height="2"/>
+
+  </draw_ops>
+
+
+
 
   <draw_ops name="round_bevel_shaded">
     <include name="bevel"/>
@@ -517,7 +598,7 @@
   </frame_style>
 
   <frame_style name="focused_maximized" geometry="normal_maximized" parent="normal">
-    <piece position="entire_background" draw_ops="bevel"/>
+    <piece position="entire_background" draw_ops="bevel_maximized"/>
     <piece position="title" draw_ops="title"/>
     <button function="close" state="normal" draw_ops="close_button_normal"/>
     <button function="maximize" state="normal" draw_ops="restore_button_normal"/>
