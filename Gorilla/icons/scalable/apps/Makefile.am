@@ -8,8 +8,10 @@ icon_DATA = \
         $(NULL)
 EXTRA_DIST = $(icon_DATA)
 
-#install-data-local:
-#	cd $(icondir) && ln -sf web-browser.svg galeon.svg 
-#
-#uninstall-local:
-#   rm -rf $(icondir)/galeon.svg
+install-data-local:
+	mkdir -p $(DESTDIR)$(icondir)
+	cd $(DESTDIR)$(icondir) && \
+	ln -sf web-browser.svg galeon.svg 
+
+uninstall-local:
+	rm -rf $(DESTDIR)$(icondir)/galeon.svg
