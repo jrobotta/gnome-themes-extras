@@ -2,7 +2,8 @@
 
 	* Added almost complete GNOME menu set to Nuvola
 	* Added abiword mime type to Lush and Nuvola
-	* Added Wasp multimedia menu icon 
+	* Added Wasp multimedia menu icon
+	* Cleaned up Wasp apps menu icons somewhat
 
 2003-07-08 Christian Schaller <Uraeus@gnome.org>
 

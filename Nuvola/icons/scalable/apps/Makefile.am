@@ -27,6 +27,6 @@ install-data-local:
 	ln -sf gnome-gimp.svg gnome-palette.svg 
 
 uninstall-local:
-	rm -rf $(icondir)/gnome-mime-application-x-font-ttf.svg
+	rm -rf $(icondir)/evolution-1.4.svg
 	rm -rf $(icondir)/gnome-palette.svg
 	
