@@ -76,12 +76,16 @@ Nuvola/icons/scalable/filesystems/Makefile
 Nuvola/icons/scalable/mimetypes/Makefile
 Nuvola/icons/scalable/stock/Makefile
 Lush/Makefile
+Lush/gtk-2.0/Makefile
+Lush/gtk-2.0/iconrc
+Lush/metacity-1/Makefile
 Lush/icons/Makefile
 Lush/icons/scalable/Makefile
 Lush/icons/scalable/devices/Makefile
 Lush/icons/scalable/emblems/Makefile
 Lush/icons/scalable/filesystems/Makefile
 Lush/icons/scalable/mimetypes/Makefile
+Lush/icons/scalable/stock/Makefile
 Galaxy/Makefile
 Galaxy/gtk-2.0/Makefile
 Galaxy/metacity-1/Makefile

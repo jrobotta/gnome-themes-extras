@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras\n"
-"POT-Creation-Date: 2003-05-10 17:34+0200\n"
+"POT-Creation-Date: 2003-05-16 23:59+0200\n"
 "PO-Revision-Date: 2003-05-07 17:57+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -43,8 +43,8 @@ msgid "Lush"
 msgstr "Grönska"
 
 #: Lush/index.theme.in.h:2
-msgid "Lushy SVG icons with Mandrake Galaxy"
-msgstr "Grönskande SVG-ikoner med Mandrake Galaxy"
+msgid "Lushy SVG icons"
+msgstr "Grönskande SVG-ikoner"
 
 #: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
 msgid "Nuvola"
@@ -54,11 +54,11 @@ msgstr "Nuvola"
 msgid "The Blue Style Surf"
 msgstr "Den blåa bränningen"
 
+#~ msgid "Lushy SVG icons with Mandrake Galaxy"
+#~ msgstr "Grönskande SVG-ikoner med Mandrake Galaxy"
+
 #~ msgid "Theme"
 #~ msgstr "Tema"
 
 #~ msgid "Themes"
 #~ msgstr "Teman"
-
-#~ msgid "Lushy SVG icons"
-#~ msgstr "Grönskande SVG-ikoner"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extra 0.6\n"
-"POT-Creation-Date: 2003-05-10 17:34+0200\n"
+"POT-Creation-Date: 2003-05-16 23:59+0200\n"
 "PO-Revision-Date: 2003-04-16 01:42+0200\n"
 "Last-Translator: Christian Neumair <chris@gnome-de.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
@@ -41,8 +41,8 @@ msgid "Lush"
 msgstr "Satt"
 
 #: Lush/index.theme.in.h:2
-msgid "Lushy SVG icons with Mandrake Galaxy"
-msgstr "Satte SVG-Symbole und Mandrakes Galaxy-Thema"
+msgid "Lushy SVG icons"
+msgstr ""
 
 #: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
 msgid "Nuvola"
@@ -51,3 +51,6 @@ msgstr "Nuvola"
 #: Nuvola/index.theme.in.h:2
 msgid "The Blue Style Surf"
 msgstr "Blau wie die Brandung"
+
+#~ msgid "Lushy SVG icons with Mandrake Galaxy"
+#~ msgstr "Satte SVG-Symbole und Mandrakes Galaxy-Thema"

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras 0.1\n"
-"POT-Creation-Date: 2003-05-10 17:34+0200\n"
+"POT-Creation-Date: 2003-05-16 23:59+0200\n"
 "PO-Revision-Date: 2003-05-07 18:38+0200\n"
 "Last-Translator: Jordi Mallach <jordi@sindominio.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
@@ -42,8 +42,8 @@ msgid "Lush"
 msgstr "Lush"
 
 #: Lush/index.theme.in.h:2
-msgid "Lushy SVG icons with Mandrake Galaxy"
-msgstr "Sucoses icones SVG amb Mandrake Galaxy"
+msgid "Lushy SVG icons"
+msgstr ""
 
 #: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
 msgid "Nuvola"
@@ -52,3 +52,6 @@ msgstr "Nuvola"
 #: Nuvola/index.theme.in.h:2
 msgid "The Blue Style Surf"
 msgstr "El surf d'estil blau"
+
+#~ msgid "Lushy SVG icons with Mandrake Galaxy"
+#~ msgstr "Sucoses icones SVG amb Mandrake Galaxy"

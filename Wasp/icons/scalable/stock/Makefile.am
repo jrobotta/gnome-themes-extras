@@ -12,5 +12,6 @@ icon_DATA = \
 	navigation_left.svg \
 	navigation_right.svg \
 	navigation_reload.svg \
-	navigation_stop.svg
+	navigation_stop.svg \
+	stickies.svg
 EXTRA_DIST = $(icon_DATA)
