@@ -1,4 +1,35 @@
 2003-04-17  Alex Duggan  <aldug@astrolinux.com>
+	
+	* .cvsignore:
+	add gnome-themes-extras.spec
+	
+	* BlueSphere/.cvsignore:
+	* BlueSphere/gtk-2.0/.cvsignore:
+	* BlueSphere/icons/.cvsignore:
+	* BlueSphere/icons/scalable/.cvsignore:
+	* BlueSphere/icons/scalable/stock/.cvsignore:
+	* BlueSphere/metacity-1/.cvsignore:
+	* Galaxy/.cvsignore:
+	* Galaxy/gtk-2.0/.cvsignore:
+	* Galaxy/metacity-1/.cvsignore:
+	* Lush/.cvsignore:
+	* Lush/icons/.cvsignore:
+	* Lush/icons/scalable/.cvsignore:
+	* Lush/icons/scalable/devices/.cvsignore:
+	* Lush/icons/scalable/emblems/.cvsignore:
+	* Lush/icons/scalable/filesystems/.cvsignore:
+	* Lush/icons/scalable/mimetypes/.cvsignore:
+	* Nuvola/.cvsignore:
+	* Nuvola/icons/.cvsignore:
+	* Nuvola/icons/scalable/.cvsignore:
+	* Nuvola/icons/scalable/apps/.cvsignore:
+	* Nuvola/icons/scalable/devices/.cvsignore:
+	* Nuvola/icons/scalable/emblems/.cvsignore:
+	* Nuvola/icons/scalable/filesystems/.cvsignore:
+	* Nuvola/icons/scalable/mimetypes/.cvsignore:
+	Add some new .cvsignore to shut cvs up
+
+2003-04-17  Alex Duggan  <aldug@astrolinux.com>
 
 	* Makefile.am: impliment a 'make tarballs' target which will
 	build tarballs of the themes.
