@@ -6,6 +6,7 @@ icon_DATA = \
         gnome-mime-application-pdf.svg \
         gnome-mime-application-pgp.svg \
         gnome-mime-application-postscript.svg \
+		  gnome-mime-application-x-abiword.svg \
         gnome-mime-application-x-deb.svg \
         gnome-mime-application-x-dvi.svg \
         gnome-mime-application-x-gnome-app-info.svg \

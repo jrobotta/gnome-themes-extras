@@ -3,6 +3,8 @@
 	* Gorilla/icons/scalable/emblems/emblem-urgent.svg:
 	* Gorilla/icons/scalable/devices/gnome-dev-rw.svg:
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-text-x-lyx.svg:
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-x-shared-library.svg:
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-x-abiword.svg:
 	* Gorilla/icons/scalable/devices/Makefile.am: more porting
 
 2003-05-10 Christian Schaller <Uraeus@gnome.org>
