@@ -19,9 +19,7 @@ icon_DATA = \
 	gnome-devel.svg \
 	gnome-help.svg \
 	gnome-icq.svg \
-	gnome-joystick.svg \
 	gnome-lockscreen.svg \
-	gnome-logo.svg \
 	gnome-media-player.svg \
 	gnome-mixer.svg \
 	gnome-settings.svg \
@@ -62,11 +60,16 @@ install-data-local:
 	ln -sf my-computer.svg gnome-starthere.svg && \
 	ln -sf evolution.svg redhat-email.svg && \
 	ln -sf icon-games.svg gnome-joystick.svg && \
+	ln -sf icon-games.svg redhat-games.svg && \
 	ln -sf icon-gfx.svg gnome-graphics.svg && \
+	ln -sf icon-gfx.svg redhat-graphics.svg && \
 	ln -sf email.svg gnome-envelope.svg && \
 	ln -sf icon-globe.svg gnome-globe.svg && \
+	ln -sf icon-globe.svg redhat-internet.svg && \
 	ln -sf icon-panel-menu.svg gnome-logo.svg && \
-	ln -sf gnome-multimedia.svg icon-media.svg
+	ln -sf icon-panel-menu.svg redhat-main-menu.svg && \
+	ln -sf icon-media.svg gnome-multimedia.svg && \
+	ln -sf icon-media.svg redhat-sound_video.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/system-tools-32.svg && \
@@ -85,4 +88,9 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gnome-envelope.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-globe.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-logo.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-multimedia.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-multimedia.svg && \
+	rm -rf $(DESTDIR)$(icondir)/redhat-sound_video.svg && \
+	rm -rf $(DESTDIR)$(icondir)/redhat-games.svg && \
+	rm -rf $(DESTDIR)$(icondir)/redhat-main-menu.svg && \
+	rm -rf $(DESTDIR)$(icondir)/redhat-graphics.svg && \
+	rm -rf $(DESTDIR)$(icondir)/redhat-internet.svg 
