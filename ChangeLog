@@ -1,3 +1,7 @@
+2003-07-17  Takeshi AIHANA <aihana@gnome.gr.jp>
+
+	* configure.in: Added Japanese  "ja" into ALL_LINGUAS.
+
 2003-07-15  Danilo Šegan  <dsegan@gmx.net>
 
 	* configure.in: Added "sr" and "sr@Latn" to ALL_LINGUAS.
