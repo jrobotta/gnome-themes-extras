@@ -61,6 +61,8 @@ install-data-local:
 	ln -sf gnome-mime-application-vnd.ms-excel.svg gnome-mime-application-x-gnumeric.svg && \
 	ln -sf gnome-mime-audio.svg gnome-mime-application-ogg.svg && \
 	ln -sf gnome-mime-text-html.svg gnome-mime-application-x-php.svg 
+	ln -sf $(DESTDIR)$(datadir)/icons/Gorilla/scalable/filesystems/gnome-fs-executable.svg \
+	$(DESTDIR)$(icondir)/gnome-mime-application-x-executable.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-ttf.svg && \
@@ -72,4 +74,6 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-gnumeric.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-ogg.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-php.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-stuffit.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-stuffit.svg \
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-executable.svg
+

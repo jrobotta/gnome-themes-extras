@@ -1,3 +1,9 @@
+2004-06-09  Jakub Steiner <jimmac@ximian.com>
+
+	* (Gorilla) .. apps/Makefile.am:
+	* (Gorilla) .. filesystems/Makefile.am:
+	* (Gorilla) .. mimetypes/Makefile.am: symlink fixes
+
 2004-06-08  Jakub Steiner <jimmac@ximian.com>
 
 	* my-computer.svg

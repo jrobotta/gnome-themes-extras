@@ -14,11 +14,8 @@ install-data-local:
 	mkdir -p $(DESTDIR)$(icondir)
 	cd $(DESTDIR)$(icondir) && \
 	ln -sf gnome-games.svg gnome-joystick.svg && \
-	ln -sf web-browser.svg galeon.svg && \
-   ln -sf $(DESTDIR)$(icondir)/my-computer.svg \
-   $(DESTDIR)$(datadir)/icons/Gorilla/scalable/filesystems/gnome-fs-client.svg
+	ln -sf web-browser.svg galeon.svg  
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/galeon.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-joystick.svg && \
-   rm -rf $(DESTDIR)$(datadir)/icons/Gorilla/scalable/filesystems/gnome-fs-client.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-joystick.svg 
