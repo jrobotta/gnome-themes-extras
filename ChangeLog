@@ -1,4 +1,9 @@
 2003-04-17  Alex Duggan  <aldug@astrolinux.com>
+
+	* README: update with instructions for making releases
+	and building tarballs
+
+2003-04-17  Alex Duggan  <aldug@astrolinux.com>
 	
 	* .cvsignore:
 	add gnome-themes-extras.spec
