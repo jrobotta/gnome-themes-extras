@@ -36,8 +36,8 @@ icon_DATA = \
 EXTRA_DIST = $(icon_DATA)
 
 install-data-local:
-	mkdir -p $(icondir)
-	cd $(icondir) && \
+	mkdir -p $(DESTDIR)$(icondir)
+	cd $(DESTDIR)$(icondir) && \
 	ln -sf gnome-compressed.svg gnome-mime-application-x-stuffit.svg && \
 	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-ttf.svg && \
 	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-pcf.svg && \
@@ -48,12 +48,12 @@ install-data-local:
 	ln -sf gnome-mime-application-vnd.ms-excel.svg gnome-mime-application-x-gnumeric.svg && \
 	ln -sf gnome-mime-audio.svg gnome-mime-application-x-ogg.svg
 uninstall-local:
-	rm -rf $(icondir)/gnome-mime-application-x-stuffit.svg
-	rm -rf $(icondir)/gnome-mime-application-x-font-ttf.svg
-	rm -rf $(icondir)/gnome-mime-application-x-font-pcf.svg
-	rm -rf $(icondir)/gnome-mime-application-x-font-type1.svg
-	rm -rf $(icondir)/gnome-mime-application-x-font-linux-psf.svg
-	rm -rf $(icondir)/gnome-mime-application-x-font-bdf.svg
-	rm -rf $(icondir)/gnome-mime-application-x-font-afm.svg
-	rm -rf $(icondir)/gnome-mime-application-x-gnumeric.svg
-	rm -rf $(icondir)/gnome-mime-application-x-ogg.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-stuffit.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-ttf.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-pcf.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-type1.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-linux-psf.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-bdf.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-afm.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-gnumeric.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-ogg.svg

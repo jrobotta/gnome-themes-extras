@@ -47,8 +47,8 @@ icon_DATA = \
 EXTRA_DIST = $(icon_DATA)
 
 install-data-local:
-	mkdir -p $(icondir)
-	cd $(icondir) && \
+	mkdir -p $(DESTDIR)$(icondir)
+	cd $(DESTDIR)$(icondir) && \
 	ln -sf gnome-audio2.svg xmms.svg && \
 	ln -sf gnome-audio2.svg gnome-media-player.svg && \
 	ln -sf gnome-gimp.svg gnome-palette.svg && \
@@ -57,8 +57,8 @@ install-data-local:
 	ln -sf mozilla-star.svg web-browser.svg
 
 uninstall-local:
-	rm -rf $(icondir)/xmms.svg && \
-	rm -rf $(icondir)/gnome-palette.svg && \
-	rm -rf $(icondir)/evolution-1.4.svg && \
-	rm -rf $(icondir)/redhat-web-browser.svg && \
-	rm -rf $(icondir)/web-browser.svg 
+	rm -rf $(DESTDIR)$(icondir)/xmms.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-palette.svg && \
+	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
+	rm -rf $(DESTDIR)$(icondir)/redhat-web-browser.svg && \
+	rm -rf $(DESTDIR)$(icondir)/web-browser.svg 
