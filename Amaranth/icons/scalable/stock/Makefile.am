@@ -28,8 +28,8 @@ icon_DATA = \
 	stock_quit.svg \
 	stock_redo.svg \
 	stock_refresh.svg \
+	stock_replace.svg \
 	stock_reset.svg \
-	stock_run.svg \
 	stock_search.svg \
 	stock_screenshot.svg \
 	stock_stop.svg \

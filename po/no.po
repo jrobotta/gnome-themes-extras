@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras 0.3\n"
-"POT-Creation-Date: 2003-08-23 14:20+0200\n"
+"POT-Creation-Date: 2003-09-25 20:59+0200\n"
 "PO-Revision-Date: 2003-08-23 14:21+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
@@ -24,7 +24,8 @@ msgid "Silver Vector Theme"
 msgstr "Sølv vektortema"
 
 #: Amaranth/index.theme.in.h:2
-msgid "Sterling Silver "
+#, fuzzy
+msgid "Sterling Silver"
 msgstr "Sølvgrå "
 
 #: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1

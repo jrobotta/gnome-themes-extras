@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras 0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-08-26 00:09+0900\n"
+"POT-Creation-Date: 2003-09-25 20:59+0200\n"
 "PO-Revision-Date: 2003-08-25 15:18+0900\n"
 "Last-Translator: Young-Ho, Cha <ganadist at mizi.com>\n"
 "Language-Team: GTP Korean <gnome-kr-translation@gnome.or.kr>\n"
@@ -21,7 +21,8 @@ msgid "Silver Vector Theme"
 msgstr "은빛 벡터 테마"
 
 #: Amaranth/index.theme.in.h:2
-msgid "Sterling Silver "
+#, fuzzy
+msgid "Sterling Silver"
 msgstr "순수한 은빛 테마"
 
 #: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1

@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras\n"
-"POT-Creation-Date: 2003-08-23 12:23+0200\n"
+"POT-Creation-Date: 2003-09-25 20:59+0200\n"
 "PO-Revision-Date: 2003-08-23 12:25+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
@@ -26,8 +26,8 @@ msgid "Silver Vector Theme"
 msgstr "Vektortemat Silver"
 
 #: Amaranth/index.theme.in.h:2
-msgid "Sterling Silver "
-msgstr "Gedigen "
+msgid "Sterling Silver"
+msgstr "Gedigen"
 
 #: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
 msgid "Gorilla"
@@ -66,8 +66,8 @@ msgstr "Geting"
 msgid "BeOS style theme"
 msgstr "Tema i BeOS-stil"
 
-#~ msgid "Sterling Silver"
-#~ msgstr "Gedigen"
+#~ msgid "Sterling Silver "
+#~ msgstr "Gedigen "
 
 #~ msgid "Silver"
 #~ msgstr "Silver"

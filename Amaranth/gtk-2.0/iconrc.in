@@ -28,10 +28,10 @@ style "icon-style"
 #  stock["gtk-convert"] =       {{ "stock_convert.svg" }}
    stock["gtk-copy"] =	       {{ "stock_copy.svg" }}
    stock["gtk-cut"] =	       {{ "stock_cut.svg" }}
-#   stock["gtk-delete"] =	       {{ "editdelete.svg" }}
-#  stock["gtk-execute"] =       {{ "exec-small.svg" }}
+   stock["gtk-delete"] =	{{ "stock_delete.svg" }}
+   stock["gtk-execute"] =       {{ "stock_execute.svg" }}
    stock["gtk-find"] =	       {{ "stock_search.svg" }}
-#   stock["gtk-find-and-replace"] = {{ "findreplace.svg" }}
+   stock["gtk-find-and-replace"] = {{ "stock_replace.svg" }}
    stock["gtk-floppy"] =		{{ "stock_floppy.svg" }}
    stock["gtk-go-back"] =	{{ "stock_go-back.svg" }}
    stock["gtk-go-down"] =	{{ "stock_go-down.svg" }}
@@ -93,20 +93,19 @@ style "icon-style"
 #  stock["gtk-stock-disconnect"] = {{ "stock_disconnect.svg" }}
 #  stock["gtk-stock-reset"] = {{ "stock_reset.svg" }}
 
-   stock ["panel-run"] =           {{"stock_run.svg"}}
+   stock ["panel-run"] =           {{"stock_execute.svg"}}
    stock ["panel-searchtool"] =    {{"stock_search.svg"}}
    stock ["panel-screenshot"] =    {{"stock_screenshot.svg"}}
    stock ["panel-lockscreen"] =    {{"stock_lockscreen.svg"}}
    stock ["panel-logout"] =        {{"stock_quit.svg"}}
    stock ["panel-gnome-logo"] =    {{"gnome-logo.svg"}}
 
-        #stock ["panel-cde"] =           {{"stock_cde-menu.svg"}}
-#TBD    stock ["panel-debian"] =        {{""}}
-#TBD    stock ["panel-kde"] =           {{""}}
-#TBD    stock ["panel-suse"] =          {{""}}
-
-	     #stock ["panel-amusements"] =    {{"stock_amusements.svg"}}
-	     #stock ["panel-accessories"] =   {{"stock_accessories.svg"}}
+  #stock ["panel-cde"] =           {{"stock_cde-menu.svg"}}
+#TBD stock ["panel-debian"] =        {{""}}
+#TBD stock ["panel-kde"] =           {{""}}
+#TBD stock ["panel-suse"] =          {{""}}
+	#stock ["panel-amusements"] =    {{"stock_amusements.svg"}}
+	#stock ["panel-accessories"] =   {{"stock_accessories.svg"}}
         #stock ["panel-multimedia"] =    {{"stock_multimedia.svg"}}
 
         #stock ["panel-internet"] =      {{"stock_internet.svg"}}

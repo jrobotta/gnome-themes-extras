@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-08-30 12:26+0200\n"
+"POT-Creation-Date: 2003-09-25 20:59+0200\n"
 "PO-Revision-Date: 2003-08-30 19:52+0200\n"
 "Last-Translator: Francisco Javier F. Serrador <serrador@arrakis.es>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
@@ -74,4 +74,3 @@ msgstr "Tema de estilo BeOS"
 
 #~ msgid "Lushy SVG icons"
 #~ msgstr "Iconos SVG jugosos"
-

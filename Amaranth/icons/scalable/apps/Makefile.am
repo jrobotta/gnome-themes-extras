@@ -7,6 +7,7 @@ icon_DATA = \
 	advanced-directory.svg \
 	apacheconf.svg \
 	camera.svg \
+	disks.svg \
 	downloadmanager.svg \
 	email.svg \
 	evolution.svg \
@@ -31,13 +32,13 @@ icon_DATA = \
 	gnumeric.svg \
 	gucharmap.svg \
 	gpdf.svg \
-	icon-games.svg \
-	icon-gfx.svg \
-	icon-globe.svg \
-	icon-media.svg \
+	gnome-joystick.svg \
+	gnome-graphics.svg \
+	gnome-globe.svg \
+	gnome-multimedia.svg \
 	icon-system-tools.svg \
-	icon-panel-menu.svg \
-	icon-update.svg \
+	gnome-logo.svg \
+	downloadmanager.svg \
 	monitor.svg \
 	mozilla-icon.svg \
 	mouse-capplet.svg \
@@ -79,19 +80,15 @@ install-data-local:
 	ln -sf my-computer.svg gnome-starthere.svg && \
 	ln -sf evolution.svg redhat-email.svg && \
 	ln -sf evolution.svg evolution-1.4.svg && \
-	ln -sf icon-games.svg gnome-joystick.svg && \
-	ln -sf icon-games.svg redhat-games.svg && \
-	ln -sf icon-gfx.svg gnome-graphics.svg && \
-	ln -sf icon-gfx.svg redhat-graphics.svg && \
+	ln -sf gnome-joystick.svg redhat-games.svg && \
+	ln -sf gnome-graphics.svg redhat-graphics.svg && \
 	ln -sf email.svg gnome-envelope.svg && \
 	ln -sf email.svg mozilla-mail-icon.svg && \
-	ln -sf icon-globe.svg gnome-globe.svg && \
-	ln -sf icon-globe.svg web-browser.svg && \
-	ln -sf icon-globe.svg redhat-internet.svg && \
-	ln -sf icon-panel-menu.svg gnome-logo.svg && \
-	ln -sf icon-panel-menu.svg redhat-main-menu.svg && \
-	ln -sf icon-media.svg gnome-multimedia.svg && \
-	ln -sf icon-media.svg redhat-sound_video.svg && \
+	ln -sf gnome-globe.svg web-browser.svg && \
+	ln -sf gnome-globe.svg redhat-internet.svg && \
+	ln -sf gnome-logo.svg redhat-main-menu.svg && \
+	ln -sf gnome-logo.svg gnome-main-menu.svg && \
+	ln -sf gnome-multimedia.svg redhat-sound_video.svg && \
 	ln -sf sound-juicer.svg gripicon.svg && \
 	ln -sf gpdf.svg xpdf.svg
 
@@ -109,13 +106,8 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/redhat-config-xfree86.svg  && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-starthere.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-email.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-joystick.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-graphics.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-envelope.svg && \
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-globe.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-logo.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-multimedia.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-sound_video.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-games.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-main-menu.svg && \
@@ -132,4 +124,5 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/redhat-system_tools.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-home.svg && \
 	rm -rf $(DESTDIR)$(icondir)/xpdf.svg && \
-	rm -rf $(DESTDIR)$(icondir)/up2date.svg
+	rm -rf $(DESTDIR)$(icondir)/up2date.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-main-menu.svg

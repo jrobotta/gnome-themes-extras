@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-08-23 04:42+0200\n"
+"POT-Creation-Date: 2003-09-25 20:59+0200\n"
 "PO-Revision-Date: 2003-08-23 23:04+0300\n"
 "Last-Translator: Mətin Əmirov <metin@karegen.com>\n"
 "Language-Team: Azerbaijani <gnome@azitt.com>\n"
@@ -25,7 +25,8 @@ msgid "Silver Vector Theme"
 msgstr "Gümüş Vektor Örtüyü"
 
 #: Amaranth/index.theme.in.h:2
-msgid "Sterling Silver "
+#, fuzzy
+msgid "Sterling Silver"
 msgstr "Gümüş Sterlinq"
 
 #: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
@@ -64,4 +65,3 @@ msgstr "Wasp"
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "BeOS tərzi örtük"
-
