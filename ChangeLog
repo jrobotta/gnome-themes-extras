@@ -1,3 +1,15 @@
+2003-05-09  Jakub Steiner <jimmac@ximian.com>
+
+	* Gorilla/icons/scalable/apps/web-browser.svg:
+	* Gorilla/icons/scalable/apps/Makefile.am: add generic web
+	  browser icon
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-text-x-authors.svg:
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-vnd.ms-excel.svg:
+	* Gorilla/icons/scalable/mimetypes/Makefile.am:
+	  more mimetype porting from older Gorilla
+
+	* Gorilla/icons/index.theme.in: make icons a little smaller
+	
 2003-05-07  Jordi Mallach  <jordi@sindominio.net>
 
 	* configure.in: Added "ca" to ALL_LINGUAS.

@@ -32,6 +32,7 @@ EXTRA_DIST = $(icon_DATA)
 #	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-linux-psf.svg &&\
 #	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-bdf.svg && \
 #	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-afm.svg && \
+#	ln -sf gnome-mime-application-vnd.ms-excel.svg gnome-mime-application-x-gnumeric.svg && \
 #	ln -sf gnome-mime-audio.svg gnome-mime-application-x-ogg.svg && \
 #	ln -sf gnome-compressed.svg gnome-mime-application-x-stuffit.svg
 
@@ -42,5 +43,6 @@ EXTRA_DIST = $(icon_DATA)
 #	rm -rf $(icondir)/gnome-mime-application-x-font-linux-psf.svg
 #	rm -rf $(icondir)/gnome-mime-application-x-font-bdf.svg
 #	rm -rf $(icondir)/gnome-mime-application-x-font-afm.svg
+#	rm -rf $(icondir)/gnome-mime-application-x-gnumeric.svg
 #	rm -rf $(icondir)/gnome-mime-application-x-ogg.svg
 #	rm -rf $(icondir)/gnome-mime-application-x-stuffit.svg

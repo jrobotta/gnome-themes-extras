@@ -9,21 +9,21 @@ Example=gnome-theme-preview.svg
 
 [scalable/actions]
 MinSize=1
-Size=48
+Size=54
 MaxSize=256
 Context=Actions
 Type=scalable
 
 [scalable/apps]
 MinSize=1
-Size=48
+Size=54
 MaxSize=256
 Context=Applications
 Type=scalable
 
 [scalable/devices]
 MinSize=1
-Size=48
+Size=54
 MaxSize=256
 Context=Devices
 Type=scalable
@@ -36,14 +36,14 @@ Type=Scalable
 
 [scalable/filesystems]
 MinSize=1
-Size=48
+Size=54
 MaxSize=128
 Context=FileSystems
 Type=Scalable
 
 [scalable/mimetypes]
 MinSize=1
-Size=48
+Size=54
 MaxSize=128
 Context=MimeTypes
 Type=Scalable
