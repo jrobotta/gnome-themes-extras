@@ -8,6 +8,9 @@
 	* emblem-generic.svg:
 	* emblem-cool.svg: replace the default
 
+   * gnome-fs-network.svg:
+   * gnome-fs-server.svg: make 3d
+
 2003-03-06  Jakub Steiner <jimmac@ximian.com>
 
 	* COPYING: it should have a license
