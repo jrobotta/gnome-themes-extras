@@ -641,7 +641,11 @@
   </frame_style>
 
   <frame_style name="focused_maximized" geometry="normal_maximized" parent="normal">
+   <!-- this is quite broken. I'll investigate a nice maximized state in the future,
+        but revert to the old look in the meantime.
     <piece position="entire_background" draw_ops="bevel_maximized"/>
+    -->
+    <piece position="entire_background" draw_ops="bevel"/>
     <piece position="title" draw_ops="title"/>
     <button function="close" state="normal" draw_ops="close_button_normal"/>
     <button function="maximize" state="normal" draw_ops="restore_button_normal"/>

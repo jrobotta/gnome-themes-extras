@@ -1,3 +1,9 @@
+2003-07-28  Jakub Steiner <jimmac@ximian.com>
+
+	* Gorilla/metacity-1/metacity-theme-1.xml: temporarily revert
+	  Uraeus' maximized state, since it draws a nasty light border.
+	  I'll see about the prope maximized state in future.
+
 2003-07-27 Christian Schaller <uraeus@gnome.org>
 	
 	* Update Smooth engine to use latest from smooth CVS
