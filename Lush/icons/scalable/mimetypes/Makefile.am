@@ -35,6 +35,7 @@ icon_DATA = \
 	gnome-mime-text-x-c++.svg \
 	gnome-mime-text-x-fortran.svg \
 	gnome-mime-text-x-pascal.svg \
+	gnome-mime-text-x-python.svg \
 	gnome-mime-text-x-install.svg \
 	gnome-mime-text-x-java.svg \
 	gnome-mime-text-x-asm.svg \
