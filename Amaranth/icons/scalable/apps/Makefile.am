@@ -74,7 +74,7 @@ install-data-local:
 	ln -sf mozilla-icon.svg redhat-web-browser.svg && \
 	ln -sf mozilla-icon.svg mozilla-star.svg && \
 	ln -sf gnome-applications.svg redhat-office.svg && \
-        ln -sf gnome-cdplayer.svg gnome-cdplayer-icon.svg && \
+	ln -sf gnome-cdplayer.svg gnome-cdplayer-icon.svg && \
 	ln -sf gnome-devel.svg redhat-programming.svg && \
 	ln -sf monitor.svg redhat-config-xfree86.svg && \
 	ln -sf my-computer.svg gnome-starthere.svg && \
