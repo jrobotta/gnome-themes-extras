@@ -3,6 +3,7 @@
 	* Gorilla/icons/scalable/apps/web-browser.svg:
 	* Gorilla/icons/scalable/apps/Makefile.am: add generic web
 	  browser icon
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-image-x-xcf.svg:
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-text-html.svg:
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-text-x-authors.svg:
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-text-x-java.svg:

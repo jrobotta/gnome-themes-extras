@@ -19,6 +19,7 @@ icon_DATA = \
         gnome-mime-application-vnd.sun.xml.writer.svg \
         gnome-mime-audio.svg \
         gnome-mime-image.svg \
+        gnome-mime-image-x-xcf.svg \
         gnome-mime-text.svg \
         gnome-mime-text-html.svg \
         gnome-mime-text-x-authors.svg \
