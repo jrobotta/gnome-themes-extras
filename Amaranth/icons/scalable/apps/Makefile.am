@@ -16,6 +16,7 @@ icon_DATA = \
 	file-roller.svg \
 	gaim.svg \
 	gedit.svg \
+	gftp.svg \
 	gimp.svg \
 	gnome-aisleriot.svg \
 	gnome-applications.svg \
@@ -23,36 +24,38 @@ icon_DATA = \
 	gnome-cardgame.svg \
 	gnome-cdplayer.svg \
 	gnome-devel.svg \
+	gnome-globe.svg \
+	gnome-graphics.svg \
 	gnome-help.svg \
 	gnome-home.svg \
 	gnome-icq.svg \
+	gnome-joystick.svg \
 	gnome-lockscreen.svg \
+	gnome-logo.svg \
 	gnome-media-player.svg \
 	gnome-mixer.svg \
+	gnome-multimedia.svg \
+	gnome-pdf.svg
 	gnome-settings.svg \
 	gnome-terminal.svg \
 	gnumeric.svg \
 	gucharmap.svg \
-	gnome-pdf.svg \
-	gnome-joystick.svg \
-	gnome-graphics.svg \
-	gnome-globe.svg \
-	gnome-multimedia.svg \
+	hwbrowser.svg \
 	icon-system-tools.svg \
-	gnome-logo.svg \
-	downloadmanager.svg \
+	icon-update.svg \
 	monitor.svg \
-	mozilla-icon.svg \
 	mouse-capplet.svg \
+	mozilla-icon.svg \
 	my-computer.svg \
 	netscape.svg \
 	opera.svg \
+	rhythmbox.svg \
 	sambaconf.svg \
 	seti.svg \
+	sound-juicer.svg \
 	system-floppy.svg \
 	tex.svg \
 	xmms.svg \
-	sound-juicer.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 
