@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras.HEAD\n"
-"POT-Creation-Date: 2003-05-24 04:21+0200\n"
+"POT-Creation-Date: 2003-06-07 00:58+0200\n"
 "PO-Revision-Date: 2003-05-24 12:24+0000\n"
 "Last-Translator: Francisco Javier F. Serrador <serrador@arrakis.es>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
@@ -59,4 +59,3 @@ msgstr "Avispa"
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "Tema de estilo BeOS"
-

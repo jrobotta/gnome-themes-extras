@@ -1,6 +1,7 @@
 icondir = $(datadir)/icons/Wasp/scalable/mimetypes
 NULL = 
 icon_DATA = \
+	gnome-mime-application-pgp.svg \
 	gnome-mime-image.svg \
 	gnome-mime-image-xcf.svg \
 	gnome-mime-package.svg \

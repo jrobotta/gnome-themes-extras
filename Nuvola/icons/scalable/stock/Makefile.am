@@ -11,6 +11,8 @@ icon_DATA = \
 	filenew.svg \
 	fileopen.svg \
 	filesave.svg \
+	findreplace.svg \
+	find.svg \
 	filesaveas.svg \
 	folder_new.svg \
 	folder.svg \

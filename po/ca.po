@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras 0.1\n"
-"POT-Creation-Date: 2003-05-16 23:59+0200\n"
+"POT-Creation-Date: 2003-06-07 00:58+0200\n"
 "PO-Revision-Date: 2003-05-07 18:38+0200\n"
 "Last-Translator: Jordi Mallach <jordi@sindominio.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
@@ -27,7 +27,7 @@ msgid "Gorilla"
 msgstr "Gorilla"
 
 #: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
-#: Nuvola/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
 msgid "Vector Theme"
 msgstr "Tema Vector"
 
@@ -52,6 +52,14 @@ msgstr "Nuvola"
 #: Nuvola/index.theme.in.h:2
 msgid "The Blue Style Surf"
 msgstr "El surf d'estil blau"
+
+#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr ""
+
+#: Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr ""
 
 #~ msgid "Lushy SVG icons with Mandrake Galaxy"
 #~ msgstr "Sucoses icones SVG amb Mandrake Galaxy"
