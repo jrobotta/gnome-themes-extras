@@ -7,6 +7,7 @@ icon_DATA = \
         gnome-dev-cdrom-audio.svg \
         gnome-dev-harddisk.svg \
         gnome-dev-cdrom.svg \
+        gnome-dev-mouse.svg \
         gnome-dev-network.svg \
         gnome-dev-rw.svg \
         $(NULL)
