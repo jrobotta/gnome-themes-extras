@@ -1,3 +1,9 @@
+2003-11-16 Christian Schaller <Uraeus@gnome.org>
+
+	* Update Smooth engine
+	* Update version number
+	* Replace Nuvola Metacity theme
+
 2003-10-12  Christophe Merlet  <redfox@redfoxcenter.org>
 
 	* Amaranth/icons/scalable/mimetypes/Makefile.am:
