@@ -22,10 +22,15 @@ icon_DATA = \
 	recycled.svg \
 	reload.svg \
 	stock_cdrom.svg \
+	stock_cut.svg \
 	stock_go-back.svg \
 	stock_go-down.svg \
 	stock_go-forward.svg \
 	stock_go-up.svg \
 	stock_home.svg \
-	stock_stop.svg
+	stock_quit.svg \
+	stock_redo.svg \
+	stock_stop.svg \
+	stock_undo.svg
+
 EXTRA_DIST = $(icon_DATA)

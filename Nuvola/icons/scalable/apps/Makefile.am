@@ -15,10 +15,11 @@ icon_DATA = \
 	gnome-searchtool.svg \
 	gnome-terminal.svg \
 	go.svg \
-	mozilla-star.svg \
+	mozilla.svg \
 	my-computer.svg \
 	realplayer.svg \
 	system-search-32.svg \
+	web-browser.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 

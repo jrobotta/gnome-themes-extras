@@ -3,50 +3,42 @@
 "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
 <svg
-   i:viewOrigin="178 524"
-   i:rulerOrigin="-178 -268"
-   i:pageBounds="178 524 434 268"
    width="48pt"
    height="48pt"
    viewBox="0 0 256 256"
-   style="overflow:visible;enable-background:new 0 0 256 256"
+   overflow="visible"
+   enable-background="new 0 0 256 256"
    xml:space="preserve"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:ns="&amp;ns_vars;"
-   xmlns:i="&amp;ns_ai;"
    xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg153"
    sodipodi:version="0.32pre"
-   sodipodi:docname="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/filesystems/gnome-fs-regular.svgz"
-   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/filesystems/">
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/filesystems/gnome-fs-regular.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/filesystems">
   <defs
-     id="defs176" />
+     id="defs175" />
   <sodipodi:namedview
      id="base" />
-  <metadata
-     id="metadata154">
-    <ns:variableSets>
-      <ns:variableSet
-         varSetName="binding1"
-         locked="none">
-        <ns:variables />
-        <ns:sampleDataSets />
-      </ns:variableSet>
-    </ns:variableSets>
-  </metadata>
+  <g
+     id="Layer_2"
+     stroke="#000000">
+    <path
+       fill="none"
+       stroke="none"
+       d="M256,256H0V0h256V256z"
+       id="path155" />
+  </g>
   <g
      id="Layer_3"
-     i:layer="yes"
-     i:dimmedPercent="50"
-     i:rgbTrio="#4F00FFFF4F00"
-     style="stroke:#000000;">
+     stroke="#000000">
     <path
-       i:knockout="Off"
-       style="opacity:0.2;stroke:none;"
-       d="M49,19c-9.374,0-17,7.626-17,17v200c0,9.374,7.626,17,17,17h176c9.374,0,17-7.626,17-17    V36c0-9.374-7.626-17-17-17H49z"
-       id="path156" />
+       opacity="0.2"
+       stroke="none"
+       d="M49,19c-9.374,0-17,7.626-17,17v200c0,9.374,7.626,17,17,17h176c9.374,0,17-7.626,17-17V36    c0-9.374-7.626-17-17-17H49z"
+       id="path157" />
     <linearGradient
        id="XMLID_1_"
        gradientUnits="userSpaceOnUse"
@@ -56,23 +48,35 @@
        y2="130">
       <stop
          offset="0"
-         style="stop-color:#A7ABAC"
-         id="stop158" />
+         style="stop-color:#797979"
+         id="stop159" />
       <stop
          offset="1"
-         style="stop-color:#85898A"
-         id="stop159" />
+         style="stop-color:#666666"
+         id="stop160" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#797979"
+         id="midPointStop161" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#797979"
+         id="midPointStop162" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#666666"
+         id="midPointStop163" />
     </linearGradient>
     <path
-       i:knockout="Off"
-       style="fill:url(#XMLID_1_);stroke:none;"
-       d="M40,13c-9.374,0-17,7.626-17,17v200c0,9.374,7.626,17,17,17h176c9.374,0,17-7.626,17-17    V30c0-9.374-7.626-17-17-17H40z"
-       id="path163" />
-    <path
-       i:knockout="Off"
-       style="fill:#99CCFF;stroke:none;"
-       d="M28,230c0,6.627,5.373,12,12,12h176c6.627,0,12-5.373,12-12V30c0-6.627-5.373-12-12-12H40    c-6.627,0-12,5.373-12,12V230z"
+       fill="url(#XMLID_1_)"
+       stroke="none"
+       d="M40,13c-9.374,0-17,7.626-17,17v200c0,9.374,7.626,17,17,17h176    c9.374,0,17-7.626,17-17V30c0-9.374-7.626-17-17-17H40z"
        id="path164" />
+    <path
+       fill="#99CCFF"
+       stroke="none"
+       d="M28,230c0,6.627,5.373,12,12,12h176c6.627,0,12-5.373,12-12V30c0-6.627-5.373-12-12-12H40    c-6.627,0-12,5.373-12,12V230z"
+       id="path165" />
     <linearGradient
        id="XMLID_2_"
        gradientUnits="userSpaceOnUse"
@@ -83,34 +87,34 @@
       <stop
          offset="0"
          style="stop-color:#FFFFFF"
-         id="stop166" />
+         id="stop167" />
       <stop
          offset="1"
          style="stop-color:#99CCFF"
-         id="stop167" />
+         id="stop168" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="midPointStop169" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#FFFFFF"
+         id="midPointStop170" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#99CCFF"
+         id="midPointStop171" />
     </linearGradient>
     <path
-       i:knockout="Off"
-       style="fill:url(#XMLID_2_);stroke:none;"
+       fill="url(#XMLID_2_)"
+       stroke="none"
        d="M40,23c-3.859,0-7,3.14-7,7v200c0,3.859,3.141,7,7,7h176c3.859,0,7-3.141,7-7V30    c0-3.86-3.141-7-7-7H40z"
-       id="path171" />
-    <path
-       i:knockout="Off"
-       style="opacity:0.4;fill:#FFFFFF;stroke:none;"
-       d="M163,108c18.593-17.431,40.938-26.006,65-30.265V30c0-6.627-5.373-12-12-12H40    c-6.627,0-12,5.373-12,12v143.268C77.582,177.009,124.478,142.51,163,108z"
        id="path172" />
-  </g>
-  <g
-     id="Layer_2"
-     i:layer="yes"
-     i:editable="no"
-     i:dimmedPercent="50"
-     i:rgbTrio="#FFFF4F004F00"
-     style="stroke:#000000;">
     <path
-       i:knockout="Off"
-       style="fill:none;stroke:none;"
-       d="M256,256H0V0h256V256z"
-       id="path174" />
+       opacity="0.4"
+       fill="#FFFFFF"
+       stroke="none"
+       d="M163,108c18.593-17.431,40.938-26.006,65-30.265V30c0-6.627-5.373-12-12-12    H40c-6.627,0-12,5.373-12,12v143.268C77.582,177.009,124.478,142.51,163,108z"
+       id="path173" />
   </g>
 </svg>
