@@ -35,7 +35,6 @@ icon_DATA = \
 	network-config.svg \
 	network.svg \
 	procman.svg \
-	properties-screensaver.svg \
 	redhat-config-date.svg \
 	redhat-config-users.svg \
 	redhat-config-xfree86.svg \
