@@ -10,6 +10,7 @@ icon_DATA = \
         gnome-mime-application-x-backup.svg \
         gnome-mime-application-x-deb.svg \
         gnome-mime-application-x-dvi.svg \
+        5B
         gnome-mime-application-x-executable.svg \
         gnome-mime-application-x-gnome-app-info.svg \
         gnome-mime-application-x-gnucash.svg \
@@ -77,4 +78,4 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-gnumeric.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-ogg.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-php.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-stuffit.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-stuffit.svg
