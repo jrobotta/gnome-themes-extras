@@ -30,6 +30,14 @@
 
 #define gtk_type_is_a(object, type) (g_type_is_a(object, type))
 
+/* COMBO is deprecated in favour of COMBO_BOX, and thus doesn't exist in >=2.3,
+   since this is the future we wrap GTK_IS_COMBO_BOX around GTK_IS_COMBO for 
+   earlier versions of GTK2.
+*/
+#ifndef GTK_IS_COMBO_BOX
+#define GTK_IS_COMBO_BOX(obj) GTK_IS_COMBO(obj)
+#endif
+
 typedef const gchar		detail_char;
 
 static GtkStyleClass *parent_class = NULL;

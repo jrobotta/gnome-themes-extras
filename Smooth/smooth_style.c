@@ -210,7 +210,6 @@ smooth_fill_background(GtkStyle * style,
     gdk_bitmap_unref(clip_mask);
 }
 
-
 void
 smooth_draw_shadow_with_gap(GtkStyle * style,
                             GdkWindow * window,
@@ -236,13 +235,6 @@ smooth_draw_shadow_with_gap(GtkStyle * style,
   GdkGC              *dark, *light, *mid, *middark=NULL, *midlight=NULL;
   gboolean 	     line_overlap = FALSE;
 
-  if ((EDGE_LINE_STYLE(style, part)==SMOOTH_LINE_WIN32) && DETAIL("buttondefault")) {
-    shade = shaded_color (style, state_type, shades[8]);
-    do_draw_shadow_with_gap(window, area, shade, shade, x, y, width, height, gap_side, gap_pos, gap_size, TRUE);
-    if (shade) gtk_gc_release (shade);
-    return;
-  }
-  
   if (EDGE_LINE_STYLE(style, part)==SMOOTH_LINE_NONE) return;
   
   if (shadow_type == GTK_SHADOW_NONE) return;
@@ -707,7 +699,7 @@ smooth_draw_shadow(GtkStyle * style,
 {
   g_return_if_fail(sanitize_parameters(style, window, &width, &height));
 
-  if ((EDGE_LINE_STYLE(style,NULL) == SMOOTH_LINE_FLAT)  && DETAIL ("entry") && widget && (GTK_IS_SPIN_BUTTON (widget) || (widget->parent && GTK_IS_COMBO(widget->parent)))) 
+  if ((EDGE_LINE_STYLE(style,NULL) == SMOOTH_LINE_FLAT)  && DETAIL ("entry") && widget && (GTK_IS_SPIN_BUTTON (widget) || (widget->parent && GTK_IS_COMBO_BOX(widget->parent)))) 
   {
        gtk_paint_flat_box(style, window, widget->state, GTK_SHADOW_NONE, area, widget, "entry_bg", x, y, width, height);
 
@@ -1124,6 +1116,76 @@ smooth_draw_focus(GtkStyle *style,
 
   if (free_gc)
     gtk_gc_release(gc);
+}
+
+void
+smooth_draw_button_default(GtkStyle *style,
+                           GdkWindow *window,
+                           GtkStateType state_type,
+                           GdkRectangle *clip,
+                           GdkRectangle *button,
+                           GtkWidget *widget,
+                           gint x,
+                           gint y,
+                           gint width,
+                           gint height)
+{
+	GdkRectangle button_area;
+	smooth_part_style *button_default=smooth_button_part(style, TRUE);
+	
+	if (button)
+	{
+		button_area.x = button->x;
+		button_area.y = button->y;
+		button_area.width = button->width;
+		button_area.height = button->height;
+	}
+	else
+	{
+		//if no button area was passed assume the button area is 1 pixel inside, eg. assume there is room for win32 focus
+		button_area.x = x+1;
+		button_area.y = y+1;
+		button_area.width = width+1;
+		button_area.height = height+1;
+	}
+	
+	switch (smooth_button_get_style(style, TRUE))
+	{
+		case SMOOTH_BUTTON_DEFAULT_NORMAL:
+		{
+			/*paint fill with a gradient, invert if GTK_SHADOW_IN */
+			gradient_fill_background(style, window, GTK_SHADOW_IN, clip, widget, button_default, x, y, width, height, TRUE, GTK_ORIENTATION_VERTICAL);
+
+			/* paint shadow */
+			smooth_draw_shadow_with_gap(style, window, state_type, GTK_SHADOW_IN, clip, widget, "button", button_default, x, y, width, height, 0, 0, 0);     
+		}	
+		break;
+
+		case SMOOTH_BUTTON_DEFAULT_NONE:
+		case SMOOTH_BUTTON_DEFAULT_TRIANGLE:/* draw the triangle on button draw, not here */
+		case SMOOTH_BUTTON_DEFAULT_WIN32:/* draw background first */
+		default:
+		{
+			/*try and paint fill with parent style */
+			GtkStyle *parent_style = style;
+			GtkStateType parent_state = GTK_STATE_NORMAL;
+			
+			if ((widget) && (widget->parent)) {
+				parent_style = widget->parent->style;
+				parent_state = widget->parent->state;
+			}
+
+			smooth_fill_background(parent_style, window, parent_state, GTK_SHADOW_NONE, clip, NULL, widget, button_default, x, y, width, height, FALSE, FALSE,
+						GTK_ORIENTATION_VERTICAL,FALSE);
+		}				
+	}	
+
+	if (smooth_button_get_style(style, TRUE) == SMOOTH_BUTTON_DEFAULT_WIN32)
+	{
+		GdkGC *shade = shaded_color (style, state_type, shades[8]);
+		do_draw_shadow_with_gap(window, clip, shade, shade, button_area.x+1, button_area.y+1, button_area.width-2, button_area.height-2, 0, 0, 0, TRUE);
+		if (shade) gtk_gc_release (shade);
+	}
 }
 
 void
@@ -1615,7 +1677,7 @@ smooth_draw_box(GtkStyle * style,
 				    0, 0, 0);
       }
     } else if (DETAIL("hruler") || DETAIL("vruler") || DETAIL("metacity") || DETAIL("bar") || DETAIL("spinbutton_up") || DETAIL("spinbutton_down") || 
-               DETAIL("optionmenu") || DETAIL("optionmenutab") || DETAIL("slider") || DETAIL("menuitem") || DETAIL("buttondefault") || 
+               DETAIL("optionmenu") || DETAIL("optionmenutab") || DETAIL("slider") || DETAIL("menuitem") || 
                DETAIL("togglebutton") || DETAIL("button") || DETAIL ("hscrollbar") || DETAIL ("vscrollbar")) 
     {
  	smooth_part_style * part = NULL;
@@ -1671,13 +1733,17 @@ smooth_draw_box(GtkStyle * style,
           }
         else if (DETAIL("bar") && GTK_IS_PROGRESS_BAR(widget))
           {
-            part = THEME_PART(PROGRESS_PART(style));
+            part = PROGRESS_PART(style);
 
 	    x += PART_XPADDING(part);
             y += PART_YPADDING(part), 
 	    width -= PART_XPADDING(part)*2;
             height -= PART_YPADDING(part)*2; 
           } 
+        else if (DETAIL("button"))
+          {
+            part = smooth_button_part(style, FALSE);
+          }
         
         /*paint fill of orientation with a gradient, invert if GTK_SHADOW_IN */
         gradient_fill_background(style, window, state_type, area, widget, part, x, y, width, height, shadow_type == GTK_SHADOW_IN, orientation);
@@ -1692,12 +1758,11 @@ smooth_draw_box(GtkStyle * style,
 		  y + height - ythickness(style) - 2,
 		  x + width - 19 - xthickness(style), 
                   GTK_ORIENTATION_VERTICAL);
-        else if (DETAIL("button")) 
-          {
+        else if (DETAIL("button") && (smooth_button_default_triangle(style))) {
             /* Paint a triangle here instead of in "buttondefault"
                which is drawn _behind_ the current button */
             draw_default_triangle(style, window, state_type, shadow_type, area, widget, detail, x, y, width, height);
-          }
+	}
           
         /* paint shadow */
         smooth_draw_shadow_with_gap(style, window, state_type, shadow_type, area, widget, detail, part, x, y, width, height, 0, 0, 0);     

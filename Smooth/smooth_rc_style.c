@@ -2,6 +2,7 @@
 #include "smooth_rc_style.h"
 #include <stdio.h>
 
+/* tab part styles*/
 smooth_part_style 
 *smooth_tab_part(GtkStyle * style, gboolean for_active_tab)
 {
@@ -61,6 +62,78 @@ smooth_tab_edge_line_thickness(GtkStyle * style, gboolean for_active_tab)
     return EDGE_LINE_THICKNESS(style, THEME_PART(&tabs));
 }
 
+/* button part styles*/
+smooth_part_style 
+*smooth_button_part(GtkStyle * style, gboolean for_button_default)
+{
+  smooth_button_style button = THEME_DATA(style)->button;
+  
+  if ((for_button_default) && (button.use_button_default))
+    return &THEME_DATA(style)->button.button_default;
+  else
+    return THEME_PART(&THEME_DATA(style)->button);
+}
+
+gint
+smooth_button_get_style(GtkStyle * style, gboolean for_button_default)
+{
+  smooth_button_style button = THEME_DATA(style)->button;
+  smooth_part_style button_default = THEME_DATA(style)->button.button_default;
+  
+  if ((for_button_default) && (button.use_button_default))
+    return button_default.style;
+  else
+    return THEME_PART(&button)->style;
+}
+
+gboolean
+smooth_button_default_triangle(GtkStyle * style)
+{
+  smooth_button_style button = THEME_DATA(style)->button;
+  smooth_part_style button_default = THEME_DATA(style)->button.button_default;
+  
+  if ((button.use_button_default))
+    return ((button_default.style==SMOOTH_BUTTON_DEFAULT_TRIANGLE) || (button.default_triangle));
+  else
+    return (button.default_triangle);
+}
+
+smooth_fill_style *
+smooth_button_fill(GtkStyle * style, gboolean for_button_default)
+{
+  smooth_button_style button = THEME_DATA(style)->button;
+  smooth_part_style button_default = THEME_DATA(style)->button.button_default;
+  
+  if ((for_button_default) && (button.use_button_default) && (button_default.use_fill))
+    return &THEME_DATA(style)->button.button_default.fill;
+  else
+    return &THEME_PART(&THEME_DATA(style)->button)->fill;
+}
+
+gint
+smooth_button_edge_line_style(GtkStyle * style, gboolean for_button_default)
+{
+  smooth_button_style button = THEME_DATA(style)->button;
+  smooth_part_style button_default = THEME_DATA(style)->button.button_default;
+  
+  if ((for_button_default) && (button.use_button_default) && (button_default.edge.use_line || button_default.use_line))
+    return EDGE_LINE_STYLE(style, &button_default);
+  else
+    return EDGE_LINE_STYLE(style, THEME_PART(&button));
+}
+
+gint
+smooth_button_edge_line_thickness(GtkStyle * style, gboolean for_button_default)
+{
+  smooth_button_style button = THEME_DATA(style)->button;
+  smooth_part_style button_default = THEME_DATA(style)->button.button_default;
+  
+  if ((for_button_default) && (button.use_button_default) && (button_default.edge.use_line || button_default.use_line))
+    return EDGE_LINE_THICKNESS(style, &button_default);
+  else
+    return EDGE_LINE_THICKNESS(style, THEME_PART(&button));
+}
+
 static void   smooth_rc_style_class_init (SmoothRcStyleClass *klass);
 static guint  smooth_rc_style_parse (GtkRcStyle *rc_style, GtkSettings *settings,
 					     GScanner *scanner);
@@ -73,9 +146,7 @@ GType smooth_type_rc_style = 0;
 
 enum
   {
-    TOKEN_GRADIENT = G_TOKEN_LAST + 1,
-
-    TOKEN_REAL_SLIDERS,
+    TOKEN_REAL_SLIDERS = G_TOKEN_LAST + 1,
     TOKEN_RESIZE_GRIP,
 
     TOKEN_STYLE,
@@ -96,6 +167,8 @@ enum
     TOKEN_LINE,
     TOKEN_THICKNESS,
 
+    TOKEN_FOREGROUND,
+
     TOKEN_ARROW,
     TOKEN_SOLID,
     TOKEN_ETCHED,
@@ -103,7 +176,9 @@ enum
     TOKEN_FOCUS,
     TOKEN_PATTERN,
 
-    TOKEN_FOREGROUND,
+    TOKEN_BUTTON,
+    TOKEN_BUTTON_DEFAULT,
+    TOKEN_DEFAULT_TRIANGLE,
 
     TOKEN_TABS,
     TOKEN_ACTIVE_TAB,
@@ -126,7 +201,16 @@ enum
     TOKEN_XPADDING,
     TOKEN_YPADDING,
 
-    TOKEN_DEPRECATED_TABSTYLE,//backward compatibility for 0.5.2 & 0.5.4
+    /* backward compatibility for <= 0.5.4 */
+    TOKEN_DEPRECATED_TABSTYLE,
+
+    /* backward compatibility for <= 0.5.0 */
+    TOKEN_DEPRECATED_ARROWSTYLE,
+    TOKEN_DEPRECATED_SOLIDARROW,
+    TOKEN_DEPRECATED_ETCHEDARROW,
+    
+    /* backward compatibility for <= 0.4.0 */
+    TOKEN_DEPRECATED_GRADIENT
   };
   
 static struct
@@ -137,8 +221,6 @@ static struct
 
 theme_symbols[] =
 {
-  { "use_gradient",        TOKEN_GRADIENT },
-
   { "real_sliders",        TOKEN_REAL_SLIDERS },
   { "resize_grip",         TOKEN_RESIZE_GRIP },
 
@@ -160,6 +242,8 @@ theme_symbols[] =
   { "line",                TOKEN_LINE },
   { "thickness",           TOKEN_THICKNESS },
 
+  { "foreground",          TOKEN_FOREGROUND },
+
   { "arrow",     	   TOKEN_ARROW },
   { "solid",               TOKEN_SOLID },
   { "etched",              TOKEN_ETCHED },
@@ -167,7 +251,9 @@ theme_symbols[] =
   { "focus",               TOKEN_FOCUS },
   { "pattern",             TOKEN_PATTERN },
 
-  { "foreground",             TOKEN_FOREGROUND },
+  { "button",              TOKEN_BUTTON },
+  { "default",             TOKEN_BUTTON_DEFAULT },
+  { "show_triangle",       TOKEN_DEFAULT_TRIANGLE },
 
   { "tabs",                TOKEN_TABS },
   { "active_tab",          TOKEN_ACTIVE_TAB },
@@ -190,7 +276,16 @@ theme_symbols[] =
   { "xpadding",            TOKEN_XPADDING },
   { "ypadding",            TOKEN_YPADDING },
 
-  { "tab_style",           TOKEN_DEPRECATED_TABSTYLE },//backward compatibility for 0.5.2 & 0.5.4
+  /* backward compatibility for <= 0.5.4 */
+  { "tab_style",           TOKEN_DEPRECATED_TABSTYLE },
+
+  /* backward compatibility for <= 0.5.0 */
+  { "arrow_style",     	   TOKEN_DEPRECATED_ARROWSTYLE },
+  { "solid_arrow",         TOKEN_DEPRECATED_SOLIDARROW },
+  { "etched_arrow",        TOKEN_DEPRECATED_ETCHEDARROW },
+
+  /* backward compatibility for <= 0.4.0 */
+  { "use_gradient",        TOKEN_DEPRECATED_GRADIENT }
 };
 
 static guint n_theme_symbols = sizeof(theme_symbols) / sizeof(theme_symbols[0]);
@@ -251,7 +346,7 @@ TranslateLineStyleName (gchar * str, gint *retval)
     *retval = SMOOTH_LINE_SMOOTHED;
   else if (is_enum("cold") || is_enum("wonderland"))
     *retval = SMOOTH_LINE_COLD;
-  else if (is_enum("win32") || is_enum("windows") || is_enum("m$") || is_enum("winblows") || is_enum("redmond"))
+  else if (is_enum("win32") || is_enum("windows") || is_enum("redmond"))
     *retval = SMOOTH_LINE_WIN32;
   else
     return FALSE; 
@@ -273,6 +368,24 @@ TranslateOptionStyleName (gchar * str, gint *retval)
     *retval = SQUARE_OPTION;
   else if (is_enum("xpm"))
     *retval = XPM_OPTION;
+  else
+    return FALSE; 
+
+  return TRUE;
+}
+
+static gboolean 
+TranslateButtonDefaultStyleName (gchar * str, gint *retval)
+{
+#define is_enum(XX)  (g_ascii_strncasecmp(str, XX, strlen(XX))==0)
+  if (is_enum("gtk") || is_enum("gtk1") || is_enum("default") || is_enum("normal") || is_enum("standard"))
+    *retval = SMOOTH_BUTTON_DEFAULT_NORMAL;
+  else if (is_enum("win32") || is_enum("windows") || is_enum("redmond"))
+    *retval = SMOOTH_BUTTON_DEFAULT_WIN32;
+  else if (is_enum("triangle"))
+    *retval = SMOOTH_BUTTON_DEFAULT_TRIANGLE;
+  else if (is_enum("none"))
+    *retval = SMOOTH_BUTTON_DEFAULT_NONE;
   else
     return FALSE; 
 
@@ -340,7 +453,6 @@ static void part_init (SmoothRcStyle *style, smooth_part_style *part, gint parts
     part->fill.use_color1[i] = FALSE;
     part->fill.use_color2[i] = FALSE;
     part->fill.file_name[i] = NULL;
-    
   }
 
   part->edge.use_line        = FALSE;
@@ -409,9 +521,15 @@ void smooth_rc_style_init (SmoothRcStyle *style)
   part_init(style, THEME_PART(&style->trough), 0);
   style->trough.show_value = DEFAULT_TROUGH_SHOW_VALUE;
   
+  part_init(style, THEME_PART(&style->button), 0);
+  part_init(style, &style->button.button_default, DEFAULT_BUTTONDEFAULTSTYLE);
+  style->button.default_triangle = DEFAULT_BUTTONDEFAULTTRIANGLE;
+  style->button.use_button_default = FALSE;
+  
   part_init(style, THEME_PART(&style->tabs), DEFAULT_TABSTYLE);
   part_init(style, &style->tabs.active_tab, DEFAULT_TABSTYLE);
   style->tabs.use_active_tab	= FALSE;
+
 }
 
 static guint 
@@ -882,6 +1000,125 @@ static guint theme_parse_arrow (GtkSettings  *settings, GScanner *scanner, GToke
   return token;
 }
 
+static guint theme_parse_button_default (GtkSettings  *settings, GScanner *scanner, GTokenType wanted_token, smooth_part_style *retval)
+{
+  guint token;
+
+  token = g_scanner_get_next_token (scanner);
+  if (token != wanted_token)
+    {
+      return wanted_token;
+    }
+
+  token = g_scanner_get_next_token (scanner);
+  if (token != G_TOKEN_LEFT_CURLY)
+    return G_TOKEN_LEFT_CURLY;
+
+  token = g_scanner_peek_next_token (scanner);
+  while (token != G_TOKEN_RIGHT_CURLY) {
+    switch (token) {
+      case TOKEN_STYLE:
+	token = theme_parse_custom_enum(scanner, TOKEN_STYLE, TranslateButtonDefaultStyleName, DEFAULT_BUTTONDEFAULTSTYLE, &THEME_PART(retval)->style);
+	break;
+	
+      case TOKEN_LINE:
+        token = theme_parse_line (settings, scanner, TOKEN_LINE, &THEME_PART(retval)->line);
+        THEME_PART(retval)->use_line = TRUE;
+        break;
+
+      case TOKEN_FILL :
+        token = theme_parse_fill (settings, scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
+        THEME_PART(retval)->use_fill = TRUE;
+        break;
+  
+      case TOKEN_EDGE:
+        token = theme_parse_edge (settings, scanner, TOKEN_EDGE, &THEME_PART(retval)->edge);
+        break;
+
+      case TOKEN_XPADDING:
+        token = theme_parse_int (scanner, TOKEN_XPADDING, 0, &THEME_PART(retval)->xpadding, -25, 25);
+        break;
+
+      case TOKEN_YPADDING:
+        token = theme_parse_int (scanner, TOKEN_YPADDING, 0, &THEME_PART(retval)->ypadding, -25, 25);
+        break;
+    default:
+      g_scanner_get_next_token (scanner);
+      token = G_TOKEN_RIGHT_CURLY;
+      break;
+    }
+
+    token = g_scanner_peek_next_token (scanner);
+  }
+
+  g_scanner_get_next_token (scanner);
+  token = G_TOKEN_NONE;
+
+  return token;
+}
+
+static guint theme_parse_button (GtkSettings  *settings, GScanner *scanner, GTokenType wanted_token, smooth_button_style *retval)
+{
+  guint token;
+
+  token = g_scanner_get_next_token (scanner);
+  if (token != wanted_token)
+    {
+      return wanted_token;
+    }
+
+  token = g_scanner_get_next_token (scanner);
+  if (token != G_TOKEN_LEFT_CURLY)
+    return G_TOKEN_LEFT_CURLY;
+
+  token = g_scanner_peek_next_token (scanner);
+  while (token != G_TOKEN_RIGHT_CURLY) {
+    switch (token) {
+      case TOKEN_BUTTON_DEFAULT:
+	token = theme_parse_button_default (settings, scanner, TOKEN_BUTTON_DEFAULT, &retval->button_default);
+	retval->use_button_default = TRUE;
+	break;	  
+
+      case TOKEN_DEFAULT_TRIANGLE:
+	token = theme_parse_boolean (scanner, TOKEN_DEFAULT_TRIANGLE, DEFAULT_BUTTONDEFAULTTRIANGLE,  &retval->default_triangle);
+	break;	  
+
+      case TOKEN_LINE:
+        token = theme_parse_line (settings, scanner, TOKEN_LINE, &THEME_PART(retval)->line);
+        THEME_PART(retval)->use_line = TRUE;
+        break;
+
+      case TOKEN_FILL :
+        token = theme_parse_fill (settings, scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
+        THEME_PART(retval)->use_fill = TRUE;
+        break;
+
+      case TOKEN_EDGE:
+        token = theme_parse_edge (settings, scanner, TOKEN_EDGE, &THEME_PART(retval)->edge);
+        break;
+
+      case TOKEN_XPADDING:
+        token = theme_parse_int (scanner, TOKEN_XPADDING, 0, &THEME_PART(retval)->xpadding, -25, 25);
+        break;
+
+      case TOKEN_YPADDING:
+        token = theme_parse_int (scanner, TOKEN_YPADDING, 0, &THEME_PART(retval)->ypadding, -25, 25);
+        break;
+    default:
+      g_scanner_get_next_token (scanner);
+      token = G_TOKEN_RIGHT_CURLY;
+      break;
+    }
+
+    token = g_scanner_peek_next_token (scanner);
+  }
+
+  g_scanner_get_next_token (scanner);
+  token = G_TOKEN_NONE;
+
+  return token;
+}
+
 static guint theme_parse_active_tab (GtkSettings  *settings, GScanner *scanner, GTokenType wanted_token, smooth_part_style *retval)
 {
   guint token;
@@ -974,7 +1211,7 @@ static guint theme_parse_tab (GtkSettings  *settings, GScanner *scanner, GTokenT
         token = theme_parse_fill (settings, scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
         THEME_PART(retval)->use_fill = TRUE;
         break;
-  
+
       case TOKEN_EDGE:
         token = theme_parse_edge (settings, scanner, TOKEN_EDGE, &THEME_PART(retval)->edge);
         break;
@@ -1317,6 +1554,9 @@ smooth_rc_style_parse (GtkRcStyle *rc_style,
         case TOKEN_TABS:
           token = theme_parse_tab (settings, scanner, TOKEN_TABS, &smooth_style->tabs);
           break;
+        case TOKEN_BUTTON:
+          token = theme_parse_button (settings, scanner, TOKEN_BUTTON, &smooth_style->button);
+          break;
 	case TOKEN_REAL_SLIDERS:
 	  token = theme_parse_boolean (scanner, TOKEN_REAL_SLIDERS, DEFAULT_REAL_SLIDERS, &smooth_style->real_sliders);
 	  break;
@@ -1347,10 +1587,47 @@ smooth_rc_style_parse (GtkRcStyle *rc_style,
 	case TOKEN_OPTION:
 	  token = theme_parse_option (settings, scanner, TOKEN_OPTION, &smooth_style->option);
 	  break;
+
+        /* backward compatibility for <=0.5.4 */
 	case TOKEN_DEPRECATED_TABSTYLE:
 	  token = theme_parse_custom_enum(scanner, TOKEN_DEPRECATED_TABSTYLE, TranslateTabStyleName, DEFAULT_TABSTYLE, 
 						&THEME_PART(&smooth_style->tabs)->style);
 	  break;
+
+        /* backward compatibility for <=0.5.0 */
+	case TOKEN_DEPRECATED_ARROWSTYLE:
+	  token = theme_parse_custom_enum(scanner, TOKEN_DEPRECATED_ARROWSTYLE, TranslateArrowStyleName, DEFAULT_ARROWSTYLE, 
+						&THEME_PART(&smooth_style->arrow)->style);
+	  break;
+
+	case TOKEN_DEPRECATED_SOLIDARROW:
+	  token = theme_parse_boolean (scanner, TOKEN_DEPRECATED_SOLIDARROW, DEFAULT_SOLIDARROW, &smooth_style->arrow.solid);
+
+	  break;
+
+	case TOKEN_DEPRECATED_ETCHEDARROW:
+	  token = theme_parse_boolean (scanner, TOKEN_DEPRECATED_ETCHEDARROW, DEFAULT_ETCHEDARROW, &smooth_style->arrow.etched);
+	  break;
+
+        /* backward compatibility for <=0.4.0 */
+	case TOKEN_DEPRECATED_GRADIENT:
+	  {
+	    gboolean use_gradient=FALSE;
+	
+	    token = theme_parse_boolean (scanner, TOKEN_DEPRECATED_GRADIENT, TRUE, &use_gradient);
+	    
+	    if (use_gradient) 
+	    {
+	      smooth_style->fill.style = SMOOTH_FILL_SHADE_GRADIENT;
+	      smooth_style->fill.quadratic_gradient = TRUE;
+	      smooth_style->fill.gradient_direction[0] = GDK_GRADIENT_VERTICAL;			
+	      smooth_style->fill.gradient_direction[1] = GDK_GRADIENT_HORIZONTAL;			
+	      smooth_style->fill.shade1 = 1.3;
+	      smooth_style->fill.shade2 = 0.7;
+	    }
+	  }  
+	  break;
+
 	default:
 	  g_scanner_get_next_token (scanner);
 	  token = G_TOKEN_RIGHT_CURLY;
@@ -1375,7 +1652,7 @@ smooth_rc_style_parse (GtkRcStyle *rc_style,
   return G_TOKEN_NONE;
 }
 	
- void part_merge (smooth_part_style *dest_part, smooth_part_style *src_part)
+void part_merge (smooth_part_style *dest_part, smooth_part_style *src_part)
 {
   gint i;
   
@@ -1484,7 +1761,7 @@ smooth_rc_style_merge (GtkRcStyle * dest,
 
           dest_data->fill.file_name[i] = g_strdup(src_data->fill.file_name[i]);
         }
-
+        
         if (src_data->focus.pattern[i]) {
           if (dest_data->focus.pattern[i])
             g_free(dest_data->focus.pattern[i]);
@@ -1518,7 +1795,12 @@ smooth_rc_style_merge (GtkRcStyle * dest,
       part_merge(THEME_PART(&dest_data->trough),THEME_PART(&src_data->trough));
       dest_data->trough.show_value = src_data->trough.show_value;
       
-      part_merge(THEME_PART(&dest_data->progress),THEME_PART(&src_data->progress));
+      part_merge(&dest_data->progress,&src_data->progress);
+
+      part_merge(THEME_PART(&dest_data->button), THEME_PART(&src_data->button));
+      dest_data->button.default_triangle = src_data->button.default_triangle;
+      dest_data->button.use_button_default = src_data->button.use_button_default;
+      part_merge(&dest_data->button.button_default,&src_data->button.button_default);
 
       part_merge(THEME_PART(&dest_data->tabs), THEME_PART(&src_data->tabs));
       dest_data->tabs.use_active_tab = src_data->tabs.use_active_tab;
@@ -1560,6 +1842,8 @@ void smooth_rc_style_dispose (GObject *rc_style)
         part_finalize(THEME_PART(&data->option));
         part_finalize(THEME_PART(&data->trough));
         part_finalize(&data->progress);
+        part_finalize(THEME_PART(&data->button));
+        part_finalize(&data->button.button_default);
         part_finalize(THEME_PART(&data->tabs));
         part_finalize(&data->tabs.active_tab);
       }

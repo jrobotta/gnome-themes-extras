@@ -17,10 +17,24 @@
 #define SMOOTH_FILL_SHADE_GRADIENT	3
 #define SMOOTH_FILL_PIXBUF		4
 
+#define SMOOTH_FONT_NORMAL		1
+#define SMOOTH_FONT_BOLD		2
+#define SMOOTH_FONT_ITALIC		3
+#define SMOOTH_FONT_BOLD_ITALIC		4
+
+#define SMOOTH_TEXT_INHERITED		1
+#define SMOOTH_TEXT_DEFAULT		2
+#define SMOOTH_TEXT_CUSTOM		3
+
 #define SMOOTH_EDGE_NONE		1
 #define SMOOTH_EDGE_LINE		2
 #define SMOOTH_EDGE_GRADIENT		3
 #define SMOOTH_EDGE_PIXBUF		4
+
+#define SMOOTH_BUTTON_DEFAULT_NONE	1
+#define SMOOTH_BUTTON_DEFAULT_NORMAL	2
+#define SMOOTH_BUTTON_DEFAULT_WIN32	3
+#define SMOOTH_BUTTON_DEFAULT_TRIANGLE	4
 
 #define SMOOTH_TAB_NORMAL		1
 #define SMOOTH_TAB_ROUND		2
@@ -35,6 +49,8 @@
 #define DEFAULT_EDGESTYLE		LINE_EDGE
 #define DEFAULT_LINETHICKNESS		2
 #define DEFAULT_LINESTYLE		SMOOTH_LINE_STANDARD
+#define DEFAULT_BUTTONDEFAULTSTYLE	SMOOTH_BUTTON_DEFAULT_NORMAL
+#define DEFAULT_BUTTONDEFAULTTRIANGLE	TRUE
 #define DEFAULT_TABSTYLE		SMOOTH_TAB_NORMAL
 #define DEFAULT_GRIPSTYLE		FIXEDLINES_IN_GRIP
 #define DEFAULT_ARROWSTYLE		ARROW_STYLE_THINICE
@@ -47,6 +63,7 @@
 #define DEFAULT_RESIZE_GRIP		TRUE
 #define DEFAULT_TROUGH_SHOW_VALUE	FALSE
 #define DEFAULT_GRIPOVERLAP		FALSE
+
 
 typedef struct _SmoothRcStyle SmoothRcStyle;
 
@@ -66,6 +83,7 @@ typedef struct _smooth_grip_style smooth_grip_style;
 typedef struct _smooth_check_style smooth_check_style;
 typedef struct _smooth_option_style smooth_option_style;
 typedef struct _smooth_arrow_style smooth_arrow_style;
+typedef struct _smooth_button_style smooth_button_style;
 typedef struct _smooth_tab_style smooth_tab_style;
 typedef struct _smooth_trough_style smooth_trough_style;
 
@@ -175,11 +193,6 @@ struct _smooth_edge_style {
 };
 
 struct _smooth_focus_style {
-#ifdef GTK1
-  gboolean interior;
-  gint width;
-  gint pad;
-#endif
   gboolean use_foreground[5];//GtkStateType
   GdkColor foreground[5];//GtkStateType
 
@@ -237,6 +250,19 @@ struct _smooth_arrow_style {
 
   gint xpadding;
   gint ypadding;
+
+  /*smooth_part_style part;
+  gint border;
+  gint fill;*/
+};
+
+struct _smooth_button_style {
+  smooth_part_style part;
+  gboolean default_triangle;
+
+  gboolean use_button_default;
+
+  smooth_part_style button_default;
 };
 
 struct _smooth_tab_style {
@@ -295,8 +321,8 @@ struct _SmoothRcStyle
   smooth_check_style	  check;
   smooth_option_style	  option;
   smooth_arrow_style      arrow;
+  smooth_button_style	  button;
   smooth_tab_style	  tabs;
-
 };
 
 void smooth_rc_style_init (SmoothRcStyle *style);
@@ -308,6 +334,7 @@ struct _SmoothRcStyleClass
 
 void smooth_rc_style_register_type (GTypeModule *module);
 
+/* tab part styles*/
 smooth_part_style *smooth_tab_part(GtkStyle * style, gboolean for_active_tab);
 
 gint smooth_tab_get_style(GtkStyle * style, gboolean for_active_tab);
@@ -316,3 +343,15 @@ smooth_fill_style *smooth_tab_fill(GtkStyle * style, gboolean for_active_tab);
 
 gint smooth_tab_edge_line_style(GtkStyle * style, gboolean for_active_tab);
 gint smooth_tab_edge_line_thickness(GtkStyle * style, gboolean for_active_tab);
+
+/* button part styles*/
+smooth_part_style *smooth_button_part(GtkStyle * style, gboolean for_default_button);
+
+gint smooth_button_get_style(GtkStyle * style, gboolean for_default_button);
+
+gboolean smooth_button_default_triangle(GtkStyle * style);
+
+smooth_fill_style *smooth_button_fill(GtkStyle * style, gboolean for_default_button);
+
+gint smooth_button_edge_line_style(GtkStyle * style, gboolean for_default_button);
+gint smooth_button_edge_line_thickness(GtkStyle * style, gboolean for_default_button);

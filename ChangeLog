@@ -1,3 +1,8 @@
+2004-01-29  Christian Schaller <Uraeus@gnome.org>
+
+	* Updated smooth to compile with Gtk2.3
+	* New improved Wasp logout icon
+
 2004-01-11  Alessio Frusciante  <algol@firenze.linux.it>
 
 	* configure.in: Added "it" (Italian) to ALL_LINGUAS.

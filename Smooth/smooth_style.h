@@ -145,6 +145,18 @@ smooth_draw_focus(GtkStyle *style,
                   gint dash_width);
 
 void
+smooth_draw_button_default(GtkStyle *style,
+                           GdkWindow *window,
+                           GtkStateType state_type,
+                           GdkRectangle *clip,
+                           GdkRectangle *button,
+                           GtkWidget *widget,
+                           gint x,
+                           gint y,
+                           gint width,
+                           gint height);
+
+void
 smooth_draw_slider(GtkStyle * style,
      	           GdkWindow * window,
 	           GtkStateType state_type,

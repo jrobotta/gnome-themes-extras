@@ -223,6 +223,47 @@ draw_extension(GtkStyle * style,
   smooth_draw_extension(style, window, state_type, shadow_type, area, widget, detail, x, y, width, height, gap_side);
 }
 
+static const GtkBorder default_default_border = { 1, 1, 1, 1 };
+static const GtkBorder default_default_outside_border = { 0, 0, 0, 0 };
+
+static void
+gtk_button_get_props (GtkWidget *widget,
+		      GtkBorder *default_border,
+		      GtkBorder *default_outside_border,
+		      gboolean  *interior_focus)
+{
+  GtkBorder *tmp_border;
+
+  if (default_border)
+    {
+      gtk_widget_style_get (widget, "default_border", &tmp_border, NULL);
+
+      if (tmp_border)
+	{
+	  *default_border = *tmp_border;
+	  g_free (tmp_border);
+	}
+      else
+	*default_border = default_default_border;
+    }
+
+  if (default_outside_border)
+    {
+      gtk_widget_style_get (widget, "default_outside_border", &tmp_border, NULL);
+
+      if (tmp_border)
+	{
+	  *default_outside_border = *tmp_border;
+	  g_free (tmp_border);
+	}
+      else
+	*default_outside_border = default_default_outside_border;
+    }
+
+  if (interior_focus)
+    gtk_widget_style_get (widget, "interior_focus", interior_focus, NULL);
+}
+
 static void
 draw_box(GtkStyle * style,
 	 GdkWindow * window,
@@ -239,8 +280,43 @@ draw_box(GtkStyle * style,
   GtkOrientation orientation;
   
   g_return_if_fail(sanitize_parameters(style, window, &width, &height));
-  
-  if (DETAIL("buttondefault") || DETAIL("togglebutton") || DETAIL("button") || DETAIL("spinbutton_up") || DETAIL("spinbutton_down") || GTK_IS_BUTTON(widget))
+    
+	if (DETAIL("buttondefault"))
+	{
+		GdkRectangle button;
+
+		gint border_width = GTK_CONTAINER (widget)->border_width;
+		GtkBorder default_border;
+		GtkBorder default_outside_border;
+		gboolean interior_focus;
+		gint focus_width;
+		gint focus_pad;
+
+		gtk_button_get_props (widget, &default_border, &default_outside_border, &interior_focus);
+		gtk_widget_style_get (widget,
+					"focus-line-width", &focus_width,
+					"focus-padding", &focus_pad,
+					NULL); 
+	
+		button.x = widget->allocation.x + border_width + default_outside_border.left;
+		button.y = widget->allocation.y + border_width + default_outside_border.top;
+		button.width = (widget->allocation.width - border_width * 2) - (default_outside_border.left + default_outside_border.right);
+		button.height = (widget->allocation.height - border_width * 2) - (default_outside_border.top + default_outside_border.bottom);
+
+		if (!interior_focus)
+		{
+			button.x += focus_width + focus_pad;
+			button.y += focus_width + focus_pad;
+			button.width -= 2 * (focus_width + focus_pad);
+			button.height -= 2 * (focus_width + focus_pad);
+		}
+
+		smooth_draw_button_default(style, window, state_type, area, &button, widget, x, y, width, height);
+
+		return;
+	}	
+
+  if (DETAIL("togglebutton") || DETAIL("button") || DETAIL("spinbutton_up") || DETAIL("spinbutton_down") || GTK_IS_BUTTON(widget))
     orientation = GTK_ORIENTATION_HORIZONTAL;
   else if (DETAIL("hscrollbar"))
     orientation = GTK_ORIENTATION_HORIZONTAL;

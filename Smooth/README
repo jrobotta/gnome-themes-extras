@@ -1,4 +1,4 @@
-This is the Smooth GTK engine, currently it supports GTK2 and GTK1.2, however GTK 1.2 support is a bit messier/less reliable then GTK2, although it has improved a bit in recent CVS, most noticable problems are radiobuttons/checks do not always match the theme colours properly.
+This is the Smooth GTK engine, currently it supports GTK2 and GTK1.2, however GTK 1.2 support is a bit messier/less reliable then GTK2, although it has improved a bit in recent CVS, most noticable problems are changing themes causes sliders and scrollbar sizes to misbehave unless gtk1.2 apps are restarted afterword.
 
 The GTK 1.2 version adds nice support for reading most GTK2 Style Properties and xthickness & ythickness, however it is incomplete and only actualy sets a few of them.
 
@@ -9,7 +9,7 @@ to make,  run:
 
 FEEL FREE TO HELP!
 
-The current version is full of messy & sometimes downright screwy code. I am still attempting to clean up and somewhat organize most of the code, however in the process I have messed up the actual functionality of code, most notably the arrow code in "utils/draw_arrows.c" and grips code in "utils/draw_grips.c", and the calling functions in "smooth_style.c" I am slowly finding and fixing these things, but feel free to organize and/or fix the stupid things I have managed to destroy and have yet too fix.
+The current version is full of messy & sometimes downright screwy code. I am still attempting to clean up and somewhat organize most of the code, however in the process I often mess up the actual functionality of code, I am slowly finding and fixing these things, but feel free to organize and/or fix the stupid things I have managed to destroy and have yet too fix.
 
 Also, feel free to improve in anyway that makes sense. Though I would prefer proper functionality before adding of new features.
 
@@ -18,4 +18,4 @@ To sum up : if you have the inclination to do so, I would not be opposed to patc
 Enjoy!
 
 Andrew Johnson <ajgenius@ajgenius.us>
-Mar 30, 2003
+Dec 16, 2003
