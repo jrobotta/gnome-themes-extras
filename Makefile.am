@@ -1,2 +1,2 @@
-SUBDIRS= Gorilla Nuvola po
+SUBDIRS= Gorilla Nuvola Lush Galaxy BlueSphere po
 EXTRA_DIST = intltool-extract.in  intltool-merge.in  intltool-update.in
