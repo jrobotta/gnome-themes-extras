@@ -51,6 +51,8 @@ icon_DATA = \
 	keyboard-capplet.svg \
 	keyboard-shortcut.svg \
 	redhat-config-date.svg \
+	user_auth.svg \
+	gnome-logo.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 
@@ -76,7 +78,10 @@ install-data-local:
 	ln -sf gnome-multimedia.svg redhat-sound_video.svg && \
 	ln -sf gnome-devel.svg redhat-programming.svg && \
 	ln -sf gnome-home.svg redhat-home.svg && \
-	ln -sf gnome-ccdesktop.svg redhat-preferences.svg
+	ln -sf gnome-ccdesktop.svg redhat-preferences.svg && \
+	ln -sf gnome-logo.svg redhat-main-menu.svg && \
+	ln -sf gnome-logo.svg gnome-main-menu.svg && \
+	ln -sf gnome-gaim.svg gaim.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/system-tools-32.svg && \
@@ -86,4 +91,5 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/redhat-web-browser.svg && \
 	rm -rf $(DESTDIR)$(icondir)/web-browser.svg  && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-*.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-main-menu.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-main-menu.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gaim.svg

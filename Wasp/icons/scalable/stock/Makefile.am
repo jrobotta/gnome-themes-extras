@@ -24,5 +24,7 @@ icon_DATA = \
 	stock_lockscreen.svg \
 	stock_multimedia.svg \
 	stock_searchtool.svg \
-	stock_dialog_info.svg
+	stock_dialog_info.svg \
+	stock_logout.svg \
+	stock_gnome-logo.svg
 EXTRA_DIST = $(icon_DATA)
