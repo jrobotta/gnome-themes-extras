@@ -4,6 +4,7 @@
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-x-deb.svg:
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-text-x-makefile.svg:
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-text-x-install.svg:
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-text-css.svg:
 	* Gorilla/icons/scalable/mimetypes/Makefile.am:
 	  more porting
 

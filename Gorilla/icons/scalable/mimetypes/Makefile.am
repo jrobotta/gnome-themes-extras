@@ -23,6 +23,7 @@ icon_DATA = \
         gnome-mime-image.svg \
         gnome-mime-image-x-xcf.svg \
         gnome-mime-text.svg \
+        gnome-mime-text-css.svg \
         gnome-mime-text-html.svg \
         gnome-mime-text-x-authors.svg \
         gnome-mime-text-x-install.svg \
