@@ -1,4 +1,4 @@
-SUBDIRS= Amaranth Gorilla Nuvola Lush BlueSphere Wasp po
+SUBDIRS= Amaranth Gorilla Nuvola Lush Wasp po
 EXTRA_DIST = \
 	gnome-themes-extras.spec gnome-themes-extras.spec.in \
 	intltool-extract.in  intltool-merge.in  intltool-update.in m4 \
@@ -16,15 +16,6 @@ GORILLA_TAR_FILES = \
 	Gorilla/icons/scalable/filesystems/*.svg \
 	Gorilla/icons/scalable/mimetypes/*.svg \
 	Gorilla/icons/scalable/stock/*.svg
-
-BLUESPHERE_TAR_FILES = \
-	BlueSphere/gtk-2.0/gtkrc BlueSphere/gtk-2.0/*.png BlueSphere/gtk-2.0/*.svg \
-	BlueSphere/icons/index.theme BlueSphere/icons/scalable/stock/*.svg \
-	BlueSphere/metacity-1/metacity-theme-1.xml BlueSphere/metacity-1/*.png
-	
-GALAXY_TAR_FILES = \
-	Galaxy/index.theme \
-	Galaxy/metacity-1/metacity-theme-1.xml Galaxy/metacity-1/*.png
 
 LUSH_TAR_FILES = \
 	Lush/index.theme \
@@ -46,11 +37,9 @@ NUVOLA_TAR_FILES = \
 	Nuvola/icons/scalable/stock/*.svg  \
 	Nuvola/metacity-1/metacity-theme-1.xml Nuvola/metacity-1/*.png
 	
-tarballs: $(GORILLA_TAR_FILES) $(BLUESPHERE_TAR_FILES) $(GALAXY_TAR_FILES) $(LUSH_TAR_FILES) $(NUVOLA_TAR_FILES)
+tarballs: $(GORILLA_TAR_FILES) $(LUSH_TAR_FILES) $(NUVOLA_TAR_FILES)
 	mkdir -p tarballs
 	tar czf Gorilla.tar.gz $(GORILLA_TAR_FILES); \
-	tar czf Bluesphere.tar.gz $(BLUESPHERE_TAR_FILES); \
-	tar czf Galaxy.tar.gz $(GALAXY_TAR_FILES); \
 	tar czf Lush.tar.gz $(LUSH_TAR_FILES); \
 	tar czf Nuvola.tar.gz $(NUVOLA_TAR_FILES)
-	mv Gorilla.tar.gz Bluesphere.tar.gz Galaxy.tar.gz Lush.tar.gz Nuvola.tar.gz tarballs
+	mv Gorilla.tar.gz Galaxy.tar.gz Lush.tar.gz Nuvola.tar.gz tarballs

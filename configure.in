@@ -109,13 +109,6 @@ Lush/icons/scalable/emblems/Makefile
 Lush/icons/scalable/filesystems/Makefile
 Lush/icons/scalable/mimetypes/Makefile
 Lush/icons/scalable/stock/Makefile
-BlueSphere/Makefile
-BlueSphere/gtk-2.0/Makefile
-BlueSphere/gtk-2.0/iconrc
-BlueSphere/metacity-1/Makefile
-BlueSphere/icons/Makefile
-BlueSphere/icons/scalable/Makefile
-BlueSphere/icons/scalable/stock/Makefile
 Wasp/Makefile
 Wasp/gtk-2.0/Makefile
 Wasp/gtk-2.0/iconrc
