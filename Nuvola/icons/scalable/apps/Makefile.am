@@ -1,6 +1,7 @@
 icondir = $(datadir)/icons/Nuvola/scalable/apps
 NULL = 
 icon_DATA = \
+	applets-screenshooter.svg \
 	gnome-applications.svg \
 	gnome-envelope.svg \
 	gnome-favorites.svg \
@@ -10,10 +11,9 @@ icon_DATA = \
 	gnome-joystick.svg \
 	gnome-logo.svg \
 	gnome-multimedia.svg \
-	gnome-screenshot.svg \
 	gnome-searchtool.svg \
 	gnome-terminal.svg \
-	go.svg \	# KDE logo
+	go.svg \
 	my-computer.svg \
 	redhat-email.svg \
 	web-browser.svg \
