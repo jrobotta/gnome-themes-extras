@@ -1,3 +1,8 @@
+2005-02-11 Christian Schaller <uraeu@gnome.org>
+
+	* update spec file for a non-engines world
+	* make 0.8.1 release
+
 2004-12-22  Thomas Wood  <thos@gnome.org>
 
 	* Makefile.am:
