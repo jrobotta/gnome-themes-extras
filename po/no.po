@@ -1,0 +1,53 @@
+# Norwegian translations for PACKAGE package.
+# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Kjartan Maraas <kmaraas@gnome.org>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras 0.3\n"
+"POT-Creation-Date: 2003-08-20 22:16+0200\n"
+"PO-Revision-Date: 2003-08-20 22:20+0200\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian <i18n-nb@lister.ping.uio.no>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "Gorilla"
+
+#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
+msgid "Vector Theme"
+msgstr "Vektortema"
+
+#: Gorilla/index.theme.in.h:2
+msgid "The vector mono Godess"
+msgstr "Vektortemaet mono-Gudinne"
+
+#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "Saftig"
+
+#: Lush/index.theme.in.h:2
+msgid "Mild green theme"
+msgstr "Mildt grønt tema"
+
+#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "Nuvola"
+
+#: Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "Blåaktige bølger"
+
+#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "Veps"
+
+#: Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "BoOS-lignende tema"
