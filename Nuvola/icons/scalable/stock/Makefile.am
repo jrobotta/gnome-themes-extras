@@ -8,6 +8,7 @@ icon_DATA = \
 	filenew.svg \
 	fileopen.svg \
 	filesave.svg \
+	filesaveas.svg \
 	folder_new.svg \
 	folder.svg \
 	forward.svg \

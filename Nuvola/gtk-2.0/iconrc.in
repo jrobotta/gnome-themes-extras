@@ -63,7 +63,7 @@ style "icon-style"
 #  stock["gtk-remove"] =		{{ "viewmag-_2.svg" }}
 #  stock["gtk-revert-to-saved"] ={{ "revert-small.svg" }}
    stock["gtk-save"] =		{{ "filesave.svg" }}
-#  stock["gtk-save-as"] =	{{ "filesaveas.svg" }}
+   stock["gtk-save-as"] =	{{ "filesaveas.svg" }}
 #  stock["gtk-select-color"] =	{{ "stock_select-color.svg" }}
 #  stock["gtk-select-font"] =	{{ "stock_select-font.svg" }}
 #  stock["gtk-sort-ascending"] =	{{ "3downarrow.svg" }}
