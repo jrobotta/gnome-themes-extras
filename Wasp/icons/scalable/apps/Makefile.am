@@ -1,23 +1,30 @@
 icondir = $(datadir)/icons/Wasp/scalable/apps
 NULL = 
 icon_DATA = \
+	advanced-directory.svg \
 	applets-screenshooter.svg \
+	background-capplet.svg \
 	bluefish.svg \
 	file-manager.svg \
+	file-roller.svg \
 	fonts-capplet.svg \
 	gdm.svg \
 	gedit-icon.svg \
+	gnome-applications.svg \
 	gnome-audio2.svg \
 	gnome-cd-player.svg \
 	gnome-devel.svg \
 	gnome-envelope.svg \
+	gnome-eyes.svg \
 	gnome-favorites.svg \
+	gnome-gaim.svg \
 	gnome-gimp.svg \
 	gnome-globe.svg \
 	gnome-multimedia.svg \
 	gnome-joystick.svg \
 	gnome-monitor.svg \
-	gnome-printer-properties.svg \
+	gnome-multimedia.svg \
+	gnome-printers-properties.svg \
 	gnome-terminal.svg \
 	gnome-util.svg \
 	gnumeric.svg \
@@ -25,10 +32,18 @@ icon_DATA = \
 	keyboard.svg \
 	mozilla-star.svg \
 	my-computer.svg \
+	network-config.svg \
+	network.svg \
+	procman.svg \
 	properties-screensaver.svg \
+	redhat-config-date.svg \
 	redhat-config-users.svg \
+	redhat-config-xfree86.svg \
+	screensaver-properties.svg \
 	system-tools.svg \
 	vanity.svg \
+	ximian-evolution-calendar.svg \
+	ximian-redhat-config-nfs.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 

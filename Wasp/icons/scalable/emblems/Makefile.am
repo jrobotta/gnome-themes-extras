@@ -7,8 +7,10 @@ icon_DATA = \
         emblem-danger.svg \
         emblem-distinguished.svg \
         emblem-documents.svg \
+	emblem-favorites.svg \
         emblem-fun.svg \
         emblem-generic.svg \
+	emblem-idea.svg \
         emblem-important.svg \
         emblem-noread.svg \
         emblem-nowrite.svg \
