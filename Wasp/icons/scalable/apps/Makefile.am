@@ -49,6 +49,7 @@ EXTRA_DIST = $(icon_DATA)
 install-data-local:
 	mkdir -p $(DESTDIR)$(icondir)
 	cd $(DESTDIR)$(icondir) && \
+	ln -sf advanced-directory.svg system-tools-32.svg && \
 	ln -sf gnome-audio2.svg xmms.svg && \
 	ln -sf gnome-audio2.svg gnome-media-player.svg && \
 	ln -sf gnome-gimp.svg gnome-palette.svg && \
@@ -57,6 +58,7 @@ install-data-local:
 	ln -sf mozilla-star.svg web-browser.svg
 
 uninstall-local:
+	rm -rf $(DESTDIR)$(icondir)/system-tools-32.svg && \
 	rm -rf $(DESTDIR)$(icondir)/xmms.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-palette.svg && \
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \

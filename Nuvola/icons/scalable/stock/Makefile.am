@@ -17,6 +17,7 @@ icon_DATA = \
 	folder_new.svg \
 	folder.svg \
 	gnome-logo.svg \
+	panel-lockscreen.svg \
 	printer.svg \
 	print-preview.svg \
 	recycled.svg \
@@ -30,6 +31,7 @@ icon_DATA = \
 	stock_home.svg \
 	stock_quit.svg \
 	stock_redo.svg \
+	stock_run.svg \
 	stock_stop.svg \
 	stock_undo.svg
 

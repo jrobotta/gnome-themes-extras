@@ -10,6 +10,7 @@ icon_DATA = \
 	gnome-globe.svg \
 	gnome-graphics.svg \
 	gnome-joystick.svg \
+	gnome-lockscreen.svg \
 	gnome-logo.svg \
 	gnome-multimedia.svg \
 	gnome-searchtool.svg \
@@ -18,6 +19,7 @@ icon_DATA = \
 	mozilla.svg \
 	my-computer.svg \
 	realplayer.svg \
+	system-floppy.svg \
 	system-search-32.svg \
 	web-browser.svg \
 	$(NULL)

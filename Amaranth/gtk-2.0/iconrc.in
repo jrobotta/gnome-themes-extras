@@ -1,5 +1,5 @@
 pixmap_path "@DATADIR@/icons/Amaranth/scalable/stock"
-style "6nome-stock-icons"
+style "icon-style"
 {
   stock["gnome-stock-about"] = {{ "stock_about.svg" }}
 #  stock["gnome-stock-volume"] = {{ "stock_volume.svg" }}
@@ -33,10 +33,10 @@ style "6nome-stock-icons"
 #   stock["gtk-find"] =	       {{ "find.svg" }}
 #   stock["gtk-find-and-replace"] = {{ "findreplace.svg" }}
    stock["gtk-floppy"] =		{{ "stock_floppy.svg" }}
-   stock["gtk-go-back"] =	{{ "stock-go_back.svg" }}
-   stock["gtk-go-down"] =	{{ "stock-go_down.svg" }}
-   stock["gtk-go-forward"] =	{{ "stock-go_forward.svg" }}
-   stock["gtk-go-up"] =		{{ "stock-go_up.svg" }}
+   stock["gtk-go-back"] =	{{ "stock_go-back.svg" }}
+   stock["gtk-go-down"] =	{{ "stock_go-down.svg" }}
+   stock["gtk-go-forward"] =	{{ "stock_go-forward.svg" }}
+   stock["gtk-go-up"] =		{{ "stock_go-up.svg" }}
   stock["gtk-help"] =		{{ "stock_help.svg" }}
   stock["gtk-home"] =		{{ "stock_home.svg" }}
 #  stock["gtk-index"] =		{{ "stock_index.svg" }}
@@ -53,23 +53,23 @@ style "6nome-stock-icons"
 #  stock["gtk-ok"] =		{{ "button_ok.svg" }}
    stock["gtk-open"] =		{{ "stock_open.svg" }} 
 #  stock["gtk-paste"] =		{{ "editpaste.svg" }}
-#  stock["gtk-print"] =		{{ "printer.svg" }}
-#  stock["gtk-print-preview"] =	{{ "print-preview.svg" }}
-#  stock["gtk-preferences"] =	{{ "stock_preferences.svg" }}
+   stock["gtk-print"] =		{{ "stock_print.svg" }}
+   stock["gtk-print-preview"] =	{{ "stock_print-preview.svg" }}
+   stock["gtk-preferences"] =	{{ "stock_preferences.svg" }}
 #  stock["gtk-properties"] =	{{ "configure-b.svg" }}
    stock["gtk-quit"] =		{{ "stock_quit.svg" }}
    stock["gtk-redo"] =		{{ "stock_redo.svg" }}
-#  stock["gtk-refresh"] =	{{ "reload.svg" }}
+   stock["gtk-refresh"] =	{{ "stock_refresh.svg" }}
 #  stock["gtk-remove"] =		{{ "viewmag-_2.svg" }}
 #  stock["gtk-revert-to-saved"] ={{ "revert-small.svg" }}
    stock["gtk-save"] =		{{ "stock_floppy.svg" }}
 #  stock["gtk-save-as"] =	{{ "filesaveas.svg" }}
 #  stock["gtk-select-color"] =	{{ "stock_select-color.svg" }}
 #  stock["gtk-select-font"] =	{{ "stock_select-font.svg" }}
-#  stock["gtk-sort-ascending"] =	{{ "3downarrow.svg" }}
-#  stock["gtk-sort-descending"] ={{ "3uparrow.svg" }}
+   stock["gtk-sort-ascending"] = {{ "stock_gtk-sort-ascending.svg" }}
+   stock["gtk-sort-descending"] ={{ "stock_gtk-sort-descending.svg" }}
 #  stock["gtk-spell-check"] =	{{ "stock_spell-check.svg" }}
-#  stock["gtk-stop"] =		{{ "stop.svg" }}
+   stock["gtk-stop"] =		{{ "stock_stop.svg" }}
 #  stock["gtk-strikethrough"] =	{{ "stock_strikethrough.svg" }}
 #  stock["gtk-undelete"] =	{{ "recycled.svg" }}
 #  stock["gtk-underline"] =	{{ "text_under.svg" }}
@@ -97,7 +97,7 @@ style "6nome-stock-icons"
         #stock ["panel-searchtool"] =    {{"stock_searchtool.svg"}}
         #stock ["panel-screenshot"] =    {{"stock_screenshot.svg"}}
    stock ["panel-lockscreen"] =    {{"stock_lockscreen.svg"}}
-   stock ["panel-logout"] =        {{"stock_logout.svg"}}
+   stock ["panel-logout"] =        {{"stock_quit.svg"}}
    stock ["panel-gnome-logo"] =    {{"gnome-logo.svg"}}
 
         #stock ["panel-cde"] =           {{"stock_cde-menu.svg"}}
@@ -145,3 +145,4 @@ style "6nome-stock-icons"
         #stock ["mouse-dblclck-on"] =       {{"double-click-on.svg"}}
         #stock ["mouse-dblclck-off"] =      {{"double-click-off.svg"}}
 }
+class "GtkWidget" style "icon-style"

@@ -93,10 +93,10 @@ style "icon-style"
 #  stock["gtk-stock-disconnect"] = {{ "stock_disconnect.svg" }}
 #  stock["gtk-stock-reset"] = {{ "stock_reset.svg" }}
 
-        #stock ["panel-run"] =           {{"stock_run.svg"}}
+   stock ["panel-run"] =           {{"stock_run.svg"}}
    stock ["panel-searchtool"] =    {{"find.svg"}}
    stock ["panel-screenshot"] =    {{"applets-screenshooter.svg"}}
-        #stock ["panel-lockscreen"] =    {{"stock_lockscreen.svg"}}
+   stock ["panel-lockscreen"] =    {{"panel-lockscreen.svg"}}
    stock ["panel-logout"] =        {{"stock_quit.svg"}}
    stock ["panel-gnome-logo"] =    {{"gnome-logo.svg"}}
 

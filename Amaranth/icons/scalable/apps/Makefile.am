@@ -15,13 +15,14 @@ icon_DATA = \
 	gnome-cdplayer.svg \
 	gnome-devel.svg \
 	gnome-envelope.svg \
-	gnome-floppy.svg \
 	gnome-globe.svg \
 	gnome-graphics.svg \
 	gnome-help.svg \
 	gnome-icq.svg \
 	gnome-joystick.svg \
+	gnome-lockscreen.svg \
 	gnome-logo.svg \
+	gnome-media-player.svg \
 	gnome-multimedia.svg \
 	gnome-settings.svg \
 	gnome-terminal.svg \
@@ -34,6 +35,7 @@ icon_DATA = \
 	opera.svg \
 	sambaconf.svg \
 	seti.svg \
+	system-floppy.svg \
 	tex.svg \
 	xmms.svg \
 	$(NULL)
@@ -42,6 +44,7 @@ EXTRA_DIST = $(icon_DATA)
 install-data-local:
 	mkdir -p $(DESTDIR)$(icondir)
 	cd $(DESTDIR)$(icondir) && \
+	ln -sf advanced-directory.svg system-tools-32.svg && \
 	ln -sf gnome-envelope.svg evolution-1.4.svg && \
 	ln -sf gaim.svg gnome-gaim.svg && \
 	ln -sf gimp.svg gnome-palette.svg && \
@@ -52,6 +55,7 @@ install-data-local:
 	ln -sf my-computer.svg gnome-starthere.svg
 	
 uninstall-local:
+	rm -rf $(DESTDIR)$(icondir)/system-tools-32.svg && \
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-gaim.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-gimp.svg && \

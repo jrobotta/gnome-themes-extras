@@ -16,7 +16,6 @@ icon_DATA = \
 	stock_help.svg \
 	stock_home.svg \
 	stock_lockscreen.svg \
-	stock_logout.svg \
 	stock_new.svg \
 	stock_open.svg \
 	stock_preferences.svg \
