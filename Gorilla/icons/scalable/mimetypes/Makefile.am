@@ -20,5 +20,7 @@ icon_DATA = \
 		  $(NULL)
 EXTRA_DIST = $(icon_DATA)
 
-install-local:
+install-data-local:
 	cd $(icondir) && ln -s gnome-mime-font.svg gnome-mime-font-ttf.svg
+uninstall-local:
+	rm -rf $(icondir)/gnome-mime-font-ttf.svg

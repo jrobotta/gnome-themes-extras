@@ -1,6 +1,12 @@
 2003-01-23  Alex Duggan  <aldug@astrolinux.com>
 
 	* Gorilla/icons/scalable/mimetypes/Makefile.am:
+	* po/POTFILES.in:
+	Make distcheck fixes
+	
+2003-01-23  Alex Duggan  <aldug@astrolinux.com>
+
+	* Gorilla/icons/scalable/mimetypes/Makefile.am:
 	create a gnome-mime-font-ttf.svg symlink to gnome-mime-font.svg
 	
 2003-01-23  Alex Duggan  <aldug@astrolinux.com>
