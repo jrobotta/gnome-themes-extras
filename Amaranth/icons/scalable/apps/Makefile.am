@@ -5,7 +5,9 @@ icon_DATA = \
 	accessibility-keyboard-capplet.svg \
 	advanced-directory.svg \
 	apacheconf.svg \
+	camera.svg \
 	downloadmanager.svg \
+	email.svg \
 	evolution.svg \
 	gaim.svg \
 	gedit.svg \
@@ -16,9 +18,6 @@ icon_DATA = \
 	gnome-cardgame.svg \
 	gnome-cdplayer.svg \
 	gnome-devel.svg \
-	gnome-envelope.svg \
-	gnome-globe.svg \
-	gnome-graphics.svg \
 	gnome-help.svg \
 	gnome-icq.svg \
 	gnome-joystick.svg \
@@ -26,11 +25,16 @@ icon_DATA = \
 	gnome-logo.svg \
 	gnome-media-player.svg \
 	gnome-mixer.svg \
-	gnome-multimedia.svg \
 	gnome-settings.svg \
 	gnome-terminal.svg \
 	gnumeric.svg \
 	gpdf.svg \
+	icon-games.svg \
+	icon-gfx.svg \
+	icon-globe.svg \
+	icon-media.svg \
+	icon-panel-menu.svg \
+	icon-update.svg \
 	monitor.svg \
 	mozilla-icon.svg \
 	my-computer.svg \
@@ -57,8 +61,14 @@ install-data-local:
         ln -sf gnome-cdplayer.svg gnome-cdplayer-icon.svg && \
 	ln -sf monitor.svg redhat-config-xfree86.svg && \
 	ln -sf my-computer.svg gnome-starthere.svg && \
-	ln -sf evolution.svg redhat-email.svg
-	
+	ln -sf evolution.svg redhat-email.svg && \
+	ln -sf icon-games.svg gnome-joystick.svg && \
+	ln -sf icon-gfx.svg gnome-graphics.svg && \
+	ln -sf email.svg gnome-envelope.svg && \
+	ln -sf icon-globe.svg gnome-globe.svg && \
+	ln -sf icon-panel-menu.svg gnome-logo.svg && \
+	ln -sf gnome-multimedia.svg icon-media.svg
+
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/system-tools-32.svg && \
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
@@ -70,4 +80,10 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/mozilla-star.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-config-xfree86.svg  && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-starthere.svg && \
-	rm -rf $(DESTDIR)$(icondir)/redhat-email.svg
+	rm -rf $(DESTDIR)$(icondir)/redhat-email.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-joystick.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-graphics.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-envelope.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-globe.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-logo.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-multimedia.svg
