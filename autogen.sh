@@ -21,10 +21,10 @@ DIE=0
 	DIE=1
 }
 
-(automake-1.4 --version) < /dev/null > /dev/null 2>&1 || {
+(automake --version) < /dev/null > /dev/null 2>&1 || {
 	echo
 	echo "You must have automake installed to compile $PROJECT."
-	echo "Get ftp://sourceware.cygnus.com/pub/automake/automake-1.4.tar.gz"
+	echo "Get ftp://sourceware.cygnus.com/pub/automake/automake-1.6.tar.gz"
 	echo "(or a newer version if it is available)"
 	DIE=1
 }
@@ -113,14 +113,14 @@ do
 	echo "Running libtoolize..."
 	libtoolize --force --copy
       fi
-      echo "Running aclocal-1.4 $aclocalinclude ..."
-      aclocal-1.4 $aclocalinclude
+      echo "Running aclocal $aclocalinclude ..."
+      aclocal $aclocalinclude
       if grep "^AM_CONFIG_HEADER" configure.in >/dev/null; then
 	echo "Running autoheader..."
 	autoheader
       fi
       echo "Running automake --gnu $am_opt ..."
-      automake-1.4 --add-missing --gnu $am_opt
+      automake --add-missing --gnu $am_opt
       echo "Running autoconf ..."
       autoconf
     )

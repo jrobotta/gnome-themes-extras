@@ -1,0 +1,14 @@
+version 0.5.2 has been released. this adds fill=gradient/color1[state]/color2[state] support to allow more crux like defining of themes; fixes to allow a spacing of 0 for midlines etc; adds support for building rpm's for RH8 and RH9; supports gradients if "metacity" detail; and fixes gradients on menuitems on menubars for gtk1
+
+have decided to start doing sub-releases to get minor fixes out faster, current cvs is 0.5.1, next "official" release will be 0.5.2.
+
+version 0.5 has been released. with this version themes are a seperate module, and most of them are no longer available. This version offers many improvements and bug fixes over the previous, and some things may have got broken, in any event too many things too cover. In short, this version is superior in most ways so use it.
+
+version 0.5 is fast aproaching and CVS etc is now on SF at http://sf.net/projects/smooth-engine
+
+version 0.4 has been released,  this add supports for multiple check  styles, extended line support for theme parts: options, checks, & grips, and
+xpadding & ypadding for theme parts. There are also some minor improvements and the begining of general internal improvements.
+
+version 0.3 has been released, adding support for GTK1.2 along with many new and inexplicable bugs.. Thats right folks, I don't fix bugs, I make 'em.. 
+
+version 0.2 has been released to the public. woohoo!

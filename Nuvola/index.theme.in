@@ -8,6 +8,6 @@ _Comment=The Blue Style Surf
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=BlueSphere
-MetacityTheme=BlueSphere
+GtkTheme=Nuvola
+MetacityTheme=Galaxy
 IconTheme=Nuvola

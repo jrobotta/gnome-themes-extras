@@ -32,13 +32,15 @@ LUSH_TAR_FILES = \
 	Lush/icons/scalable/mimetypes/*.svg
 
 NUVOLA_TAR_FILES = \
+	Nuvola/gtk-2.0/gtkrc \
 	Nuvola/index.theme \
 	Nuvola/icons/index.theme \
 	Nuvola/icons/scalable/apps/*.svg \
 	Nuvola/icons/scalable/devices/*.svg \
 	Nuvola/icons/scalable/emblems/*.svg \
 	Nuvola/icons/scalable/filesystems/*.svg \
-	Nuvola/icons/scalable/mimetypes/*.svg
+	Nuvola/icons/scalable/mimetypes/*.svg \
+	Nuvola/icons/scalable/stock/*.svg 
 	
 tarballs: $(GORILLA_TAR_FILES) $(BLUESPHERE_TAR_FILES) $(GALAXY_TAR_FILES) $(LUSH_TAR_FILES) $(NUVOLA_TAR_FILES)
 	mkdir -p tarballs

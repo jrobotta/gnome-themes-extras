@@ -26,8 +26,8 @@ icon_DATA = \
 	gnome-mime-audio.svg \
 	gnome-mime-audio-x-midi.svg \
 	gnome-mime-audio-x-pn-realaudio.svg \
-	gnome-mime-image-svg.svg \
         gnome-mime-image.svg \
+	gnome-mime-image-xcf.svg \
         gnome-mime-text-html.svg \
 	gnome-mime-text.svg \
 	gnome-mime-text-x-c-header.svg \

@@ -7,6 +7,7 @@ icon_DATA = \
         emblem-danger.svg \
         emblem-distinguished.svg \
         emblem-documents.svg \
+	emblem-favourite.svg \
         emblem-fun.svg \
         emblem-generic.svg \
         emblem-important.svg \

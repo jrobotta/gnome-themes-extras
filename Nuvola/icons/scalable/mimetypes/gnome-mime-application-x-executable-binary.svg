@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   i:viewOrigin="178 524"
+   i:rulerOrigin="-178 -268"
+   i:pageBounds="178 524 434 268"
+   width="48pt"
+   height="48pt"
+   viewBox="0 0 256 256"
+   style="overflow:visible;enable-background:new 0 0 256 256"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:ns="&amp;ns_vars;"
+   xmlns:i="&amp;ns_ai;"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg153"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/mimetypes/gnome-mime-application-x-executable-binary.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/mimetypes">
+  <defs
+     id="defs183" />
+  <sodipodi:namedview
+     id="base" />
+  <metadata
+     id="metadata154">
+    <ns:variableSets>
+      <ns:variableSet
+         varSetName="binding1"
+         locked="none">
+        <ns:variables />
+        <ns:sampleDataSets />
+      </ns:variableSet>
+    </ns:variableSets>
+  </metadata>
+  <g
+     id="Layer_3"
+     i:layer="yes"
+     i:dimmedPercent="50"
+     i:rgbTrio="#4F00FFFF4F00"
+     style="stroke:#000000;">
+    <path
+       i:knockout="Off"
+       style="opacity:0.2;stroke:none;"
+       d="M49,19c-9.374,0-17,7.626-17,17v200c0,9.374,7.626,17,17,17h176c9.374,0,17-7.626,17-17    V36c0-9.374-7.626-17-17-17H49z"
+       id="path156" />
+    <linearGradient
+       id="XMLID_1_"
+       gradientUnits="userSpaceOnUse"
+       x1="23"
+       y1="130"
+       x2="233"
+       y2="130">
+      <stop
+         offset="0"
+         style="stop-color:#A7ABAC"
+         id="stop158" />
+      <stop
+         offset="1"
+         style="stop-color:#85898A"
+         id="stop159" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#A7ABAC"
+         id="midPointStop160" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#A7ABAC"
+         id="midPointStop161" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#85898A"
+         id="midPointStop162" />
+    </linearGradient>
+    <path
+       i:knockout="Off"
+       style="fill:url(#XMLID_1_);stroke:none;"
+       d="M40,13c-9.374,0-17,7.626-17,17v200c0,9.374,7.626,17,17,17h176c9.374,0,17-7.626,17-17    V30c0-9.374-7.626-17-17-17H40z"
+       id="path163" />
+    <path
+       i:knockout="Off"
+       style="fill:#99CCFF;stroke:none;"
+       d="M28,230c0,6.627,5.373,12,12,12h176c6.627,0,12-5.373,12-12V30c0-6.627-5.373-12-12-12H40    c-6.627,0-12,5.373-12,12V230z"
+       id="path164" />
+    <linearGradient
+       id="XMLID_2_"
+       gradientUnits="userSpaceOnUse"
+       x1="84.5029"
+       y1="86.5029"
+       x2="321.5015"
+       y2="323.5015">
+      <stop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="stop166" />
+      <stop
+         offset="1"
+         style="stop-color:#99CCFF"
+         id="stop167" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="midPointStop168" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#FFFFFF"
+         id="midPointStop169" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#99CCFF"
+         id="midPointStop170" />
+    </linearGradient>
+    <path
+       i:knockout="Off"
+       style="fill:url(#XMLID_2_);stroke:none;"
+       d="M40,23c-3.859,0-7,3.14-7,7v200c0,3.859,3.141,7,7,7h176c3.859,0,7-3.141,7-7V30    c0-3.86-3.141-7-7-7H40z"
+       id="path171" />
+    <path
+       i:knockout="Off"
+       style="opacity:0.4;fill:#FFFFFF;stroke:none;"
+       d="M163,108c18.593-17.431,40.938-26.006,65-30.265V30c0-6.627-5.373-12-12-12H40    c-6.627,0-12,5.373-12,12v143.268C77.582,177.009,124.478,142.51,163,108z"
+       id="path172" />
+    <g
+       i:knockout="Off"
+       id="g173">
+      <path
+         i:knockout="Off"
+         style="fill:#0066CC;stroke:none;"
+         d="M50.328,176.735h-0.096l-5.424,2.929l-0.816-3.216l6.816-3.648h3.6V204h-4.08V176.735z"
+         id="path174" />
+      <path
+         i:knockout="Off"
+         style="fill:#0066CC;stroke:none;"
+         d="M80.52,204.528c-6.096,0-10.272-5.712-10.368-16.032c0-10.513,4.56-16.225,10.896-16.225     c6.528,0,10.32,5.856,10.32,15.792c0,10.608-3.984,16.465-10.8,16.465H80.52z M80.711,201.264c4.272,0,6.336-5.04,6.336-13.008     c0-7.68-1.92-12.72-6.336-12.72c-3.84,0-6.336,4.896-6.336,12.72c-0.096,8.112,2.4,13.008,6.288,13.008H80.711z"
+         id="path175" />
+      <path
+         i:knockout="Off"
+         style="fill:#0066CC;stroke:none;"
+         d="M109.175,176.735h-0.096l-5.424,2.929l-0.816-3.216l6.816-3.648h3.6V204h-4.08V176.735z"
+         id="path176" />
+      <path
+         i:knockout="Off"
+         style="fill:#0066CC;stroke:none;"
+         d="M139.366,204.528c-6.097,0-10.272-5.712-10.368-16.032     c0-10.513,4.56-16.225,10.896-16.225c6.528,0,10.32,5.856,10.32,15.792c0,10.608-3.983,16.465-10.8,16.465H139.366z      M139.558,201.264c4.272,0,6.336-5.04,6.336-13.008c0-7.68-1.92-12.72-6.336-12.72c-3.84,0-6.336,4.896-6.336,12.72     c-0.096,8.112,2.4,13.008,6.288,13.008H139.558z"
+         id="path177" />
+      <path
+         i:knockout="Off"
+         style="fill:#0066CC;stroke:none;"
+         d="M168.021,176.735h-0.097l-5.424,2.929l-0.815-3.216l6.815-3.648h3.601V204h-4.08V176.735     z"
+         id="path178" />
+      <path
+         i:knockout="Off"
+         style="fill:#0066CC;stroke:none;"
+         d="M198.213,204.528c-6.097,0-10.272-5.712-10.368-16.032     c0-10.513,4.56-16.225,10.896-16.225c6.528,0,10.32,5.856,10.32,15.792c0,10.608-3.984,16.465-10.8,16.465H198.213z      M198.404,201.264c4.272,0,6.336-5.04,6.336-13.008c0-7.68-1.92-12.72-6.336-12.72c-3.84,0-6.336,4.896-6.336,12.72     c-0.096,8.112,2.4,13.008,6.288,13.008H198.404z"
+         id="path179" />
+    </g>
+  </g>
+  <g
+     id="Layer_2"
+     i:layer="yes"
+     i:editable="no"
+     i:dimmedPercent="50"
+     i:rgbTrio="#FFFF4F004F00"
+     style="stroke:#000000;">
+    <path
+       i:knockout="Off"
+       style="fill:none;stroke:none;"
+       d="M256,256H0V0h256V256z"
+       id="path181" />
+  </g>
+</svg>

@@ -6,22 +6,22 @@
    i:viewOrigin="178 524"
    i:rulerOrigin="-178 -268"
    i:pageBounds="178 524 434 268"
-   width="256"
-   height="256"
+   width="48pt"
+   height="48pt"
    viewBox="0 0 256 256"
    style="overflow:visible;enable-background:new 0 0 256 256"
    xml:space="preserve"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:ns="&amp;ns_vars;"
-   xmlns:i="&amp;ns_ai;"
-   xmlns:xml="http://www.w3.org/XML/1998/namespace"
-   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg153"
    sodipodi:version="0.32pre"
-   sodipodi:docname="/home/cschalle/gnome-themes-extras/Lush/icons/scalable/filesystems/gnome-fs-gnome.svg"
-   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Lush/icons/scalable/filesystems">
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Lush/icons/scalable/filesystems/gnome-fs-home.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Lush/icons/scalable/filesystems/"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:ns="&amp;amp;ns_vars;"
+   xmlns:i="&amp;amp;ns_ai;"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs237" />
   <sodipodi:namedview

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   i:viewOrigin="178 524"
+   i:rulerOrigin="-178 -268"
+   i:pageBounds="178 524 434 268"
+   width="48pt"
+   height="48pt"
+   viewBox="0 0 256 256"
+   style="overflow:visible;enable-background:new 0 0 256 256"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:ns="&amp;ns_vars;"
+   xmlns:i="&amp;ns_ai;"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg153"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/mimetypes/gnome-mime-audio-x-pn-realaudio.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/mimetypes">
+  <defs
+     id="defs189" />
+  <sodipodi:namedview
+     id="base" />
+  <metadata
+     id="metadata154">
+    <ns:variableSets>
+      <ns:variableSet
+         varSetName="binding1"
+         locked="none">
+        <ns:variables />
+        <ns:sampleDataSets />
+      </ns:variableSet>
+    </ns:variableSets>
+  </metadata>
+  <g
+     id="Layer_3"
+     i:layer="yes"
+     i:dimmedPercent="50"
+     i:rgbTrio="#4F00FFFF4F00"
+     style="stroke:#000000;">
+    <path
+       i:knockout="Off"
+       style="opacity:0.2;stroke:none;"
+       d="M49,19c-9.374,0-17,7.626-17,17v200c0,9.374,7.626,17,17,17h176c9.374,0,17-7.626,17-17    V36c0-9.374-7.626-17-17-17H49z"
+       id="path156" />
+    <linearGradient
+       id="XMLID_1_"
+       gradientUnits="userSpaceOnUse"
+       x1="23"
+       y1="130"
+       x2="233"
+       y2="130">
+      <stop
+         offset="0"
+         style="stop-color:#A7ABAC"
+         id="stop158" />
+      <stop
+         offset="1"
+         style="stop-color:#85898A"
+         id="stop159" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#A7ABAC"
+         id="midPointStop160" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#A7ABAC"
+         id="midPointStop161" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#85898A"
+         id="midPointStop162" />
+    </linearGradient>
+    <path
+       i:knockout="Off"
+       style="fill:url(#XMLID_1_);stroke:none;"
+       d="M40,13c-9.374,0-17,7.626-17,17v200c0,9.374,7.626,17,17,17h176c9.374,0,17-7.626,17-17    V30c0-9.374-7.626-17-17-17H40z"
+       id="path163" />
+    <path
+       i:knockout="Off"
+       style="fill:#99CCFF;stroke:none;"
+       d="M28,230c0,6.627,5.373,12,12,12h176c6.627,0,12-5.373,12-12V30c0-6.627-5.373-12-12-12H40    c-6.627,0-12,5.373-12,12V230z"
+       id="path164" />
+    <linearGradient
+       id="XMLID_2_"
+       gradientUnits="userSpaceOnUse"
+       x1="84.5029"
+       y1="86.5029"
+       x2="321.5015"
+       y2="323.5015">
+      <stop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="stop166" />
+      <stop
+         offset="1"
+         style="stop-color:#99CCFF"
+         id="stop167" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="midPointStop168" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#FFFFFF"
+         id="midPointStop169" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#99CCFF"
+         id="midPointStop170" />
+    </linearGradient>
+    <path
+       i:knockout="Off"
+       style="fill:url(#XMLID_2_);stroke:none;"
+       d="M40,23c-3.859,0-7,3.14-7,7v200c0,3.859,3.141,7,7,7h176c3.859,0,7-3.141,7-7V30    c0-3.86-3.141-7-7-7H40z"
+       id="path171" />
+    <path
+       i:knockout="Off"
+       style="opacity:0.4;fill:#FFFFFF;stroke:none;"
+       d="M163,108c18.593-17.431,40.938-26.006,65-30.265V30c0-6.627-5.373-12-12-12H40    c-6.627,0-12,5.373-12,12v143.268C77.582,177.009,124.478,142.51,163,108z"
+       id="path172" />
+    <path
+       i:knockout="Off"
+       style="opacity:0.4;fill:#999999;stroke:none;"
+       d="M17,103.774c0,24.054,25.271,43.622,56.335,43.622c6.078,0,12.035-0.778,17.759-2.245    c5.082,2.143,12.808,5.178,19.841,7.494c12.128,3.995,16.557,4.237,18.955,1.038c0.327-0.437,0.992-1.511,0.992-3.015    c0-1.199-0.423-2.672-1.777-4.312c-4.301-5.207-7.246-13.045-8.896-18.391c6.177-7.164,9.462-15.469,9.462-24.192    c0-24.053-25.272-43.621-56.336-43.621S17,79.722,17,103.774z"
+       id="path173" />
+    <path
+       i:knockout="Off"
+       style="fill:#3399FF;stroke:none;"
+       d="M5.513,92.774c0,24.054,25.271,43.622,56.335,43.622c6.078,0,12.035-0.778,17.759-2.245    c5.082,2.143,12.808,5.178,19.841,7.494c12.128,3.995,16.557,4.237,18.955,1.038c0.327-0.437,0.992-1.511,0.992-3.015    c0-1.199-0.423-2.672-1.777-4.312c-4.301-5.207-7.246-13.045-8.896-18.391c6.177-7.164,9.462-15.469,9.462-24.192    c0-24.053-25.272-43.621-56.336-43.621S5.513,68.722,5.513,92.774z"
+       id="path174" />
+    <linearGradient
+       id="XMLID_3_"
+       gradientUnits="userSpaceOnUse"
+       x1="39.9292"
+       y1="70.8564"
+       x2="92.0975"
+       y2="123.0247">
+      <stop
+         offset="0"
+         style="stop-color:#5F7FBA"
+         id="stop176" />
+      <stop
+         offset="1"
+         style="stop-color:#244A9F"
+         id="stop177" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#5F7FBA"
+         id="midPointStop178" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#5F7FBA"
+         id="midPointStop179" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#244A9F"
+         id="midPointStop180" />
+    </linearGradient>
+    <path
+       i:knockout="Off"
+       style="fill:url(#XMLID_3_);stroke:none;"
+       d="M114.237,138.15c-5.331-6.455-8.685-16.134-10.409-22.271    c6.265-6.481,9.971-14.465,9.971-23.104c0-21.67-23.26-39.237-51.951-39.237S9.896,71.104,9.896,92.774    c0,21.671,23.26,39.238,51.951,39.238c6.381,0,12.488-0.874,18.135-2.463C92.487,134.927,119.991,145.115,114.237,138.15z"
+       id="path181" />
+    <path
+       i:knockout="Off"
+       style="opacity:0.5;fill:#FFFFFF;stroke:none;"
+       d="M67.362,56.172c-0.085,0-0.168-0.004-0.253-0.004c-28.692,0-51.951,17.567-51.951,39.237    c0,3.956,0.783,7.774,2.226,11.376C19.723,92.715,30.681,73.398,67.362,56.172z"
+       id="path182" />
+    <path
+       i:knockout="Off"
+       style="stroke:none;"
+       d="M75.241,68.581c0,0-14.097,8.944-15.446,9.799c-1.614,0-23.616,0-23.616,0v32.018    c0,0,22.003,0,23.616,0c1.35,0.856,20.086,12.743,20.086,12.743L79.88,65.637L75.241,68.581z"
+       id="path183" />
+    <path
+       i:knockout="Off"
+       style="fill:#F0F0F0;stroke:none;"
+       d="M76.859,117.646V71.131L60.672,81.4H39.199v25.977h21.474L76.859,117.646z"
+       id="path184" />
+    <path
+       i:knockout="Off"
+       style="fill:#FFFFFF;stroke:none;"
+       d="M76.859,114.626V76.568l-16.188,8.402H39.199v21.253h21.474L76.859,114.626z"
+       id="path185" />
+  </g>
+  <g
+     id="Layer_2"
+     i:layer="yes"
+     i:editable="no"
+     i:dimmedPercent="50"
+     i:rgbTrio="#FFFF4F004F00"
+     style="stroke:#000000;">
+    <path
+       i:knockout="Off"
+       style="fill:none;stroke:none;"
+       d="M256,256H0V0h256V256z"
+       id="path187" />
+  </g>
+</svg>
