@@ -1,0 +1,50 @@
+# Swedish messages for gnome-themes-extras.
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-themes-extras
+# package.
+# Christian Rose <menthos@menthos.com>, 2003.
+#
+# $Id$
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras\n"
+"POT-Creation-Date: 2003-05-07 01:52+0200\n"
+"PO-Revision-Date: 2003-05-07 01:53+0200\n"
+"Last-Translator: Christian Rose <menthos@menthos.com>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "Gorilla"
+
+#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2
+msgid "Vector Theme"
+msgstr "Vektortema"
+
+#: Gorilla/index.theme.in.h:2
+msgid "The vector mono Godess"
+msgstr "Vektorgudinnan"
+
+#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "Grönska"
+
+#: Lush/index.theme.in.h:2
+msgid "Lushy SVG icons with Mandrake Galaxy"
+msgstr "Grönskande SVG-ikoner med Mandrake Galaxy"
+
+#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "Nuvola"
+
+#: Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "Den blåa bränningen"
+
+#~ msgid "Lushy SVG icons"
+#~ msgstr "Grönskande SVG-ikoner"
