@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras VERSION\n"
-"POT-Creation-Date: 2003-05-18 12:28+0200\n"
-"PO-Revision-Date: 2003-05-18 14:43+0200\n"
+"POT-Creation-Date: 2003-05-21 05:05+0200\n"
+"PO-Revision-Date: 2003-05-21 10:41+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgid "Gorilla"
 msgstr "Gorila"
 
 #: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
-#: Nuvola/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
 msgid "Vector Theme"
 msgstr "Vektorové téma"
 
@@ -50,3 +50,11 @@ msgstr "Nuvola"
 #: Nuvola/index.theme.in.h:2
 msgid "The Blue Style Surf"
 msgstr "Surfování v modrém stylu"
+
+#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "Vosa"
+
+#: Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "Téma ve stylu BeOS"
