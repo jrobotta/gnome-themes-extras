@@ -1,3 +1,7 @@
+2004-08-11  Adam Weinberger  <adamw@gnome.org>
+
+	* configure.in: Added en_CA to ALL_LINGUAS.
+
 2004-07-28  Gustavo Maciel Dias Vieira  <gustavo@sagui.org>
 
 	* configure.in: Added pt_BR to ALL_LINGUAS.
