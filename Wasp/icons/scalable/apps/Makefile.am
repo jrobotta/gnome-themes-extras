@@ -14,6 +14,7 @@ icon_DATA = \
 	gnome-devel.svg \
 	gnome-gimp.svg \
 	gnome-globe.svg \
+	gnome-multimedia.svg \
 	gnome-joystick.svg \
 	gnome-printer-properties.svg \
 	gnumeric.svg \

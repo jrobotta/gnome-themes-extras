@@ -10,6 +10,7 @@ icon_DATA = \
         gnome-mime-application-vnd.sun.xml.draw.svg \
         gnome-mime-application-vnd.sun.xml.impress.svg \
         gnome-mime-application-vnd.sun.xml.writer.svg \
+	gnome-mime-application-x-abiword.svg \
 	gnome-mime-application-x-deb.svg \
 	gnome-mime-application-x-dvi.svg \
 	gnome-mime-application-x-executable-binary.svg \

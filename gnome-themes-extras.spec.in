@@ -29,6 +29,7 @@ rm -rf ${RPM_BUILD_ROOT}
 ### Remove files not to be installed
 rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/@GTK_BINARY_VERSION@/engines/*.la
 rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/@GTK_BINARY_VERSION@/engines/*.a
+
 %clean
 rm -rf ${RPM_BUILD_ROOT}
 
