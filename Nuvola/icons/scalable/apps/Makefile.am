@@ -95,7 +95,8 @@ install-data-local:
 	ln -sf ooo_impress.svg redhat-presentations.svg && \
 	ln -sf ooo_writer.svg redhat-word-processor.svg && \
 	ln -sf sodipodi.svg inkscape.svg && \
-	ln -sf kasteroids.svg maelstrom.svg
+	ln -sf kasteroids.svg maelstrom.svg && \
+	ln -sf mplayer.svg mplayer-logo.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
@@ -112,4 +113,5 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gedit-icon.svg && \
 	rm -rf $(DESTDIR)$(icondir)/inkscape.svg && \
 	rm -rf $(DESTDIR)$(icondir)/maelstrom.svg && \
-	rm -rf $(DESTDIR)$(icondir)/evolution.svg
+	rm -rf $(DESTDIR)$(icondir)/evolution.svg && \
+	rm -rf $(DESTDIR)$(icondir)/mplayer-logo.svg
