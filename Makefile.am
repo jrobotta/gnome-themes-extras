@@ -40,7 +40,8 @@ NUVOLA_TAR_FILES = \
 	Nuvola/icons/scalable/emblems/*.svg \
 	Nuvola/icons/scalable/filesystems/*.svg \
 	Nuvola/icons/scalable/mimetypes/*.svg \
-	Nuvola/icons/scalable/stock/*.svg 
+	Nuvola/icons/scalable/stock/*.svg  \
+	Nuvola/metacity-1/metacity-theme-1.xml Nuvola/metacity-1/*.png
 	
 tarballs: $(GORILLA_TAR_FILES) $(BLUESPHERE_TAR_FILES) $(GALAXY_TAR_FILES) $(LUSH_TAR_FILES) $(NUVOLA_TAR_FILES)
 	mkdir -p tarballs
