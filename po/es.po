@@ -1,29 +1,33 @@
 # translation of gnome-themes-extras.HEAD.es.po to Spanish
 # translation of gnome-themes-extras.HEAD.po to Spanish
 # This file is distributed under the same license as the PACKAGE package.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# Francisco Javier F. Serrador <serrador@arrakis.es>, 2003
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Francisco Javier F. Serrador <serrador@arrakis.es>, 2003.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-themes-extras.HEAD.es\n"
+"Project-Id-Version: gnome-themes-extras.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-07-19 20:19+0200\n"
-"PO-Revision-Date: 2003-07-20 04:18+0200\n"
+"POT-Creation-Date: 2003-08-25 12:41+0200\n"
+"PO-Revision-Date: 2003-08-25 13:41+0200\n"
 "Last-Translator: Francisco Javier F. Serrador <serrador@arrakis.es>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0.1\n"
+"X-Generator: KBabel 1.0.2\n"
 
-#: Galaxy/index.theme.in.h:1
-msgid "Galaxy"
-msgstr "Galaxy"
+#: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
+msgid "Amaranth"
+msgstr "Amaranto"
 
-#: Galaxy/index.theme.in.h:2
-msgid "Mandrake Linux theme"
-msgstr "Tema de Mandrake Linux"
+#: Amaranth/icons/index.theme.in.h:2
+msgid "Silver Vector Theme"
+msgstr "Tema vectorial plateado"
+
+#: Amaranth/index.theme.in.h:2
+msgid "Sterling Silver "
+msgstr "Plata de Ley"
 
 #: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
 msgid "Gorilla"
@@ -36,11 +40,11 @@ msgstr "Tema vectorial"
 
 #: Gorilla/index.theme.in.h:2
 msgid "The vector mono Godess"
-msgstr "La diosa mono vectorial"
+msgstr "La Diosa mono vectorial"
 
 #: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
 msgid "Lush"
-msgstr "Jugoso"
+msgstr "Lozano"
 
 #: Lush/index.theme.in.h:2
 msgid "Mild green theme"
@@ -61,6 +65,12 @@ msgstr "Avispa"
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "Tema de estilo BeOS"
+
+#~ msgid "Galaxy"
+#~ msgstr "Galaxy"
+
+#~ msgid "Mandrake Linux theme"
+#~ msgstr "Tema de Mandrake Linux"
 
 #~ msgid "Lushy SVG icons"
 #~ msgstr "Iconos SVG jugosos"
