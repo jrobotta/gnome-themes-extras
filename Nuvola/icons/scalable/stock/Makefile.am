@@ -12,5 +12,6 @@ icon_DATA = \
 	folder.svg \
 	forward.svg \
 	home.svg \
+	recycled.svg \
 	up.svg
 EXTRA_DIST = $(icon_DATA)
