@@ -1,5 +1,9 @@
 2004-06-09  Jakub Steiner <jimmac@ximian.com>
 
+	* (Gorilla) .. devices/gnome-fs-floppy.svg: 3D should suit it
+
+2004-06-09  Jakub Steiner <jimmac@ximian.com>
+
 	* (Gorilla) .. apps/Makefile.am:
 	* (Gorilla) .. filesystems/Makefile.am:
 	* (Gorilla) .. mimetypes/Makefile.am: symlink fixes
