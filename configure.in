@@ -62,7 +62,7 @@ Makefile
 gnome-themes-extras.spec
 Amaranth/Makefile
 Amaranth/gtk-2.0/Makefile
-Amaranth/gtk-2.0/gtkrc
+Amaranth/gtk-2.0/iconrc
 Amaranth/metacity-1/Makefile
 Amaranth/icons/Makefile
 Amaranth/icons/scalable/Makefile
@@ -88,6 +88,7 @@ Gorilla/metacity-1/Makefile
 Nuvola/Makefile
 Nuvola/gtk-2.0/Makefile
 Nuvola/gtk-2.0/iconrc
+Nuvola/gtk-1.0/Makefile
 Nuvola/metacity-1/Makefile
 Nuvola/icons/Makefile
 Nuvola/icons/scalable/Makefile
@@ -121,5 +122,6 @@ Wasp/icons/scalable/emblems/Makefile
 Wasp/icons/scalable/filesystems/Makefile
 Wasp/icons/scalable/mimetypes/Makefile
 Wasp/icons/scalable/stock/Makefile
+Smooth/Makefile
 po/Makefile.in
 ])

@@ -1,4 +1,4 @@
-SUBDIRS= Amaranth Gorilla Nuvola Lush Wasp po
+SUBDIRS= Amaranth Gorilla Nuvola Lush Wasp Smooth po
 EXTRA_DIST = \
 	gnome-themes-extras.spec gnome-themes-extras.spec.in \
 	intltool-extract.in  intltool-merge.in  intltool-update.in m4 \

@@ -1,3 +1,14 @@
+2003-08-04 Christian Schaller <Uraeus@gnome.org>
+
+	* Moved Smooth into separate subdir
+	* Patch Smooth to latest version
+	* Added new Amaranth theme from ajgenius
+	* Fixed old commented out Gorilla app symlink
+	* Add new stock icons to Lush
+	* Add new stock icons to Nuvola
+	* Added a few app icons for Amaranth
+	* Added fake Nuvola gtk-1 from James Ogley
+
 2003-07-31 Christian Schaller <Uraeus@gnome.org>
 
 	* Added lots of new Amaranth icons from Michael Doches
