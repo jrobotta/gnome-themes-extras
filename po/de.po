@@ -6,9 +6,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-themes-extra 0.6\n"
-"POT-Creation-Date: 2003-05-16 23:59+0200\n"
-"PO-Revision-Date: 2003-04-16 01:42+0200\n"
+"Project-Id-Version: gnome-themes-extra 0.1\n"
+"POT-Creation-Date: 2003-05-20 18:29+0200\n"
+"PO-Revision-Date: 2003-05-20 18:29+0200\n"
 "Last-Translator: Christian Neumair <chris@gnome-de.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgid "Gorilla"
 msgstr "Gorilla"
 
 #: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
-#: Nuvola/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
 msgid "Vector Theme"
 msgstr "Vektorthema"
 
@@ -42,7 +42,7 @@ msgstr "Satt"
 
 #: Lush/index.theme.in.h:2
 msgid "Lushy SVG icons"
-msgstr ""
+msgstr "Satte SVG-Symbole"
 
 #: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
 msgid "Nuvola"
@@ -51,6 +51,14 @@ msgstr "Nuvola"
 #: Nuvola/index.theme.in.h:2
 msgid "The Blue Style Surf"
 msgstr "Blau wie die Brandung"
+
+#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "Wespe"
+
+#: Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "Thema im BeOS-Stil"
 
 #~ msgid "Lushy SVG icons with Mandrake Galaxy"
 #~ msgstr "Satte SVG-Symbole und Mandrakes Galaxy-Thema"
