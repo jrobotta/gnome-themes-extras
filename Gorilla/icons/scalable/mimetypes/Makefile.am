@@ -19,3 +19,6 @@ icon_DATA = \
         gnome-mime-video.svg \
 		  $(NULL)
 EXTRA_DIST = $(icon_DATA)
+
+install-local:
+	cd $(icondir) && ln -s gnome-mime-font.svg gnome-mime-font-ttf.svg
