@@ -14,6 +14,7 @@ Requires:	gnome-panel >= 2.2.2.2
 Requires:	librsvg2 >= 2.2.0
 Obsoletes:	Nuvola
 Obsoletes:	gtk-smooth-engine
+Obsoletes:	ximian-artwork
 
 %description
 Additional themes collection for GNOME
