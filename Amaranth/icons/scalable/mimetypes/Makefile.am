@@ -12,6 +12,7 @@ icon_DATA = \
 	gnome-mime-image-xcf.svg \
 	gnome-mime-text.svg \
 	gnome-mime-text-x-asm.svg \
+	gnome-mime-text-c.svg \
 	gnome-mime-text-x-c-header.svg \
 	gnome-mime-text-x-c++.svg \
 	gnome-mime-text-x-fortran.svg \
