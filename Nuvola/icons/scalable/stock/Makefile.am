@@ -7,7 +7,6 @@ icon_DATA = \
 	editcopy.svg \
 	editdelete.svg \
 	editpaste.svg \
-	edit.svg \
 	filenew.svg \
 	fileopen.svg \
 	filesave.svg \
@@ -21,18 +20,32 @@ icon_DATA = \
 	printer.svg \
 	print-preview.svg \
 	recycled.svg \
-	reload.svg \
 	stock_cdrom.svg \
 	stock_cut.svg \
+	stock_desktop.svg \
+	stock_edit.svg \
 	stock_go-back.svg \
 	stock_go-down.svg \
 	stock_go-forward.svg \
 	stock_go-up.svg \
+	stock-gtk-remove.svg \
+	stock_help.svg \
 	stock_home.svg \
+	stock-media-eject.svg \
+	stock-media-ffwd.svg \
+	stock-media-next.svg \
+	stock-media-play.svg \
+	stock-media-prev.svg \
+	stock-media-rewind.svg \
+	stock-media-stop.svg \
+	stock-media-pause.svg \
 	stock_quit.svg \
 	stock_redo.svg \
+	stock_reload.svg \
+	stock-revert-to-saved.svg \
 	stock_run.svg \
 	stock_stop.svg \
-	stock_undo.svg
+	stock_undo.svg \
+	stock-volume.svg
 
 EXTRA_DIST = $(icon_DATA)

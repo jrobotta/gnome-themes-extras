@@ -2,8 +2,7 @@ pixmap_path "@DATADIR@/icons/Nuvola/scalable/stock"
 style "icon-style"
 {
 #  stock["gnome-stock-about"] = {{ "star-button.svg" }}
-#  stock["gnome-stock-volume"] = {{ "stock_volume.svg" }}
-#  stock["gnome-stock-volume"] = {{ "stock_balance.svg" }}
+   stock["gnome-stock-volume"] = {{ "stock-volume.svg" }}
 #  stock["gnome-stock-mic"] = {{ "stock_mic.svg" }}
 #  stock["gnome-stock-line-in"] = {{ "stock_line-in.svg" }}
 #  stock["gnome-stock-attach"] = {{ "stock_attach.svg" }}
@@ -28,7 +27,7 @@ style "icon-style"
 #  stock["gtk-convert"] =       {{ "stock_convert.svg" }}
    stock["gtk-copy"] =	       {{ "editcopy.svg" }}
    stock["gtk-cut"] =	       {{ "stock_cut.svg" }}
-   stock["gtk-delete"] =	       {{ "editdelete.svg" }}
+   stock["gtk-delete"] =	{{ "editdelete.svg" }}
 #  stock["gtk-execute"] =       {{ "exec-small.svg" }}
    stock["gtk-find"] =	       {{ "find.svg" }}
    stock["gtk-find-and-replace"] = {{ "findreplace.svg" }}
@@ -37,7 +36,7 @@ style "icon-style"
    stock["gtk-go-down"] =	{{ "stock_go-down.svg" }}
    stock["gtk-go-forward"] =	{{ "stock_go-forward.svg" }}
    stock["gtk-go-up"] =		{{ "stock_go-up.svg" }}
-#  stock["gtk-help"] =		{{ "help.svg" }}
+  stock["gtk-help"] =		{{ "stock_help.svg" }}
   stock["gtk-home"] =		{{ "stock_home.svg" }}
 #  stock["gtk-index"] =		{{ "stock_index.svg" }}
 #  stock["gtk-italic"] =		{{ "text_italic.svg" }}
@@ -59,9 +58,9 @@ style "icon-style"
 #  stock["gtk-properties"] =	{{ "configure-b.svg" }}
   stock["gtk-quit"] =		{{ "stock_quit.svg" }}
   stock["gtk-redo"] =		{{ "stock_redo.svg" }}
-   stock["gtk-refresh"] =	{{ "reload.svg" }}
-#  stock["gtk-remove"] =		{{ "viewmag-_2.svg" }}
-#  stock["gtk-revert-to-saved"] ={{ "revert-small.svg" }}
+   stock["gtk-refresh"] =	{{ "stock_reload.svg" }}
+   stock["gtk-remove"] =	{{ "stock-gtk-remove.svg" }}
+   stock["gtk-revert-to-saved"] ={{ "stock-revert-to-saved.svg" }}
    stock["gtk-save"] =		{{ "filesave.svg" }}
    stock["gtk-save-as"] =	{{ "filesaveas.svg" }}
 #  stock["gtk-select-color"] =	{{ "stock_select-color.svg" }}
@@ -83,7 +82,7 @@ style "icon-style"
 #  stock["terminal-edit"] =      {{ "stock_preferences.svg" }}
 #  stock["session-stock-edit"] = {{ "stock_preferences.svg" }}
   
-   stock["gtk-stock-edit"] =      {{ "edit.svg" }}
+   stock["gtk-stock-edit"] =      {{ "stock_edit.svg" }}
 #  stock["gtk-stock-import"] =      {{ "stock_import.svg" }}
 #  stock["gtk-stock-export"] =      {{ "stock_export.svg" }}
 #  stock["gtk-stock-insert-image"] =      {{ "stock_insert-image.svg" }}
@@ -122,24 +121,24 @@ style "icon-style"
 
         #stock ["panel-drawer"] =        {{"stock_drawer.svg"}}
 #       stock ["panel-applet"] =        {{""}}
-#       stock ["panel-desktop"] =       {{""}}
+        stock ["panel-desktop"] =       {{"stock_desktop.svg"}}
 
 #stock ["commandline-browser"] =	{{"stock_commandline-browser.xpm"}}
 #stock ["commandline-history"] =	{{"stock_commandline-history.xpm"}}
 
 
-# stock ["cdplayer-stop"] =       {{"player_stop.svg"}}
-# stock ["cdplayer-play"] = 	{{"noatunplay.svg"}}
-# stock ["cdplayer-pause"] = 	{{"noatunpause.svg"}}
-# stock ["cdplayer-prev"] =       {{"noatunback.svg"}}
-# stock ["cdplayer-next"] =       {{"noatunforward.svg"}}
-# stock ["cdplayer-eject"] =      {{"player_eject.svg"}}
+	stock ["cdplayer-stop"] =       {{"stock-media-stop.svg"}}
+	stock ["cdplayer-play"] = 	{{"stock-media-play.svg"}}
+	stock ["cdplayer-pause"] = 	{{"stock-media-pause.svg"}}
+	stock ["cdplayer-prev"] =       {{"stock-media-prev.svg"}}
+	stock ["cdplayer-next"] =       {{"stock-media-next.svg"}}
+	stock ["cdplayer-eject"] =      {{"stock-media-eject.svg"}}
 
 	     #stock ["volume-mute"] =      	{{"volume-mute.svg"}}
-        #stock ["volume-zero"] =      	{{"volume-zero.svg"}}
-        #stock ["volume-min"] =      	{{"volume-min.svg"}}
-        #stock ["volume-med"] =      	{{"volume-medium.svg"}}
-        #stock ["volume-max"] =      	{{"volume-max.svg"}}
+        stock ["volume-zero"] =      	{{"stock-volume.svg"}}
+        stock ["volume-min"] =      	{{"stock-volume.svg"}}
+        stock ["volume-med"] =      	{{"stock-volume.svg"}}
+        stock ["volume-max"] =      	{{"stock-volume.svg"}}
 
         #stock ["mouse-dblclck-maybe"] =    {{"double-click-maybe.svg"}}
         #stock ["mouse-dblclck-on"] =       {{"double-click-on.svg"}}
