@@ -1,0 +1,66 @@
+# Bulgarian translation of gnome-themes-extra.
+# Copyright (C) 2005 gnome-themes-extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-themes-extra package.
+# Stanimir Djevelekov <kori.mendocino@gmail.com>, 2005.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extra 0.8.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-04-05 17:35+0300\n"
+"PO-Revision-Date: 2005-04-05 17:34+0300\n"
+"Last-Translator: Stanimir Djevelekov <kori.mendocino@gmail.com>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../Amaranth/icons/index.theme.in.h:1 ../Amaranth/index.theme.in.h:1
+msgid "Amaranth"
+msgstr "Амарант"
+
+#: ../Amaranth/icons/index.theme.in.h:2
+msgid "Silver Vector Theme"
+msgstr "Сребърен векторен изглед"
+
+#: ../Amaranth/index.theme.in.h:2
+msgid "Sterling Silver"
+msgstr "Чисто сребро"
+
+#: ../Gorilla/icons/index.theme.in.h:1 ../Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "Горила"
+
+#: ../Gorilla/icons/index.theme.in.h:2 ../Lush/icons/index.theme.in.h:2
+#: ../Nuvola/icons/index.theme.in.h:2 ../Wasp/icons/index.theme.in.h:1
+msgid "Vector Theme"
+msgstr "Векторен изглед"
+
+#: ../Gorilla/index.theme.in.h:2
+msgid "The Vector Mono Goddess"
+msgstr "Векторната богиня на Моно"
+
+#: ../Lush/icons/index.theme.in.h:1 ../Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "Поляна"
+
+#: ../Lush/index.theme.in.h:2
+msgid "Mild green theme"
+msgstr "Тучно-зелен изглед"
+
+#: ../Nuvola/icons/index.theme.in.h:1 ../Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "Нуовола"
+
+#: ../Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "Стилно син изглед"
+
+#: ../Wasp/icons/index.theme.in.h:2 ../Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "Оса"
+
+#: ../Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "Изглед в стила на BeOS"
