@@ -33,8 +33,12 @@ icon_DATA = \
 	gnome-mime-text-x-c-header.svg \
 	gnome-mime-text-x-c.svg \
 	gnome-mime-text-x-c++.svg \
+	gnome-mime-text-x-fortran.svg \
+	gnome-mime-text-x-pascal.svg \
 	gnome-mime-text-x-install.svg \
 	gnome-mime-text-x-java.svg \
+	gnome-mime-text-x-asm.svg \
+	gnome-mime-text-x-yacc.svg \
 	gnome-mime-text-x-readme.svg \
 	gnome-mime-text-x-sh.svg \
 	gnome-mime-video-mpeg.svg \
