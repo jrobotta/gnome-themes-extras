@@ -18,6 +18,7 @@ icon_DATA = \
         emblem-relax.svg \
         emblem-symbolic-link.svg \
         emblem-multimedia.svg \
+        emblem-urgent.svg \
         emblem-web.svg \
         $(NULL)
 EXTRA_DIST = $(icon_DATA)

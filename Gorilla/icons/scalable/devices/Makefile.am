@@ -7,5 +7,6 @@ icon_DATA = \
         gnome-dev-harddisk.svg \
         gnome-dev-cdrom.svg \
         gnome-dev-network.svg \
+        gnome-dev-rw.svg \
         $(NULL)
 EXTRA_DIST = $(icon_DATA)
