@@ -47,7 +47,7 @@ AC_FUNC_MMAP
 AC_FUNC_ALLOCA
 AC_CHECK_FUNCS(setenv putenv)
 
-ALL_LINGUAS="ca cs de es fr he pt sv zh_TW"
+ALL_LINGUAS="ca cs de es fr he pt sv tr zh_TW"
 AM_GLIB_GNU_GETTEXT
 
 AC_OUTPUT([
