@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-08-25 12:41+0200\n"
-"PO-Revision-Date: 2003-08-25 13:41+0200\n"
+"POT-Creation-Date: 2003-08-30 12:26+0200\n"
+"PO-Revision-Date: 2003-08-30 19:52+0200\n"
 "Last-Translator: Francisco Javier F. Serrador <serrador@arrakis.es>\n"
 "Language-Team: Spanish <traductores@es.gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgid "Silver Vector Theme"
 msgstr "Tema vectorial plateado"
 
 #: Amaranth/index.theme.in.h:2
-msgid "Sterling Silver "
+msgid "Sterling Silver"
 msgstr "Plata de Ley"
 
 #: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
