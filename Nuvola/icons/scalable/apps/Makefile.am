@@ -5,6 +5,7 @@ icon_DATA = \
 	accessories.svg \
 	camera.svg \
 	evolution-1.4.svg \
+	gedit.svg \
 	gnome-applications.svg \
 	gnome-ccdesktop.svg \
 	gnome-envelope.svg \
@@ -60,6 +61,7 @@ install-data-local:
 	ln -sf gnome-applications.svg redhat-office.svg && \
 	ln -sf accessories.svg redhat-accessories.svg && \
 	ln -sf my-computer.svg redhat-home.svg && \
+	ln -sf gedit.svg gedit-icon.svg && \
 	ln -sf gnome-joystick.svg redhat-games.svg && \
 	ln -sf gnome-graphics.svg redhat-graphics.svg && \
 	ln -sf gnome-globe.svg web-browser.svg && \
@@ -81,4 +83,5 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/redhat-*.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-main-menu.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mouse.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-audio.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-audio.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gedit-icon.svg

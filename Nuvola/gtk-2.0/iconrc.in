@@ -20,7 +20,7 @@ style "icon-style"
    stock["gtk-add"] =	       {{ "bookmark_add.svg" }}
 #  stock["gtk-apply"] =	       {{ "stock_apply.svg" }}
 #  stock["gtk-bold"] =	       {{ "text_bold.svg" }} 
-#  stock["gtk-cancel"] =	       {{ "button_cancel.svg" }}
+   stock["gtk-cancel"] =	       {{ "stock_stock.svg" }}
    stock["gtk-cdrom"] =	       {{ "stock_cdrom.svg" }}
 #  stock["gtk-clear"] =	       {{ "editdelete-2.1.svg" }}
 #  stock["gtk-close"] =	       {{ "kill.svg" }}
@@ -51,7 +51,7 @@ style "icon-style"
    stock["gtk-missing-image"] =	{{ "brokenimage.svg" }}
    stock["gtk-new"] =	     	{{ "filenew.svg" }}
 #  stock["gtk-no"] =		{{ "stock_no.svg" }} 
-#  stock["gtk-ok"] =		{{ "button_ok.svg" }}
+   stock["gtk-ok"] =		{{ "stock_ok.svg" }}
    stock["gtk-open"] =		{{ "fileopen.svg" }} 
    stock["gtk-paste"] =		{{ "editpaste.svg" }}
    stock["gtk-print"] =		{{ "printer.svg" }}
