@@ -124,6 +124,7 @@ Wasp/icons/scalable/mimetypes/Makefile
 Wasp/icons/scalable/stock/Makefile
 Smooth/Makefile
 Industrial/Makefile
+Industrial/gtk-2.0/gtkrc
 Industrial/gtk-2.0/Makefile
 po/Makefile.in
 ])
