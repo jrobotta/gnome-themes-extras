@@ -22,10 +22,10 @@ PKG_CHECK_MODULES(GTK,
 		  gtk+-2.0 >= 2.0.0,,
 		AC_MSG_ERROR([GTK+-2.0 is required to compile gtk-engines]))
 
-GTK_VERSION=`$PKG_CONFIG --variable=gtk_binary_version gtk+-2.0`
+GTK_BINARY_VERSION=`$PKG_CONFIG --variable=gtk_binary_version gtk+-2.0`
 AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
-AC_SUBST(GTK_VERSION)
+AC_SUBST(GTK_BINARY_VERSION)
 
 # Checks for header files.
 AC_HEADER_STDC
@@ -42,15 +42,12 @@ AC_FUNC_MMAP
 AC_FUNC_ALLOCA
 AC_CHECK_FUNCS(setenv putenv)
 
-
-GTK_VERSION=`$PKG_CONFIG --variable=gtk_binary_version gtk+-2.0`
-AC_SUBST(GTK_VERSION)
-
 ALL_LINGUAS=""
 AM_GLIB_GNU_GETTEXT
 
 AC_OUTPUT([
 Makefile
+gnome-themes-extras.spec
 Gorilla/Makefile
 Gorilla/gtk/Makefile
 Gorilla/gtk-2.0/Makefile

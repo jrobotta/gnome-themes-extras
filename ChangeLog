@@ -1,3 +1,10 @@
+2003-04-04  Yanko Kaneti <yaneti@declera.com>
+
+	* configure.in:
+	* gnome-themes-extras.spec.in (added): First spec. 
+	* Galaxy/gtk-2.0/Makefile.am: 
+	* Makefile.am: install the Galaxy theme in the correct place.
+
 2003-03-39  Christian F.K. Schaller <Uraeus@gnome.org>
 	* Added Lush, BlueSphere and Galaxy themes
 
