@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the gnome-themes-extra
 # package.
 # Christian Neumair <chris@gnome-de.org>, 2003.
-#
+# 
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-themes-extra 0.1\n"
+"Project-Id-Version: gnome-themes-extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-31 17:10+0200\n"
-"PO-Revision-Date: 2003-05-20 18:29+0200\n"
-"Last-Translator: Christian Neumair <chris@gnome-de.org>\n"
+"POT-Creation-Date: 2005-01-12 14:45+0100\n"
+"PO-Revision-Date: 2005-01-12 14:45+0100\n"
+"Last-Translator: Frank Arnold <frank@scirocco-5v-turbo.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,10 +24,9 @@ msgstr "Amaranth"
 
 #: Amaranth/icons/index.theme.in.h:2
 msgid "Silver Vector Theme"
-msgstr "Slibernes Vektorthema"
+msgstr "Silbernes Vektorthema"
 
 #: Amaranth/index.theme.in.h:2
-#, fuzzy
 msgid "Sterling Silver"
 msgstr "Sterling Silber"
 
@@ -41,9 +41,8 @@ msgid "Vector Theme"
 msgstr "Vektorthema"
 
 #: Gorilla/index.theme.in.h:2
-#, fuzzy
 msgid "The Vector Mono Goddess"
-msgstr "Die einzig wahre Vektor-Gottheit"
+msgstr "Die Vektor-Mono-Göttin"
 
 # Eigenname
 #: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
@@ -51,9 +50,8 @@ msgid "Lush"
 msgstr "Lush"
 
 #: Lush/index.theme.in.h:2
-#, fuzzy
 msgid "Mild green theme"
-msgstr "Mandrakes Linux-Thema"
+msgstr "Weiches grünes Thema"
 
 # Eigenname
 #: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
