@@ -20,6 +20,7 @@ icon_DATA = \
         gnome-mime-image.svg \
         gnome-mime-text.svg \
         gnome-mime-text-x-authors.svg \
+        gnome-mime-text-x-java.svg \
         gnome-mime-video.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
