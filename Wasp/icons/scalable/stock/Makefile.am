@@ -26,5 +26,10 @@ icon_DATA = \
 	stock_searchtool.svg \
 	stock_dialog_info.svg \
 	stock_logout.svg \
-	stock_gnome-logo.svg
+	stock_gnome-logo.svg \
+	gaim_auth.svg \
+	gaim_error.svg \
+	gaim_info.svg \
+	gaim_offline.svg \
+	gaim_online.svg
 EXTRA_DIST = $(icon_DATA)

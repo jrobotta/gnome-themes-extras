@@ -1518,7 +1518,7 @@ smooth_rc_style_merge (GtkRcStyle * dest,
       part_merge(THEME_PART(&dest_data->trough),THEME_PART(&src_data->trough));
       dest_data->trough.show_value = src_data->trough.show_value;
       
-      part_merge(&dest_data->progress,&src_data->progress);
+      part_merge(THEME_PART(&dest_data->progress),THEME_PART(&src_data->progress));
 
       part_merge(THEME_PART(&dest_data->tabs), THEME_PART(&src_data->tabs));
       dest_data->tabs.use_active_tab = src_data->tabs.use_active_tab;

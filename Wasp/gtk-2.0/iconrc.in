@@ -126,15 +126,14 @@ style "icon-style"
 
 #stock ["commandline-browser"] =	{{"stock_commandline-browser.xpm"}}
 #stock ["commandline-history"] =	{{"stock_commandline-history.xpm"}}
-
-
-# stock ["cdplayer-stop"] =       {{"player_stop.svg"}}
-# stock ["cdplayer-play"] = 	{{"noatunplay.svg"}}
-# stock ["cdplayer-pause"] = 	{{"noatunpause.svg"}}
-# stock ["cdplayer-prev"] =       {{"noatunback.svg"}}
-# stock ["cdplayer-next"] =       {{"noatunforward.svg"}}
-# stock ["cdplayer-eject"] =      {{"player_eject.svg"}}
-
+	stock ["gaim-away"]	=	{{"gaim_offline.svg"}}
+	stock ["gaim-dialog-auth"] =	{{"gaim_auth.svg"}}
+	stock ["gaim-dialog-error"] =	{{"gaim_error.svg"}}
+	stock ["gaim-dialog-info"] =	{{"gaim-dialog-info"}}
+	stock ["gaim-icon-away"] =	{{"gaim_offline.svg"}}
+	stock ["gaim-icon-online"] =	{{"gaim_online.svg}}
+	stock ["gaim-info"]	=	{{"gaim-dialog-info"}}
+	
 	     #stock ["volume-mute"] =      	{{"volume-mute.svg"}}
         #stock ["volume-zero"] =      	{{"volume-zero.svg"}}
         #stock ["volume-min"] =      	{{"volume-min.svg"}}

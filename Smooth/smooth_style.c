@@ -1634,21 +1634,36 @@ smooth_draw_box(GtkStyle * style,
               {
                 if (DETAIL ("vscrollbar")) 
                   {
-                    if (y < widget->allocation.y + widget->allocation.height/2)
-                      height +=1;
-                    else 
+                    if (y < widget->allocation.y + widget->allocation.height/2) {
+                        if ((area) && (area->height >= height))
+                          area->height = height + 1;
+			height +=1;
+                    } else 
                       {
+                        if ((area) && (area->y <= y))
+                          area->y = y - 1;
                         y -= 1; 
+
+                        if ((area) && (area->height >= height))
+                          area->height = height + 1;
                         height +=1;
                       }
                   } 
                 else 
                   {
-                    if (x < widget->allocation.x + widget->allocation.width/2)
-                      width +=1;
-                    else 
+                    if (x < widget->allocation.x + widget->allocation.width/2) {
+                        if ((area) && (area->width >= width))
+                          area->width = width + 1;
+
+                        width +=1;
+                    } else 
                       {
+                        if ((area) && (area->x <= x))
+                          area->x = x - 1;
                         x -= 1; 
+
+                        if ((area) && (area->width >= width))
+                          area->width = width + 1;
                         width +=1;
                       }
                   }        
@@ -1656,7 +1671,7 @@ smooth_draw_box(GtkStyle * style,
           }
         else if (DETAIL("bar") && GTK_IS_PROGRESS_BAR(widget))
           {
-            part = PROGRESS_PART(style);
+            part = THEME_PART(PROGRESS_PART(style));
 
 	    x += PART_XPADDING(part);
             y += PART_YPADDING(part), 
@@ -1685,9 +1700,7 @@ smooth_draw_box(GtkStyle * style,
           }
           
         /* paint shadow */
-        gtk_paint_shadow(style, window, state_type, shadow_type, area, widget,
-          detail, x, y, width, height);      
-
+        smooth_draw_shadow_with_gap(style, window, state_type, shadow_type, area, widget, detail, part, x, y, width, height, 0, 0, 0);     
     } else {
         FLAT_FILL_BACKGROUND(style, window, state_type, area, widget, NULL, x, y, width, height);
         gtk_paint_shadow(style, window, state_type, shadow_type, area, widget,
