@@ -5,6 +5,9 @@ icon_DATA = \
 	bookmark.svg \
 	down.svg \
 	editcopy.svg \
+	editdelete.svg \
+	editpaste.svg \
+	edit.svg \
 	filenew.svg \
 	fileopen.svg \
 	filesave.svg \
@@ -14,5 +17,7 @@ icon_DATA = \
 	forward.svg \
 	home.svg \
 	recycled.svg \
+	reload.svg \
+	stop.svg \
 	up.svg
 EXTRA_DIST = $(icon_DATA)

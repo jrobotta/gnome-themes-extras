@@ -27,8 +27,8 @@ style "icon-style"
 #  stock["gtk-close"] =	       {{ "kill.svg" }}
 #  stock["gtk-convert"] =       {{ "stock_convert.svg" }}
    stock["gtk-copy"] =	       {{ "editcopy.svg" }}
-#  stock["gtk-cut"] =	       {{ "editcut.svg" }}
-#  stock["gtk-delete"] =	       {{ "editdelete-small.svg" }}
+   stock["gtk-cut"] =	       {{ "editdelete.svg" }}
+   stock["gtk-delete"] =	       {{ "editdelete.svg" }}
 #  stock["gtk-execute"] =       {{ "exec-small.svg" }}
 #  stock["gtk-find"] =	       {{ "find.svg" }}
 #  stock["gtk-find-and-replace"] = {{ "stock_find-and-replace.svg" }}
@@ -51,15 +51,15 @@ style "icon-style"
    stock["gtk-new"] =	     	{{ "filenew.svg" }}
 #  stock["gtk-no"] =		{{ "stock_no.svg" }} 
 #  stock["gtk-ok"] =		{{ "button_ok.svg" }}
-  stock["gtk-open"] =		{{ "fileopen.svg" }} 
-#  stock["gtk-paste"] =		{{ "editpaste-2.1.svg" }}
+   stock["gtk-open"] =		{{ "fileopen.svg" }} 
+   stock["gtk-paste"] =		{{ "editpaste.svg" }}
 #  stock["gtk-print"] =		{{ "stock_print.svg" }}
 #  stock["gtk-print-preview"] =	{{ "stock_print-preview.svg" }}
 #  stock["gtk-preferences"] =	{{ "stock_preferences.svg" }}
 #  stock["gtk-properties"] =	{{ "configure-b.svg" }}
 #  stock["gtk-quit"] =		{{ "exit.svg" }}
 #  stock["gtk-redo"] =		{{ "redo-2.0.svg" }}
-#  stock["gtk-refresh"] =	{{ "reload-2.0.svg" }}
+   stock["gtk-refresh"] =	{{ "reload.svg" }}
 #  stock["gtk-remove"] =		{{ "viewmag-_2.svg" }}
 #  stock["gtk-revert-to-saved"] ={{ "revert-small.svg" }}
    stock["gtk-save"] =		{{ "filesave.svg" }}
@@ -69,7 +69,7 @@ style "icon-style"
 #  stock["gtk-sort-ascending"] =	{{ "3downarrow.svg" }}
 #  stock["gtk-sort-descending"] ={{ "3uparrow.svg" }}
 #  stock["gtk-spell-check"] =	{{ "stock_spell-check.svg" }}
-#  stock["gtk-stop"] =		{{ "stop-2.1.svg" }}
+   stock["gtk-stop"] =		{{ "stop.svg" }}
 #  stock["gtk-strikethrough"] =	{{ "stock_strikethrough.svg" }}
   stock["gtk-undelete"] =	{{ "recycled.svg" }}
 #  stock["gtk-underline"] =	{{ "text_under.svg" }}
@@ -83,7 +83,7 @@ style "icon-style"
 #  stock["terminal-edit"] =      {{ "stock_preferences.svg" }}
 #  stock["session-stock-edit"] = {{ "stock_preferences.svg" }}
   
-#  stock["gtk-stock-edit"] =      {{ "stock_edit.svg" }}
+   stock["gtk-stock-edit"] =      {{ "edit.svg" }}
 #  stock["gtk-stock-import"] =      {{ "stock_import.svg" }}
 #  stock["gtk-stock-export"] =      {{ "stock_export.svg" }}
 #  stock["gtk-stock-insert-image"] =      {{ "stock_insert-image.svg" }}
