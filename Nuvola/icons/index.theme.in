@@ -4,6 +4,7 @@
 [Icon Theme]
 _Name=Nuvola
 _Comment=Vector Theme
+Inherits=gnome,crystalsvg
 Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices
 Example=gnome-theme-preview.svg
 
