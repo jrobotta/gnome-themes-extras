@@ -1,4 +1,5 @@
 #include "misc_functions.h"
+#include "../smooth_rc_style.h"
 
 /* Many of the following functions were shamelessly copied
  * from multiple engines : the gtk-2.0 metal engine,
@@ -7,6 +8,263 @@
  * Wonderland(aka BlueCurve(TM)) engine, and the LighthouseBlue
  * engine, with a few subsequent (mostly minor) modifications.
  */
+
+void
+alloc_color (GtkStyle * style, GdkColor * color)
+{
+  GdkColormap *cmap = style->colormap;
+  gint depth = style->depth;
+  
+  if (!(cmap)) {
+    cmap = gdk_colormap_get_system();
+    depth = gdk_colormap_get_visual(cmap)->depth;
+  }
+  
+  gdk_colormap_alloc_color (cmap, color, FALSE, TRUE);
+}
+
+GdkGC *
+new_color_gc (GtkStyle * style, GdkColor * color)
+{
+  GdkGCValues gc_values;
+  GdkColormap *cmap = style->colormap;
+  gint depth = style->depth;
+  
+  if (!(cmap)) {
+    cmap = gdk_colormap_get_system();
+    depth = gdk_colormap_get_visual(cmap)->depth;
+  }
+  
+  gdk_colormap_alloc_color (cmap, color, FALSE, TRUE);
+
+  gc_values.foreground = *color;
+
+  return gtk_gc_get (depth, cmap,
+		     &gc_values, GDK_GC_FOREGROUND);
+}
+
+GdkGC *
+shaded_color (GtkStyle * style, GtkStateType state_type, gdouble shade_value)
+{
+  GdkColor color;
+  
+  shade (&style->bg[state_type], &color, shade_value);
+
+  return new_color_gc (style, &color);
+
+}
+
+void
+lighttone_color(GdkColor * color, GtkStyle * style, GtkStateType state)
+{
+  if ((THEME_DATA(style)) && (THEME_DATA(style)->colors.has_light[state]))
+    {
+      color->red = THEME_DATA(style)->colors.light[state].red;
+      color->green = THEME_DATA(style)->colors.light[state].green;
+      color->blue = THEME_DATA(style)->colors.light[state].blue;
+    }
+  else 
+    {
+      shade (&style->bg[state], color, LIGHTNESS_MULT);
+
+      THEME_DATA(style)->colors.light[state].red = color->red;
+      THEME_DATA(style)->colors.light[state].green = color->green;
+      THEME_DATA(style)->colors.light[state].blue = color->blue;
+      
+      THEME_DATA(style)->colors.has_light[state] = TRUE;
+    }  
+}
+
+void
+darktone_color(GdkColor * color, GtkStyle * style, GtkStateType state)
+{
+  if ((THEME_DATA(style)) && (THEME_DATA(style)->colors.has_dark[state]))
+    {
+      color->red = THEME_DATA(style)->colors.dark[state].red;
+      color->green = THEME_DATA(style)->colors.dark[state].green;
+      color->blue = THEME_DATA(style)->colors.dark[state].blue;
+    }
+  else 
+    {
+      shade(&style->bg[state], color, DARKNESS_MULT);
+
+      THEME_DATA(style)->colors.dark[state].red = color->red;
+      THEME_DATA(style)->colors.dark[state].green = color->green;
+      THEME_DATA(style)->colors.dark[state].blue = color->blue;
+      
+      THEME_DATA(style)->colors.has_dark[state] = TRUE;
+    }  
+}
+
+void
+midtone_color(GdkColor * color, GtkStyle * style, GtkStateType state)
+{
+  if ((THEME_DATA(style)) && (THEME_DATA(style)->colors.has_mid[state]))
+    {
+      color->red = THEME_DATA(style)->colors.mid[state].red;
+      color->green = THEME_DATA(style)->colors.mid[state].green;
+      color->blue = THEME_DATA(style)->colors.mid[state].blue;
+    }
+  else 
+    {
+      GdkColor dark_color, light_color;
+  
+      lighttone_color(&light_color, style, state);
+      darktone_color(&dark_color, style, state);
+
+      color->red = (light_color.red + dark_color.red) / 2;
+      color->green = (light_color.green + dark_color.green) / 2;
+      color->blue = (light_color.blue + dark_color.blue) / 2;
+
+      THEME_DATA(style)->colors.mid[state].red = color->red;
+      THEME_DATA(style)->colors.mid[state].green = color->green;
+      THEME_DATA(style)->colors.mid[state].blue = color->blue;
+      
+      THEME_DATA(style)->colors.has_mid[state] = TRUE;
+    }  
+}
+
+void
+middarktone_color(GdkColor * color, GtkStyle * style, GtkStateType state)
+{
+  if ((THEME_DATA(style)) && (THEME_DATA(style)->colors.has_middark[state]))
+    {
+      color->red = THEME_DATA(style)->colors.middark[state].red;
+      color->green = THEME_DATA(style)->colors.middark[state].green;
+      color->blue = THEME_DATA(style)->colors.middark[state].blue;
+    }
+  else 
+    {
+      GdkColor dark_color;
+  
+      darktone_color(&dark_color, style, state);
+
+      color->red = (style->bg[state].red + dark_color.red) / 2;
+      color->green = (style->bg[state].green + dark_color.green) / 2;
+      color->blue = (style->bg[state].blue + dark_color.blue) / 2;
+
+      THEME_DATA(style)->colors.middark[state].red = color->red;
+      THEME_DATA(style)->colors.middark[state].green = color->green;
+      THEME_DATA(style)->colors.middark[state].blue = color->blue;
+      
+      THEME_DATA(style)->colors.has_middark[state] = TRUE;
+    }  
+}
+
+void
+midlighttone_color(GdkColor * color, GtkStyle * style, GtkStateType state)
+{
+  if ((THEME_DATA(style)) && (THEME_DATA(style)->colors.has_midlight[state]))
+    {
+      color->red = THEME_DATA(style)->colors.midlight[state].red;
+      color->green = THEME_DATA(style)->colors.midlight[state].green;
+      color->blue = THEME_DATA(style)->colors.midlight[state].blue;
+    }
+  else 
+    {
+      GdkColor light_color;
+  
+      lighttone_color(&light_color, style, state);
+
+      color->red = (style->bg[state].red + light_color.red) / 2;
+      color->green = (style->bg[state].green + light_color.green) / 2;
+      color->blue = (style->bg[state].blue + light_color.blue) / 2;
+
+      THEME_DATA(style)->colors.midlight[state].red = color->red;
+      THEME_DATA(style)->colors.midlight[state].green = color->green;
+      THEME_DATA(style)->colors.midlight[state].blue = color->blue;
+      
+      THEME_DATA(style)->colors.has_midlight[state] = TRUE;
+    }  
+}
+
+GdkGC *
+lighttone_gc(GtkStyle * style, GtkStateType state)
+{
+  GdkGC * light_gc=style->light_gc[state];
+  GdkColor color;
+
+  lighttone_color(&color, style, state);
+
+  light_gc = new_color_gc(style, &color);
+  return light_gc;
+}
+
+GdkGC *
+darktone_gc(GtkStyle * style, GtkStateType state)
+{
+  GdkGC * dark_gc=style->dark_gc[state];
+  GdkColor color;
+
+  darktone_color(&color, style, state);
+
+  dark_gc = new_color_gc(style, &color);
+  return dark_gc;
+}
+
+GdkGC *
+midtone_gc(GtkStyle * style, GtkStateType state)
+{
+  GdkGC * mid_gc=style->mid_gc[state];
+  GdkColor color;
+
+  midtone_color(&color, style, state);
+
+  mid_gc = new_color_gc(style, &color);
+  return mid_gc;
+}
+
+GdkGC *
+middarktone_gc(GtkStyle * style, GtkStateType state)
+{
+  GdkGC * middark_gc=style->mid_gc[state];
+  GdkColor color;
+
+  middarktone_color(&color, style, state);
+
+  middark_gc = new_color_gc(style, &color);
+  return middark_gc;
+}
+
+GdkGC *
+midlighttone_gc(GtkStyle * style, GtkStateType state)
+{
+  GdkGC * midlight_gc=style->mid_gc[state];
+  GdkColor color;
+
+  midlighttone_color(&color, style, state);
+
+  midlight_gc = new_color_gc(style, &color);
+  return midlight_gc;
+}
+
+GdkBitmap *
+arc_clip_mask(gint width,
+	      gint height)
+{
+  GdkBitmap *result;
+  GdkGC *gc;
+  GdkColor color;
+
+  result = (GdkBitmap *)gdk_pixmap_new(NULL, width, height, 1);
+  gc = gdk_gc_new(result);
+	
+  color.pixel = 0;
+  gdk_gc_set_foreground(gc, &color);
+
+  gdk_draw_rectangle(result, gc, TRUE, 0, 0, width, height);
+  gdk_draw_rectangle(result, gc, FALSE, 0, 0, width, height);
+
+  color.pixel = 1;
+  gdk_gc_set_foreground(gc, &color);
+
+  gdk_draw_arc(result, gc, TRUE, 0, 0, width, height, 0, 360*64);
+  gdk_draw_arc(result, gc, FALSE, 0, 0, width, height, 0, 360*64);
+
+  gdk_gc_destroy(gc);
+
+  return result;
+}
 
 /* The following is based on a similar routine found in most 
  * GTK2 engines, I have no idea which one came up with it first...
@@ -31,6 +289,74 @@ sanitize_parameters(GtkStyle * style,
   return TRUE;  
 }
 
+GtkWidget *
+get_notebook_page(GtkWidget * widget)
+{
+  g_return_val_if_fail(GTK_IS_WIDGET(widget), NULL);
+
+  while (widget && widget->parent && !gtk_type_is_a(GTK_WIDGET_TYPE(widget->parent), GTK_TYPE_NOTEBOOK))
+    widget = widget->parent;
+
+  if (!(widget && widget->parent && gtk_type_is_a(GTK_WIDGET_TYPE(widget->parent), GTK_TYPE_NOTEBOOK)))
+    return NULL;
+      
+
+  return widget;
+}
+
+GtkWidget *
+get_tab_label(GtkWidget *page, GtkWidget * widget)
+{
+  GtkWidget * real_widget = widget;
+  g_return_val_if_fail(GTK_IS_WIDGET(widget), NULL);
+
+  widget = gtk_notebook_get_menu_label(GTK_NOTEBOOK(page->parent), page);
+  if (!(widget)) 
+     widget = gtk_notebook_get_tab_label(GTK_NOTEBOOK(page->parent), page);
+     
+  return widget;
+}
+
+gboolean 
+widget_is_tab_label(GtkWidget *page, GtkWidget * widget)
+{
+  GtkWidget * real_widget = widget;
+  g_return_val_if_fail(GTK_IS_WIDGET(widget), FALSE);
+
+  widget = gtk_notebook_get_menu_label(GTK_NOTEBOOK(page->parent), page);
+  if (!(widget)) 
+     widget = gtk_notebook_get_tab_label(GTK_NOTEBOOK(page->parent), page);
+     
+  if ((real_widget) && (widget) && (real_widget != widget) && (!(gtk_widget_is_ancestor(real_widget, widget))))
+    return FALSE;
+
+  return TRUE;
+}
+
+gboolean 
+tab_label_is_current_page(GtkWidget *page, GtkWidget * widget)
+{
+  gint current_num = 0;
+  GtkWidget *current_page = NULL; 
+  GtkWidget *current_label = NULL;
+
+  current_num = gtk_notebook_get_current_page(GTK_NOTEBOOK(page->parent));
+  if (current_num ==-1)
+    return FALSE;
+
+  current_page = gtk_notebook_get_nth_page(GTK_NOTEBOOK(page->parent), current_num); 
+
+  if (!(current_page))
+    return FALSE;
+
+  current_label = gtk_notebook_get_tab_label(GTK_NOTEBOOK(page->parent), current_page);
+
+  if ((current_label == NULL) || (current_label != widget) && (!gtk_widget_is_ancestor(widget, current_label)))
+    return FALSE;
+
+  return TRUE;
+}
+
 /* From GTK-Engines Metal 2.0:
  * 
  * This function makes up for some brokeness in gtkrange.c
@@ -48,7 +374,6 @@ reverse_engineer_stepper_box (GtkWidget    *range,
 			      gint         *width,
 			      gint         *height)
 {
-#if GTK2
   gint slider_width = 15, stepper_size = 15;
   gint box_width;
   gint box_height;
@@ -76,14 +401,6 @@ reverse_engineer_stepper_box (GtkWidget    *range,
   *y = (*y - (box_height - *height) / 2) + 2;
   *width = box_width - 3;
   *height = box_height - 3;
-#endif
-
-#if GTK1
-  *x += 2;
-  *y += 2;
-  *width -= 4;
-  *height -= 4;
-#endif
 }
 
 /* This function is based on reverse_engineer_stepper_box
@@ -101,7 +418,6 @@ reverse_engineer_spin_button (GtkWidget    *widget,
 			      gint         *width,
 			      gint         *height)
 {
-#ifdef GTK2
   gint size = pango_font_description_get_size (widget->style->font_desc);
   gint realheight, realwidth;
 
@@ -119,7 +435,6 @@ reverse_engineer_spin_button (GtkWidget    *widget,
   *y += ((*height - realheight) / 2) + (arrow_type==GTK_ARROW_DOWN?1:-1);
   *width = realwidth;
   *height = realheight;
-#endif
 }
 
 /* This function is a home-grown (probably flawed) function 
@@ -143,7 +458,6 @@ reverse_engineer_arrow_box (GtkWidget    *widget,
       reverse_engineer_spin_button (widget, arrow_type,
 				    x, y, width, height);
    }
-  #if GTK2
   else if (DETAIL("menuitem"))
     {
       *width += 2;
@@ -156,19 +470,6 @@ reverse_engineer_arrow_box (GtkWidget    *widget,
       *x -= 1;
       *y -= 1;
   }  
-  #endif  
-  #if GTK1
-  else if (DETAIL("menuitem"))
-    {
-      *width += 2;
-      *height += 2;
-      *x -= 1;
-      *y += 0;
-    }
-  else if (DETAIL("arrow")) {
-      *y += 1;
-  }  
-  #endif  
 }
 
 /* This function is based on a portion of Xenophilia's xeno_draw_extension */

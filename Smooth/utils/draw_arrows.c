@@ -367,7 +367,7 @@ do_draw_arrow(GdkWindow * window,
         extra_tail=3;
       else  
         if (arrow_style == ARROW_STYLE_XFCE) 
-          extra_tail=2;
+          extra_tail=1;
 
       ah -= 2;
       aw -= 2;
@@ -381,9 +381,9 @@ do_draw_arrow(GdkWindow * window,
           ah = 2*aw - 1;
         }  
 
-        if ((ah < 3) || (aw < 5)) {
-          ah = 3;
-          aw = 5;
+        if ((ah < 5) || (aw < 3)) {
+          ah = 5;
+          aw = 3;
         }
 	aw += extra_tail;
       } else { 
@@ -397,6 +397,10 @@ do_draw_arrow(GdkWindow * window,
           aw = 2*ah - 1;
         }  
 
+        if ((aw < 5) || (ah < 3)) {
+          aw = 5;
+          ah = 3;
+        }
 	ah += extra_tail;
       }
 

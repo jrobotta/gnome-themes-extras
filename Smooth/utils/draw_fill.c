@@ -343,15 +343,31 @@ new_cache(gchar * file_name)
    result->ref_count = 1;
    result->file_name = g_strdup(file_name);
    
-#if GTK1
-   result->pixbuf = gdk_pixbuf_new_from_file(file_name);
-#endif
-
-#if GTK2
    result->pixbuf = gdk_pixbuf_new_from_file(file_name, NULL);
-#endif
 
    return result;
+}
+
+static gboolean 
+force_cleanup_cache(gpointer key, gpointer value, gpointer user_data)
+{
+  if (value) 
+    free_cache((GdkCachedPixbuf *)value);
+  return TRUE;
+}
+
+void
+cleanup_gdk_pixbuf_cache(gboolean force)
+{
+   if (pixbuf_cache) {
+     if (force)
+       g_hash_table_foreach_remove(pixbuf_cache, force_cleanup_cache, NULL);
+
+     if (g_hash_table_size(pixbuf_cache)<=0) {
+       g_hash_table_destroy(pixbuf_cache);
+       pixbuf_cache = NULL;
+     }  
+   }   
 }
 
 static GdkPixbuf *
@@ -383,17 +399,100 @@ static void
 internal_gdk_pixbuf_unref(gchar * file_name)
 {  
    GdkCachedPixbuf *cache=NULL;
+   if (pixbuf_cache) {
+     cache = g_hash_table_lookup(pixbuf_cache, file_name);
 
-   cache = g_hash_table_lookup(pixbuf_cache, file_name);
-
-   if (cache) {
-     cache->ref_count--;
+     if (cache) {
+       cache->ref_count--;
    
-     if (cache->ref_count == 0) {
-       g_hash_table_remove(pixbuf_cache, file_name);
-       free_cache(cache);
-     }   
-   }   
+       if (cache->ref_count == 0) {
+         g_hash_table_remove(pixbuf_cache, file_name);
+         free_cache(cache);
+       }   
+     }
+     cleanup_gdk_pixbuf_cache(FALSE);  
+  }   
+}
+
+static void
+internal_tile_pixbuf(GdkWindow * window,
+                     GdkGC * gc,
+                     GdkPixbuf *pixbuf,
+   	             GdkRectangle * area,
+                     int xoffset, 
+                     int yoffset,
+ 		     int x,
+ 		     int y,
+ 		     int width,
+ 		     int height)
+{
+  GdkRectangle target;
+  GdkPoint min_point;
+  GdkPoint max_point;
+  int num_left;
+  int num_above;
+
+  int tile_x;
+  int tile_y;
+  int tile_width;
+  int tile_height;
+
+  tile_width=gdk_pixbuf_get_width(pixbuf);
+  tile_height=gdk_pixbuf_get_height(pixbuf);
+
+  if (area) {
+      GdkRectangle tmp;       
+      
+      tmp.x = x+xoffset;
+      tmp.y = y+yoffset;
+      tmp.width = width;
+      tmp.height = height;
+
+      gdk_rectangle_intersect(area, &tmp, &target);
+      
+      if ((target.width <= 0) && (target.height <= 0))
+        return;
+  } else {
+      target.x = x+xoffset;
+      target.y = y+yoffset;
+      target.width = width;
+      target.height = height;
+  }
+
+  /* The number of tiles left and above the target area */
+  num_left = target.x / tile_width;
+  num_above = target.y / tile_height;
+  
+  min_point.x = target.x + (num_left * tile_width) - tile_width;
+  min_point.y = target.x + (num_above * tile_height) - tile_height;
+              	
+  max_point.x = (target.x + target.width + 2 * tile_width);
+  max_point.y = (target.y + target.height + 2 * tile_height);
+
+  for (tile_y = min_point.y; tile_y <= max_point.y; tile_y += tile_height) {
+     for (tile_x = min_point.x; tile_x <= max_point.x; tile_x += tile_width) {
+        GdkRectangle current;
+        GdkRectangle tmp;
+
+        current.x = tile_x;
+        current.y = tile_y;
+        current.width = tile_width;
+        current.height = tile_height;
+
+        gdk_rectangle_intersect(&target, &current, &tmp);
+        
+        if ((tmp.width > 0) && (tmp.height > 0)) 
+          {
+            gdk_pixbuf_render_to_drawable (pixbuf, window, gc,
+	  			           0, 0, 
+				           tmp.x, tmp.y,
+				           tile_width, tile_height,
+				           GDK_RGB_DITHER_NONE,
+				           0, 0);
+
+          }				           
+     }
+  }
 }
 
 void
@@ -401,11 +500,14 @@ gdk_tile_pixbuf_fill (GdkWindow * window,
                       GdkGC * gc,
 		      gchar * file_name,
 		      GdkRectangle * area,
+		      gint xoffset, 
+		      gint yoffset,
 		      gint x,
 		      gint y,
 		      gint width,
 		      gint height,
-		      gboolean noclip)
+		      gboolean noclip, 
+                      gboolean window_is_buffered)
 {
   GdkRectangle clip;
   GdkPixbuf *pixbuf = NULL;
@@ -421,8 +523,8 @@ gdk_tile_pixbuf_fill (GdkWindow * window,
   pixbuf_width=gdk_pixbuf_get_width(pixbuf);
   pixbuf_height=gdk_pixbuf_get_height(pixbuf);
 
-  clip.x = x;
-  clip.y = y;
+  clip.x = x+xoffset;
+  clip.y = y+yoffset;
   clip.width = width;
   clip.height = height;
 
@@ -437,27 +539,32 @@ gdk_tile_pixbuf_fill (GdkWindow * window,
       gdk_gc_set_clip_rectangle(gc, &clip);
   }
 
-  tmp_pixmap = gdk_pixmap_new (window,
-			       pixbuf_width,
-			       pixbuf_height,
-			       -1);
+  if (window_is_buffered)
+    internal_tile_pixbuf(window, gc, pixbuf, &clip, xoffset, yoffset, x, y, width, height);
+  else {
+    tmp_pixmap = gdk_pixmap_new (window,
+	  		         pixbuf_width,
+			         pixbuf_height,
+			         gdk_rgb_get_visual()->depth);
 
-  tmp_gc = gdk_gc_new (tmp_pixmap);
-  gdk_pixbuf_render_to_drawable (pixbuf, tmp_pixmap, tmp_gc,
-				 0, 0, 
-				 0, 0,
-				 pixbuf_width, pixbuf_height,
-				 GDK_RGB_DITHER_NORMAL,
-				 0, 0);
-  gdk_gc_unref (tmp_gc);
+    tmp_gc = gdk_gc_new (tmp_pixmap);
+    gdk_pixbuf_render_to_drawable (pixbuf, tmp_pixmap, tmp_gc,
+  				   0, 0, 
+				   0, 0,
+				   pixbuf_width, pixbuf_height,
+				   GDK_RGB_DITHER_NORMAL,
+				   0, 0);
+    gdk_gc_unref (tmp_gc);
 
-  gdk_gc_set_fill(gc, GDK_TILED);
-  gdk_gc_set_tile(gc,tmp_pixmap);
-  gdk_gc_set_ts_origin(gc, 0, 0);
-  gdk_draw_rectangle (window, gc, TRUE, x, y, width, height);
+    gdk_gc_set_fill(gc, GDK_TILED);
+    gdk_gc_set_tile(gc,tmp_pixmap);
+    gdk_gc_set_ts_origin(gc, 0, 0);
+    gdk_draw_rectangle (window, gc, TRUE, x, y, width, height);
 
-  gdk_gc_set_fill(gc, GDK_SOLID);
-  gdk_pixmap_unref (tmp_pixmap);
+    gdk_gc_set_fill(gc, GDK_SOLID);
+    gdk_pixmap_unref (tmp_pixmap);
+  }
+  
   internal_gdk_pixbuf_unref (file_name);
 
   if (!noclip)

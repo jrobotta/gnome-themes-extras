@@ -1,0 +1,1 @@
+SUBDIRS= metacity-1

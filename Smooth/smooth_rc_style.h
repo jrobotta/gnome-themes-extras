@@ -12,30 +12,30 @@
 #define SMOOTH_LINE_SMOOTHBEVEL		9
 #define SMOOTH_LINE_SOFT		10
 
-#define SMOOTH_SOLID_FILL		1
-#define SMOOTH_GRADIENT_FILL		2
-#define SMOOTH_SHADE_GRADIENT_FILL	3
-#define SMOOTH_PIXBUF_FILL		4
+#define SMOOTH_FILL_SOLID		1
+#define SMOOTH_FILL_GRADIENT		2
+#define SMOOTH_FILL_SHADE_GRADIENT	3
+#define SMOOTH_FILL_PIXBUF		4
 
-#define SMOOTH_NORMAL_TABS		1
-#define SMOOTH_ROUND_TABS		2
-#define SMOOTH_TRIANGLE_TABS		3
-#define SMOOTH_XPM_TABS			4
+#define SMOOTH_EDGE_NONE		1
+#define SMOOTH_EDGE_LINE		2
+#define SMOOTH_EDGE_GRADIENT		3
+#define SMOOTH_EDGE_PIXBUF		4
 
-#define NO_EDGE		1
-#define LINE_EDGE	2
-#define GRADIENT_EDGE	3
-#define XPM_EDGE	4
+#define SMOOTH_TAB_NORMAL		1
+#define SMOOTH_TAB_ROUND		2
+#define SMOOTH_TAB_TRIANGLE		3
+#define SMOOTH_TAB_PIXBUF		4
 
 #define DEFAULT_CHECKSTYLE		FAST_CHECK
 #define DEFAULT_GRADIENT		TRUE
 #define DEFAULT_HGRADIENTDIRECTION	GDK_GRADIENT_HORIZONTAL
 #define DEFAULT_VGRADIENTDIRECTION	GDK_GRADIENT_VERTICAL
-#define DEFAULT_FILLSTYLE		SMOOTH_SOLID_FILL
+#define DEFAULT_FILLSTYLE		SMOOTH_FILL_SOLID
 #define DEFAULT_EDGESTYLE		LINE_EDGE
 #define DEFAULT_LINETHICKNESS		2
 #define DEFAULT_LINESTYLE		SMOOTH_LINE_STANDARD
-#define DEFAULT_TABSTYLE		SMOOTH_NORMAL_TABS
+#define DEFAULT_TABSTYLE		SMOOTH_TAB_NORMAL
 #define DEFAULT_GRIPSTYLE		FIXEDLINES_IN_GRIP
 #define DEFAULT_ARROWSTYLE		ARROW_STYLE_THINICE
 #define DEFAULT_SOLIDARROW		FALSE
@@ -48,36 +48,31 @@
 #define DEFAULT_TROUGH_SHOW_VALUE	FALSE
 #define DEFAULT_GRIPOVERLAP		FALSE
 
-
 typedef struct _SmoothRcStyle SmoothRcStyle;
 
-#if GTK1
-typedef struct _SmoothRcProperty SmoothRcProperty;
-#endif
-
-#if GTK2
 typedef struct _SmoothRcStyleClass SmoothRcStyleClass;
-#endif
 
 typedef struct _smooth_line_style smooth_line_style;
 typedef struct _smooth_fill_style smooth_fill_style;
+typedef struct _smooth_focus_style smooth_focus_style;
 
 typedef struct _smooth_part_style smooth_part_style;
 
 typedef struct _smooth_edge_style smooth_edge_style;
 
 typedef struct _smooth_bg_style smooth_bg_style;
+typedef struct _smooth_fg_style smooth_fg_style;
 typedef struct _smooth_grip_style smooth_grip_style;
 typedef struct _smooth_check_style smooth_check_style;
 typedef struct _smooth_option_style smooth_option_style;
 typedef struct _smooth_arrow_style smooth_arrow_style;
+typedef struct _smooth_tab_style smooth_tab_style;
 typedef struct _smooth_trough_style smooth_trough_style;
 
 typedef gboolean (*SmoothTranslateEnumFunc) (gchar * str, gint *retval);
 
 #define THEME_PART(part)                 ((smooth_part_style *) (part))
 
-#if GTK2
 extern GType smooth_type_rc_style;
 
 #define SMOOTH_TYPE_RC_STYLE              smooth_type_rc_style
@@ -91,17 +86,6 @@ extern GType smooth_type_rc_style;
 #define THEME_DATA(style)                 (SMOOTH_RC_STYLE (style->rc_style))
 #define NEW_THEME_DATA(rc_style)          (SMOOTH_RC_STYLE (rc_style))
 #define SET_THEME_DATA(rc_style, data)    (SMOOTH_RC_DATA (rc_style))
-#endif
-
-#if GTK1
-#define SMOOTH_RC_DATA(rc_style)          ((SmoothRcStyle *) ((rc_style)->engine_data))
-
-#define THEME_DATA(style)                 ((SmoothRcStyle *) ((style)->engine_data))
-#define NEW_THEME_DATA(rc_style)          ((SmoothRcStyle *) (g_new0 (SmoothRcStyle, 1)))
-#define SET_THEME_DATA(rc_style, data)    (rc_style->engine_data=data)
-
-#define PANED_HANDLE_SIZE(style)(THEME_DATA(style)->paned_handle_size)
-#endif
 
 #define REAL_SLIDERS(style)(THEME_DATA(style)->real_sliders)
 #define RESIZE_GRIP(style)(THEME_DATA(style)->resize_grip)
@@ -151,6 +135,14 @@ extern GType smooth_type_rc_style;
 #define ARROW_XPADDING(part)(THEME_DATA(style)->arrow.ypadding)
 #define ARROW_YPADDING(part)(THEME_DATA(style)->arrow.xpadding)
 
+#define FOCUS_USE_FOREGROUND(style, state)(THEME_DATA(style)->focus.use_foreground[state])
+#define FOCUS_FOREGROUND(style, state)(THEME_DATA(style)->focus.foreground[state])
+
+#define FOCUS_USE_PATTERN(style, state)(THEME_DATA(style)->focus.pattern[state]!=NULL)
+#define FOCUS_PATTERN(style, state)(THEME_DATA(style)->focus.pattern[state])
+
+#define BUFFERED_FILL(style)(THEME_DATA(style)->buffered_fill)
+
 struct _smooth_line_style {
   gint style;
   gint thickness;
@@ -182,12 +174,26 @@ struct _smooth_edge_style {
   gboolean use_line;
 };
 
+struct _smooth_focus_style {
+#ifdef GTK1
+  gboolean interior;
+  gint width;
+  gint pad;
+#endif
+  gboolean use_foreground[5];//GtkStateType
+  GdkColor foreground[5];//GtkStateType
+
+  gchar * pattern[5];//GtkStateType
+};
+
 struct _smooth_part_style {
   gint style;
 
   smooth_edge_style edge;
+
   smooth_line_style line;
   smooth_fill_style fill;
+
   gboolean use_line;
   gboolean use_fill;
 
@@ -199,6 +205,10 @@ struct _smooth_part_style {
 };
 
 struct _smooth_bg_style {
+  smooth_part_style part;
+};
+
+struct _smooth_fg_style {
   smooth_part_style part;
 };
 
@@ -227,10 +237,14 @@ struct _smooth_arrow_style {
 
   gint xpadding;
   gint ypadding;
+};
 
-  /*smooth_part_style part;
-  gint border;
-  gint fill;*/
+struct _smooth_tab_style {
+  smooth_part_style part;
+
+  gboolean use_active_tab;
+
+  smooth_part_style active_tab;
 };
 
 struct _smooth_trough_style {
@@ -238,24 +252,40 @@ struct _smooth_trough_style {
   gboolean show_value;
 };
 
-
 struct _SmoothRcStyle
 {
-  #if GTK2
   GtkRcStyle parent_instance;
-  #endif
-
-  #if GTK1
-  gint			  refcount;
-  #endif
   
+  gboolean buffered_fill;
+  
+  struct {
+    gboolean has_dark[5];//GtkStateType
+    GdkColor dark[5];//GtkStateType
+
+    gboolean has_light[5];//GtkStateType
+    GdkColor light[5];//GtkStateType
+
+    gboolean has_mid[5];//GtkStateType
+    GdkColor mid[5];//GtkStateType
+
+    gboolean has_midlight[5];//GtkStateType
+    GdkColor midlight[5];//GtkStateType
+
+    gboolean has_middark[5];//GtkStateType
+    GdkColor middark[5];//GtkStateType
+  } colors;
+
   gboolean		  real_sliders;
   gboolean		  resize_grip;
   
   smooth_fill_style	  fill;
   smooth_line_style	  line;
   smooth_edge_style	  edge;
+
+  smooth_focus_style	  focus;
+
   smooth_bg_style	  background;
+  smooth_fg_style	  foreground;
 
   smooth_trough_style     trough;
 
@@ -265,39 +295,24 @@ struct _SmoothRcStyle
   smooth_check_style	  check;
   smooth_option_style	  option;
   smooth_arrow_style      arrow;
-  gint			  tab_style;
-  #if GTK1
-  gint			  xthickness;
-  gint			  ythickness;
+  smooth_tab_style	  tabs;
 
-  guint16		  paned_handle_size;
-  #endif
 };
 
 void smooth_rc_style_init (SmoothRcStyle *style);
 
-#if GTK2
 struct _SmoothRcStyleClass
 {
   GtkRcStyleClass parent_class;
 };
 
 void smooth_rc_style_register_type (GTypeModule *module);
-#endif
 
-#if GTK1
-void
-smooth_rc_style_merge (GtkRcStyle * dest,
-                       GtkRcStyle * src);
-		       
-guint 
-smooth_rc_style_parse (GScanner * scanner, 
-                       GtkRcStyle * rc_style);
+smooth_part_style *smooth_tab_part(GtkStyle * style, gboolean for_active_tab);
 
-struct _SmoothRcProperty
-{
-  gchar * class_name;
-  gchar * property_name;
-  GtkArg value;
-};
-#endif
+gint smooth_tab_get_style(GtkStyle * style, gboolean for_active_tab);
+
+smooth_fill_style *smooth_tab_fill(GtkStyle * style, gboolean for_active_tab);
+
+gint smooth_tab_edge_line_style(GtkStyle * style, gboolean for_active_tab);
+gint smooth_tab_edge_line_thickness(GtkStyle * style, gboolean for_active_tab);

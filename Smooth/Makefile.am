@@ -15,7 +15,7 @@ libsmooth_la_SOURCES = \
 	utils/draw_arrows.h	\
         utils/misc_functions.c	\
         utils/misc_functions.h	\
-	smooth_theme_main.c	\
+	smooth_gtk2_engine.c	\
 	smooth_rc_style.c	\
 	smooth_rc_style.h	\
 	smooth_style.c	\

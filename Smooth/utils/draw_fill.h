@@ -59,10 +59,16 @@ gdk_tile_pixbuf_fill (GdkWindow * window,
                       GdkGC * gc,
 		      gchar * file_name,
 		      GdkRectangle * area,
+		      gint xoffset, 
+		      gint yoffset,
 		      gint x,
 		      gint y,
 		      gint width,
 		      gint height,
-		      gboolean noclip);
+		      gboolean noclip, 
+                      gboolean window_is_buffered);
+		      
+void cleanup_gdk_pixbuf_cache(gboolean force);
+		      
 
 #endif /* DRAW_FILL_H */
