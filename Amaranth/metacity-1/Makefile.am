@@ -1,20 +1,17 @@
 themedir = $(datadir)/themes/Amaranth/metacity-1
 
 theme_DATA=  \
-	button-close-focus.png \
-	button-close.png \
-	button-inactive.png \
-	metacity-theme-1.xml \
-	button-max-focus.png \
-	button-max.png \
-	button-min-focus.png \
-	button-min.png \
-	left-side-inactive.png\
 	left-side.png \
-	menu-button.png \
-	menu-button-pressed.png \
-	right-side-inactive.png \
+	title-bar.png \
+	wm-max.svg \
+	wm-min.svg \
+	wm-close-focus.svg \
+	wm-menu-focus.svg \
+	wm-restore.svg \
+	metacity-theme-1.xml \
+	wm-close.svg \
+	wm-menu.svg \
 	right-side.png \
-	title-bar-inactive.png \
-	title-bar.png
+	wm-max-focus.svg \
+	wm-min-focus.svg
 EXTRA_DIST = $(theme_DATA)
