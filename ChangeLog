@@ -1,3 +1,7 @@
+2003-05-07  Jordi Mallach  <jordi@sindominio.net>
+
+	* configure.in: Added "ca" to ALL_LINGUAS.
+
 2003-05-07  Christian Neumair  <chris@gnome-de.org>
 
 	* Nuvola/metacity-1/.cvsignore: Added.
