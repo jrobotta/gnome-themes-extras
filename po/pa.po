@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: punlinux\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-03-04 17:28+0530\n"
+"PO-Revision-Date: 2004-01-29 14:26+0530\n"
+"Last-Translator: Amanpreet Singh Alam <amanlinux@netscape.net>\n"
+"Language-Team: KBST Punjab <kbstpunjab@netscape.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
+msgid "Amaranth"
+msgstr "ਅਮਰਥ"
+
+#: Amaranth/icons/index.theme.in.h:2
+msgid "Silver Vector Theme"
+msgstr "ਸਿਲਵਰ ਵੈਕਟਰ ਥੀਮ"
+
+#: Amaranth/index.theme.in.h:2
+msgid "Sterling Silver"
+msgstr "ਸਹੀ ਸਿਲਵਰ"
+
+#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "ਗੋਰੀਲਾ"
+
+#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
+msgid "Vector Theme"
+msgstr "ਵੈਕਟਰ ਥੀਮ"
+
+#: Gorilla/index.theme.in.h:2
+msgid "The vector mono Godess"
+msgstr "ਦੀ ਵੈਕਟਰ ਮੋਨੋ ਗਾਡਨਿਸ"
+
+#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "ਲੂਸ਼"
+
+#: Lush/index.theme.in.h:2
+msgid "Mild green theme"
+msgstr "ਮਿਡ ਗਰੀਨ ਥੀਮ"
+
+#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "ਨੂਵੋਲਾ"
+
+#: Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "ਬਲਿਊ ਸਟਾਇਲ ਸਰਫ਼"
+
+#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "ਵਾਸਪ"
+
+#: Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "BeOS ਸਟਾਇਲ ਥੀਮ"
