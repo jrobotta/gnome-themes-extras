@@ -5,7 +5,6 @@ icon_DATA = \
         gnome-gimp.svg \
         gnome-games.svg \
         gnome-terminal.svg \
-        my-computer.svg \
         web-browser.svg \
         $(NULL)
 EXTRA_DIST = $(icon_DATA)
