@@ -2,7 +2,9 @@
 
 	* Added updated and new icons to Nuvola from David
 	* Added symlinks to Nuvola for better coverage
-	* Added file manager icon to Wasp
+	* Added file manager, favorites, my-computer icon to Wasp
+	* Cleaned up symlink scripts in Makefiles
+	* Commented out Amaranth as it will not be part of 0.2
 	
 2003-07-11 Christian Schaller <Uraeus@gnome.org>
 

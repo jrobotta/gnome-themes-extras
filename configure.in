@@ -53,18 +53,6 @@ AM_GLIB_GNU_GETTEXT
 AC_OUTPUT([
 Makefile
 gnome-themes-extras.spec
-Amaranth/Makefile
-Amaranth/gtk-2.0/Makefile
-Amaranth/gtk-2.0/gtkrc
-Amaranth/metacity-1/Makefile
-Amaranth/icons/Makefile
-Amaranth/icons/scalable/Makefile
-Amaranth/icons/scalable/apps/Makefile
-Amaranth/icons/scalable/devices/Makefile
-Amaranth/icons/scalable/emblems/Makefile
-Amaranth/icons/scalable/filesystems/Makefile
-Amaranth/icons/scalable/mimetypes/Makefile
-Amaranth/icons/scalable/stock/Makefile
 Gorilla/Makefile
 Gorilla/gtk/Makefile
 Gorilla/gtk-2.0/Makefile
@@ -123,3 +111,17 @@ Wasp/icons/scalable/mimetypes/Makefile
 Wasp/icons/scalable/stock/Makefile
 po/Makefile.in
 ])
+
+# Amaranth/Makefile
+# Amaranth/gtk-2.0/Makefile
+# Amaranth/gtk-2.0/gtkrc
+# Amaranth/metacity-1/Makefile
+# Amaranth/icons/Makefile
+# Amaranth/icons/scalable/Makefile
+# Amaranth/icons/scalable/apps/Makefile
+# Amaranth/icons/scalable/devices/Makefile
+# Amaranth/icons/scalable/emblems/Makefile
+# Amaranth/icons/scalable/filesystems/Makefile
+# Amaranth/icons/scalable/mimetypes/Makefile
+# Amaranth/icons/scalable/stock/Makefile
+

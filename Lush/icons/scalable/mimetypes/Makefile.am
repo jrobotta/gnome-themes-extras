@@ -14,7 +14,7 @@ icon_DATA = \
 	gnome-mime-application-vnd.sun.xml.impress.svg \
 	gnome-mime-application-vnd.sun.xml.writer.svg \
 	gnome-mime-application-x-deb.svg \
-	gnome-mime-application-x-font-afm.svg \
+	gnome-mime-application-x-font.svg \
 	gnome-mime-application-x-font-ttf.svg \
 	gnome-mime-application-x-gnome-app-info.svg \
 	gnome-mime-application-x-gzip.svg \
@@ -48,6 +48,23 @@ icon_DATA = \
 EXTRA_DIST = $(icon_DATA)
 
 install-data-local:
+	mkdir -p $(icondir)
+	cd $(icondir) && \
+	ln -sf gnome-compressed.svg gnome-mime-application-x-stuffit.svg && \
+	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-pcf.svg && \
+	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-type1.svg && \
+	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-linux-psf.svg &&\
+	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-bdf.svg && \
+	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-afm.svg && \
+	ln -sf gnome-mime-audio.svg gnome-mime-application-x-ogg.svg && \
+	ln -sf gnome-mime-text-html.svg gnome-mime-application-x-php.svg 
 
 uninstall-local:
-	
+	rm -rf $(icondir)/gnome-mime-application-x-stuffit.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-font-pcf.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-font-type1.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-font-linux-psf.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-font-bdf.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-font-afm.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-ogg.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-php.svg

@@ -11,6 +11,8 @@ BuildRequires:  libxml2-devel >= 0:2.5.0
 BuildRequires:  librsvg2-devel >= 0:2.1.3
 BuildRequires:  gdk-pixbuf-devel >= 0:1.3.11
 BuildRequires:  libgsf-devel
+Requires:	gnome-panel >= 2.2.2.2
+Requires:	librsvg2 >= 2.2.0
 Obsoletes:	Nuvola
 
 %description

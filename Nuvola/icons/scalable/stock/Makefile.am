@@ -1,7 +1,7 @@
 icondir = $(datadir)/icons/Nuvola/scalable/stock
 icon_DATA = \
-	applets_screenshooter.svg \
-        bookmark_add.svg \
+        applets-screenshooter.svg \
+	bookmark_add.svg \
 	bookmark.svg \
 	brokenimage.svg \
 	editcopy.svg \

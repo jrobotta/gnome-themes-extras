@@ -63,13 +63,13 @@ install-data-local:
 	ln -sf gnome-mime-text-html.svg gnome-mime-application-x-php.svg 
 
 uninstall-local:
-	rm -rf $(icondir)/gnome-mime-application-x-font-ttf.svg
-	rm -rf $(icondir)/gnome-mime-application-x-font-pcf.svg
-	rm -rf $(icondir)/gnome-mime-application-x-font-type1.svg
-	rm -rf $(icondir)/gnome-mime-application-x-font-linux-psf.svg
-	rm -rf $(icondir)/gnome-mime-application-x-font-bdf.svg
-	rm -rf $(icondir)/gnome-mime-application-x-font-afm.svg
-	rm -rf $(icondir)/gnome-mime-application-x-gnumeric.svg
-	rm -rf $(icondir)/gnome-mime-application-x-ogg.svg
-	rm -rf $(icondir)/gnome-mime-application-x-php.svg
+	rm -rf $(icondir)/gnome-mime-application-x-font-ttf.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-font-pcf.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-font-type1.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-font-linux-psf.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-font-bdf.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-font-afm.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-gnumeric.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-ogg.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-php.svg && \
 	rm -rf $(icondir)/gnome-mime-application-x-stuffit.svg
