@@ -1,3 +1,7 @@
+2003-07-07 Christian Schaller <Uraeus@gnome.org>
+	
+	* Add print-preview icon to Nuvola
+
 2003-07-02  Artur Flinta  <aflinta@cvs.gnome.org>
 
 	* configure.in: Added pl to ALL_LINGUAS
