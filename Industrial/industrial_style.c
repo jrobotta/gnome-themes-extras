@@ -16,6 +16,8 @@
 **************************************************************************/
 
 #include "industrial_style_versioned_include.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 #define DETAIL(xx)   ((detail) && (!strcmp((xx), detail)))
 #if INDUSTRIAL_GTK_VERSION == 2
@@ -228,7 +230,7 @@ shade_color (GdkColor * a, GdkColor *fg, GdkColor * b, float k)
 }
 
 #define TOHEX(x) (CLAMP ((int) ((x) * 255.0), 0, 255))
-#define FROMHEX(x) (((x) >= '0' && (x) <= '9') ? ((x) - '0') : (tolower(x) - 'a' + 10))
+#define FROMHEX(x) (((x) >= '0' && (x) <= '9') ? ((x) - '0') : (g_ascii_tolower(x) - 'a' + 10))
 
 static void
 shade_hex (GdkColor * a, GdkColor *fg, char hex[6])
@@ -770,6 +772,10 @@ rotate_point (GtkPositionType pos,
     x_value = x + offset_y;
     y_value = y + height - offset_x - 1;
     break;
+  default:
+    g_warning ("Please report this event at http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-themes-extras");
+    x_value = x;
+    y_value = y;
   }
 
   if (x_result)
@@ -1282,9 +1288,9 @@ real_draw_box (GtkStyle      *style,
 
     GdkGC *gc;
     GdkColor *color;
-    int gradient_lines = 7;
 
-    if (! (GTK_WIDGET_HAS_DEFAULT (widget) &&
+    if (! (widget &&
+	   GTK_WIDGET_HAS_DEFAULT (widget) &&
 	   GTK_IS_BUTTON (widget) && 
 	   GTK_BUTTON (widget)->relief == GTK_RELIEF_NORMAL/* &&
 							      state_type != GTK_STATE_ACTIVE*/)) {
@@ -1629,10 +1635,10 @@ real_draw_box (GtkStyle      *style,
 	     DETAIL("dockitem") ||
 	     WIDGET_TYPE_NAME("PanelAppletFrame")) {
     GdkGC *bg_gc = NULL;
-    GdkGC *fg_gc;
+    GdkGC *fg_gc = NULL;
     GdkColor *bg_color;
     GdkColor *fg_color;
-    GdkGC *corner_gc;
+    GdkGC *corner_gc = NULL;
 
 
     if (fill) {

@@ -1,3 +1,8 @@
+2004-03-27  Christian Schaller <Uraeus@gnome.org>
+
+	* Add patch to Industrial from Morten Welinder
+	  Fixes issue for Gnumeric and probably others
+
 2004-03-21  Christian Schaller <Uraeus@gnome.org>
 
 	* Some small changes to Nuvola to make it more 2.6 friendly
