@@ -66,7 +66,7 @@ install-data-local:
 	ln -sf gnome-mime-video.svg gnome-mime-video-quicktime.svg && \
 	ln -sf gnome-mime-video.svg gnome-mime-video-x-ms-wmv.svg && \
 	ln -sf gnome-mime-video.svg gnome-mime-video-mpeg.svg && \
-	ln -sf gnome-mime-text-html.svg gnome-mime-application-x-php.svg && \
+	ln -sf gnome-mime-text-html.svg gnome-mime-application-x-php.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-ttf.svg && \
