@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"
-[
- <!ATTLIST svg
-  xmlns:xlink CDATA #FIXED "http://www.w3.org/1999/xlink">
-]>
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
 <svg
    xmlns="http://www.w3.org/2000/svg"
@@ -12,10 +8,16 @@
    version="1"
    x="0.00000000"
    y="0.00000000"
-   width="40.0000000"
-   height="40.0000000"
+   width="48pt"
+   height="48pt"
    viewBox="0 0 119.862 144.729"
-   id="svg548">
+   id="svg548"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   sodipodi:version="0.34"
+   sodipodi:docname="/home/cschalle/Themes/gnome-themes-extras/Nuvola/icons/scalable/emblems/emblem-noread.svg"
+   sodipodi:docbase="/home/cschalle/Themes/gnome-themes-extras/Nuvola/icons/scalable/emblems/">
+  <sodipodi:namedview
+     id="base" />
   <defs
      id="defs639" />
   <g
@@ -39,15 +41,15 @@
            style="stop-color:#828282;stop-opacity:1;"
            offset="1.00000000"
            id="stop553" />
-        <a:midPointStop
+        <midPointStop
            offset="0"
            style="stop-color:#616161"
            id="midPointStop554" />
-        <a:midPointStop
+        <midPointStop
            offset="0.5"
            style="stop-color:#616161"
            id="midPointStop555" />
-        <a:midPointStop
+        <midPointStop
            offset="1"
            style="stop-color:#828282"
            id="midPointStop556" />
@@ -84,15 +86,15 @@
            style="stop-color:#dadada;stop-opacity:1;"
            offset="1.00000000"
            id="stop563" />
-        <a:midPointStop
+        <midPointStop
            offset="0"
            style="stop-color:#828282"
            id="midPointStop564" />
-        <a:midPointStop
+        <midPointStop
            offset="0.5"
            style="stop-color:#828282"
            id="midPointStop565" />
-        <a:midPointStop
+        <midPointStop
            offset="1"
            style="stop-color:#DADADA"
            id="midPointStop566" />
@@ -133,15 +135,15 @@
            style="stop-color:#828282;stop-opacity:1;"
            offset="1.00000000"
            id="stop574" />
-        <a:midPointStop
+        <midPointStop
            offset="0"
            style="stop-color:#616161"
            id="midPointStop575" />
-        <a:midPointStop
+        <midPointStop
            offset="0.5"
            style="stop-color:#616161"
            id="midPointStop576" />
-        <a:midPointStop
+        <midPointStop
            offset="1"
            style="stop-color:#828282"
            id="midPointStop577" />
@@ -166,15 +168,15 @@
            style="stop-color:#a87d28;stop-opacity:1;"
            offset="1.00000000"
            id="stop581" />
-        <a:midPointStop
+        <midPointStop
            offset="0"
            style="stop-color:#824F26"
            id="midPointStop582" />
-        <a:midPointStop
+        <midPointStop
            offset="0.5"
            style="stop-color:#824F26"
            id="midPointStop583" />
-        <a:midPointStop
+        <midPointStop
            offset="1"
            style="stop-color:#A87D28"
            id="midPointStop584" />
@@ -199,15 +201,15 @@
            style="stop-color:#d6a84a;stop-opacity:1;"
            offset="1.00000000"
            id="stop588" />
-        <a:midPointStop
+        <midPointStop
            offset="0"
            style="stop-color:#A87D28"
            id="midPointStop589" />
-        <a:midPointStop
+        <midPointStop
            offset="0.5"
            style="stop-color:#A87D28"
            id="midPointStop590" />
-        <a:midPointStop
+        <midPointStop
            offset="1"
            style="stop-color:#D6A84A"
            id="midPointStop591" />
@@ -232,15 +234,15 @@
            style="stop-color:#d6a84a;stop-opacity:1;"
            offset="1.00000000"
            id="stop595" />
-        <a:midPointStop
+        <midPointStop
            offset="0"
            style="stop-color:#A87D28"
            id="midPointStop596" />
-        <a:midPointStop
+        <midPointStop
            offset="0.5"
            style="stop-color:#A87D28"
            id="midPointStop597" />
-        <a:midPointStop
+        <midPointStop
            offset="1"
            style="stop-color:#D6A84A"
            id="midPointStop598" />
@@ -265,15 +267,15 @@
            style="stop-color:#fff030;stop-opacity:1;"
            offset="1.00000000"
            id="stop602" />
-        <a:midPointStop
+        <midPointStop
            offset="0"
            style="stop-color:#FF9200"
            id="midPointStop603" />
-        <a:midPointStop
+        <midPointStop
            offset="0.5"
            style="stop-color:#FF9200"
            id="midPointStop604" />
-        <a:midPointStop
+        <midPointStop
            offset="1"
            style="stop-color:#FFF030"
            id="midPointStop605" />
@@ -314,23 +316,23 @@
            style="stop-color:#fff030;stop-opacity:1;"
            offset="1.00000000"
            id="stop613" />
-        <a:midPointStop
+        <midPointStop
            offset="0"
            style="stop-color:#FFC957"
            id="midPointStop614" />
-        <a:midPointStop
+        <midPointStop
            offset="0.4299"
            style="stop-color:#FFC957"
            id="midPointStop615" />
-        <a:midPointStop
+        <midPointStop
            offset="0.4382"
            style="stop-color:#FFAE00"
            id="midPointStop616" />
-        <a:midPointStop
+        <midPointStop
            offset="0.5"
            style="stop-color:#FFAE00"
            id="midPointStop617" />
-        <a:midPointStop
+        <midPointStop
            offset="1"
            style="stop-color:#FFF030"
            id="midPointStop618" />
@@ -367,15 +369,15 @@
            style="stop-color:#ffc957;stop-opacity:1;"
            offset="1.00000000"
            id="stop625" />
-        <a:midPointStop
+        <midPointStop
            offset="0"
            style="stop-color:#FFFFFF"
            id="midPointStop626" />
-        <a:midPointStop
+        <midPointStop
            offset="0.4299"
            style="stop-color:#FFFFFF"
            id="midPointStop627" />
-        <a:midPointStop
+        <midPointStop
            offset="1"
            style="stop-color:#FFC957"
            id="midPointStop628" />
@@ -400,15 +402,15 @@
            style="stop-color:#ffffff;stop-opacity:1;"
            offset="1.00000000"
            id="stop632" />
-        <a:midPointStop
+        <midPointStop
            offset="0"
            style="stop-color:#FF9200"
            id="midPointStop633" />
-        <a:midPointStop
+        <midPointStop
            offset="0.5"
            style="stop-color:#FF9200"
            id="midPointStop634" />
-        <a:midPointStop
+        <midPointStop
            offset="1"
            style="stop-color:#FFFFFF"
            id="midPointStop635" />
