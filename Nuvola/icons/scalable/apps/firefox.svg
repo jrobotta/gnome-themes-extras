@@ -2,17 +2,17 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
 "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg
-   width="424.734"
-   height="381.495"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="48.000000pt"
+   height="48.000000pt"
    id="svg1"
    sodipodi:version="0.32"
    inkscape:version="0.38.1"
-   sodipodi:docname="firefox_03.svg"
-   sodipodi:docbase="/home/tobias/Desktop">
+   sodipodi:docname="firefox.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/apps"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -22,11 +22,12 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.0000000"
      inkscape:cx="108.50000"
-     inkscape:cy="146.00000"
-     inkscape:window-width="1048"
-     inkscape:window-height="976"
-     inkscape:window-x="244"
-     inkscape:window-y="483" />
+     inkscape:cy="-99.695999"
+     inkscape:window-width="871"
+     inkscape:window-height="656"
+     inkscape:window-x="67"
+     inkscape:window-y="81"
+     borderlayer="top" />
   <defs
      id="defs2">
     <linearGradient
@@ -425,7 +426,7 @@
   </defs>
   <g
      id="g1355"
-     transform="matrix(1.255533,0.000000,0.000000,1.255527,-69.77655,-34.70643)">
+     transform="matrix(0.174776,0.000000,0.000000,0.174775,-7.213184,1.058021)">
     <path
        sodipodi:type="arc"
        style="fill:url(#radialGradient1079);fill-opacity:1.0000000;fill-rule:evenodd;stroke-width:3.0000000pt;"

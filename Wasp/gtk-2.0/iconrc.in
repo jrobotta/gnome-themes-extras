@@ -129,7 +129,7 @@ style "icon-style"
 	stock ["gaim-away"]	=	{{"gaim_offline.svg"}}
 	stock ["gaim-dialog-auth"] =	{{"gaim_auth.svg"}}
 	stock ["gaim-dialog-error"] =	{{"gaim_error.svg"}}
-	# stock ["gaim-dialog-info"] =	{{"gaim-dialog-info"}}
+	# stock ["gaim-dialog-info"] =	{{"gaim-dialog-info.svg"}}
 	stock ["gaim-icon-away"] =	{{"gaim_offline.svg"}}
 	stock ["gaim-icon-online"] =	{{"gaim_online.svg"}}
 	stock ["gaim-info"]	=	{{"gaim_info.svg"}}

@@ -15,3 +15,13 @@ icon_DATA = \
         gnome-dev-zipdisk.svg \
         $(NULL)
 EXTRA_DIST = $(icon_DATA)
+
+install-data-local:
+	mkdir -p $(DESTDIR)$(icondir)
+	cd $(DESTDIR)$(icondir) && \
+	ln -sf gnome-dev-mouse.svg gnome-dev-mouse-optical.svg && \
+	ln -sf gnome-dev-cdwriter.svg gnome-dev-removable.svg
+
+uninstall-local:
+	rm -rf $(DESTDIR)$(icondir)/gnome-dev-mouse-optical.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-dev-removable.svg

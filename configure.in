@@ -130,4 +130,5 @@ Smooth/Makefile
 Industrial/Makefile
 Industrial/gtk-2.0/gtkrc
 Industrial/gtk-2.0/Makefile
+po/Makefile.in
 ])
