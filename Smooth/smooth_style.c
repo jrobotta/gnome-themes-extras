@@ -22,7 +22,7 @@
  *   IceGradient theme for gtk, hacked over ThinIce by Tim Gerla and Tomas Ã–gren ThinIce,
  *     which is based on raster's Motif theme and the Metal theme.
  *     Authors: Tim Gerla <timg@means.net>
- *              Tomas Ögren <stric@ing.umu.se>
+ *              Tomas Ã–gren <stric@ing.umu.se>
  *              JM Perez <jose.perez@upcnet.es>
  *   
  * <-- EnGradient Header
@@ -34,7 +34,7 @@
  * IceGradient theme for gtk, hacked over ThinIce by Tim Gerla and Tomas Ã–gren ThinIce,
  *   which is based on raster's Motif theme and the Metal theme.
  *   Authors: Tim Gerla <timg@means.net>
- *              Tomas Ögren <stric@ing.umu.se>
+ *            Tomas Ã–gren <stric@ing.umu.se>
  *            JM Perez <jose.perez@upcnet.es>
  *   
  * <-- IceGradient Header
@@ -47,7 +47,7 @@
  *   Author: Bastien Nocera <hadess@hadess.net>
  *   Cleanice original author:  Rodney Dawes <dobez@fnmail.com>
  *   ThinIce Authors: Tim Gerla <timg@means.net>
- *            Tomas Ögren <stric@ing.umu.se>
+ *   	  Tomas Ã–gren <stric@ing.umu.se>
  *   Clean Author: dengen40@yahoo.com
  *
  * <-- CleanIce Header
@@ -115,13 +115,22 @@ static GdkGC *
 new_color_gc (GtkStyle * style, GdkColor * color)
 {
   GdkGCValues gc_values;
+   GdkColormap *cmap=NULL;
+  gint depth=0;
   
-  gdk_colormap_alloc_color (style->colormap, color,
+  cmap = style->colormap;
+  depth = style->depth;
+ if (!(cmap)) {
+    cmap = gdk_colormap_get_system();
+    depth = gdk_colormap_get_visual(cmap)->depth;
+  }
+  
+  gdk_colormap_alloc_color (cmap, color,
 			    FALSE, TRUE);
 
   gc_values.foreground = *color;
 
-  return gtk_gc_get (style->depth, style->colormap,
+  return gtk_gc_get (depth, cmap,
 		     &gc_values, GDK_GC_FOREGROUND);
 }
 
@@ -2174,12 +2183,14 @@ draw_slider_grip(GtkStyle * style,
    case FIXEDLINES_IN_GRIP:
    case FIXEDLINES_OUT_GRIP:
        /* too small no midlines */
-      if ((width <= 13) && (height <= 13))
+      if (((width <= 13) && (orientation == GTK_ORIENTATION_HORIZONTAL)) ||
+          ((height <= 13) && (orientation == GTK_ORIENTATION_VERTICAL)))
          BAIL = TRUE;
 	
      break;
    case SLASHES_GRIP:
-      if ((width <= 7) && (height <= 7))
+      if (((width <= 13) && (orientation == GTK_ORIENTATION_HORIZONTAL)) ||
+          ((height <= 13) && (orientation == GTK_ORIENTATION_VERTICAL)))
          BAIL = TRUE;
 
      break;
@@ -2876,7 +2887,7 @@ draw_flat_box (GtkStyle * style,
 	       const gchar * detail,
 	       gint x, gint y, gint width, gint height)
 {
-   g_return_if_fail(sanitize_parameters(style, window, NULL, NULL));
+   g_return_if_fail(sanitize_parameters(style, window, &width, &height));
 
    /* we always want call to the default for treeviews and such */  
  
@@ -2891,7 +2902,7 @@ draw_flat_box (GtkStyle * style,
      FLAT_FILL_BACKGROUND(style, window, state_type, area, widget, NULL, x, y, width, height);
 
      if (DETAIL("tooltip")) 
-       gdk_draw_rectangle(window, style->black_gc, FALSE, x, y, width - 1, height - 1);
+       gdk_draw_rectangle(window, style->dark_gc[state_type], FALSE, x, y, width - 1, height - 1);
    }
 }
 

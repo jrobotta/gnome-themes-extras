@@ -1,6 +1,6 @@
 #include "misc_functions.h"
 
-/* This function is based on CleanIce draw arrow routines */
+/* This function is based on XFCE's & CleanIce draw arrow routines, both which  were based on ThinIce's */
 static void
 do_draw_default_arrow(GdkWindow * window,
 		        GdkRectangle * area,
@@ -9,83 +9,7 @@ do_draw_default_arrow(GdkWindow * window,
 			gint x,
 			gint y,
 			gint width,
-			gint height,
-			gint extra_tail)
-{
-  gint j, extra=0;
-  gboolean sharp = TRUE;
-
-  if (area)
-    gdk_gc_set_clip_rectangle (gc, area);
-  
-  if (arrow_type == GTK_ARROW_DOWN)
-    {
-      extra = (extra_tail==-1)?(height - 1 + width/2):extra_tail;
-    
-      for (j = 0; j < extra; j++)
-        gdk_draw_line (window, gc, x, y + j, x + width - sharp, y + j);	
-
-      if (extra) extra--;
-
-      for (j = 0; j <= width/2; j++)
-        gdk_draw_line (window, gc, x + j, y + j + extra, x + width - j - sharp, y + j + extra);	
-    }
-  else if (arrow_type == GTK_ARROW_UP)
-    {
-      extra = (extra_tail==-1)?(height - 1 + width/2):extra_tail;
-      
-      y -= 1;
-
-      for (j = 0; j < extra; j++)
-        gdk_draw_line (window, gc, x, y + height - j, x + width - sharp, y + height - j);	
-
-      if (extra) extra--;
-      
-      for (j = 0; j <= width/2; j++)
-        gdk_draw_line (window, gc, x + j, y + height - j - extra, x + width - j - sharp, y + height - j - extra);	
-    }
-  else if (arrow_type == GTK_ARROW_LEFT)
-    {
-      extra = (extra_tail==-1)?(width - 1 + height / 2):extra_tail;
-
-      x -= 2;
-
-      for (j = 0; j < extra; j++)
-        gdk_draw_line (window, gc, x + width - j, y, x + width - j, y + height - sharp);	
-
-      if (extra) extra--;
-
-      for (j = 0; j <= height/2; j++)
-        gdk_draw_line (window, gc, x + width - j - extra, y + j, x + width - j - extra, y + height - j - sharp);	
-    }
-  else if (arrow_type == GTK_ARROW_RIGHT)
-    {
-      extra = (extra_tail==-1)?(width - 1 + height / 2):extra_tail;
-
-      for (j = 0; j < extra; j++)
-        gdk_draw_line (window, gc, x + j, y, x + j, y + height - sharp);	
-
-      if (extra) extra--;
-
-      for (j = 0; j <= height/2; j++)
-        gdk_draw_line (window, gc, x + j + extra, y + j, x + j + extra, y + height - j - sharp);	
-    }
-
-  if (area)
-    gdk_gc_set_clip_rectangle (gc, NULL);
-}
-
-/* This function is based on XFCE's & CleanIce draw arrow routines, both which  were based on ThinIce's */
-static void
-do_draw_default_arrow_with_tail(GdkWindow * window,
-		        GdkRectangle * area,
-			GtkArrowType arrow_type,
-			GdkGC * gc,
-			gint x,
-			gint y,
-			gint width,
-			gint height,
-			gint extra_tail)
+			gint height)
 {
   gint steps, extra;
   gint start, increment;
@@ -100,7 +24,7 @@ do_draw_default_arrow_with_tail(GdkWindow * window,
 
     steps = 1 + width / 2;
 
-    extra = (extra_tail==-1)?height - steps:extra_tail;
+    extra = height - steps;
 
     if (arrow_type == GTK_ARROW_DOWN)
     {
@@ -128,7 +52,7 @@ do_draw_default_arrow_with_tail(GdkWindow * window,
 
     steps = 1 + height / 2;
 
-    extra = (!extra_tail)?0:width - steps;
+    extra = width - steps;
 
     if (arrow_type == GTK_ARROW_RIGHT)
     {
@@ -422,7 +346,7 @@ do_draw_arrow(GdkWindow * window,
 	      gint height,
 	      gint arrow_style)
 {
-  gint aw=width, ah=height;
+  gint aw=width, ah=height, extra_tail=0;
 
   switch (arrow_style) {
     case ARROW_STYLE_ICEGRADIENT : 
@@ -433,95 +357,54 @@ do_draw_arrow(GdkWindow * window,
       do_draw_icegradient_arrow(window, area, arrow_type, fill_gc, TRUE, x, y, aw, ah);
       do_draw_icegradient_arrow(window, area, arrow_type, border_gc, FALSE, x, y, aw, ah);
       break;
-    case ARROW_STYLE_THINICE : 
-      x -= 1;
-      y -= 1;
-      ah -= 1;
-      aw -= 1;
-
-      if ((arrow_type == GTK_ARROW_LEFT) || (arrow_type == GTK_ARROW_RIGHT)) {
-        aw -= 3 - ah % 2;
-        ah -= 3 - ah % 2;
-      } else { 
-        ah -= 3 - aw % 2;
-        aw -= 3 - aw % 2;
-      }
- 
-      x += (width - aw) / 2;
-      y += (height - ah) / 2;
-
-      do_draw_default_arrow_with_tail(window, area, arrow_type, border_gc, x, y, aw, ah, -1);
-      do_draw_default_arrow_with_tail(window, area, arrow_type, fill_gc, x+1, y+1, aw-2, ah-2, -1);
-      break;
     case ARROW_STYLE_WONDERLAND : 
       do_draw_wonderland_arrow(window, area, arrow_type, border_gc, x+1, y+1, width-2, height-2);
       break;
-    case ARROW_STYLE_DEFAULT : 
-      ah -= 2;
-      aw -= 2;
-      if ((arrow_type == GTK_ARROW_LEFT) || (arrow_type == GTK_ARROW_RIGHT)) {
-	gfloat tmp=((ah+1)/2);
-        if (tmp > aw) {
-          ah = 2*aw - 1;
-          aw = (ah+1)/2;
-        } else {
-          aw = (gint) tmp;
-          ah = 2*aw - 1;
-        }  
-      } else { 
-        gfloat tmp=((aw+1)/2);
-      
-        if (tmp > ah) {
-          aw = 2*ah - 1;
-          ah = (aw+1)/2;
-        } else {
-          ah = (gint) tmp;
-          aw = 2*ah - 1;
-        }  
-      }
-
-      x += (width - aw) / 2;
-      y += (height - ah) / 2;
-      do_draw_default_arrow(window, area, arrow_type, border_gc, x, y, aw, ah, 0);
-      
-      if ((arrow_type == GTK_ARROW_LEFT) || (arrow_type == GTK_ARROW_RIGHT))
-        do_draw_default_arrow(window, area, arrow_type, fill_gc, x+1, y+2, aw-2, ah-4, 0);
-      else
-        do_draw_default_arrow(window, area, arrow_type, fill_gc, x+2, y+1, aw-4, ah-2, 0);
-      
-      break;
+    case ARROW_STYLE_THINICE : 
     case ARROW_STYLE_XFCE :
+    case ARROW_STYLE_DEFAULT : 
+      if (arrow_style == ARROW_STYLE_THINICE) 
+        extra_tail=3;
+      else  
+        if (arrow_style == ARROW_STYLE_XFCE) 
+          extra_tail=2;
+
       ah -= 2;
       aw -= 2;
       if ((arrow_type == GTK_ARROW_LEFT) || (arrow_type == GTK_ARROW_RIGHT)) {
-        gfloat tmp=((ah+1)/2);
+        gfloat tmp=((ah+1)/2) - ((width%2)?1:0);
         if (tmp > aw) {
-          ah = 2*aw - 1;
+          ah = 2*aw - 1 - ((width%2)?1:0);
           aw = (ah+1)/2;
         } else {
           aw = (gint) tmp;
           ah = 2*aw - 1;
         }  
 
-	aw += 2;
+        if ((ah < 3) || (aw < 5)) {
+          ah = 3;
+          aw = 5;
+        }
+	aw += extra_tail;
       } else { 
-        gfloat tmp=((aw+1)/2);
+        gfloat tmp=((aw+1)/2) - ((height%2)?1:0);
       
         if (tmp > ah) {
-          aw = 2*ah - 1;
+          aw = 2*ah - 1 - ((height%2)?1:0);
           ah = (aw+1)/2;
         } else {
           ah = (gint) tmp;
           aw = 2*ah - 1;
         }  
 
-	ah += 2;
+	ah += extra_tail;
       }
 
       x += (width - aw) / 2 ;
       y += (height - ah) / 2;
       
-      do_draw_default_arrow(window, area, arrow_type, border_gc, x, y, aw, ah, 2);
+      do_draw_default_arrow(window, area, arrow_type, border_gc, x, y, aw, ah);
+      do_draw_default_arrow(window, area, arrow_type, fill_gc, x+1, y+1, aw-2, ah-2);
       break;
     case ARROW_STYLE_XPM : 
     default :
