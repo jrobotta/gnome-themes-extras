@@ -1,4 +1,9 @@
-2003-07-23 Christian Schaler <Uraeus@gnome.org>
+2003-07-27 Christian Schaller <uraeus@gnome.org>
+	
+	* Update Smooth engine to use latest from smooth CVS
+	* Fix a couple of Nuvola icons
+
+2003-07-23 Christian Schaller <Uraeus@gnome.org>
 
 	* Switch mazimize and restore icons in Wasp, they where wrong now
 

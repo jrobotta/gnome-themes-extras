@@ -9,11 +9,12 @@
 #define SMOOTH_LINE_SMOOTHED		6
 #define SMOOTH_LINE_COLD		7
 #define SMOOTH_LINE_WIN32		8
+#define SMOOTH_LINE_SMOOTHBEVEL		9
 
 #define SMOOTH_SOLID_FILL		1
 #define SMOOTH_GRADIENT_FILL		2
 #define SMOOTH_SHADE_GRADIENT_FILL	3
-#define SMOOTH_XPM_FILL			4
+#define SMOOTH_PIXBUF_FILL		4
 
 #define SMOOTH_NORMAL_TABS		1
 #define SMOOTH_ROUND_TABS		2
@@ -141,6 +142,7 @@ extern GType smooth_type_rc_style;
 #define FILL_SHADE2_VALUE(style, part) (((part) && THEME_PART(part)->use_fill)?THEME_PART(part)->fill.shade2:THEME_DATA(style)->fill.shade2)
 #define FILL_COLOR1(style, part, state) (((part) && THEME_PART(part)->use_fill)?((THEME_PART(part)->fill.use_color1[state])?THEME_PART(part)->fill.color1[state]:((THEME_DATA(style)->fill.use_color1[state])?THEME_DATA(style)->fill.color1[state]:style->bg[state])):((THEME_DATA(style)->fill.use_color1[state])?THEME_DATA(style)->fill.color1[state]:style->bg[state]))
 #define FILL_COLOR2(style, part, state) (((part) && THEME_PART(part)->use_fill)?((THEME_PART(part)->fill.use_color2[state])?THEME_PART(part)->fill.color2[state]:((THEME_DATA(style)->fill.use_color2[state])?THEME_DATA(style)->fill.color2[state]:style->bg[state])):((THEME_DATA(style)->fill.use_color2[state])?THEME_DATA(style)->fill.color2[state]:style->bg[state]))
+#define FILL_FILE_NAME(style, part, state) (((part) && THEME_PART(part)->use_fill)?((THEME_PART(part)->fill.file_name[state])?THEME_PART(part)->fill.file_name[state]:((THEME_DATA(style)->fill.file_name[state])?THEME_DATA(style)->fill.file_name[state]:NULL)):((THEME_DATA(style)->fill.file_name[state])?THEME_DATA(style)->fill.file_name[state]:NULL))
 
 #define ARROW_STYLE(style)(THEME_DATA(style)->arrow.style)
 #define SOLID_ARROW(style)(THEME_DATA(style)->arrow.solid)
@@ -167,6 +169,8 @@ struct _smooth_fill_style {
 
   GdkColor color1[5];//GtkStateType
   GdkColor color2[5];//GtkStateType
+
+  gchar * file_name[5];//GtkStateType
 };
 
 struct _smooth_edge_style {

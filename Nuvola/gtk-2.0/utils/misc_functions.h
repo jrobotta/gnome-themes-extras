@@ -3,7 +3,9 @@
 
 #include <gtk/gtk.h>
 
-#include "draw_gradients.h"
+#include <gdk-pixbuf/gdk-pixbuf.h>
+
+#include "draw_fill.h"
 #include "draw_grips.h"
 #include "draw_arrows.h"
 
@@ -25,6 +27,11 @@
 #define ythickness(style) (((GtkStyle *)style)->ythickness)
 
 #define gdk_window_get_size(window, width, height) (gdk_drawable_get_size (window, width, height))
+#define gdk_pixbuf_unref(pixbuf) (g_object_unref(pixbuf))
+#define gdk_pixmap_unref(pixmap) (g_object_unref(pixmap))
+#define gdk_pixbuf_ref(pixbuf) (g_object_ref(pixbuf))
+#define gdk_pixmap_ref(pixmap) (g_object_ref(pixmap))
+#define gdk_gc_destroy(gc) (g_object_ref(gc))
 
 typedef const gchar		detail_char;
 

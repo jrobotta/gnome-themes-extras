@@ -219,6 +219,7 @@ rounded_extension_points(gint x,
   gint x2 = x + width - 1, y2 = y + height - 1;
   switch (position) {
     case GTK_POS_BOTTOM:
+      y2 +=1;
       points[0].x = x2;		points[0].y = y2;
       points[1].x = x2;		points[1].y = y+5;
       points[2].x = x2-2;	points[2].y = y+2;

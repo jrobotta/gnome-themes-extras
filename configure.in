@@ -19,6 +19,12 @@ AM_MAINTAINER_MODE
 
 AC_PROG_INTLTOOL([0.23])
 AC_PROG_CC
+AC_PROG_INSTALL
+
+# No static please
+AM_DISABLE_STATIC
+
+# Initialize libtool
 AM_PROG_LIBTOOL
 
 PKG_CHECK_MODULES(GTK,
@@ -26,6 +32,7 @@ PKG_CHECK_MODULES(GTK,
 		AC_MSG_ERROR([GTK+-2.0 is required to compile gtk-engines]))
 
 GTK_BINARY_VERSION=`$PKG_CONFIG --variable=gtk_binary_version gtk+-2.0`
+
 AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
 AC_SUBST(GTK_BINARY_VERSION)

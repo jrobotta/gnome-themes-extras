@@ -1,6 +1,10 @@
 #include "smooth_style.h"
 #include "smooth_rc_style.h"
 
+#if GTK1
+  #define GtkSettings  int
+#endif
+
 #if GTK2
 static void   smooth_rc_style_class_init (SmoothRcStyleClass *klass);
 static guint  smooth_rc_style_parse (GtkRcStyle *rc_style, GtkSettings *settings,
@@ -21,6 +25,8 @@ enum
     TOKEN_RESIZE_GRIP,
 
     TOKEN_STYLE,
+
+    TOKEN_FILE,
 
     TOKEN_FILL,
     TOKEN_VDIRECTION,
@@ -81,6 +87,8 @@ theme_symbols[] =
 
   { "style",               TOKEN_STYLE },
 
+  { "file",                TOKEN_FILE },
+
   { "fill",                TOKEN_FILL },
   { "vdirection",          TOKEN_VDIRECTION },
   { "hdirection",          TOKEN_HDIRECTION },
@@ -139,8 +147,8 @@ TranslateFillStyleName (gchar * str, gint *retval)
     *retval = SMOOTH_GRADIENT_FILL;
   else if (is_enum("shade_gradient") || is_enum("shaded") || is_enum("shade"))
     *retval = SMOOTH_SHADE_GRADIENT_FILL;
-  else if (is_enum("xpm"))
-    *retval = SMOOTH_XPM_FILL;
+  else if (is_enum("pixbuf") || is_enum("pixmap") || is_enum("xpm"))
+    *retval = SMOOTH_PIXBUF_FILL;
   else
     return FALSE; 
   return TRUE;
@@ -173,6 +181,8 @@ TranslateLineStyleName (gchar * str, gint *retval)
     *retval = SMOOTH_LINE_FLAT;
   else if (is_enum("thin"))
     *retval = SMOOTH_LINE_THIN;
+  else if (is_enum("smoothbevel"))
+    *retval = SMOOTH_LINE_SMOOTHBEVEL;
   else if (is_enum("bevel"))
     *retval = SMOOTH_LINE_BEVELED;
   else if (is_enum("standard") || is_enum("normal") || is_enum("default"))
@@ -269,6 +279,7 @@ static void part_init (SmoothRcStyle *style, smooth_part_style *part, gint parts
   for (i=0; i < 5; i++) {
     part->fill.use_color1[i] = FALSE;
     part->fill.use_color2[i] = FALSE;
+    part->fill.file_name[i] = NULL;
   }
 
   part->edge.use_line        = FALSE;
@@ -301,6 +312,7 @@ void smooth_rc_style_init (SmoothRcStyle *style)
   for (i=0; i < 5; i++) {
     style->fill.use_color1[i] = FALSE;
     style->fill.use_color2[i] = FALSE;
+    style->fill.file_name[i] = NULL;
   }
 
   style->arrow.style     = DEFAULT_ARROWSTYLE;
@@ -483,7 +495,7 @@ theme_parse_boolean(GScanner *scanner,
   return token;
 }
 
-static guint theme_parse_line (GScanner *scanner, GTokenType wanted_token, smooth_line_style *retval)
+static guint theme_parse_line (GtkSettings  *settings, GScanner *scanner, GTokenType wanted_token, smooth_line_style *retval)
 {
   guint token;
 
@@ -521,7 +533,7 @@ static guint theme_parse_line (GScanner *scanner, GTokenType wanted_token, smoot
   return token;
 }
 
-static guint theme_parse_fill (GScanner *scanner, GTokenType wanted_token, smooth_fill_style *retval)
+static guint theme_parse_fill (GtkSettings  *settings, GScanner *scanner, GTokenType wanted_token, smooth_fill_style *retval)
 {
   guint token;
 
@@ -593,6 +605,32 @@ static guint theme_parse_fill (GScanner *scanner, GTokenType wanted_token, smoot
         token = gtk_rc_parse_color (scanner, &retval->color2[state]);
       }
       break;
+    case TOKEN_FILE:
+      {
+        GtkStateType state;
+  
+        token = g_scanner_get_next_token (scanner);
+        if (token != TOKEN_FILE)
+          return TOKEN_FILE;
+  
+        token = gtk_rc_parse_state (scanner, &state);
+        if (token != G_TOKEN_NONE)
+          return token;
+  
+        token = g_scanner_get_next_token (scanner);
+        if (token != G_TOKEN_EQUAL_SIGN)
+          return G_TOKEN_EQUAL_SIGN;
+
+        token = g_scanner_get_next_token (scanner);
+        if (token == G_TOKEN_STRING)
+#ifdef GTK1
+          retval->file_name[state] = gtk_rc_find_pixmap_in_path(scanner, scanner->value.v_string);
+#endif
+#ifdef GTK2
+          retval->file_name[state] = gtk_rc_find_pixmap_in_path(settings, scanner, scanner->value.v_string);
+#endif
+      }	
+      break;
     case TOKEN_QUADRATIC_GRADIENT:
       token = theme_parse_boolean (scanner, TOKEN_QUADRATIC_GRADIENT, FALSE, &retval->quadratic_gradient);
       break;
@@ -611,7 +649,7 @@ static guint theme_parse_fill (GScanner *scanner, GTokenType wanted_token, smoot
   return token;
 }
 
-static guint theme_parse_edge (GScanner *scanner, GTokenType wanted_token, smooth_edge_style *retval)
+static guint theme_parse_edge (GtkSettings  *settings, GScanner *scanner, GTokenType wanted_token, smooth_edge_style *retval)
 {
   smooth_edge_style junk_edge;
   smooth_fill_style junk_fill;
@@ -634,14 +672,14 @@ static guint theme_parse_edge (GScanner *scanner, GTokenType wanted_token, smoot
       token = theme_parse_custom_enum(scanner, TOKEN_STYLE, TranslateEdgeStyleName, DEFAULT_EDGESTYLE, &retval->style);
       break;
     case TOKEN_LINE:
-      token = theme_parse_line (scanner, TOKEN_LINE, &retval->line);
+      token = theme_parse_line (settings, scanner, TOKEN_LINE, &retval->line);
       retval->use_line = TRUE;
       break;
     case TOKEN_EDGE:    
-      token = theme_parse_edge (scanner, TOKEN_EDGE, &junk_edge);
+      token = theme_parse_edge (settings, scanner, TOKEN_EDGE, &junk_edge);
       break;
     case TOKEN_FILL :
-      token = theme_parse_fill (scanner, TOKEN_FILL, &junk_fill);
+      token = theme_parse_fill (settings, scanner, TOKEN_FILL, &junk_fill);
       break;
     default:
       g_scanner_get_next_token (scanner);
@@ -658,7 +696,7 @@ static guint theme_parse_edge (GScanner *scanner, GTokenType wanted_token, smoot
   return token;
 }
 
-static guint theme_parse_arrow (GScanner *scanner, GTokenType wanted_token, smooth_arrow_style *retval)
+static guint theme_parse_arrow (GtkSettings  *settings, GScanner *scanner, GTokenType wanted_token, smooth_arrow_style *retval)
 {
   guint token;
 
@@ -707,7 +745,8 @@ static guint theme_parse_arrow (GScanner *scanner, GTokenType wanted_token, smoo
   return token;
 }
 
-static guint theme_parse_option (GScanner *scanner, GTokenType wanted_token, smooth_option_style *retval)
+
+static guint theme_parse_option (GtkSettings  *settings, GScanner *scanner, GTokenType wanted_token, smooth_option_style *retval)
 {
   guint token;
 
@@ -728,17 +767,17 @@ static guint theme_parse_option (GScanner *scanner, GTokenType wanted_token, smo
       token = theme_parse_custom_enum(scanner, TOKEN_STYLE, TranslateOptionStyleName, DEFAULT_OPTIONSTYLE, &THEME_PART(retval)->style);
       break;
     case TOKEN_FILL :
-      token = theme_parse_fill (scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
+      token = theme_parse_fill (settings, scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
       THEME_PART(retval)->use_fill = TRUE;
       break;
     case TOKEN_EDGE:
-      token = theme_parse_edge (scanner, TOKEN_EDGE, &THEME_PART(retval)->edge);
+      token = theme_parse_edge (settings, scanner, TOKEN_EDGE, &THEME_PART(retval)->edge);
       break;
     case TOKEN_MOTIF:
       token = theme_parse_boolean (scanner, TOKEN_MOTIF, TRUE, &retval->motif);
       break;
     case TOKEN_LINE:
-      token = theme_parse_line (scanner, TOKEN_LINE, &THEME_PART(retval)->line);
+      token = theme_parse_line (settings, scanner, TOKEN_LINE, &THEME_PART(retval)->line);
       THEME_PART(retval)->use_line = TRUE;
       break;
     case TOKEN_XPADDING:
@@ -762,7 +801,7 @@ static guint theme_parse_option (GScanner *scanner, GTokenType wanted_token, smo
   return token;
 }
 
-static guint theme_parse_grip (GScanner *scanner, GTokenType wanted_token, smooth_grip_style *retval)
+static guint theme_parse_grip (GtkSettings  *settings, GScanner *scanner, GTokenType wanted_token, smooth_grip_style *retval)
 {
   guint token;
 
@@ -783,14 +822,14 @@ static guint theme_parse_grip (GScanner *scanner, GTokenType wanted_token, smoot
       token = theme_parse_custom_enum(scanner, TOKEN_STYLE, TranslateGripStyleName, DEFAULT_GRIPSTYLE,  &THEME_PART(retval)->style);
       break;
     case TOKEN_LINE:
-      token = theme_parse_line (scanner, TOKEN_LINE, &THEME_PART(retval)->line);
+      token = theme_parse_line (settings, scanner, TOKEN_LINE, &THEME_PART(retval)->line);
       THEME_PART(retval)->use_line = TRUE;
       break;
     case TOKEN_EDGE:
-      token = theme_parse_edge (scanner, TOKEN_EDGE, &THEME_PART(retval)->edge);
+      token = theme_parse_edge (settings, scanner, TOKEN_EDGE, &THEME_PART(retval)->edge);
       break;
     case TOKEN_FILL :
-      token = theme_parse_fill (scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
+      token = theme_parse_fill (settings, scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
       THEME_PART(retval)->use_fill = TRUE;
       break;
     case TOKEN_XPADDING:
@@ -823,7 +862,7 @@ static guint theme_parse_grip (GScanner *scanner, GTokenType wanted_token, smoot
   return token;
 }
 
-static guint theme_parse_check (GScanner *scanner, GTokenType wanted_token, smooth_check_style *retval)
+static guint theme_parse_check (GtkSettings  *settings, GScanner *scanner, GTokenType wanted_token, smooth_check_style *retval)
 {
   guint token;
 
@@ -844,14 +883,14 @@ static guint theme_parse_check (GScanner *scanner, GTokenType wanted_token, smoo
       token = theme_parse_custom_enum(scanner, TOKEN_STYLE, TranslateCheckStyleName, DEFAULT_CHECKSTYLE,  &THEME_PART(retval)->style);
       break;
     case TOKEN_FILL :
-      token = theme_parse_fill (scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
+      token = theme_parse_fill (settings, scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
       THEME_PART(retval)->use_fill = TRUE;
       break;
     case TOKEN_MOTIF:
       token = theme_parse_boolean (scanner, TOKEN_MOTIF, TRUE, &retval->motif);
       break;
     case TOKEN_EDGE:
-      token = theme_parse_edge (scanner, TOKEN_EDGE, &THEME_PART(retval)->edge);
+      token = theme_parse_edge (settings, scanner, TOKEN_EDGE, &THEME_PART(retval)->edge);
       break;
     case TOKEN_XPADDING:
       token = theme_parse_int (scanner, TOKEN_XPADDING, 0, &THEME_PART(retval)->xpadding, -25, 25);
@@ -860,7 +899,7 @@ static guint theme_parse_check (GScanner *scanner, GTokenType wanted_token, smoo
       token = theme_parse_int (scanner, TOKEN_YPADDING, 0, &THEME_PART(retval)->ypadding, -25, 25);
       break;
     case TOKEN_LINE:
-      token = theme_parse_line (scanner, TOKEN_LINE, &THEME_PART(retval)->line);
+      token = theme_parse_line (settings, scanner, TOKEN_LINE, &THEME_PART(retval)->line);
       THEME_PART(retval)->use_line = TRUE;
       break;
     default:
@@ -878,7 +917,7 @@ static guint theme_parse_check (GScanner *scanner, GTokenType wanted_token, smoo
   return token;
 }
 
-static guint theme_parse_generic_part (GScanner *scanner, GTokenType wanted_token, smooth_part_style *retval)
+static guint theme_parse_generic_part (GtkSettings  *settings, GScanner *scanner, GTokenType wanted_token, smooth_part_style *retval)
 {
   guint token;
 
@@ -896,15 +935,15 @@ static guint theme_parse_generic_part (GScanner *scanner, GTokenType wanted_toke
   while (token != G_TOKEN_RIGHT_CURLY) {
     switch (token) {
     case TOKEN_FILL :
-      token = theme_parse_fill (scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
+      token = theme_parse_fill (settings, scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
       THEME_PART(retval)->use_fill = TRUE;
       break;
     case TOKEN_LINE:
-      token = theme_parse_line (scanner, TOKEN_LINE, &THEME_PART(retval)->line);
+      token = theme_parse_line (settings, scanner, TOKEN_LINE, &THEME_PART(retval)->line);
       THEME_PART(retval)->use_line = TRUE;
       break;
     case TOKEN_EDGE:
-      token = theme_parse_edge (scanner, TOKEN_EDGE, &THEME_PART(retval)->edge);
+      token = theme_parse_edge (settings, scanner, TOKEN_EDGE, &THEME_PART(retval)->edge);
       break;
     case TOKEN_XPADDING:
       token = theme_parse_int (scanner, TOKEN_XPADDING, 0, &THEME_PART(retval)->xpadding, -25, 25);
@@ -927,7 +966,7 @@ static guint theme_parse_generic_part (GScanner *scanner, GTokenType wanted_toke
   return token;
 }
 
-static guint theme_parse_trough_part (GScanner *scanner, GTokenType wanted_token, smooth_trough_style *retval)
+static guint theme_parse_trough_part (GtkSettings  *settings, GScanner *scanner, GTokenType wanted_token, smooth_trough_style *retval)
 {
   guint token;
 
@@ -948,11 +987,11 @@ static guint theme_parse_trough_part (GScanner *scanner, GTokenType wanted_token
       token = theme_parse_boolean (scanner, TOKEN_TROUGH_SHOW_VALUE, DEFAULT_TROUGH_SHOW_VALUE, &retval->show_value);
       break;
     case TOKEN_FILL :
-      token = theme_parse_fill (scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
+      token = theme_parse_fill (settings, scanner, TOKEN_FILL, &THEME_PART(retval)->fill);
       THEME_PART(retval)->use_fill = TRUE;
       break;
     case TOKEN_LINE:
-      token = theme_parse_line (scanner, TOKEN_LINE, &THEME_PART(retval)->line);
+      token = theme_parse_line (settings, scanner, TOKEN_LINE, &THEME_PART(retval)->line);
       THEME_PART(retval)->use_line = TRUE;
       break;
     case TOKEN_XPADDING:
@@ -1143,6 +1182,8 @@ smooth_rc_style_parse (GScanner * scanner,
   guint i;
 
   #if GTK1
+    GtkSettings  *settings=NULL; 
+  
   smooth_style->refcount = 1;
   smooth_rc_style_init (smooth_style);
   #endif
@@ -1180,10 +1221,10 @@ smooth_rc_style_parse (GScanner * scanner,
       switch (token)
 	{
         case TOKEN_EDGE:
-          token = theme_parse_edge (scanner, TOKEN_EDGE, &smooth_style->edge);
+          token = theme_parse_edge (settings, scanner, TOKEN_EDGE, &smooth_style->edge);
           break;
 	case TOKEN_FILL :
-   	  token = theme_parse_fill (scanner, TOKEN_FILL, &smooth_style->fill);
+   	  token = theme_parse_fill (settings, scanner, TOKEN_FILL, &smooth_style->fill);
     	  break;
 	case TOKEN_REAL_SLIDERS:
 	  token = theme_parse_boolean (scanner, TOKEN_REAL_SLIDERS, DEFAULT_REAL_SLIDERS, &smooth_style->real_sliders);
@@ -1192,25 +1233,25 @@ smooth_rc_style_parse (GScanner * scanner,
 	  token = theme_parse_boolean (scanner, TOKEN_RESIZE_GRIP, DEFAULT_RESIZE_GRIP, &smooth_style->resize_grip);
 	  break;
 	case TOKEN_LINE:
-	  token = theme_parse_line (scanner, TOKEN_LINE, &smooth_style->line);
+	  token = theme_parse_line (settings, scanner, TOKEN_LINE, &smooth_style->line);
 	  break;
 	case TOKEN_GRIP:
-	  token = theme_parse_grip (scanner, TOKEN_GRIP, &smooth_style->grip);
+	  token = theme_parse_grip (settings, scanner, TOKEN_GRIP, &smooth_style->grip);
 	  break;
 	case TOKEN_ARROW:
-	  token = theme_parse_arrow (scanner, TOKEN_ARROW, &smooth_style->arrow);
+	  token = theme_parse_arrow (settings, scanner, TOKEN_ARROW, &smooth_style->arrow);
 	  break;	  
 	case TOKEN_PROGRESS:
-	  token = theme_parse_generic_part (scanner, TOKEN_PROGRESS, &smooth_style->progress);
+	  token = theme_parse_generic_part (settings, scanner, TOKEN_PROGRESS, &smooth_style->progress);
 	  break;
 	case TOKEN_TROUGH:
-	  token = theme_parse_trough_part (scanner, TOKEN_TROUGH, &smooth_style->trough);
+	  token = theme_parse_trough_part (settings, scanner, TOKEN_TROUGH, &smooth_style->trough);
 	  break;
 	case TOKEN_CHECK:
-	  token = theme_parse_check (scanner, TOKEN_CHECK, &smooth_style->check);
+	  token = theme_parse_check (settings, scanner, TOKEN_CHECK, &smooth_style->check);
 	  break;
 	case TOKEN_OPTION:
-	  token = theme_parse_option (scanner, TOKEN_OPTION, &smooth_style->option);
+	  token = theme_parse_option (settings, scanner, TOKEN_OPTION, &smooth_style->option);
 	  break;
 	case TOKEN_TABSTYLE:
 	  token = theme_parse_custom_enum(scanner, TOKEN_TABSTYLE, TranslateTabStyleName, DEFAULT_TABSTYLE, &smooth_style->tab_style);
@@ -1298,6 +1339,9 @@ void part_merge (smooth_part_style *dest_part, smooth_part_style *src_part)
     dest_part->fill.use_color2[i] = src_part->fill.use_color2[i];
     if (src_part->fill.use_color2[i])
       color_merge(&dest_part->fill.color2[i], &src_part->fill.color2[i]);
+
+    if (src_part->fill.file_name[i])
+      dest_part->fill.file_name[i] = g_strdup(src_part->fill.file_name[i]);
   }
   
   dest_part->edge.use_line  	  = src_part->edge.use_line;
@@ -1350,7 +1394,7 @@ smooth_rc_style_merge (GtkRcStyle * dest,
       dest_data->edge.line.style      = src_data->edge.line.style;
       dest_data->edge.line.thickness  = src_data->edge.line.thickness;
 
-      part_merge(THEME_PART(&dest_data->fill),THEME_PART(&src_data->fill));
+      dest_data->fill.style = src_data->fill.style;
       dest_data->fill.quadratic_gradient = src_data->fill.quadratic_gradient;
       dest_data->fill.gradient_direction[0] = src_data->fill.gradient_direction[0];
       dest_data->fill.gradient_direction[1] = src_data->fill.gradient_direction[1];
@@ -1365,6 +1409,9 @@ smooth_rc_style_merge (GtkRcStyle * dest,
         dest_data->fill.use_color2[i] = src_data->fill.use_color2[i];
         if (src_data->fill.use_color2[i])
           color_merge(&dest_data->fill.color2[i], &src_data->fill.color2[i]);
+
+        if (src_data->fill.file_name[i])
+          dest_data->fill.file_name[i] = g_strdup(src_data->fill.file_name[i]);
       }
 
       dest_data->arrow.style = src_data->arrow.style;

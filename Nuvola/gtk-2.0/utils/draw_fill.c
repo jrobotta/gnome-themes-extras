@@ -1,17 +1,6 @@
 #include "misc_functions.h"
 
-/* Most of the following functions were taken originaly from the 
- * IceGradient & EnGradient engines, however, after taking a 
- * look at the sources more closely I realized that 600+ lines
- * were a waste of repetetive code in multiple routines, so I merged
- * the bulk of the code into one major routine: gdk_draw_gradient,
- * which was then broken out into alloc_gradient_color to take care of
- * several repetitions of that. I then took style specific code from
- * EnGradient and converted into style_draw_gradient, which simply
- * called to gdk_draw_gradient for the real work.
- *
- *It still needs more work, and better support for multiple gradients.
- */
+/* the following are color routines */
 
 /* This function is taken and slightly from Wonderland, though 
  * I have seen it in other engines as well, and it apears
@@ -183,7 +172,7 @@ alloc_gradient_color(GdkColor * color,
   gfloat a, b, c, delta;
   if (quadratic) {
     
-    /* delta = ax� + bx� + cx */ 
+    /* delta = ax³ + bx² + cx */ 
    
     a = 4.0 / (steps * steps * steps);
     b = -6.0 / (steps * steps);
@@ -200,6 +189,21 @@ alloc_gradient_color(GdkColor * color,
   gdk_colormap_alloc_color(colormap, color, FALSE, TRUE);
 }
 
+/* the following are gradient fill routines */
+
+/* Most of the gradient functions were taken originaly from the 
+ * IceGradient & EnGradient engines, however, after taking a 
+ * look at the sources more closely I realized that 600+ lines
+ * were a waste of repetetive code in multiple routines, so I merged
+ * the bulk of the code into one major routine: gdk_draw_gradient,
+ * which was then broken out into alloc_gradient_color to take care of
+ * several repetitions of that. I then took style specific code from
+ * EnGradient and converted into style_draw_gradient, which simply
+ * called to gdk_draw_gradient for the real work.
+ *
+ *It still needs more work, and better support for multiple gradients.
+ */
+
 /*
  * Explanation of the quadratic gradient formula:
  * y|
@@ -207,15 +211,15 @@ alloc_gradient_color(GdkColor * color,
  *  | \      /         the color range of the background is too wide. The idea is to make the range
  *  |  \    /          shorter in the center where the text will be. An easy way to do it would be
  *  !   -__-           to set the relative distances between steps corresponding to a something like
- * -+----------|-x                            y = (x - w/2)² for x in [0,w]
+ * -+----------|-x                            y = (x - w/2)Â² for x in [0,w]
  *  |          w       where w is the number of steps in the gradient.
  *                     At step w you'll have the acumulated sum of all steps and thus
- *                                   int(y, 0, w) = w³/12
+ *                                   int(y, 0, w) = wÂ³/12
  * At each step you would get
- *                               int(y) = x³/3 - wx²/2 + w²x/4
+ *                               int(y) = xÂ³/3 - wxÂ²/2 + wÂ²x/4
  * If you want a coefficient in [0,1]
- *                      int(y) / int(y, 0, w) = 4x³/w³ - 6x²/w² + 3x/w =
- *                                            = ax³ + bx² + cx
+ *                      int(y) / int(y, 0, w) = 4xÂ³/wÂ³ - 6xÂ²/wÂ² + 3x/w =
+ *                                            = axÂ³ + bxÂ² + cx
 */
 
 void
@@ -310,4 +314,166 @@ gdk_draw_shaded_gradient (GdkWindow * window,
   shade (&color, &light, shine_value);
 
   gdk_draw_gradient(window, gc, colormap, area, x, y, width, height, light, dark, gradient_type, quadratic, noclip);
+}
+
+/* the following are pixbuf fill routines */
+
+#if GTK1
+static GdkPixbuf *
+internal_gdk_pixbuf_get_by_name(gchar * file_name)
+{
+  return NULL;
+}
+
+static void
+internal_gdk_pixbuf_unref(gchar * file_name)
+{  
+}
+#endif
+
+#if GTK2
+static GHashTable* pixbuf_cache = NULL;
+
+typedef struct
+  {
+    gchar       *file_name;
+    GdkPixbuf   *pixbuf;
+    GdkPixmap   *pixmap;
+    GdkGC       *pixmap_gc;
+    gint 	ref_count;
+  } GdkCachedPixbuf;
+
+static void
+free_cache(GdkCachedPixbuf *cache)
+{
+  /*g_object_unref(cache->pixmap_gc);
+  g_object_unref(cache->pixmap);*/
+  g_object_unref(cache->pixbuf);
+  g_free(cache->file_name);
+  g_free(cache);
+}
+
+static GdkCachedPixbuf *
+new_cache(gchar * file_name)
+{
+   GdkCachedPixbuf *result=NULL;
+
+   result = g_new0(GdkCachedPixbuf, 1);
+   result->ref_count = 1;
+   result->file_name = g_strdup(file_name);
+   result->pixbuf = gdk_pixbuf_new_from_file(file_name, NULL);
+
+   return result;
+}
+
+static GdkPixbuf *
+internal_gdk_pixbuf_get_by_name(gchar * file_name)
+{
+   GdkCachedPixbuf *cache=NULL;
+   GdkPixbuf *result=NULL;
+   
+   if (!pixbuf_cache)
+     pixbuf_cache= g_hash_table_new_full(g_str_hash, g_str_equal,
+                           		 NULL, NULL);
+
+   cache = g_hash_table_lookup(pixbuf_cache, file_name);
+   
+   if (!cache) {
+     cache = new_cache(file_name);
+     if (cache) 
+       g_hash_table_insert(pixbuf_cache, cache->file_name, cache);
+   }
+  
+   if (cache) {
+     result = cache->pixbuf;
+     cache->ref_count++;
+   }
+   
+   return result;
+}
+
+static void
+internal_gdk_pixbuf_unref(gchar * file_name)
+{  
+   GdkCachedPixbuf *cache=NULL;
+
+   cache = g_hash_table_lookup(pixbuf_cache, file_name);
+
+   if (cache) {
+     cache->ref_count--;
+   
+     if (cache->ref_count == 0) {
+       g_hash_table_remove(pixbuf_cache, file_name);
+       free_cache(cache);
+     }   
+   }   
+}
+#endif
+
+void
+gdk_tile_pixbuf_fill (GdkWindow * window,
+                      GdkGC * gc,
+		      gchar * file_name,
+		      GdkRectangle * area,
+		      gint x,
+		      gint y,
+		      gint width,
+		      gint height,
+		      gboolean noclip)
+{
+  GdkRectangle clip;
+  GdkPixbuf *pixbuf = internal_gdk_pixbuf_get_by_name(file_name);
+  GdkPixmap *tmp_pixmap;
+  GdkGC *tmp_gc;
+  gint pixbuf_width=-1, pixbuf_height=-1;
+  
+  if (!pixbuf)
+    return;
+    
+  pixbuf_width=gdk_pixbuf_get_width(pixbuf);
+  pixbuf_height=gdk_pixbuf_get_height(pixbuf);
+
+  clip.x = x;
+  clip.y = y;
+  clip.width = width;
+  clip.height = height;
+
+  if (!noclip) {
+    if (area) {
+      GdkRectangle clip2;       
+      if (gdk_rectangle_intersect(area,&clip, &clip2))
+        gdk_gc_set_clip_rectangle(gc, &clip2);
+      else
+        gdk_gc_set_clip_rectangle(gc, area);
+    } else
+      gdk_gc_set_clip_rectangle(gc, &clip);
+  }
+
+  tmp_pixmap = gdk_pixmap_new (window,
+			       pixbuf_width,
+			       pixbuf_height,
+			       -1);
+
+  tmp_gc = gdk_gc_new (tmp_pixmap);
+  gdk_pixbuf_render_to_drawable (pixbuf, tmp_pixmap, tmp_gc,
+				 0, 0, 
+				 0, 0,
+				 pixbuf_width, pixbuf_height,
+				 GDK_RGB_DITHER_NORMAL,
+				 0, 0);
+  gdk_gc_unref (tmp_gc);
+
+  gdk_gc_set_fill(gc, GDK_TILED);
+  gdk_gc_set_tile(gc,tmp_pixmap);
+  gdk_gc_set_ts_origin(gc, 0, 0);
+  gdk_draw_rectangle (window, gc, TRUE, x, y, width, height);
+
+  gdk_gc_set_fill(gc, GDK_SOLID);
+  gdk_pixmap_unref (tmp_pixmap);
+  internal_gdk_pixbuf_unref (file_name);
+
+  if (!noclip)
+    gdk_gc_set_clip_rectangle(gc, NULL); 
+
+  return;
 }

@@ -10,10 +10,10 @@ enginedir = $(libdir)/gtk-2.0/$(GTK_BINARY_VERSION)/engines
 engine_LTLIBRARIES = libsmooth.la
 
 libsmooth_la_SOURCES = \
-	utils/draw_gradients.c	\
-	utils/draw_gradients.h	\
 	utils/draw_grips.c	\
 	utils/draw_grips.h	\
+	utils/draw_fill.h	\
+	utils/draw_fill.c	\
 	utils/draw_arrows.c	\
 	utils/draw_arrows.h	\
         utils/misc_functions.c	\

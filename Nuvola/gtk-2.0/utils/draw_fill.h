@@ -1,5 +1,5 @@
-#ifndef DRAW_GRADIENTS_H
-#define DRAW_GRADIENTS_H
+#ifndef DRAW_FILL_H
+#define DRAW_FILL_H
 
 typedef enum {
   GDK_GRADIENT_HORIZONTAL,
@@ -54,4 +54,15 @@ gdk_draw_shaded_gradient (GdkWindow * window,
 			  gboolean quadratic,
 			  gboolean noclip);
 
-#endif /* DRAW_GRADIENTS_H */
+void
+gdk_tile_pixbuf_fill (GdkWindow * window,
+                      GdkGC * gc,
+		      gchar * file_name,
+		      GdkRectangle * area,
+		      gint x,
+		      gint y,
+		      gint width,
+		      gint height,
+		      gboolean noclip);
+
+#endif /* DRAW_FILL_H */

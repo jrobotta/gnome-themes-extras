@@ -79,8 +79,6 @@ static GtkStyleClass *parent_class = NULL;
 
 #define IS_BONOBO_DOCK_ITEM(object) ((widget) && (widget->parent) && (GTK_IS_HANDLE_BOX(gtk_widget_get_parent (widget)) || (g_type_name(G_OBJECT_TYPE(widget->parent))) && (!strcmp("BonoboDockItem", g_type_name(G_OBJECT_TYPE(widget->parent))))))
 
-#define gdk_gc_destroy(gc) (g_object_unref(gc))
-
 #endif
 
 #define ROUND_CORNERS	0
@@ -200,6 +198,36 @@ midtone_gc(GtkStyle * style, GtkStateType state)
   return mid_gc;
 }
 
+static GdkGC *
+middarktone_gc(GtkStyle * style, GtkStateType state)
+{
+  GdkGC * dark_gc=NULL, * mid_gc=style->mid_gc[state];
+  GdkColor dark_color,  mid_color;
+
+  shade (&style->bg[state], &dark_color, DARKNESS_MULT);
+
+  mid_color.red = (style->bg[state].red + dark_color.red) / 2;
+  mid_color.green = (style->bg[state].green + dark_color.green) / 2;
+  mid_color.blue = (style->bg[state].blue + dark_color.blue) / 2;
+  mid_gc = new_color_gc(style, &mid_color);
+  return mid_gc;
+}
+
+static GdkGC *
+midlighttone_gc(GtkStyle * style, GtkStateType state)
+{
+  GdkGC * * light_gc=NULL, * mid_gc=style->mid_gc[state];
+  GdkColor  light_color, mid_color;
+
+  shade (&style->bg[state], &light_color, LIGHTNESS_MULT);
+
+  mid_color.red = (light_color.red + style->bg[state].red) / 2;
+  mid_color.green = (light_color.green + style->bg[state].green) / 2;
+  mid_color.blue = (light_color.blue + style->bg[state].blue) / 2;
+  mid_gc = new_color_gc(style, &mid_color);
+  return mid_gc;
+}
+
 static GdkBitmap *
 arc_clip_mask(gint width,
 	      gint height)
@@ -259,8 +287,8 @@ round_box_clip_mask(gint width,
   return result;
 }
 
-#define FLAT_FILL_BACKGROUND(style, window, state_type, area, widget, part, x, y, width, height) (fill_background(style, window, state_type, GTK_SHADOW_NONE, area, widget, part, x, y, width, height, FALSE, FALSE, GTK_ORIENTATION_VERTICAL,FALSE))		
-#define gradient_fill_background(style, window, state_type, area, widget, part, x, y, width, height, invert, orientation) (fill_background(style, window, state_type, GTK_SHADOW_NONE, area, widget, part, x, y, width, height, TRUE, invert, orientation,FALSE))
+#define FLAT_FILL_BACKGROUND(style, window, state_type, area, widget, part, x, y, width, height) (fill_background(style, window, state_type, GTK_SHADOW_NONE, area, NULL, widget, part, x, y, width, height, FALSE, FALSE, GTK_ORIENTATION_VERTICAL,FALSE))		
+#define gradient_fill_background(style, window, state_type, area, widget, part, x, y, width, height, invert, orientation) (fill_background(style, window, state_type, GTK_SHADOW_NONE, area, NULL, widget, part, x, y, width, height, TRUE, invert, orientation,FALSE))
 
 /* This function is based on a similar routine from IceGradient */
 static void 
@@ -269,6 +297,7 @@ fill_background(GtkStyle * style,
 	        GtkStateType state_type,
 		GtkShadowType shadow_type,
 	        GdkRectangle * area,
+	        GdkRegion * rgn,
  	        GtkWidget * widget,
 		smooth_part_style * part,
 	        gint x,
@@ -295,9 +324,53 @@ fill_background(GtkStyle * style,
   clip_area.width = width;
   clip_area.height = height;
   	
+  if (fill_style == SMOOTH_PIXBUF_FILL) {
+    if (!FILL_FILE_NAME(style, part, state_type)) 
+      fill_style = SMOOTH_SOLID_FILL;
+  } else {
+    if (!use_gradient) 
+       fill_style = SMOOTH_SOLID_FILL;
+  }
 
-  if (!use_gradient) fill_style = SMOOTH_SOLID_FILL;
   switch (fill_style) {
+    case SMOOTH_PIXBUF_FILL : 
+      { 
+        GdkGC *gc = gdk_gc_new(window);
+	GdkGCValues gc_values;
+
+        gdk_gc_get_values(style->bg_gc[state_type], &gc_values);
+	gdk_gc_set_function(gc, GDK_COPY);
+        gdk_gc_set_line_attributes(gc, 1, GDK_LINE_SOLID, gc_values.cap_style, gc_values.join_style);
+        
+        if (!arc_fill) {
+	  #if ROUND_CORNERS
+  	  gdk_gc_set_clip_rectangle(gc, NULL);
+	  arc_fill = TRUE;
+	  clip_mask = round_box_clip_mask(width, height);
+	  gdk_gc_set_clip_origin(gc, x, y);	  
+          gdk_gc_set_clip_mask(gc, clip_mask);
+          #else
+	  if (rgn) {
+	    arc_fill = TRUE;
+	    gdk_gc_set_clip_region(gc, rgn);
+	  } else 
+	    if (area) gdk_gc_set_clip_rectangle(gc, area);
+	  #endif
+	} 
+	else {
+  	  gdk_gc_set_clip_rectangle(gc, NULL);
+          clip_mask = arc_clip_mask(clip_area.width+1, clip_area.height+1);
+	  gdk_gc_set_clip_origin(gc, clip_area.x, clip_area.y);	  
+          gdk_gc_set_clip_mask(gc, clip_mask);
+        }
+	         
+        gdk_tile_pixbuf_fill (window, gc, FILL_FILE_NAME(style, part, state_type), area, x, y, width, height, arc_fill);
+	
+        gdk_gc_set_clip_mask(gc, NULL);
+        gdk_gc_set_clip_rectangle(gc, NULL);
+        gdk_gc_destroy(gc);
+      }
+      break;
     case SMOOTH_GRADIENT_FILL : 
     case SMOOTH_SHADE_GRADIENT_FILL : 
       {
@@ -318,7 +391,11 @@ fill_background(GtkStyle * style,
 	  gdk_gc_set_clip_origin(gc, x, y);	  
           gdk_gc_set_clip_mask(gc, clip_mask);
           #else
-	  if (area) gdk_gc_set_clip_rectangle(gc, area);
+	  if (rgn) {
+	    arc_fill = TRUE;
+	    gdk_gc_set_clip_region(gc, rgn);
+	  } else 
+	    if (area) gdk_gc_set_clip_rectangle(gc, area);
 	  #endif
 	} 
 	else
@@ -344,23 +421,23 @@ fill_background(GtkStyle * style,
       }
       break;
     default :
-      if ((!style->bg_pixmap[state_type]) || (arc_fill)) {
+      if ((!style->bg_pixmap[state_type]) || (arc_fill) || (rgn)) {
         GdkGC *gc = ((!(OPTION_MOTIF(style))) && (shadow_type!=GTK_SHADOW_NONE))?style->base_gc[state_type]:style->bg_gc[state_type];
 
-        if (area) 
-	  gdk_gc_set_clip_rectangle(gc, area);
+        if (area) gdk_gc_set_clip_rectangle(gc, area);
+	if (rgn) gdk_gc_set_clip_region(gc, rgn);
 
-        if (arc_fill) 
+        if (!arc_fill) {
+         gdk_draw_rectangle(window, gc, TRUE, x, y, width, height); 
+	} 
+	else 
 	{
-	  gdk_draw_arc(window, gc, TRUE, x, y, width, height, 0, 360 * 64);
+  	  gdk_draw_arc(window, gc, TRUE, x, y, width, height, 0, 360 * 64);
           gdk_draw_arc(window, gc, FALSE, x, y, width, height, 0, 360 * 64);
-        } 
-	else
-	  gtk_style_apply_default_background(style, window, widget && !GTK_WIDGET_NO_WINDOW(widget),
-                                        state_type, area, x, y, width, height);
+        }
 
-        if (area) 
-	  gdk_gc_set_clip_rectangle(gc, NULL);
+        gdk_gc_set_clip_region(gc, NULL);
+        gdk_gc_set_clip_rectangle(gc, NULL);
       } else
          gtk_style_apply_default_background(style, window, widget && !GTK_WIDGET_NO_WINDOW(widget),
                                           state_type, area, x, y, width, height);
@@ -373,7 +450,7 @@ fill_background(GtkStyle * style,
     #if GTK2
     g_object_unref(clip_mask);
     #endif
- }   
+ } 
 }
 
 
@@ -399,7 +476,7 @@ draw_line_shadow_with_gap(GtkStyle * style,
   GdkGC              *gc3 = NULL;
   GdkGC              *gc4 = NULL;
   GdkGC              *shade = NULL;
-  GdkGC              *dark, *light, *mid;
+  GdkGC              *dark, *light, *mid, *middark, *midlight;
   gboolean 	     line_overlap = FALSE;
 
   if ((EDGE_LINE_STYLE(style, part)==SMOOTH_LINE_WIN32) && DETAIL("buttondefault")) {
@@ -426,6 +503,10 @@ draw_line_shadow_with_gap(GtkStyle * style,
     
   light = lighttone_gc(style, state_type);
   mid = midtone_gc(style, state_type);
+
+  midlight = midlighttone_gc(style, state_type);
+  middark = middarktone_gc(style, state_type);
+  
   switch (shadow_type)
     {
     case GTK_SHADOW_ETCHED_IN:
@@ -473,10 +554,10 @@ draw_line_shadow_with_gap(GtkStyle * style,
         switch (EDGE_LINE_STYLE(style, part))
 	{
 	  case SMOOTH_LINE_SMOOTHED :
-            gc1 = mid;
+            gc1 = middark;
             gc2 = dark;
             gc3 = light;
-            gc4 = mid;
+            gc4 = midlight;
 	    line_overlap = FALSE;
             break;
 	  case SMOOTH_LINE_COLD :
@@ -546,6 +627,13 @@ draw_line_shadow_with_gap(GtkStyle * style,
             gc4 = mid;
 	    line_overlap = TRUE;
             break;
+	  case SMOOTH_LINE_SMOOTHBEVEL :
+            gc1 = midlight;
+            gc2 = light;
+            gc3 = dark;
+            gc4 = middark;
+	    line_overlap = TRUE;
+            break;
 	  case SMOOTH_LINE_COLD :
             shade = shaded_color (style, state_type, shades[6]);
             gc1 = shade;
@@ -586,166 +674,8 @@ draw_line_shadow_with_gap(GtkStyle * style,
   if (dark) gtk_gc_release (dark);
   if (mid) gtk_gc_release (mid);
   if (light) gtk_gc_release (light);
-}
-
-/* This routine is mostly based on the Xenophilia draw_extension & draw_polygon
- * routines, though the LighthouseBlue draw_extension routine, & the XFCE
- * draw_shadow routine were also useful resources.
- */
-static void
-draw_round_shadow(GtkStyle * style,
-	       GdkWindow * window,
-	       GtkStateType state_type,
-	       GtkShadowType shadow_type,
-	       GdkRectangle * area,
-	       GtkWidget * widget,
-	       detail_char * detail,
-	       gint x,
-	       gint y,
-	       gint width,
-	       gint height)
-{
-  GdkPoint	 points[13];
-  gint		 x2, y2;
-  gint 		 orientation=0, position=1, selected=0;
-  GdkGC              *shade = NULL;
-  GdkGC              *dark, *light, *mid;
-  gint thick=0;      
-	
-  x2 = x + width - 2;
-  y2 = y + height - 2;
-	
-  rounded_box_points(x+1, y+1, width-2, height-2,points, TRUE);
-	
-  thick = EDGE_LINE_THICKNESS(style, NULL);  
-	
-  dark = darktone_gc(style, state_type);
-  light = lighttone_gc(style, state_type);
-  mid = midtone_gc(style, state_type);
-
-	/* draw inner shadow line(s)  */	
-	{
-	  GdkGC		*gc[3], *use_gc=NULL, *mid_gc=NULL, *bg_gc=style->bg_gc[state_type];
-	  gdouble		angle;
-	  gint		j,i, x,y, x2,y2, xt, yt, mx=0,my=0, sign, thickness;
-	
-          if (EDGE_LINE_STYLE(style, NULL)==SMOOTH_LINE_NONE) return;
-
-          switch (shadow_type)
-          {
-            case GTK_SHADOW_ETCHED_IN:
-              gc[0] = dark;
-              gc[1] = light;
-              gc[2] = light;
-              gc[3] = dark;
-	      break;
-            case GTK_SHADOW_ETCHED_OUT:
-              gc[0] = light;
-              gc[1] = light;
-              gc[2] = dark;
-              gc[3] = dark;
-	      break;
-            case GTK_SHADOW_IN:
-              gc[0] = mid;
-              gc[1] = light;
-              gc[2] = mid;
-              gc[3] = dark;
-	      break;
-            case GTK_SHADOW_OUT:
-              gc[0] = mid;
-              gc[1] = dark;
-              gc[2] = mid;
-              gc[3] = light;
-	      break;
-	    default :
-              gc[0] = mid;
-              gc[1] = dark;
-              gc[2] = mid;
-              gc[3] = light;  
-	  }    
-          thickness = 2;
-	  		
-	  sign = 0;
-	  for (i = thickness; i >= 0; --i) {
-	    for (j = 0; j < 12; ++j) {
-		x	= points[j].x;
-		y	= points[j].y;
-		x2	= points[j+1].x;
-		y2	= points[j+1].y;
-			
-		if ((x == x2) && (y == y2)) {
-		  angle = 0;
-		} else {
-		  angle = atan2 (y2 - y, x2 - x);
-		}
-			
-		if ((angle > - (M_PI_4 * 3) - 0.0625) && (angle < M_PI_4 - 0.0625)) {
-		  if (i!=1) {
-		    use_gc = gc[3];
-		  } else {
-		    use_gc = gc[2];
-		  } 
-		  mid_gc = use_gc;
-		  if (angle > -M_PI_4) {
-   	            y  -= i;
-		    y2 -= i;
-		  } else {
-		    x  -= i;
-		    x2 -= i;
-		  }
-		  if (sign != 0) {
-		    sign = 0;
-  		    mx = x + i;
-  		    if (i!=1) {
-		      mid_gc = gc[3];
-		    } else {
-		      mid_gc = gc[2];
-		    } 
-		  }
-		} else {
-		  if (i!=1) {
-		    use_gc = gc[0];
-		  } else {
-     		    use_gc = gc[1];
-		  }  
-		  mid_gc = use_gc;
-		  if ((angle < -(M_PI_4 * 3)) || (angle > (M_PI_4 * 3))) {
-   	            y  += i;
-		    y2 += i;
-		  } else {
-		    x  += i;
-		    x2 += i;
-		  }
-		  if (sign != 1) {
-		    sign = 1;
-  		    mx = x - i;
-  		    if (i!=1) {
-		      mid_gc = gc[0];
-		    } else {
-		      mid_gc = gc[1];
-		    } 
-		  }
-	        }
-	        my = y;
-		if (use_gc) {
-	  	  if (y2 < y) {
-		    xt = x; x = x2; x2 = xt;
-		    yt = y; y = y2; y2 = yt;
-	          }
-                  if (area) gdk_gc_set_clip_rectangle (use_gc, area);
-	          gdk_draw_line (window, use_gc, x, y, x2, y2);
-                  if (area) gdk_gc_set_clip_rectangle (use_gc, NULL);
-	        }
-		
-		if ((j > 0) && (mid_gc) && (mid_gc != use_gc))
-		  gdk_draw_point (window, mid_gc, mx, my);
-            }
-	  }  
-	}  
-  if (shade) gtk_gc_release (shade);
-  if (mid) gtk_gc_release (mid);
-  if (light) gtk_gc_release (light);
-  if (dark) gtk_gc_release (dark);
+  if (middark) gtk_gc_release (middark);
+  if (midlight) gtk_gc_release (midlight);
 }
 
 static void 
@@ -1511,7 +1441,7 @@ draw_box(GtkStyle * style,
             }
           }
 	  
-          draw_line_shadow_with_gap(style, window, state_type, shadow_type, area, widget, detail,
+          draw_line_shadow_with_gap(style, window, GTK_STATE_NORMAL, shadow_type, area, widget, detail,
 	                            trough, x+PART_XPADDING(trough), y+PART_YPADDING(trough), 
 	                            width-PART_XPADDING(trough)*2, height-PART_YPADDING(trough)*2, 
 				    0, 0, 0);
@@ -1672,7 +1602,7 @@ draw_option(GtkStyle * style,
       if ((line_style->style != SMOOTH_LINE_BEVELED) && (line_style->style != SMOOTH_LINE_THIN))
         {x++; y++; width-=2; height-=2;}     
 
-      fill_background(style, window, state_type, shadow_type, area, widget, THEME_PART(option), x, y, width, height, (OPTION_MOTIF(style)), TRUE, GTK_ORIENTATION_VERTICAL, TRUE);
+      fill_background(style, window, state_type, shadow_type, area, NULL, widget, THEME_PART(option), x, y, width, height, (OPTION_MOTIF(style)), TRUE, GTK_ORIENTATION_VERTICAL, TRUE);
      
       if ((line_style->style != SMOOTH_LINE_BEVELED) && (line_style->style != SMOOTH_LINE_THIN))
         {x--; y--; width+=2; height+=2;}
@@ -1740,7 +1670,7 @@ draw_shadow_gap (GtkStyle * style,
 {
   g_return_if_fail(sanitize_parameters(style, window, &width, &height));
   
-  gtk_style_apply_default_background (style, window, widget && !GTK_WIDGET_NO_WINDOW (widget), state_type, area, x, y, width, height);
+  FLAT_FILL_BACKGROUND(style, window, state_type, area, widget, NULL, x, y, width, height);
 
   draw_line_shadow_with_gap(style, window, state_type, shadow_type, area, widget, detail, NULL, x, y, width, height, gap_side, gap_x, gap_width);
 }
@@ -1763,7 +1693,7 @@ draw_box_gap (GtkStyle * style,
 {
   g_return_if_fail(sanitize_parameters(style, window, &width, &height));
   
-  gtk_style_apply_default_background (style, window, widget && !GTK_WIDGET_NO_WINDOW (widget), state_type, area, x, y, width, height);
+  FLAT_FILL_BACKGROUND(style, window, state_type, area, widget, NULL, x, y, width, height);
 
   draw_line_shadow_with_gap(style, window, state_type, shadow_type, area, widget, detail, NULL, x, y, width, height, gap_side, gap_x-1, gap_width+1);
 }
@@ -1795,7 +1725,7 @@ draw_extension(GtkStyle * style,
   gint 		 orientation=0, position=1, selected=0;
   GtkNotebook *notebook=NULL;
   GdkGC              *shade = NULL;
-  GdkGC              *dark, *light, *mid;
+  GdkGC              *dark=NULL, *light=NULL, *mid=NULL, *midlight=NULL, *middark=NULL;
   gint thick=0;      
   GdkRectangle        rect;
   SmoothRcStyle *data = NULL;
@@ -1871,8 +1801,7 @@ draw_extension(GtkStyle * style,
 		triangular = TRUE;
 		h = i*3 + 5;
 		if (gap_side == GTK_POS_BOTTOM) {
-			
-			y2 = y + h - 1;
+			y2 = y + h;
 			
 			points[0].x = x2;		points[0].y = y2;
 			points[1].x = x2-i;		points[1].y = y+4;
@@ -1894,17 +1823,16 @@ draw_extension(GtkStyle * style,
 			points[6].x = x2-i;		points[6].y = y2-4;
 			points[7].x = x2;		points[7].y = y;	
 		}
-		x  += i;
-		x2 -= i;
 		goto draw;
 	} else goto square;
       break;
     }
     
     square: {
-       gint c1=0, c2=0;
+       gint c1=0, c2=1;
        switch (gap_side) {
           case GTK_POS_BOTTOM:
+            y2 += 1;
             points[0].x = x2;		points[0].y = y2;
 	    points[1].x = x2;		points[1].y = y+c2;
 	    points[2].x = x2-c1;	points[2].y = y+c1;
@@ -1970,90 +1898,106 @@ draw_extension(GtkStyle * style,
 		}
 	}
 	
-        FLAT_FILL_BACKGROUND(parent_style, window, parent_state, area, widget, NULL, x, y, width, height);
-
 	/* draw inner shadow line(s)  */	
 	{
 	  GdkGC		*gc[3], *use_gc=NULL, *mid_gc=NULL, *bg_gc=style->bg_gc[state_type];
 	  gdouble		angle;
-	  gint		j,i, x,y, x2,y2, xt, yt, mx=0,my=0, sign, thickness;
+	  gint		j,i, x1,y1, x2,y2, xt, yt, mx=0,my=0, sign, thickness;
 	
-          if (EDGE_LINE_STYLE(style, tab)==SMOOTH_LINE_NONE) return;
+          fill_background(parent_style, window, parent_state, GTK_SHADOW_NONE, area, NULL, widget, NULL, x, y, width, height, FALSE, FALSE, GTK_ORIENTATION_VERTICAL,FALSE);
+	  
+          switch (EDGE_LINE_STYLE(style, tab)) {
+	    case SMOOTH_LINE_NONE : return;
 
-
-          if (EDGE_LINE_STYLE(style, tab)==SMOOTH_LINE_THIN) {
-            gc[0] = light;
-            gc[1] = light;
-            gc[2] = dark;
-            gc[3] = dark;
-	    thickness = 0;
-          } else
-          if (EDGE_LINE_STYLE(style, tab)==SMOOTH_LINE_BEVELED) {
-            gc[0] = light;
-            gc[1] = light;
-            gc[2] = dark;
-            gc[3] = dark;
-	    thickness = EDGE_LINE_THICKNESS(style, tab) - 1;
-          } else {
-            if (EDGE_LINE_STYLE(style, tab)==SMOOTH_LINE_FLAT) {
-  	      thickness = 0;
+            case SMOOTH_LINE_THIN :
+              gc[0] = light;
+              gc[1] = light;
+              gc[2] = dark;
+              gc[3] = dark;
+	      thickness = 0;
+              break;
+	    
+            case SMOOTH_LINE_BEVELED :
+              gc[0] = light;
+              gc[1] = light;
+              gc[2] = dark;
+              gc[3] = dark;
+	      thickness = EDGE_LINE_THICKNESS(style, tab) - 1;
+              break;
+	    
+            case SMOOTH_LINE_FLAT :
               gc[0] = style->fg_gc[state_type];
               gc[1] = style->fg_gc[state_type];
               gc[2] = style->fg_gc[state_type];
               gc[3] = style->fg_gc[state_type];
-	      thickness = 0;
-            } else {
- 	     thickness = 1;
-             if(EDGE_LINE_STYLE(style, tab)==SMOOTH_LINE_SMOOTHED)
-             {
-               gc[0] = mid;
-               gc[1] = light;
-               gc[2] = mid;
-               gc[3] = dark;
-             } else
-               if(EDGE_LINE_STYLE(style, tab)==SMOOTH_LINE_COLD)
-               {
-                 shade = shaded_color (style, state_type, shades[6]);
-                 gc[0] = shade;
-                 gc[1] = light;
-                 gc[2] = mid;
-                 gc[3] = shade;
-               } else {
-                 if(EDGE_LINE_STYLE(style, tab)==SMOOTH_LINE_WIN32)
-                 {
-                   shade = shaded_color (style, state_type, shades[8]);
-                   gc[0] = light;
-                   gc[1] = style->bg_gc[state_type];
-                   gc[2] = dark;
-                   gc[3] = shade;
-                 } else {                
-  		   gc[0] = mid;
-                   gc[1] = light;
-                   gc[2] = dark;
-                   gc[3] = style->black_gc;
-		 }  
-               } 
-            }
-          }
-	  if (area) gdk_gc_set_clip_rectangle (bg_gc, area);
-	  gdk_draw_polygon (window, bg_gc, TRUE, points, 8);
-		
-	  /* draw edge line */
-          gdk_draw_line (window, bg_gc, points[0].x, points[0].y, points[7].x, points[7].y);
+              thickness = 0;
+              break;
 
-	  if (area) gdk_gc_set_clip_rectangle (bg_gc, NULL);
+            case SMOOTH_LINE_SMOOTHED :
+              gc[0] = mid;
+              gc[1] = light;
+              gc[2] = mid;
+              gc[3] = dark;
+              thickness = 1;
+              break;
+
+            case SMOOTH_LINE_COLD :
+              shade = shaded_color (style, state_type, shades[6]);
+              gc[0] = shade;
+              gc[1] = light;
+              gc[2] = mid;
+              gc[3] = shade;
+              thickness = 1;
+	      break;
+
+            case SMOOTH_LINE_WIN32 :
+              shade = shaded_color (style, state_type, shades[8]);
+              gc[0] = light;
+              gc[1] = style->bg_gc[state_type];
+              gc[2] = dark;
+              gc[3] = shade;
+              thickness = 1;
+              break;
+
+            case SMOOTH_LINE_SMOOTHBEVEL :
+              midlight = midlighttone_gc(style, state_type);
+              middark = middarktone_gc(style, state_type);
+  
+              gc[0] = midlight;
+              gc[1] = light;
+              gc[2] = middark;
+              gc[3] = dark;
+              thickness = 1;
+              break;
+	    
+            default :			 
+              gc[0] = mid;
+              gc[1] = light;
+              gc[2] = dark;
+              gc[3] = style->black_gc;
+              thickness = 1;
+          }
+          {
+            GdkRegion *cliprgn = gdk_region_polygon(points, 8, GDK_EVEN_ODD_RULE);
+            fill_background(style, window, state_type, GTK_SHADOW_NONE, NULL, cliprgn, widget, NULL, x, y, width, height, FALSE, FALSE, GTK_ORIENTATION_VERTICAL,FALSE);
+	    gdk_gc_set_clip_region (bg_gc, NULL);
+            gdk_region_destroy(cliprgn);
+	  }
+
+          if (!(selected)) gdk_draw_line (window, bg_gc, points[0].x, points[0].y, points[7].x, points[7].y);
+
 	  sign = 0;
 	  for (i = thickness; i >= 0; --i) {
 	    for (j = 0; j < 7; ++j) {
-		x	= points[j].x;
-		y	= points[j].y;
+		x1	= points[j].x;
+		y1	= points[j].y;
 		x2	= points[j+1].x;
 		y2	= points[j+1].y;
 			
-		if ((x == x2) && (y == y2)) {
+		if ((x1 == x2) && (y1 == y2)) {
 		  angle = 0;
 		} else {
-		  angle = atan2 (y2 - y, x2 - x);
+		  angle = atan2 (y2 - y1, x2 - x1);
 		}
 			
 		if ((angle > - (M_PI_4 * 3) - 0.0625) && (angle < M_PI_4 - 0.0625)) {
@@ -2064,15 +2008,15 @@ draw_extension(GtkStyle * style,
 		  } 
 		  mid_gc = use_gc;
 		  if (angle > -M_PI_4) {
-   	            y  -= i;
+   	            y1  -= i;
 		    y2 -= i;
 		  } else {
-		    x  -= i;
+		    x1  -= i;
 		    x2 -= i;
 		  }
 		  if (sign != 0) {
 		    sign = 0;
-  		    mx = x + i;
+  		    mx = x1 + i;
   		    if (i!=1) {
 		      mid_gc = gc[3];
 		    } else {
@@ -2087,15 +2031,15 @@ draw_extension(GtkStyle * style,
 		  }  
 		  mid_gc = use_gc;
 		  if ((angle < -(M_PI_4 * 3)) || (angle > (M_PI_4 * 3))) {
-   	            y  += i;
+   	            y1  += i;
 		    y2 += i;
 		  } else {
-		    x  += i;
+		    x1  += i;
 		    x2 += i;
 		  }
 		  if (sign != 1) {
 		    sign = 1;
-  		    mx = x - i;
+  		    mx = x1 - i;
   		    if (i!=1) {
 		      mid_gc = gc[0];
 		    } else {
@@ -2103,15 +2047,13 @@ draw_extension(GtkStyle * style,
 		    } 
 		  }
 	        }
-	        my = y;
+	        my = y1;
 		if (use_gc) {
-	  	  if (y2 < y) {
-		    xt = x; x = x2; x2 = xt;
-		    yt = y; y = y2; y2 = yt;
+	  	  if (y2 < y1) {
+		    xt = x1; x1 = x2; x2 = xt;
+		    yt = y1; y1 = y2; y2 = yt;
 	          }
-                  if (area) gdk_gc_set_clip_rectangle (use_gc, area);
-	          gdk_draw_line (window, use_gc, x, y, x2, y2);
-                  if (area) gdk_gc_set_clip_rectangle (use_gc, NULL);
+	          gdk_draw_line (window, use_gc, x1, y1, x2, y2);
 	        }
 		
 		if ((j > 0) && (mid_gc) && (mid_gc != use_gc))
@@ -2123,6 +2065,8 @@ draw_extension(GtkStyle * style,
   if (mid) gtk_gc_release (mid);
   if (light) gtk_gc_release (light);
   if (dark) gtk_gc_release (dark);
+  if (middark) gtk_gc_release (middark);
+  if (midlight) gtk_gc_release (midlight);
 }
 
 static void 
@@ -2334,17 +2278,6 @@ draw_handle(GtkStyle * style,
      
     grip = GRIP_PART(style);
     
-    /*if (DETAIL ("dockitem") ||
-      (widget && strcmp (g_type_name (G_TYPE_FROM_INSTANCE (widget)), "PanelAppletFrame") == 0))
-    {
-      / Work around orientation bugs /
-      if (orientation == GTK_ORIENTATION_VERTICAL)
-	orientation = GTK_ORIENTATION_HORIZONTAL;
-      else
-	orientation = GTK_ORIENTATION_VERTICAL;
-      
-    }*/
-
     if (!GTK_IS_PANED(widget)) {
       gint thick = 0;
       if (toolbar_overlap)
@@ -2504,8 +2437,6 @@ draw_handle(GtkStyle * style,
 	width += 4;
 	height += 6;
 	break;
-	
-      default:	
     }
 
   if ((THEME_PART(grip)->use_line || THEME_PART(grip)->edge.use_line)) {
@@ -2906,6 +2837,33 @@ static void draw_layout (GtkStyle * style, GdkWindow * window,
 			       area, widget, detail, x, y, layout);
 }
 
+static void 
+draw_flat_box (GtkStyle * style,
+               GdkWindow * window,
+	       GtkStateType state_type,
+	       GtkShadowType shadow_type,
+	       GdkRectangle * area,
+	       GtkWidget * widget,
+	       const gchar * detail,
+	       gint x, gint y, gint width, gint height)
+{
+   GdkGC *gc1;
+ 
+   g_return_if_fail(sanitize_parameters(style, window, NULL, NULL));
+
+   gc1 = style->bg_gc[state_type];
+   
+   if (gc1 != style->bg_gc[state_type]) 
+   {
+     FLAT_FILL_BACKGROUND(style, window, state_type, area, widget, NULL, x, y, width, height);
+
+     if (DETAIL("tooltip")) 
+       gdk_draw_rectangle(window, style->black_gc, FALSE, x, y, width - 1, height - 1);
+   } else
+     parent_class->draw_flat_box (style, window, state_type, shadow_type,
+			          area, widget, detail, x, y, width, height);
+}
+
 static void
 smooth_style_class_init (SmoothStyleClass *klass)
 {
@@ -2921,6 +2879,7 @@ smooth_style_class_init (SmoothStyleClass *klass)
   style_class->draw_diamond = draw_diamond;
 
   style_class->draw_box = draw_box;
+  style_class->draw_flat_box = draw_flat_box;
   style_class->draw_check = draw_check;
   style_class->draw_option = draw_option;
   style_class->draw_tab = draw_tab;
@@ -3089,15 +3048,10 @@ draw_flat_box (GtkStyle * style,
    if ((!style->bg_pixmap[state_type]) || (gc1 != style->bg_gc[state_type]) ||
      (gdk_window_get_type(window) == GDK_WINDOW_PIXMAP)) 
    {
-     if (area)
-       gdk_gc_set_clip_rectangle(gc1, area);
-    
-     gdk_draw_rectangle(window, gc1, TRUE, x, y, width, height);
+     FLAT_FILL_BACKGROUND(style, window, state_type, area, widget, NULL, x, y, width, height);
+
      if (DETAIL("tooltip")) 
        gdk_draw_rectangle(window, style->black_gc, FALSE, x, y, width - 1, height - 1);
-  
-     if (area) 
-       gdk_gc_set_clip_rectangle(gc1, NULL);
    } else {
      gtk_style_apply_default_background(style, window, widget && !GTK_WIDGET_NO_WINDOW(widget), 
        state_type, area, x, y, width, height);
