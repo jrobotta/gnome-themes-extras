@@ -1,10 +1,9 @@
 icondir = $(datadir)/icons/Nuvola/scalable/stock
 icon_DATA = \
-        back.svg \
-	bookmark_add.svg \
+	applets_screenshooter.svg \
+        bookmark_add.svg \
 	bookmark.svg \
 	brokenimage.svg \
-	down.svg \
 	editcopy.svg \
 	editdelete.svg \
 	editpaste.svg \
@@ -17,13 +16,16 @@ icon_DATA = \
 	filesaveas.svg \
 	folder_new.svg \
 	folder.svg \
-	forward.svg \
 	gnome-logo.svg \
-	home.svg \
 	printer.svg \
 	print-preview.svg \
 	recycled.svg \
 	reload.svg \
-	stop.svg \
-	up.svg
+	stock_cdrom.svg \
+	stock_go-back.svg \
+	stock_go-down.svg \
+	stock_go-forward.svg \
+	stock_go-up.svg \
+	stock_home.svg \
+	stock_stop.svg
 EXTRA_DIST = $(icon_DATA)

@@ -22,7 +22,7 @@ style "icon-style"
 #  stock["gtk-apply"] =	       {{ "stock_apply.svg" }}
 #  stock["gtk-bold"] =	       {{ "text_bold.svg" }} 
 #  stock["gtk-cancel"] =	       {{ "button_cancel.svg" }}
-#  stock["gtk-cdrom"] =	       {{ "stock_cdrom.svg" }}
+   stock["gtk-cdrom"] =	       {{ "stock_cdrom.svg" }}
 #  stock["gtk-clear"] =	       {{ "editdelete-2.1.svg" }}
 #  stock["gtk-close"] =	       {{ "kill.svg" }}
 #  stock["gtk-convert"] =       {{ "stock_convert.svg" }}
@@ -33,12 +33,12 @@ style "icon-style"
    stock["gtk-find"] =	       {{ "find.svg" }}
    stock["gtk-find-and-replace"] = {{ "findreplace.svg" }}
    stock["gtk-floppy"] =		{{ "filesave.svg" }}
-   stock["gtk-go-back"] =	{{ "back.svg" }}
-   stock["gtk-go-down"] =	{{ "down.svg" }}
-   stock["gtk-go-forward"] =	{{ "forward.svg" }}
-   stock["gtk-go-up"] =		{{ "up.svg" }}
+   stock["gtk-go-back"] =	{{ "stock_go-back.svg" }}
+   stock["gtk-go-down"] =	{{ "stock_go-down.svg" }}
+   stock["gtk-go-forward"] =	{{ "stock_go-forward.svg" }}
+   stock["gtk-go-up"] =		{{ "stock_go-up.svg" }}
 #  stock["gtk-help"] =		{{ "help.svg" }}
-  stock["gtk-home"] =		{{ "home.svg" }}
+  stock["gtk-home"] =		{{ "stock_home.svg" }}
 #  stock["gtk-index"] =		{{ "stock_index.svg" }}
 #  stock["gtk-italic"] =		{{ "text_italic.svg" }}
 
@@ -69,7 +69,7 @@ style "icon-style"
 #  stock["gtk-sort-ascending"] =	{{ "3downarrow.svg" }}
 #  stock["gtk-sort-descending"] ={{ "3uparrow.svg" }}
 #  stock["gtk-spell-check"] =	{{ "stock_spell-check.svg" }}
-   stock["gtk-stop"] =		{{ "stop.svg" }}
+   stock["gtk-stop"] =		{{ "stock_stop.svg" }}
 #  stock["gtk-strikethrough"] =	{{ "stock_strikethrough.svg" }}
   stock["gtk-undelete"] =	{{ "recycled.svg" }}
 #  stock["gtk-underline"] =	{{ "text_under.svg" }}
@@ -94,8 +94,8 @@ style "icon-style"
 #  stock["gtk-stock-reset"] = {{ "stock_reset.svg" }}
 
         #stock ["panel-run"] =           {{"stock_run.svg"}}
-        #stock ["panel-searchtool"] =    {{"stock_searchtool.svg"}}
-        #stock ["panel-screenshot"] =    {{"stock_screenshot.svg"}}
+   stock ["panel-searchtool"] =    {{"find.svg"}}
+   stock ["panel-screenshot"] =    {{"applets-screenshooter.svg"}}
         #stock ["panel-lockscreen"] =    {{"stock_lockscreen.svg"}}
         #stock ["panel-logout"] =        {{"stock_logout.svg"}}
    stock ["panel-gnome-logo"] =    {{"gnome-logo.svg"}}

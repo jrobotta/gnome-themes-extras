@@ -4,6 +4,7 @@ icon_DATA = \
 	advanced-directory.svg \
 	applets-screenshooter.svg \
 	bluefish.svg \
+	file-manager.svg \
 	fonts-capplet.svg \
 	gdm.svg \
 	gedit-icon.svg \

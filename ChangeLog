@@ -1,8 +1,14 @@
+2003-07-13 Christian Schaller <Uraeus@gnome.org>
+
+	* Added updated and new icons to Nuvola from David
+	* Added symlinks to Nuvola for better coverage
+	* Added file manager icon to Wasp
+	
 2003-07-11 Christian Schaller <Uraeus@gnome.org>
 
-	*	Added Amaranth theme (alpha version)
-	*	Add apps directory to Lush theme
-	*	Add extra icon to Wasp theme
+	* Added Amaranth theme (alpha version)
+	* Add apps directory to Lush theme
+	* Add extra icon to Wasp theme
 
 2003-07-10 Christian Schaller <Uraeus@gnome.org>
 
@@ -13,7 +19,9 @@
 
 2003-07-08 Christian Schaller <Uraeus@gnome.org>
 
-	* Removed mid-stop point info from most icons, should reduce spew considerably
+	* Removed mid-stop point info from most icons, 
+	  should reduce spew considerably, fix by
+	  Adam Hooper
 	* Traditional Chinese translation by baddog
 
 2003-07-07 Christian Schaller <Uraeus@gnome.org>
