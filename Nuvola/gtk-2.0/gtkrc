@@ -7,6 +7,7 @@
 # to match the Nuvola icon set
 
 include "iconrc"
+gtk-icon-sizes = "panel-menu=32,32"
 
 style "default" {
     GtkWidget::interior_focus         = 5

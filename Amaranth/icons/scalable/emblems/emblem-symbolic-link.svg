@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   i:viewOrigin="237 465"
+   i:rulerOrigin="-242 -332"
+   i:pageBounds="242 460 370 332"
+   width="32pt"
+   height="32pt"
+   viewBox="0 0 136 137"
+   overflow="visible"
+   enable-background="new 0 0 136 137"
+   xml:space="preserve"
+   id="svg153"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/emblems/emblem-symbolic-link.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/emblems"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:ns="http://ns.adobe.com/Variables/1.0/"
+   xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs
+     id="defs219">
+    <linearGradient
+       id="XMLID_4_"
+       gradientUnits="userSpaceOnUse"
+       x1="118.04"
+       y1="85.1807"
+       x2="74.6631"
+       y2="128.5576"
+       gradientTransform="matrix(1 0 0 1 -4.0332 -9.7393)">
+      <stop
+         offset="0.0056"
+         style="stop-color:#FFFFFF"
+         id="stop209" />
+      <stop
+         offset="1"
+         style="stop-color:#121E06"
+         id="stop210" />
+      <a:midPointStop
+         offset="0.0056"
+         style="stop-color:#FFFFFF"
+         id="midPointStop211" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#FFFFFF"
+         id="midPointStop212" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#121E06"
+         id="midPointStop213" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base" />
+  <metadata
+     id="metadata154">
+    <sfw>
+      <slices />
+      <sliceSourceBounds
+         x="237"
+         y="328"
+         width="136"
+         height="137"
+         bottomLeftOrigin="true" />
+    </sfw>
+    <ns:variableSets>
+      <ns:variableSet
+         varSetName="binding1"
+         locked="none">
+        <ns:variables />
+        <ns:sampleDataSets />
+      </ns:variableSet>
+    </ns:variableSets>
+  </metadata>
+  <path
+     i:knockout="Off"
+     fill="url(#XMLID_4_)"
+     d="M98.146,83.482l-8.041-8.041h23.901l-0.001,23.9l-9.047-9.047      c0,0-23.522,39.33-28.365,34.487c-2.913-2.913-2.75-6.75-5.146-9.146c-1.586-1.587-5.418-1.418-7.969-3.97      C57.076,105.264,98.146,83.482,98.146,83.482z"
+     id="path214"
+     transform="translate(0,1.90735e-06)"
+     style="font-size:12;fill:url(#XMLID_4_);stroke:#000000;" />
+  <g
+     id="g215"
+     style="font-size:12;stroke:#000000;">
+    <g
+       i:knockout="Off"
+       id="g216">
+      <path
+         i:knockout="Off"
+         opacity="0.25"
+         fill="#FFFFFF"
+         stroke="none"
+         d="M71.448,115.637c-1.587-1.587-5.418-1.418-7.969-3.97      c-6.403-6.403,34.667-28.185,34.667-28.185l-8.041-8.041h23.901v4.078c0,0-1.627,9.225-10.852,7.338      S71.448,115.637,71.448,115.637z"
+         id="path217" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   i:viewOrigin="249.2485 453.7085"
+   i:rulerOrigin="-242 -332"
+   i:pageBounds="242 460 370 332"
+   width="48pt"
+   height="48pt"
+   viewBox="0 0 128.251 121.702"
+   overflow="visible"
+   enable-background="new 0 0 128.251 121.702"
+   xml:space="preserve"
+   id="svg153"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/filesystems/gnome-fs-regular.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/filesystems"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:ns="http://ns.adobe.com/Variables/1.0/"
+   xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs
+     id="defs169" />
+  <sodipodi:namedview
+     id="base" />
+  <metadata
+     id="metadata154">
+    <sfw>
+      <slices />
+      <sliceSourceBounds
+         x="249.249"
+         y="332.007"
+         width="128.251"
+         height="121.702"
+         bottomLeftOrigin="true" />
+    </sfw>
+    <ns:variableSets>
+      <ns:variableSet
+         varSetName="binding1"
+         locked="none">
+        <ns:variables />
+        <ns:sampleDataSets />
+      </ns:variableSet>
+    </ns:variableSets>
+  </metadata>
+  <g
+     i:knockout="On"
+     id="g157"
+     style="font-size:12;stroke:#000000;">
+    <path
+       i:knockout="Off"
+       fill="none"
+       stroke-width="2"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       d="M116.118,96.492     c-25.415,3.645-50.831,7.289-76.246,10.934C42.796,71.391,22.855,35.916,25.96,1c20.778,2.806,41.556,5.611,62.333,8.417     C91.398,39.001,113.194,68.026,116.118,96.492z"
+       id="path158" />
+    <linearGradient
+       id="XMLID_1_"
+       gradientUnits="userSpaceOnUse"
+       x1="16.311"
+       y1="10.6494"
+       x2="109.1361"
+       y2="103.4744">
+      <stop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="stop160" />
+      <stop
+         offset="1"
+         style="stop-color:#9FA5A6"
+         id="stop161" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="midPointStop162" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#FFFFFF"
+         id="midPointStop163" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#9FA5A6"
+         id="midPointStop164" />
+    </linearGradient>
+    <path
+       i:knockout="Off"
+       fill="url(#XMLID_1_)"
+       stroke="none"
+       d="M116.118,96.492c-25.415,3.645-50.831,7.289-76.246,10.934     C42.796,71.391,22.855,35.916,25.96,1c20.778,2.806,41.556,5.611,62.333,8.417C91.398,39.001,113.194,68.026,116.118,96.492z"
+       id="path165" />
+  </g>
+  <g
+     i:knockout="On"
+     opacity="0.3"
+     id="g166"
+     style="font-size:12;opacity:0.3;stroke:#000000;">
+    <path
+       i:knockout="Off"
+       fill="#FFFFFF"
+       stroke="none"
+       d="M27.246,27.36C25.852,18.538,25.182,9.751,25.96,1     c20.778,2.806,41.556,5.611,62.333,8.417c1.492,14.219,7.301,28.308,13.259,42.268c6.438,15.087,13.047,30.022,14.565,44.807     c-6.749-4.9-15.691-15.928-23.884-22.157c-8.275-6.831-14.826-8.498-20.826-8.604c-6.056-0.3-11.703,1.024-19.06-4.287     C45.272,56.524,35.694,44.76,27.246,27.36z"
+       id="path167" />
+  </g>
+</svg>

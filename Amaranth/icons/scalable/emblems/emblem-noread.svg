@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   xml:space="preserve"
+   width="48pt"
+   height="48pt"
+   viewBox="0 0 507.946 507.946"
+   id="svg49"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/emblems/emblem-noread.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/emblems/"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs
+     id="defs62">
+    <radialGradient
+       id="radialGradient93"
+       cx="218.9404"
+       cy="219.7715"
+       r="150.7063"
+       fx="218.9404"
+       fy="219.7715"
+       gradientUnits="userSpaceOnUse"
+       style="stroke:#000000;stroke-opacity:0.986014;stroke-width:0.981612;">
+      <stop
+         offset="0.000000"
+         style="stop-color:#25a6ca;stop-opacity:1;"
+         id="stop94" />
+      <stop
+         offset="1.000000"
+         style="stop-color:#2ea6b9;stop-opacity:0.843137;"
+         id="stop95" />
+    </radialGradient>
+    <radialGradient
+       id="aigrd1"
+       cx="218.9404"
+       cy="219.7715"
+       r="150.7063"
+       fx="218.9404"
+       fy="219.7715"
+       gradientUnits="userSpaceOnUse"
+       style="stroke:#000000;stroke-opacity:0.986014;stroke-width:0.981612;">
+      <stop
+         offset="0.000000"
+         style="stop-color:#ffd5d7;stop-opacity:1;"
+         id="stop53" />
+      <stop
+         offset="1.000000"
+         style="stop-color:#cd4525;stop-opacity:1;"
+         id="stop54" />
+    </radialGradient>
+    <linearGradient
+       xlink:href="#aigrd1"
+       id="linearGradient91"
+       x1="-0.295723"
+       y1="-0.264591"
+       x2="0.622574"
+       y2="0.365762"
+       gradientUnits="objectBoundingBox"
+       gradientTransform="matrix(0.996114,0,0,1.0039,0.496124,0.492186)"
+       spreadMethod="pad" />
+    <radialGradient
+       xlink:href="#aigrd1"
+       id="radialGradient92"
+       cx="0.321913"
+       cy="0.36707"
+       fx="0.321913"
+       fy="0.36707"
+       r="0.432747"
+       gradientUnits="objectBoundingBox"
+       gradientTransform="scale(1.06784,0.936469)"
+       spreadMethod="pad" />
+  </defs>
+  <sodipodi:namedview
+     id="base">
+    <sodipodi:guide
+       orientation="vertical"
+       position="66.018929"
+       id="sodipodi:guide127" />
+    <sodipodi:guide
+       orientation="horizontal"
+       position="91.861198"
+       id="sodipodi:guide20" />
+    <sodipodi:guide
+       orientation="horizontal"
+       position="31.293375"
+       id="sodipodi:guide21" />
+    <sodipodi:guide
+       orientation="vertical"
+       position="97.110413"
+       id="sodipodi:guide22" />
+    <sodipodi:guide
+       orientation="vertical"
+       position="34.927444"
+       id="sodipodi:guide23" />
+  </sodipodi:namedview>
+  <path
+     style="font-size:12;fill:url(#radialGradient92);fill-rule:evenodd;stroke:#1c6671;stroke-width:7.72505;stroke-opacity:0.988235;"
+     d="M356.643,263.366c0,57.027-46.23,103.257-103.256,103.257c-57.027,0-103.256-46.229-103.256-103.257c0-57.027,46.229-103.256,103.256-103.256     c57.025,0,103.256,46.229,103.256,103.256z"
+     id="path56"
+     transform="matrix(2.04451,0,0,2.04451,-264.353,-281.723)" />
+  <g
+     id="Layer_x0020_3"
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(13.8757,0,0,16.8977,-81.0548,-162.424)">
+    <path
+       style="opacity:0.7;fill:#FFFFFF;stroke:none;"
+       d="M37.4,23.5c-0.2-0.2-3.3-3.8-7.9-5.7l0.9-1.6c0.4-0.7,0.1-1.6-0.6-1.9c-0.7-0.4-1.6-0.1-1.9,0.6L26.7,17c-0.8-0.2-1.6-0.2-2.4-0.2c-7.2,0-12.9,6.5-13.1,6.7c-0.5,0.6-0.5,1.4,0,2c0.2,0.2,3.4,3.8,8,5.7l-1,1.8c-0.4,0.7-0.1,1.6,0.6,1.9     c0.7,0.4,1.6,0.1,1.9-0.6l1.3-2.3c0.8,0.1,1.6,0.2,2.4,0.2c7.2,0,12.9-6.5,13.1-6.7c0.5-0.6,0.5-1.4,0-2z M20.2,20.6c-0.9,1-1.5,2.4-1.5,3.9s0.6,2.8,1.5,3.9c-2.5-1-4.6-2.8-5.8-3.9c1.1-1.1,3.2-2.8,5.8-3.9z M22,24.5c0-1.2,0.9-2.1,2-2.3l-1.8,3.3     c-0.1-0.3-0.2-0.6-0.2-1z M24.7,26.8l1.7-3.2c0.1,0.3,0.2,0.6,0.2,0.9c0,1.1-0.8,2.1-1.9,2.3z M28.4,28.3c0.9-1,1.5-2.4,1.5-3.9s-0.6-2.8-1.5-3.9c2.5,1,4.6,2.8,5.8,3.9c-1.1,1.1-3.2,2.8-5.8,3.9z"
+       id="path328" />
+  </g>
+</svg>
