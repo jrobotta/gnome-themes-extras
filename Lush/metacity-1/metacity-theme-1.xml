@@ -15,7 +15,7 @@
 		<distance name="right_width" value="6"/>
 		<distance name="bottom_height" value="6"/>
 		<distance name="left_titlebar_edge" value="5"/>
-		<distance name="right_titlebar_edge" value="5"/>
+		<distance name="right_titlebar_edge" value="0"/>
 		<distance name="title_vertical_pad" value="5"/>
 		<border name="title_border" left="0" right="0" top="0" bottom="0"/>
 		<border name="button_border" left="2" right="2" top="3" bottom="3"/>
@@ -29,7 +29,7 @@
 		<distance name="right_width" value="6"/>
 		<distance name="bottom_height" value="6"/>
 		<distance name="left_titlebar_edge" value="5"/>
-		<distance name="right_titlebar_edge" value="5"/>
+		<distance name="right_titlebar_edge" value="0"/>
 	</frame_geometry>
 
 	<frame_geometry name="utility" title_scale="small" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false">
@@ -37,7 +37,7 @@
 		<distance name="right_width" value="6"/>
 		<distance name="bottom_height" value="6"/>
 		<distance name="left_titlebar_edge" value="0"/>
-		<distance name="right_titlebar_edge" value="5"/>
+		<distance name="right_titlebar_edge" value="0"/>
 		<distance name="title_vertical_pad" value="4"/>
 		<border name="title_border" left="0" right="0" top="1" bottom="0"/>
 		<border name="button_border" left="0" right="0" top="1" bottom="0"/>
@@ -49,7 +49,7 @@
 		<distance name="right_width" value="4"/>
 		<distance name="bottom_height" value="4"/>
 		<distance name="left_titlebar_edge" value="0"/>
-		<distance name="right_titlebar_edge" value="5"/>
+		<distance name="right_titlebar_edge" value="0"/>
 		<distance name="button_width" value="0"/>
 		<distance name="button_height" value="0"/>
 		<distance name="title_vertical_pad" value="4"/>
@@ -357,29 +357,31 @@ height="height*0.8" alpha="0.7"/>
 
 	<draw_ops name="corners_unfocused">
 		<!-- corners (unfocused) -->
-		<image filename="coin-inactive_Bas-G.png" 
-			x="0" 
-			y="height-object_height" 
-			width="object_width" 
-			height="object_height"/> 
-		<image filename="coin-inactif_Bas-D.png" 
-			x="width-object_width" 
-			y="height-object_height" 
-			width="object_width" 
-			height="object_height"/>
+		<!-- Left corner - Each piece consist of two rectangles one vertical and one horizontal -->	
+		<rectangle color="shade/gtk:bg[PRELIGHT]/1.0"
+             x="left_width-10" y="height-bottom_height-10" width="left_width+5" height="bottom_height+10" filled="true"/>
+		<rectangle color="shade/gtk:bg[PRELIGHT]/1.0"
+             x="left_width-10" y="height-bottom_height" width="left_width+15" height="bottom_height" filled="true"/>
+		
+	<!-- Right Corner -->		
+		<rectangle color="gtk:dark[INSENSITIVE]"
+             x="width-right_width" y="height-bottom_height-10" width="right_width+5" height="bottom_height+10" filled="true"/>
+		<rectangle color="gtk:dark[INSENSITIVE]"
+             x="width-right_width-10" y="height-bottom_height" width="right_width+15" height="bottom_height" filled="true"/>
 	</draw_ops>
 
 	<draw_ops name="corners_focused">
-		<!-- corners -->
-		<image filename="coingauche-bas.png" 
-			x="0" y="height-object_height" 
-			width="object_width" 
-			height="object_height"/> 
-		<image filename="coindroit-bas.png" 
-			x="width-object_width" 
-			y="height-object_height" 
-			width="object_width" 
-			height="object_height"/>
+	<!-- Left corner - Each piece consist of two rectangles one vertical and one horizontal -->	
+		<rectangle color="blend/gtk:dark[SELECTED]/gtk:bg[SELECTED]/0.4"
+             x="left_width-10" y="height-bottom_height-10" width="left_width+5" height="bottom_height+10" filled="true"/>
+		<rectangle color="blend/gtk:dark[SELECTED]/gtk:bg[SELECTED]/0.4"
+             x="left_width-10" y="height-bottom_height" width="left_width+15" height="bottom_height" filled="true"/>
+		
+	<!-- Right Corner -->		
+		<rectangle color="blend/gtk:dark[SELECTED]/gtk:bg[SELECTED]/0.4"
+             x="width-right_width" y="height-bottom_height-10" width="right_width+5" height="bottom_height+10" filled="true"/>
+		<rectangle color="blend/gtk:dark[SELECTED]/gtk:bg[SELECTED]/0.4"
+             x="width-right_width-10" y="height-bottom_height" width="right_width+15" height="bottom_height" filled="true"/>
 	</draw_ops>
 
 
@@ -416,8 +418,10 @@ height="height*0.8" alpha="0.7"/>
 		<include name="corners_focused"/>
 		<include name="sides_background"/>
 		<include name="corners_focused"/>
-
-		<image filename="cote_suitearrondibleu.png" 
+		
+		<image filename="cote_suitearrondibleu.png"
+			colorize="gtk:fg[SELECTED]"
+			alpha="0.7"
 			x="0" 
 			y="top_height" 
 			width="object_width" 
@@ -427,6 +431,7 @@ height="height*0.8" alpha="0.7"/>
 			y="top_height" 
 			width="object_width" 
 			height="object_height"/>
+			
 	</draw_ops>
 
 	<draw_ops name="unfocus_background">
