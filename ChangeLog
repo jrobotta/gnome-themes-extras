@@ -1,3 +1,12 @@
+2004-11-27  Christian Schaller <uraeus@gnome.org>
+
+	* Fix make-dist, we now depend on Automake 1.9 
+	  (think we are first in GNOME CVS for this :)
+
+2004-11-20  Christian Schaller <uraeus@gnome.org>
+
+	* Remove Smooth engine as it is in gnome-themes now
+
 2004-09-27  Jakub Steiner <jimmac@ximian.com>
 	
 	* Industrial/industrial_style.c:

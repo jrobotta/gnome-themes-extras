@@ -1,12 +1,12 @@
 AC_PREREQ(2.52)
-AC_INIT(README)
+AC_INIT(gnome-themes-extras, 0.8.0)
 
 AM_CONFIG_HEADER(config.h)
 
 ACLOCAL_FLAGS="-I m4"
 AC_SUBST(ACLOCAL_AMFLAGS, $ACLOCAL_FLAGS)
 
-AM_INIT_AUTOMAKE(gnome-themes-extras, 0.8.0)
+AM_INIT_AUTOMAKE([1.9 tar-pax])
 
 # Honor aclocal flags
 ACLOCAL="$ACLOCAL $ACLOCAL_FLAGS"
@@ -126,7 +126,6 @@ Wasp/icons/scalable/emblems/Makefile
 Wasp/icons/scalable/filesystems/Makefile
 Wasp/icons/scalable/mimetypes/Makefile
 Wasp/icons/scalable/stock/Makefile
-Smooth/Makefile
 Industrial/Makefile
 Industrial/gtk-2.0/gtkrc
 Industrial/gtk-2.0/Makefile

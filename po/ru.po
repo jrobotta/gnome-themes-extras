@@ -16,7 +16,7 @@ msgstr ""
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
 msgid "Amaranth"
@@ -66,4 +66,3 @@ msgstr "Оса"
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "Стиль BeOS"
-
