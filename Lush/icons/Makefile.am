@@ -7,4 +7,4 @@ icondir = $(datadir)/icons/Lush
 
 icon_DATA = index.theme
  
-EXTRA_DIST=index.theme.in index.theme
+EXTRA_DIST=index.theme.in index.theme README
