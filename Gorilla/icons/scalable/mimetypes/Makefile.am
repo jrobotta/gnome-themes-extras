@@ -12,6 +12,7 @@ icon_DATA = \
         gnome-mime-application-x-gnucash.svg \
         gnome-mime-application-x-font.svg \
         gnome-mime-application-x-rpm.svg \
+		  gnome-mime-application-x-shared-library.svg \
         gnome-mime-application-vnd.ms-excel.svg \
         gnome-mime-application-vnd.rn-realmedia.svg \
         gnome-mime-application-vnd.sun.xml.calc.svg \
