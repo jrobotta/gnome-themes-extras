@@ -128,12 +128,12 @@ style "icon-style"
 #stock ["commandline-history"] =	{{"stock_commandline-history.xpm"}}
 
 
-stock ["cdplayer-stop"] =       {{"player_stop.svg"}}
-stock ["cdplayer-play"] = 	{{"noatunplay.svg"}}
-stock ["cdplayer-pause"] = 	{{"noatunpause.svg"}}
-stock ["cdplayer-prev"] =       {{"noatunback.svg"}}
-stock ["cdplayer-next"] =       {{"noatunforward.svg"}}
-stock ["cdplayer-eject"] =      {{"player_eject.svg"}}
+# stock ["cdplayer-stop"] =       {{"player_stop.svg"}}
+# stock ["cdplayer-play"] = 	{{"noatunplay.svg"}}
+# stock ["cdplayer-pause"] = 	{{"noatunpause.svg"}}
+# stock ["cdplayer-prev"] =       {{"noatunback.svg"}}
+# stock ["cdplayer-next"] =       {{"noatunforward.svg"}}
+# stock ["cdplayer-eject"] =      {{"player_eject.svg"}}
 
 	     #stock ["volume-mute"] =      	{{"volume-mute.svg"}}
         #stock ["volume-zero"] =      	{{"volume-zero.svg"}}
