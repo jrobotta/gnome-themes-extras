@@ -9,6 +9,7 @@ icon_DATA = \
 	gnome-dev-harddisk.svg \
 	gnome-dev-mouse.svg \
 	gnome-dev-network.svg \
+	gnome-dev-printer.svg \
 	gnome-dev-scanner.svg \
         gnome-dev-symlink.svg \
         gnome-dev-zipdisk.svg \

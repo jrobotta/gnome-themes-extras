@@ -6,9 +6,11 @@ icon_DATA = \
 	stock_cdrom.svg \
 	stock_copy.svg \
 	stock_cut.svg \
+	stock_delete.svg \
 	stock_dialog_error.png \
 	stock_dialog_info.png \
 	stock_dialog_warning.png \
+	stock_execute.svg \
 	stock_floppy.svg \
 	stock_go-back.svg \
 	stock_go-forward.svg \
@@ -30,12 +32,11 @@ icon_DATA = \
 	stock_refresh.svg \
 	stock_replace.svg \
 	stock_reset.svg \
-	stock_search.svg \
+	stock_save_as.svg \
 	stock_screenshot.svg \
+	stock_search.svg \
 	stock_stop.svg \
 	stock_undo.svg \
-	stock_delete.svg \
-	stock_execute.svg \
 	$(NULL)
 
 EXTRA_DIST = $(icon_DATA)

@@ -9,7 +9,9 @@ icon_DATA = \
         gnome-fs-executable.svg \
         gnome-fs-home.svg \
         gnome-fs-loading-icon.svg \
+	gnome-fs-network.svg \
         gnome-fs-regular.svg \
+	gnome-fs-server.svg \
         gnome-fs-smb.svg \
         gnome-fs-trash-empty.svg \
         gnome-fs-trash-full.svg \

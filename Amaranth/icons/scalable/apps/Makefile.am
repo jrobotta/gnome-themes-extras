@@ -6,11 +6,13 @@ icon_DATA = \
 	accessories.svg \
 	advanced-directory.svg \
 	apacheconf.svg \
+	blender.svg \
 	camera.svg \
 	disks.svg \
 	downloadmanager.svg \
 	email.svg \
 	evolution.svg \
+	file-manager.svg \
 	file-roller.svg \
 	gaim.svg \
 	gedit.svg \
