@@ -325,6 +325,10 @@ draw_vgradient (GdkDrawable *drawable, GdkGC *gc, GdkColormap *colormap,
   int dr, dg, db;
   GdkGCValues old_values;
 
+  if (height == 0) {
+  	return;
+  }
+
   col = *top_color;
   dr = (bottom_color->red - top_color->red) / height;
   dg = (bottom_color->green - top_color->green) / height;

@@ -60,6 +60,7 @@ Gorilla/icons/scalable/filesystems/Makefile
 Gorilla/icons/scalable/mimetypes/Makefile
 Nuvola/Makefile
 Nuvola/gtk-2.0/Makefile
+Nuvola/metacity-1/Makefile
 Nuvola/icons/Makefile
 Nuvola/icons/scalable/Makefile
 Nuvola/icons/scalable/apps/Makefile

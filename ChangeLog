@@ -1,3 +1,10 @@
+2003-05-01  Dennis Cranston <dennis_cranston at yahoo com>
+       * Galaxy/gtk-2.0/galaxy_theme_draw.c:  Prevent a division by zero crash.
+
+2003-04-29 Christian Schaller <uraeus@gnome.org>
+	* Added Nuvola metacity theme by Josselin Mouette
+	* Added some smaller SVG files for Nuvola by Adam Hooper 
+
 2003-05-01  Yanko Kaneti  <yaneti@declera.com>
 
 	* configure.in (AC_OUTPUT): create Nuvola/metacity-1/Makefile
