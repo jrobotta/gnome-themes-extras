@@ -1,8 +1,13 @@
 2003-05-14  Jakub Steiner <jimmac@ximian.com>
 
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-x-kpresenter.svg:
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-x-kword.svg:
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-x-kspread.svg:
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-x-killustrator.svg:
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-vnd.ms-powerpoint.svg:
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-text-x-troff-man.svg:
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-x-backup.svg:
-	* Gorilla/icons/scalable/devices/Makefile.am: more porting
+	* Gorilla/icons/scalable/mimetypes/Makefile.am: more porting
 
 2003-05-12  Jakub Steiner <jimmac@ximian.com>
 
