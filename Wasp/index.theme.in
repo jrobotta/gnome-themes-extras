@@ -1,0 +1,14 @@
+# Wasp metatheme
+# (c) 2002-2003 McClintock
+# (c) 2002-2003 Christian Schaller <Uraeus@gnome.org>
+
+[Desktop Entry]
+_Name=Wasp
+Type=X-GNOME-Metatheme
+_Comment=BeOS style theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Wasp
+MetacityTheme=Wasp
+IconTheme=Wasp

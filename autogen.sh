@@ -75,7 +75,6 @@ fi
 case $CC in
 *xlc | *xlc\ * | *lcc | *lcc\ *) am_opt=--include-deps;;
 esac
-
 for coin in .
 do 
   dr=`dirname $coin`
@@ -85,10 +84,10 @@ do
     echo processing $dr
     macrodirs=`sed -n -e 's,AM_ACLOCAL_INCLUDE(\(.*\)),\1,gp' < $coin`
     ( cd $dr
-      aclocalinclude="$ACLOCAL_FLAGS"
+      aclocalinclude="-I m4 $ACLOCAL_FLAGS"
       for k in $macrodirs; do
   	if test -d $k; then
-          aclocalinclude="$aclocalinclude -I $k"
+          aclocalinclude="-I m4 $aclocalinclude"
   	##else 
 	##  echo "**Warning**: No such directory \`$k'.  Ignored."
         fi

@@ -1,3 +1,9 @@
+2003-05-10 Christian Schaller <Uraeus@gnome.org>
+	* Add Wasp theme
+	* Fix small buglet in one Nuvolla emblem
+	* Add m4 dir and m4 macro for getting datadir for iconrc files
+	* Fix iconrc to be dynamic for BlueSphere and Nuvolla also
+
 2003-05-09  Jakub Steiner <jimmac@ximian.com>
 
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-audio-x-midi.svg:

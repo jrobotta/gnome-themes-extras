@@ -1,4 +1,4 @@
-pixmap_path "/usr/share/icons/BlueSphere/scalable/stock"
+pixmap_path "/usr/local/share/icons/BlueSphere/scalable/stock"
 style "icon-style"
 {
   stock["gnome-stock-about"] = {{ "star-button.svg" }}

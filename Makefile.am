@@ -1,7 +1,7 @@
-SUBDIRS= Gorilla Nuvola Lush Galaxy BlueSphere po
+SUBDIRS= Gorilla Nuvola Lush Galaxy BlueSphere Wasp po
 EXTRA_DIST = \
 	gnome-themes-extras.spec gnome-themes-extras.spec.in \
-	intltool-extract.in  intltool-merge.in  intltool-update.in
+	intltool-extract.in  intltool-merge.in  intltool-update.in m4
 
 GORILLA_TAR_FILES = \
 	Gorilla/index.theme \

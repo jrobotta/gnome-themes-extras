@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extra 0.6\n"
-"POT-Creation-Date: 2003-05-07 15:11+0200\n"
+"POT-Creation-Date: 2003-05-10 17:34+0200\n"
 "PO-Revision-Date: 2003-04-16 01:42+0200\n"
 "Last-Translator: Christian Neumair <chris@gnome-de.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
