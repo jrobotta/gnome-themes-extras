@@ -1,3 +1,8 @@
+2003-08-12 Christian Schaller <Uraeus@gnome.org>
+
+	* Adding preview of final Amaranth Metacity theme, looks pretty ok
+	  but fails to use GTK+ colours and has pixmap instead of SVG buttons
+
 2003-08-04 Christian Schaller <Uraeus@gnome.org>
 
 	* Moved Smooth into separate subdir
