@@ -5,7 +5,6 @@ icon_DATA = \
 	cancel.svg \
 	down.svg \
 	editcopy.svg \
-	editdelete.svg \
 	editpaste.svg \
 	edittrash.svg \
 	filenew.svg \
@@ -17,6 +16,11 @@ icon_DATA = \
 	help.svg \
 	info.svg \
 	reload.svg \
+	stock_cut.svg \
+	stock_delete.svg \
+	stock_quit.svg \
+	stock_redo.svg \
+	stock_undo.svg \
 	up.svg \
 	print.svg \
 	$(NULL)
