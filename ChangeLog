@@ -1,3 +1,10 @@
+2003-04-18 Christian Schaller <uraues@gnome.org>
+	* Update Nuvola metatheme
+	* Adding Smooth Winther GTK theme to Nuvola
+	* Removed the use of Automake 1.4 as smooth need 1.6
+	* make tarballs don't work for me since ${TAR} gets translated into null
+	* the iconrc files includes fixed paths, they need to be made into iconrc.in files that get the path from the build, the iconrc files are in the BlueSphere/gtk-2.0 and Nuvola/gtk-2.0 dirs
+
 2003-04-17  Alex Duggan  <aldug@astrolinux.com>
 
 	* README: update with instructions for making releases
