@@ -172,4 +172,4 @@ style "capplet-icons"
 
 
 
-class "GtkWidget" style "gorilla-default"
+class "GtkWidget" style "capplet-icons"

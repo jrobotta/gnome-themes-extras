@@ -5,7 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras.HEAD.sk.po\n"
-"POT-Creation-Date: 2003-12-12 04:03+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-11-21 19:49+0100\n"
 "PO-Revision-Date: 2003-12-12 18:36+0100\n"
 "Last-Translator: Zdenko Podobný <zdpo@mailbox.sk>\n"
 "Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
@@ -14,8 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.2beta3\n"
 
-#: Amaranth/icons/index.theme.in.h:1
-#: Amaranth/index.theme.in.h:1
+#: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
 msgid "Amaranth"
 msgstr "Amaranth"
 
@@ -27,15 +27,12 @@ msgstr "Strieborná vektorová téma"
 msgid "Sterling Silver"
 msgstr "Čisté striebro"
 
-#: Gorilla/icons/index.theme.in.h:1
-#: Gorilla/index.theme.in.h:1
+#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
 msgid "Gorilla"
 msgstr "Gorila"
 
-#: Gorilla/icons/index.theme.in.h:2
-#: Lush/icons/index.theme.in.h:2
-#: Nuvola/icons/index.theme.in.h:2
-#: Wasp/icons/index.theme.in.h:1
+#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
 msgid "Vector Theme"
 msgstr "Vektorová téma"
 
@@ -43,8 +40,7 @@ msgstr "Vektorová téma"
 msgid "The vector mono Godess"
 msgstr "Monochromatická vektorová bohyňa"
 
-#: Lush/icons/index.theme.in.h:1
-#: Lush/index.theme.in.h:1
+#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
 msgid "Lush"
 msgstr "Svieža"
 
@@ -52,8 +48,7 @@ msgstr "Svieža"
 msgid "Mild green theme"
 msgstr "Jemná zelená téma"
 
-#: Nuvola/icons/index.theme.in.h:1
-#: Nuvola/index.theme.in.h:1
+#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
 msgid "Nuvola"
 msgstr "Nuvola"
 
@@ -61,12 +56,10 @@ msgstr "Nuvola"
 msgid "The Blue Style Surf"
 msgstr "Surfovanie v modrom štýle"
 
-#: Wasp/icons/index.theme.in.h:2
-#: Wasp/index.theme.in.h:2
+#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
 msgid "Wasp"
 msgstr "Osa"
 
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "Téma v štýle BeOS"
-

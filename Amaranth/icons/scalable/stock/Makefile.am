@@ -34,6 +34,8 @@ icon_DATA = \
 	stock_screenshot.svg \
 	stock_stop.svg \
 	stock_undo.svg \
+	stock_delete.svg \
+	stock_execute.svg \
 	$(NULL)
 
 EXTRA_DIST = $(icon_DATA)

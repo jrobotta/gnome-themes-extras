@@ -1,3 +1,14 @@
+2004-01-11 Christian Schaller <Uraeus@gnome.org>
+
+	* Updated Lush/Galaxy theme to latest version
+	* New Wasp theme without pixmaps
+	* Adding gaim Wasp icons
+	* Fixed bug 116180 	 (gorilla iconrc)
+	* Fixed bug 109746 (Galaxy metacity bug)
+	* Fixed bug 130176 (Missing Amaranth icons)
+	* Fixed bug 130301 (Bad symlinks)
+	* Make 0.6 release
+
 2003-12-16 Stanislav Visnovsky <visnovsky@nenya.ms.mff.cuni.cz>
 
 	* sk.po: Added Slovak translation.

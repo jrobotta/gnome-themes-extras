@@ -67,10 +67,8 @@ install-data-local:
 	ln -sf mozilla-star.svg redhat-web-browser.svg && \
 	ln -sf mozilla-star.svg web-browser.svg && \
 	ln -sf gnome-applications.svg redhat-office.svg && \
-	ln -sf accessories.svg redhat-accessories.svg && \
 	ln -sf my-computer.svg redhat-home.svg && \
 	ln -sf gnome-joystick.svg redhat-games.svg && \
-	ln -sf gnome-graphics.svg redhat-graphics.svg && \
 	ln -sf gnome-globe.svg web-browser.svg && \
 	ln -sf gnome-globe.svg redhat-internet.svg && \
 	ln -sf gnome-logo.svg redhat-main-menu.svg && \
@@ -79,8 +77,6 @@ install-data-local:
 	ln -sf gnome-devel.svg redhat-programming.svg && \
 	ln -sf gnome-home.svg redhat-home.svg && \
 	ln -sf gnome-ccdesktop.svg redhat-preferences.svg && \
-	ln -sf gnome-logo.svg redhat-main-menu.svg && \
-	ln -sf gnome-logo.svg gnome-main-menu.svg && \
 	ln -sf gnome-gaim.svg gaim.svg
 
 uninstall-local:
