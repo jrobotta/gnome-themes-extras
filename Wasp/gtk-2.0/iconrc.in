@@ -33,10 +33,10 @@ style "icon-style"
 #  stock["gtk-find"] =	       {{ "find.svg" }}
 #  stock["gtk-find-and-replace"] = {{ "stock_find-and-replace.svg" }}
   stock["gtk-floppy"] =		{{ "disk-floppy.svg" }}
-#  stock["gtk-go-back"] =	{{ "back.svg" }}
-#  stock["gtk-go-down"] =	{{ "down.svg" }}
-#  stock["gtk-go-forward"] =	{{ "forward.svg" }}
-#  stock["gtk-go-up"] =		{{ "up.svg" }}
+  stock["gtk-go-back"] =	{{ "navigation_left.svg" }}
+  stock["gtk-go-down"] =	{{ "navigation_down.svg" }}
+  stock["gtk-go-forward"] =	{{ "navigation_right.svg" }}
+  stock["gtk-go-up"] =		{{ "navigation_up.svg" }}
   stock["gtk-help"] =		{{ "help_book.svg" }}
   stock["gtk-home"] =		{{ "home.svg" }}
 #  stock["gtk-index"] =		{{ "stock_index.svg" }}
@@ -59,7 +59,7 @@ style "icon-style"
 #  stock["gtk-properties"] =	{{ "configure-b.svg" }}
 #  stock["gtk-quit"] =		{{ "exit.svg" }}
 #  stock["gtk-redo"] =		{{ "redo-2.0.svg" }}
-#  stock["gtk-refresh"] =	{{ "reload-2.0.svg" }}
+  stock["gtk-refresh"] =	{{ "navigation_reload.svg" }}
 #  stock["gtk-remove"] =		{{ "viewmag-_2.svg" }}
 #  stock["gtk-revert-to-saved"] ={{ "revert-small.svg" }}
    stock["gtk-save"] =		{{ "disk-floppy.svg" }}
@@ -69,7 +69,7 @@ style "icon-style"
 #  stock["gtk-sort-ascending"] =	{{ "3downarrow.svg" }}
 #  stock["gtk-sort-descending"] ={{ "3uparrow.svg" }}
 #  stock["gtk-spell-check"] =	{{ "stock_spell-check.svg" }}
-#  stock["gtk-stop"] =		{{ "stop-2.1.svg" }}
+  stock["gtk-stop"] =		{{ "navigation_stop.svg" }}
 #  stock["gtk-strikethrough"] =	{{ "stock_strikethrough.svg" }}
 #  stock["gtk-undelete"] =	{{ "recycle.svg" }}
 #  stock["gtk-underline"] =	{{ "text_under.svg" }}
