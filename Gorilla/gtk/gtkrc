@@ -23,7 +23,7 @@ style "gorilla" = "default"
   #xthickness = 2
   #ythickness = 2
  
-  engine "cleanice" { } #temporary engine before XD2
+  engine "mist" { } #temporary engine before XD2
 
   fg[NORMAL]       = "#000000"
   fg[ACTIVE]       = "#000000"

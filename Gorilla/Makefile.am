@@ -7,5 +7,5 @@ themedir = $(datadir)/themes/$(THEME_NAME)
  
 theme_DATA = index.theme
 
-SUBDIRS= gtk-2.0 icons
+SUBDIRS= gtk gtk-2.0 icons
 EXTRA_DIST = index.theme.in index.theme

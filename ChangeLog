@@ -1,6 +1,12 @@
 2003-01-23  Jakub Steiner <jimmac * ximian * com>
 
 	* Gorilla/gtk-2.0/Makefile.am: add missing stock_no.svg
+	* Gorilla/gtk/gtkrc,
+	Gorilla/gtk-2.0/gtkrc: use mist instead (temporarily)
+
+	* configure.in,
+	Gorilla/Makefile.am,
+	Gorilla/gtk/Makefile.am: add gtk1 theme 
 
 2003-01-23  Alex Duggan  <aldug@astrolinux.com>
 	

@@ -53,6 +53,7 @@ AM_GLIB_GNU_GETTEXT
 AC_OUTPUT([
 Makefile
 Gorilla/Makefile
+Gorilla/gtk/Makefile
 Gorilla/gtk-2.0/Makefile
 Gorilla/icons/Makefile
 Gorilla/icons/scalable/Makefile
