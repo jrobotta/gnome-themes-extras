@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   i:viewOrigin="288 414"
+   i:rulerOrigin="-290 -380"
+   i:pageBounds="290 412 322 380"
+   width="48pt"
+   height="48pt"
+   viewBox="0 0 37 35"
+   overflow="visible"
+   enable-background="new 0 0 37 35"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:ns="http://ns.adobe.com/Variables/1.0/"
+   xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   id="svg153"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/stock/stock_redo.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/stock">
+  <defs
+     id="defs169" />
+  <sodipodi:namedview
+     id="base" />
+  <metadata
+     id="metadata154">
+    <sfw>
+      <slices />
+      <sliceSourceBounds
+         x="288"
+         y="379"
+         width="37"
+         height="35"
+         bottomLeftOrigin="true" />
+    </sfw>
+    <ns:variableSets>
+      <ns:variableSet
+         varSetName="binding1"
+         locked="none">
+        <ns:variables />
+        <ns:sampleDataSets />
+      </ns:variableSet>
+    </ns:variableSets>
+  </metadata>
+  <g
+     id="g158"
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.0935,0,0,1.08749,-0.333782,-2.73464)">
+    <linearGradient
+       id="XMLID_1_"
+       gradientUnits="userSpaceOnUse"
+       x1="3.5693"
+       y1="17.2842"
+       x2="33.2803"
+       y2="17.2842">
+      <stop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="stop160" />
+      <stop
+         offset="1"
+         style="stop-color:#0E0F0A"
+         id="stop161" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="midPointStop162" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#FFFFFF"
+         id="midPointStop163" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#0E0F0A"
+         id="midPointStop164" />
+    </linearGradient>
+    <path
+       i:knockout="Off"
+       fill="url(#XMLID_1_)"
+       stroke="none"
+       d="M22.664,16.044c0,0-5.62-1.523-9.965,2.004      c-5.136,4.17-9.129,13.476-9.129,13.204c0-22.844,19.095-20.7,19.095-20.7h0.031V3.317L33.28,13.902L22.695,24.486v-8.442      H22.664z"
+       id="path165" />
+    <path
+       i:knockout="Off"
+       fill="none"
+       stroke-width="0.5"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       d="M22.664,16.044      c0,0-5.62-1.523-9.965,2.004c-5.136,4.17-9.129,13.476-9.129,13.204c0-22.844,19.095-20.7,19.095-20.7h0.031V3.317L33.28,13.902      L22.695,24.486v-8.442H22.664z"
+       id="path166" />
+  </g>
+  <path
+     i:knockout="Off"
+     opacity="0.3"
+     fill="#FFFFFF"
+     stroke="none"
+     d="M4.441,23.423C8.263,8.974,22.609,10.585,22.609,10.585    h0.031V3.35l7.825,7.825c0,0-1.899,4.451-11.813,2.664C8.739,12.051,3.854,25.643,4.441,23.423z"
+     id="path167"
+     style="font-size:12;opacity:0.3;fill:#ffffff;"
+     transform="matrix(1.0935,0,0,1.08749,-0.333782,-2.73464)" />
+</svg>

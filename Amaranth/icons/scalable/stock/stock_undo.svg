@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   i:viewOrigin="288 413"
+   i:rulerOrigin="-290 -380"
+   i:pageBounds="290 412 322 380"
+   width="37"
+   height="35"
+   viewBox="0 0 37 35"
+   overflow="visible"
+   enable-background="new 0 0 37 35"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:ns="http://ns.adobe.com/Variables/1.0/"
+   xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   id="svg153"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/stock/stock_undo.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/stock">
+  <defs
+     id="defs169" />
+  <sodipodi:namedview
+     id="base" />
+  <metadata
+     id="metadata154">
+    <sfw>
+      <slices />
+      <sliceSourceBounds
+         x="288"
+         y="378"
+         width="37"
+         height="35"
+         bottomLeftOrigin="true" />
+    </sfw>
+    <ns:variableSets>
+      <ns:variableSet
+         varSetName="binding1"
+         locked="none">
+        <ns:variables />
+        <ns:sampleDataSets />
+      </ns:variableSet>
+    </ns:variableSets>
+  </metadata>
+  <g
+     id="g192"
+     transform="matrix(1.07895,0,0,1.07871,-0.281785,-2.46026)">
+    <g
+       id="g158"
+       style="font-size:12;stroke:#000000;">
+      <linearGradient
+         id="XMLID_1_"
+         gradientUnits="userSpaceOnUse"
+         x1="27.7188"
+         y1="8.3403"
+         x2="4.1882"
+         y2="31.8709"
+         gradientTransform="matrix(-1 0 0 1 36.8496 0)">
+        <stop
+           offset="0"
+           style="stop-color:#FFFFFF"
+           id="stop160" />
+        <stop
+           offset="1"
+           style="stop-color:#0E0F0A"
+           id="stop161" />
+        <a:midPointStop
+           offset="0"
+           style="stop-color:#FFFFFF"
+           id="midPointStop162" />
+        <a:midPointStop
+           offset="0.5"
+           style="stop-color:#FFFFFF"
+           id="midPointStop163" />
+        <a:midPointStop
+           offset="1"
+           style="stop-color:#0E0F0A"
+           id="midPointStop164" />
+      </linearGradient>
+      <path
+         i:knockout="Off"
+         fill="url(#XMLID_1_)"
+         stroke="none"
+         d="M14.154,16.044v8.442L3.569,13.902L14.154,3.317v7.235h0.031      c0,0,19.095-2.144,19.095,20.7c0,0.271-3.993-9.034-9.13-13.204c-4.346-3.527-9.965-2.004-9.965-2.004H14.154z"
+         id="path165" />
+      <path
+         i:knockout="Off"
+         fill="none"
+         stroke-width="0.5"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         d="M14.154,16.044v8.442      L3.569,13.902L14.154,3.317v7.235h0.031c0,0,19.095-2.144,19.095,20.7c0,0.271-3.993-9.034-9.13-13.204      c-4.346-3.527-9.965-2.004-9.965-2.004H14.154z"
+         id="path166" />
+    </g>
+    <path
+       i:knockout="Off"
+       opacity="0.3"
+       fill="#FFFFFF"
+       stroke="none"
+       d="M7.867,18.199l-4.298-4.297L14.154,3.317v7.235h0.031    c0,0,7.459-0.837,13.054,4.112c3.356,2.969-8.114-5.101-12.614-0.226S7.867,18.199,7.867,18.199z"
+       id="path167"
+       style="font-size:12;opacity:0.3;fill:#ffffff;" />
+  </g>
+</svg>

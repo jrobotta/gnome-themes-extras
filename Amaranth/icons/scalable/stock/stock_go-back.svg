@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   i:viewOrigin="296 405"
+   i:rulerOrigin="-295 -385"
+   i:pageBounds="295 407 317 385"
+   width="48pt"
+   height="48pt"
+   viewBox="0 0 18 17"
+   overflow="visible"
+   enable-background="new 0 0 18 17"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:ns="http://ns.adobe.com/Variables/1.0/"
+   xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   id="svg153"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/stock/stock_go-back.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/stock">
+  <defs
+     id="defs176">
+    <linearGradient
+       id="XMLID_1_"
+       gradientUnits="userSpaceOnUse"
+       x1="3.6748"
+       y1="3.5459"
+       x2="13.7511"
+       y2="13.6222">
+      <stop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="stop157" />
+      <stop
+         offset="1"
+         style="stop-color:#195F99"
+         id="stop158" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="midPointStop159" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#FFFFFF"
+         id="midPointStop160" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#195F99"
+         id="midPointStop161" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base" />
+  <metadata
+     id="metadata154">
+    <sfw>
+      <slices />
+      <sliceSourceBounds
+         x="296"
+         y="388"
+         width="18"
+         height="17"
+         bottomLeftOrigin="true" />
+    </sfw>
+    <ns:variableSets>
+      <ns:variableSet
+         varSetName="binding1"
+         locked="none">
+        <ns:variables />
+        <ns:sampleDataSets />
+      </ns:variableSet>
+    </ns:variableSets>
+  </metadata>
+  <path
+     i:knockout="Off"
+     fill="url(#XMLID_1_)"
+     stroke-width="0.5"
+     stroke-linejoin="round"
+     d="M15.838,8.583    c0-3.935-3.19-7.125-7.126-7.125c-3.935,0-7.125,3.19-7.125,7.125s3.19,7.125,7.125,7.125    C12.647,15.709,15.838,12.519,15.838,8.583z"
+     id="path162"
+     style="font-size:12;fill:url(#XMLID_1_);stroke:#000000;stroke-width:0.5;stroke-linejoin:round;" />
+  <g
+     id="g165"
+     style="font-size:12;stroke:#000000;">
+    <linearGradient
+       id="XMLID_2_"
+       gradientUnits="userSpaceOnUse"
+       x1="4.2607"
+       y1="12.8477"
+       x2="-1.1699"
+       y2="18.2783"
+       gradientTransform="matrix(-1 0 0 1 10.9492 -7)">
+      <stop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="stop167" />
+      <stop
+         offset="1"
+         style="stop-color:#4C4C4C"
+         id="stop168" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="midPointStop169" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#FFFFFF"
+         id="midPointStop170" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#4C4C4C"
+         id="midPointStop171" />
+    </linearGradient>
+    <path
+       i:knockout="Off"
+       fill="url(#XMLID_2_)"
+       stroke="none"
+       d="M8.826,7.923V3.711L3.938,8.598l4.887,4.886L8.816,9.13      l5.449,0.003V7.922L8.826,7.923z"
+       id="path172" />
+    <path
+       i:knockout="Off"
+       fill="none"
+       stroke-width="0.5"
+       stroke-linejoin="round"
+       d="M8.826,7.923V3.711L3.938,8.598l4.887,4.886      L8.816,9.13l5.449,0.003V7.922L8.826,7.923z"
+       id="path173" />
+  </g>
+  <path
+     i:knockout="Off"
+     opacity="0.3"
+     fill="#FAFAFA"
+     stroke="none"
+     d="M9.333,9.125c5.333,2.167,6.364-2.345,6.045-3.154    c-1.042-2.642-3.618-4.512-6.631-4.512c-3.936,0-7.125,3.19-7.125,7.125c0,1.538,0.396,3.031,1.314,4.125    C3.042,12.833,4,6.958,9.333,9.125z"
+     id="path174"
+     style="font-size:12;opacity:0.3;fill:#fafafa;" />
+</svg>
