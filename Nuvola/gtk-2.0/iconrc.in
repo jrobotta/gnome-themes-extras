@@ -1,4 +1,4 @@
-pixmap_path "/usr/local/share/icons/Nuvola/scalable/stock"
+pixmap_path "@DATADIR@/icons/Nuvola/scalable/stock"
 style "icon-style"
 {
 #  stock["gnome-stock-about"] = {{ "star-button.svg" }}
@@ -51,7 +51,7 @@ style "icon-style"
    stock["gtk-new"] =	     	{{ "filenew.svg" }}
 #  stock["gtk-no"] =		{{ "stock_no.svg" }} 
 #  stock["gtk-ok"] =		{{ "button_ok.svg" }}
-#  stock["gtk-open"] =		{{ "fileopen.svg" }} 
+  stock["gtk-open"] =		{{ "fileopen.svg" }} 
 #  stock["gtk-paste"] =		{{ "editpaste-2.1.svg" }}
 #  stock["gtk-print"] =		{{ "stock_print.svg" }}
 #  stock["gtk-print-preview"] =	{{ "stock_print-preview.svg" }}
