@@ -1,3 +1,8 @@
+2004-09-27  Jakub Steiner <jimmac@ximian.com>
+	
+	* Industrial/industrial_style.c:
+	* Industrial/gtk-2.0/gtkrc.in: sync with clahey
+	
 2004-09-02  Dmitry G. Mastrukov  <dmitry@taurussoft.org>
 
 	* configure.in: Added Russian to ALL_LINGUAS.

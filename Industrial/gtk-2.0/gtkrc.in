@@ -21,9 +21,7 @@ style "industrial-default"
   GtkButton::child_displacement_x = 0
   GtkButton::child_displacement_y = 1
 
-  PanelMenu::gradient_bg = 1
-  PanelMenu::stripe-color = { 0.24, 0.44, 0.66 }
-  PanelMenu::stripe-color-light = { 0.54, 0.74, 0.96 }
+  PanelMenu::stripe-color = "#1E2C43"
 
   GtkMenuItem::selected_shadow_type = GTK_SHADOW_IN
 
@@ -40,8 +38,15 @@ style "industrial-default"
   bg[INSENSITIVE] = "#d9d9d9"
   bg[SELECTED]    = "#99a6bf"
 
-  base[SELECTED]  = "#7b96ac"
+  base[SELECTED]  = "#6484a4"
   text[SELECTED]  = "#ffffff"
+	#this is selected item without focus:
+  base[ACTIVE]  = "#b6c9cf"
+  text[INSENSITIVE]  = "#ffffff"
+	
+	#defaults 
+  #base[NORMAL]  = "#b6c9cf"
+  #text[NORMAL]  = "#000000"
 
   engine "industrial" {}
 
@@ -147,10 +152,11 @@ style "industrial-menu" = "industrial-default"
   xthickness = 3
   ythickness = 3
 
-  #bg[PRELIGHT]    = "#7b96ac"
-  #bg[SELECTED]    = "#7b96ac"
-  bg[PRELIGHT]    = "#3e71aa"
-  bg[SELECTED]    = "#577591"
+	#menu entries
+  bg[PRELIGHT]    = "#6484a4"
+  bg[SELECTED]    = "#6484a4"
+  #bg[PRELIGHT]    = "#9a9b9a"
+  #bg[SELECTED]    = "#6e7c8c"
 
   fg[PRELIGHT]  = "#ffffff"
   fg[SELECTED]  = "#ffffff"
@@ -162,8 +168,8 @@ style "industrial-menu-separator" = "industrial-default"
   xthickness = 3
   ythickness = 3
 
-  bg[PRELIGHT]    = "#7b96ac"
-  bg[SELECTED]    = "#7b96ac"
+  bg[PRELIGHT]    = "#6484a4"
+  bg[SELECTED]    = "#6484a4"
   fg[PRELIGHT]  = "#ffffff"
   fg[SELECTED]  = "#ffffff"
 }
@@ -192,7 +198,7 @@ style "industrial-tree" = "industrial-default"
 
 style "industrial-frame-title" = "industrial-default"
 {
-  fg[NORMAL] = { 0.25,0.25,0.25 }
+  fg[NORMAL] = "#4d4466"
 }
 
 style "industrial-panel" = "industrial-default"
@@ -208,23 +214,28 @@ style "industrial-tooltips" = "industrial-default"
   bg[NORMAL] = { 0.9,0.9,0.9 }
 }
 
+style "industrial-druid" = "industrial-default"
+{
+  bg[SELECTED] = "#6484a4"
+}
+
 style "metacity-frame"
 {
 
 	# Normal base color
- 	bg[NORMAL]      = { 0.97, 0.97, 0.97 }
+ 	bg[NORMAL]      = "#f6f6f6"
 
 	# Unfocused title background color
-	bg[INSENSITIVE]	= { 0.9, 0.9, 0.9 }
+	bg[INSENSITIVE]	= "#f6f6f6"
 
 	# Unfocused title text color
-	fg[INSENSITIVE]	= { 0.15, 0.15, 0.15 }
+	fg[INSENSITIVE]	= "#808080"
 
 	# Focused icon color
 	fg[NORMAL]	= { 0.2, 0.2, 0.2 }
 
 	# Focused title background color
-	bg[SELECTED]	= { 0.27, 0.52, 0.84 }
+	bg[SELECTED]	= "#6484a4"
 	
 	# Focused title text color
 	fg[SELECTED]	= "white"
@@ -257,6 +268,8 @@ class "GtkEntry" style "industrial-wide"
 widget_class "*.tooltips.*.GtkToggleButton" style "industrial-tasklist"
 widget_class "*.GtkFrame.GtkLabel" style "industrial-frame-title"
 widget_class "*.GtkFrame.GtkCheckButton.GtkLabel" style "industrial-frame-title"
+widget_class "*GnomeDruidPage*" style "industrial-druid"
+
 class "MetaFrames" style "metacity-frame"
 class "GtkVScrollbar" style "industrial-arrows"
 class "GtkHScrollbar" style "industrial-arrows"

@@ -16,8 +16,8 @@
 **************************************************************************/
 
 #include "industrial_style_versioned_include.h"
+#include <string.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 #define DETAIL(xx)   ((detail) && (!strcmp((xx), detail)))
 #if INDUSTRIAL_GTK_VERSION == 2
@@ -230,7 +230,7 @@ shade_color (GdkColor * a, GdkColor *fg, GdkColor * b, float k)
 }
 
 #define TOHEX(x) (CLAMP ((int) ((x) * 255.0), 0, 255))
-#define FROMHEX(x) (((x) >= '0' && (x) <= '9') ? ((x) - '0') : (g_ascii_tolower(x) - 'a' + 10))
+#define FROMHEX(x) (((x) >= '0' && (x) <= '9') ? ((x) - '0') : (tolower(x) - 'a' + 10))
 
 static void
 shade_hex (GdkColor * a, GdkColor *fg, char hex[6])
@@ -342,8 +342,8 @@ static const double shades[SHADE_COUNT] = { 0.0   / 253.0,   /* 0  - SHADE_FG   
 
 #define MENUITEM_BORDER_SHADE SHADE_NEG
 
-#define HANDLE_SHADE SHADE_0xD9
-#define SLIDER_HANDLE_SHADE SHADE_0xD9
+#define HANDLE_SHADE SHADE_0x9E
+#define HANDLE_SHADOW_SHADE SHADE_0xDA
 #define LINE_SHADE SHADE_0x9E
 #define STANDARD_BORDER_SHADE SHADE_0x9E
 #define STANDARD_BEVEL_TOP_SHADE SHADE_0xFF
@@ -772,10 +772,6 @@ rotate_point (GtkPositionType pos,
     x_value = x + offset_y;
     y_value = y + height - offset_x - 1;
     break;
-  default:
-    g_warning ("Please report this event at http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-themes-extras");
-    x_value = x;
-    y_value = y;
   }
 
   if (x_result)
@@ -930,37 +926,74 @@ draw_dot (GdkWindow *window,
   }
 }
 
+  /* #define names assume vertical */
+#define HANDLE_HEIGHT (4 * 4 + 1 + 2)
+#define HANDLE_WIDTH (4 + 1 + 2)
+
 static void
 draw_grid (GdkWindow *window,
-	   GdkGC *gc,
+	   GdkGC *gc1,
+	   GdkGC *gc2,
 	   gint x, gint y,
 	   gint width, gint height)
 {
-  int i, j, k;
+  int i, j, k, l;
+  int i2, j2;
+  int xoffset = 0;
+  int yoffset = 0;
+  struct {
+    int xoff;
+    int yoff;
+    int color;
+  } offsets[5] = {
+    {0, 1, 0},
+    {1, 0, 0},
+    {2, 1, 0},
+    {1, 2, 0},
+    {1, 1, 1}
+  };
 
   /*
-    ...........
-    .@...@...@.
-    ...........
-    ...+...+...
-    ...........
-    .@...@...@.
-    ...........
-    ...+...+...
-    ...........
-    .@...@...@.
-    ...........
+    .............
+    ..*...*...*..
+    .*@*.*@*.*@*.
+    ..*.*.*.*.*..
+    ...*+*.*+*...
+    ..*.*.*.*.*..
+    .*@*.*@*.*@*.
+    ..*.*.*.*.*..
+    ...*+*.*+*...
+    ..*.*.*.*.*..
+    .*@*.*@*.*@*.
+    ..*...*...*..
+    .............
 
     Repeated pattern.
 
     + and @ are the same color.  They're just used in comments later.
 
+    * is color 1.
+
+    Possibly offset by -1 either up or to the left.
+
     Set of . around the edge not part of width & height.
   */
-  for (k = 0; k <= 2; k += 2) /* draw @ -> k = 0 ... draw + -> k = 2 */
-    for (i = k; i < width; i += 4)
-      for (j = k; j < height; j += 4)
-	gdk_draw_point (window, gc, x + i, y + j);
+
+  if (width % 4 == 1)
+    xoffset = -1;
+  if (height % 4 == 1)
+    yoffset = -1;
+  for (l = 0; l < 5; l++) { /* Draw the pattern 5 times in different colors. */
+    for (k = 0; k <= 2; k += 2) { /* draw @ -> k = 0 ... draw + -> k = 2 */
+      for (i = k + offsets[l].xoff + xoffset, i2 = k + 1 + xoffset; i < width && i2 < width; i += 4, i2 += 4) {
+	if (i < 0) continue;
+	for (j = k + offsets[l].yoff + yoffset, j2 = k + 1 + yoffset; j < height && j2 < height; j += 4, j2 += 4) {
+	  if (j < 0) continue;
+	  gdk_draw_point (window, offsets[l].color ? gc1 : gc2, x + i, y + j);
+	}
+      }
+    }
+  }
 }
 
 
@@ -1033,7 +1066,8 @@ draw_handle (GtkStyle      *style,
 	     gint           height,
 	     GtkOrientation orientation)
 {
-  GdkGC *gc = get_gc (style, &style->bg[state_type], &style->fg[state_type], HANDLE_SHADE);
+  GdkGC *gc1 = get_gc (style, &style->bg[state_type], &style->fg[state_type], HANDLE_SHADE);
+  GdkGC *gc2 = get_gc (style, &style->bg[state_type], &style->fg[state_type], HANDLE_SHADOW_SHADE);
   int handle_width, handle_height, maxwidth, maxheight;
 
   g_return_if_fail (GTK_IS_STYLE (style));
@@ -1048,9 +1082,6 @@ draw_handle (GtkStyle      *style,
   
   gtk_paint_box (style, window, state_type, shadow_type, area, widget, 
                  detail, x, y, width, height);
-
-#define HANDLE_HANDLE_HEIGHT (4 * 4 + 1)
-#define HANDLE_HANDLE_WIDTH (4 + 1)
 
   if (DETAIL ("paned")) {
 #if 0
@@ -1086,13 +1117,13 @@ draw_handle (GtkStyle      *style,
 
   if (orientation == GTK_ORIENTATION_HORIZONTAL)
     {
-      handle_width = MIN (maxwidth, HANDLE_HANDLE_HEIGHT);
-      handle_height = MIN (maxheight, HANDLE_HANDLE_WIDTH);
+      handle_width = MIN (maxwidth, HANDLE_HEIGHT);
+      handle_height = MIN (maxheight, HANDLE_WIDTH);
     }
   else
     {
-      handle_width = MIN (maxwidth, HANDLE_HANDLE_WIDTH);
-      handle_height = MIN (maxheight, HANDLE_HANDLE_HEIGHT);
+      handle_width = MIN (maxwidth, HANDLE_WIDTH);
+      handle_height = MIN (maxheight, HANDLE_HEIGHT);
     }
 
   if (handle_width <= 0 || handle_height <= 0)
@@ -1101,13 +1132,17 @@ draw_handle (GtkStyle      *style,
   x += (width - handle_width) / 2;
   y += (height - handle_height) / 2;
 
-  if (area)
-    gdk_gc_set_clip_rectangle (gc, area);
+  if (area) {
+    gdk_gc_set_clip_rectangle (gc1, area);
+    gdk_gc_set_clip_rectangle (gc2, area);
+  }
 
-  draw_grid (window, gc, x, y, handle_width, handle_height);
+  draw_grid (window, gc1, gc2, x, y, handle_width, handle_height);
 
-  if (area)
-    gdk_gc_set_clip_rectangle (gc, NULL);
+  if (area) {
+    gdk_gc_set_clip_rectangle (gc1, NULL);
+    gdk_gc_set_clip_rectangle (gc2, NULL);
+  }
 }
 
 /**************************************************************************/
@@ -1162,7 +1197,6 @@ draw_slider (GtkStyle      *style,
 	     GtkOrientation orientation)
 {
   int handle_width, handle_height;
-  GdkGC *gc;
 
 #if DEBUG
   printf ("%s: %p %p %s %i %i %i %i  %i\n", __FUNCTION__, widget, window, detail, x, y,
@@ -1204,34 +1238,35 @@ draw_slider (GtkStyle      *style,
   gtk_paint_box (style, window, state_type, shadow_type,
                  area, widget, detail, x, y, width, height);
 
-  gc = get_gc (style, &style->bg[state_type], &style->fg[state_type], SLIDER_HANDLE_SHADE);
-
-  if (area)
-    gdk_gc_set_clip_rectangle (gc, area);
-
-  /* #define names assume vertical */
-#define SLIDER_HANDLE_HEIGHT (4 * 4 + 1)
-#define SLIDER_HANDLE_WIDTH (4 + 1)
 
   if (orientation == GTK_ORIENTATION_HORIZONTAL)
     {
-      handle_width = MIN (width - 2, SLIDER_HANDLE_HEIGHT);
-      handle_height = MIN (height - 2, SLIDER_HANDLE_WIDTH);
+      handle_width = MIN (width - 2, HANDLE_HEIGHT);
+      handle_height = MIN (height - 2, HANDLE_WIDTH);
     }
   else
     {
-      handle_width = MIN (width - 2, SLIDER_HANDLE_WIDTH);
-      handle_height = MIN (height - 2, SLIDER_HANDLE_HEIGHT);
+      handle_width = MIN (width - 2, HANDLE_WIDTH);
+      handle_height = MIN (height - 2, HANDLE_HEIGHT);
     }
 
   if (handle_width > 0 && handle_height > 0) {
+    GdkGC *gc1 = get_gc (style, &style->bg[state_type], &style->fg[state_type], HANDLE_SHADE);
+    GdkGC *gc2 = get_gc (style, &style->bg[state_type], &style->fg[state_type], HANDLE_SHADOW_SHADE);
+
+    if (area) {
+      gdk_gc_set_clip_rectangle (gc1, area);
+      gdk_gc_set_clip_rectangle (gc2, area);
+    }
     x += (width - handle_width) / 2;
     y += (height - handle_height) / 2;
-    draw_grid (window, gc, x, y, handle_width, handle_height);
+    draw_grid (window, gc1, gc2, x, y, handle_width, handle_height);
+    if (area) {
+      gdk_gc_set_clip_rectangle (gc1, NULL);
+      gdk_gc_set_clip_rectangle (gc2, NULL);
+    }
   }
 
-  if (area)
-    gdk_gc_set_clip_rectangle (gc, NULL);
 }
 
 static void
@@ -1248,13 +1283,31 @@ real_draw_box (GtkStyle      *style,
 	       gint           height,
 	       gboolean       fill)
 {
-  if (shadow_type == GTK_SHADOW_NONE)
-    return;
-  
   g_return_if_fail (style != NULL);
   g_return_if_fail (window != NULL);
 
   sanitize_size (window, &width, &height);
+
+  /* None of the drawing routines below are set up to handle SHADOW_TYPE_NONE,
+   * so just fill in a blank box here.  Ideally everything in the theme
+   * would be reworked to handle SHADOW_TYPE_NONE correctly */
+  if (shadow_type == GTK_SHADOW_NONE) {
+    if (!style->bg_pixmap[state_type] ||
+	GDK_IS_PIXMAP (window)) {
+	if (area)
+	  gdk_gc_set_clip_rectangle (style->bg_gc[state_type], area);
+	
+	gdk_draw_rectangle (window, style->bg_gc[state_type], TRUE,
+			    x, y, width, height);
+	if (area)
+	  gdk_gc_set_clip_rectangle (style->bg_gc[state_type], NULL);
+    }
+    else
+      gtk_style_apply_default_background (style, window,
+					  widget && !GTK_WIDGET_NO_WINDOW (widget),
+					  state_type, area, x, y, width, height);
+    return;
+  }
 
   if (DETAIL("button") ||
       DETAIL("togglebutton")) {
@@ -1288,9 +1341,9 @@ real_draw_box (GtkStyle      *style,
 
     GdkGC *gc;
     GdkColor *color;
+    int gradient_lines = 7;
 
-    if (! (widget &&
-	   GTK_WIDGET_HAS_DEFAULT (widget) &&
+    if (! (GTK_WIDGET_HAS_DEFAULT (widget) &&
 	   GTK_IS_BUTTON (widget) && 
 	   GTK_BUTTON (widget)->relief == GTK_RELIEF_NORMAL/* &&
 							      state_type != GTK_STATE_ACTIVE*/)) {
@@ -1635,10 +1688,10 @@ real_draw_box (GtkStyle      *style,
 	     DETAIL("dockitem") ||
 	     WIDGET_TYPE_NAME("PanelAppletFrame")) {
     GdkGC *bg_gc = NULL;
-    GdkGC *fg_gc = NULL;
+    GdkGC *fg_gc;
     GdkColor *bg_color;
     GdkColor *fg_color;
-    GdkGC *corner_gc = NULL;
+    GdkGC *corner_gc;
 
 
     if (fill) {
@@ -2368,8 +2421,8 @@ draw_option (GtkStyle		*style,
     bg = &style->bg[state_type];
   } 
 #endif
-
-  if (width <= 8)
+  
+  if (width < 13)
     which = PIXMAP_SMALL_RADIO_ACTIVE;
   else
     which = PIXMAP_RADIO_ACTIVE;
