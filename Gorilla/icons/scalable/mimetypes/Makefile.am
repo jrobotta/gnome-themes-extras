@@ -11,6 +11,7 @@ icon_DATA = \
         gnome-mime-application-x-dvi.svg \
         gnome-mime-application-x-font.svg \
         gnome-mime-application-x-rpm.svg \
+        gnome-mime-application-vnd.ms-excel.svg \
         gnome-mime-application-vnd.sun.xml.calc.svg \
         gnome-mime-application-vnd.sun.xml.draw.svg \
         gnome-mime-application-vnd.sun.xml.impress.svg \
@@ -18,12 +19,21 @@ icon_DATA = \
         gnome-mime-audio.svg \
         gnome-mime-image.svg \
         gnome-mime-text.svg \
+        gnome-mime-text-x-authors.svg \
         gnome-mime-video.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 
 # install-data-local:
-#	cd $(icondir) && ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-ttf.svg && ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-pcf.svg && ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-type1.svg && ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-linux-psf.svg && ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-bdf.svg && ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-afm.svg && ln -sf gnome-mime-audio.svg gnome-mime-application-x-ogg.svg && ln -sf gnome-compressed.svg gnome-mime-application-x-stuffit.svg
+#	cd $(icondir) && \
+#	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-ttf.svg && \
+#	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-pcf.svg && \
+#	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-type1.svg && \
+#	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-linux-psf.svg &&\
+#	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-bdf.svg && \
+#	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-afm.svg && \
+#	ln -sf gnome-mime-audio.svg gnome-mime-application-x-ogg.svg && \
+#	ln -sf gnome-compressed.svg gnome-mime-application-x-stuffit.svg
 
 # uninstall-local:
 #	rm -rf $(icondir)/gnome-mime-application-x-font-ttf.svg
