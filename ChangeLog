@@ -1,3 +1,7 @@
+2003-05-03  Andrew Sobala  <aes@gnome.org>
+
+	* configure.in (AC_OUTPUT): stop duplicate creation of Nuvola/metacity-1/Makefile
+
 2003-05-01  Dennis Cranston <dennis_cranston at yahoo com>
        * Galaxy/gtk-2.0/galaxy_theme_draw.c:  Prevent a division by zero crash.
 
