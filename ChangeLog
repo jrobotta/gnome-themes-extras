@@ -2,7 +2,7 @@
 
 	* Gorilla/metacity-1/metacity-theme-1.xml: temporarily revert
 	  Uraeus' maximized state, since it draws a nasty light border.
-	  I'll see about the prope maximized state in future.
+	  I'll see about a proper maximized state in future.
 
 2003-07-27 Christian Schaller <uraeus@gnome.org>
 	
