@@ -444,6 +444,10 @@
     <image filename="wm-menu.svg" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
   </draw_ops>
 
+  <draw_ops name="menu_button_icon_prelight">
+    <image filename="wm-menu.svg" colorize="#aaaa00" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
+  </draw_ops>
+
   <draw_ops name="menu_button_icon_pressed">
     <image filename="wm-menu.svg" colorize="#ffffff" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
   </draw_ops>
@@ -454,6 +458,9 @@
 
   <draw_ops name="menu_button_normal">
     <include name="menu_button_icon"/>
+  </draw_ops>
+  <draw_ops name="menu_button_prelight">
+    <include name="menu_button_icon_prelight"/>
   </draw_ops>
   <draw_ops name="menu_button_pressed">
     <include name="menu_button_icon"/>
@@ -466,6 +473,10 @@
     <image filename="wm-close.svg" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
   </draw_ops>
 
+  <draw_ops name="close_button_icon_prelight">
+    <image filename="wm-close.svg" colorize="#aaaa00" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
+  </draw_ops>
+
   <draw_ops name="close_button_icon_pressed">
     <image filename="wm-close.svg" colorize="#ffffff" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
   </draw_ops>
@@ -474,6 +485,9 @@
     <image filename="wm-close.svg" colorize="#ffffff" alpha="0.1" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
   </draw_ops>
 
+  <draw_ops name="close_button_prelight">
+    <include name="close_button_icon_prelight"/>
+  </draw_ops>
   <draw_ops name="close_button_normal">
     <include name="close_button_icon"/>
   </draw_ops>
@@ -488,6 +502,10 @@
     <image filename="wm-max.svg" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
   </draw_ops>
 
+  <draw_ops name="maximize_button_icon_prelight">
+    <image filename="wm-max.svg" colorize="#aaaa00" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
+  </draw_ops>
+
   <draw_ops name="maximize_button_icon_pressed">
     <image filename="wm-max.svg" colorize="#FFFFFF" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
   </draw_ops>
@@ -499,6 +517,9 @@
   <draw_ops name="maximize_button_normal">
     <include name="maximize_button_icon"/>
   </draw_ops>
+  <draw_ops name="maximize_button_prelight">
+    <include name="maximize_button_icon_prelight"/>
+  </draw_ops>
   <draw_ops name="maximize_button_pressed">
     <include name="maximize_button_icon_pressed"/>
   </draw_ops>
@@ -508,6 +529,10 @@
 
   <draw_ops name="restore_button_icon">
     <image filename="wm-restore.svg" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
+  </draw_ops>
+
+  <draw_ops name="restore_button_icon_prelight">
+    <image filename="wm-restore.svg" colorize="#aaaa00" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
   </draw_ops>
 
   <draw_ops name="restore_button_icon_pressed">
@@ -521,6 +546,9 @@
   <draw_ops name="restore_button_normal">
     <include name="restore_button_icon"/>
   </draw_ops>
+  <draw_ops name="restore_button_prelight">
+    <include name="restore_button_icon_prelight"/>
+  </draw_ops>
   <draw_ops name="restore_button_pressed">
     <include name="restore_button_icon_pressed"/>
   </draw_ops>
@@ -530,6 +558,10 @@
 
   <draw_ops name="minimize_button_icon">
     <image filename="wm-min.svg" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
+  </draw_ops>
+
+  <draw_ops name="minimize_button_icon_prelight">
+    <image filename="wm-min.svg" colorize="#aaaa00" x="ButtonIPad" y="ButtonIPad" width="width - ButtonIPad" height="height - ButtonIPad"/>
   </draw_ops>
 
   <draw_ops name="minimize_button_icon_pressed">
@@ -542,6 +574,9 @@
 
   <draw_ops name="minimize_button_normal">
     <include name="minimize_button_icon"/>
+  </draw_ops>
+  <draw_ops name="minimize_button_prelight">
+    <include name="minimize_button_icon_prelight"/>
   </draw_ops>
   <draw_ops name="minimize_button_pressed">
     <include name="minimize_button_icon_pressed"/>
@@ -558,12 +593,16 @@
     <piece position="title" draw_ops="title_unfocused"/>
     <button function="close" state="normal" draw_ops="close_button_unfocused"/>
     <button function="close" state="pressed" draw_ops="close_button_pressed"/>
+    <button function="close" state="prelight" draw_ops="close_button_prelight"/>
     <button function="maximize" state="normal" draw_ops="maximize_button_unfocused"/>
     <button function="maximize" state="pressed" draw_ops="maximize_button_pressed"/>
+    <button function="maximize" state="prelight" draw_ops="maximize_button_prelight"/>
     <button function="minimize" state="normal" draw_ops="minimize_button_unfocused"/>
     <button function="minimize" state="pressed" draw_ops="minimize_button_pressed"/>
+    <button function="minimize" state="prelight" draw_ops="minimize_button_prelight"/>
     <button function="menu" state="normal" draw_ops="menu_button_unfocused"/>
     <button function="menu" state="pressed" draw_ops="menu_button_pressed"/>
+    <button function="menu" state="prelight" draw_ops="menu_button_prelight"/>
   </frame_style>
 
   <frame_style name="focused" geometry="normal" parent="normal">
@@ -589,12 +628,16 @@
     <piece position="title" draw_ops="title_unfocused"/>
     <button function="close" state="normal" draw_ops="close_button_unfocused"/>
     <button function="close" state="pressed" draw_ops="close_button_pressed"/>
+    <button function="close" state="prelight" draw_ops="close_button_prelight"/>
     <button function="maximize" state="normal" draw_ops="restore_button_unfocused"/>
     <button function="maximize" state="pressed" draw_ops="restore_button_pressed"/>
+    <button function="maximize" state="prelight" draw_ops="restore_button_prelight"/>
     <button function="minimize" state="normal" draw_ops="minimize_button_unfocused"/>
     <button function="minimize" state="pressed" draw_ops="minimize_button_pressed"/>
+    <button function="minimize" state="prelight" draw_ops="minimize_button_prelight"/>
     <button function="menu" state="normal" draw_ops="menu_button_unfocused"/>
     <button function="menu" state="pressed" draw_ops="menu_button_pressed"/>
+    <button function="menu" state="prelight" draw_ops="menu_button_prelight"/>
   </frame_style>
 
   <frame_style name="focused_maximized" geometry="normal_maximized" parent="normal">
