@@ -1,3 +1,7 @@
+2003-06-10  Jakub Steiner <jimmac@ximian.com>
+
+	* Gorilla/gtk-2.0/gtkrc: tweak a little to reflect engine change
+
 2003-06-09 Christian Schaller <Uraeus@gnome.org>
 
 	* Changed wm theme for Nuvola to a hybrid of old one and Gorilla

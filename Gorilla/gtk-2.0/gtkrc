@@ -2,7 +2,7 @@
 # (c) 2002-2003 Jakub 'jimmac' Steiner <jimmac@ximian.com>
 include "iconrc"
 
-style "default"
+style "gorilla-default"
 {
   GtkWidget::interior_focus = 1
   GtkButton::default_border = { 3, 3, 3, 3 }
@@ -27,110 +27,171 @@ style "default"
   #PanelMenu::stripe-color = { 0.24, 0.44, 0.66 }
   #PanelMenu::stripe-color-light = { 0.54, 0.74, 0.96 }
 
+  GtkMenuItem::selected_shadow_type = GTK_SHADOW_IN
+
   #GtkOptionMenu::indicator_size = { 11, 6 }
   #GtkOptionMenu::indicator_spacing = { 4, 5, 2, 2 }
 
   xthickness = 1
   ythickness = 1
   
+  bg[NORMAL]      = "#dedfce"
+  bg[PRELIGHT]	   = "#9f9f93"
+  fg[PRELIGHT]    = "#ffffff"
+  bg[ACTIVE]	   = "#bebfae"
+  bg[INSENSITIVE] = "#eeeee0"
+  bg[SELECTED]    = "#9f9f93"
 
+  base[SELECTED]  = "#9f9f93"
+  text[SELECTED]  = "#ffffff"
 
-  fg[NORMAL]       = "#000000"
-  fg[ACTIVE]       = "#000000"
-  fg[PRELIGHT]     = "#ffffff"
-  fg[SELECTED]     = "#FFFFFF"
-  fg[INSENSITIVE]  = "#999989"  
-  
-  bg[NORMAL]       = "#dedfce" 
-  bg[ACTIVE]       = "#bebfae" 
-  bg[PRELIGHT]     = "#9f9f93" 
-  bg[SELECTED]     = "#9f9f93" 
-  bg[INSENSITIVE]  = "#eeeee0" 
-  
-  base[NORMAL]     = "#ffffff"
-  base[SELECTED]   = "#9f9f93"
-  base[ACTIVE]     = "#9f9f9f" #for some reason this is for inactive selected
-  #base[PRELIGHT]   = "#f0f0f0"
-  #base[INSENSITIVE]= "#ddddcf"
-  
-  text[INSENSITIVE]= "#747474"
-  text[SELECTED]   = "#ffffff"
-  text[ACTIVE]     = "#000000"
-
-  engine "industrial" {} 
+  engine "industrial" {}
 
 }
 
-class "GtkWidget" style "default"
-
-style "panel-icons"
+style "gorilla-unrounded" = "gorilla-default"
 {
-        #stock ["panel-run"] =           {{"stock_run.svg"}}
-        #stock ["panel-searchtool"] =    {{"stock_searchtool.svg"}}
-        #stock ["panel-screenshot"] =    {{"stock_screenshot.svg"}}
-        #stock ["panel-lockscreen"] =    {{"stock_lockscreen.svg"}}
-        #stock ["panel-logout"] =        {{"stock_logout.svg"}}
-        #stock ["panel-gnome-logo"] =    {{"stock_gnome-logo.svg"}}
-
-        #stock ["panel-cde"] =           {{"stock_cde-menu.svg"}}
-#TBD    stock ["panel-debian"] =        {{""}}
-#TBD    stock ["panel-kde"] =           {{""}}
-#TBD    stock ["panel-suse"] =          {{""}}
-
-	     #stock ["panel-amusements"] =    {{"stock_amusements.svg"}}
-	     #stock ["panel-accessories"] =   {{"stock_accessories.svg"}}
-        #stock ["panel-multimedia"] =    {{"stock_multimedia.svg"}}
-
-        #stock ["panel-internet"] =      {{"stock_internet.svg"}}
-        #stock ["panel-utility"] =       {{"stock_gnome-util.svg"}}
-
-        #stock ["panel-corner-type"] =   {{"stock_corner-panel.svg"}}
-        #stock ["panel-edge-type"] =     {{"stock_edge-panel.svg"}}
-        #stock ["panel-floating-type"] = {{"stock_floating-panel.svg"}}
-        #stock ["panel-sliding-type"] =  {{"stock_sliding-panel.svg"}}
-        #stock ["panel-menu-type"] =     {{"stock_menu-panel.svg"}}
-
-        #stock ["panel-launcher"] =      {{"stock_launcher-program.svg"}}
-
-        #stock ["panel-drawer"] =        {{"stock_drawer.svg"}}
-#       stock ["panel-applet"] =        {{""}}
-#       stock ["panel-desktop"] =       {{""}}
-
-	#stock ["commandline-browser"] =	{{"stock_commandline-browser.xpm"}}
-	#stock ["commandline-history"] =	{{"stock_commandline-history.xpm"}}
-
+  engine "industrial" 
+    {
+      rounded_buttons = FALSE
+    }
 }
 
-class "GtkWidget" style "panel-icons"
-style "media-icons"
+style "gorilla-wide" = "gorilla-default"
 {
-
-        #stock ["cdplayer-stop"] =       {{"media-stop.svg"}}
-        #stock ["cdplayer-play"] = 	{{"media-play.svg"}}
-        #stock ["cdplayer-pause"] = 	{{"media-pause.svg"}}
-        #stock ["cdplayer-prev"] =       {{"media-prev.svg"}}
-        #stock ["cdplayer-next"] =       {{"media-next.svg"}}
-        #stock ["cdplayer-eject"] =      {{"media-eject.svg"}}
-
-	     #stock ["volume-mute"] =      	{{"volume-mute.svg"}}
-        #stock ["volume-zero"] =      	{{"volume-zero.svg"}}
-        #stock ["volume-min"] =      	{{"volume-min.svg"}}
-        #stock ["volume-med"] =      	{{"volume-medium.svg"}}
-        #stock ["volume-max"] =      	{{"volume-max.svg"}}
-
+  xthickness = 2
+  ythickness = 2
 }
 
-class "GtkWidget" style "media-icons"
-
-style "capplet-icons"
+style "gorilla-tasklist" = "gorilla-default"
 {
-
-        #stock ["mouse-dblclck-maybe"] =    {{"double-click-maybe.svg"}}
-        #stock ["mouse-dblclck-on"] =       {{"double-click-on.svg"}}
-        #stock ["mouse-dblclck-off"] =      {{"double-click-off.svg"}}
-
+  xthickness = 5
+  ythickness = 3
 }
 
+style "gorilla-arrows" = "gorilla-default"
+{
+  fg[NORMAL] = { 0.2,0.2,0.2 }
+}
 
+style "gorilla-menu" = "gorilla-default"
+{
+#  engine "redmond95" { }
+  xthickness = 3
+  ythickness = 3
 
-class "GtkWidget" style "default"
+  #bg[PRELIGHT]    = "#7b96ac"
+  #bg[SELECTED]    = "#7b96ac"
+  bg[PRELIGHT]    = "#9f9f93"
+  bg[SELECTED]    = "#bebfae"
+
+  fg[PRELIGHT]  = "#ffffff"
+  fg[SELECTED]  = "#ffffff"
+}
+
+style "gorilla-menu-separator" = "gorilla-default"
+{
+#  engine "redmond95" { }
+  xthickness = 3
+  ythickness = 3
+
+#  bg[PRELIGHT]    = "#7b96ac"
+#  bg[SELECTED]    = "#7b96ac"
+#  fg[PRELIGHT]  = "#ffffff"
+#  fg[SELECTED]  = "#ffffff"
+}
+
+style "gorilla-menubar" = "gorilla-default"
+{
+  xthickness = 3
+  ythickness = 3
+}
+
+style "gorilla-paned" = "gorilla-default"
+{
+  xthickness = 10
+  ythickness = 10
+}
+
+style "gorilla-tree" = "gorilla-default"
+{
+  engine "industrial" 
+    {
+      rounded_buttons = FALSE
+    }
+  xthickness = 2
+  ythickness = 2
+}
+
+style "gorilla-frame-title" = "gorilla-default"
+{
+  fg[NORMAL] = { 0.25,0.25,0.25 }
+}
+
+style "gorilla-panel" = "gorilla-default"
+{
+  xthickness = 3
+  ythickness = 3
+}
+
+style "gorilla-tooltips" = "gorilla-default"
+{
+  xthickness = 4
+  ythickness = 4
+  bg[NORMAL] = { 0.9,0.9,0.9 }
+}
+
+#style "metacity-frame"
+#{
+#
+#	# Normal base color
+# 	bg[NORMAL]      = { 0.97, 0.97, 0.97 }
+#
+#	# Unfocused title background color
+#	bg[INSENSITIVE]	= { 0.9, 0.9, 0.9 }
+#
+#	# Unfocused title text color
+#	fg[INSENSITIVE]	= { 0.15, 0.15, 0.15 }
+#
+#	# Focused icon color
+#	fg[NORMAL]	= { 0.2, 0.2, 0.2 }
+#
+#	# Focused title background color
+#	bg[SELECTED]	= { 0.27, 0.52, 0.84 }
+#	
+#	# Focused title text color
+#	fg[SELECTED]	= "white"
+#}
+
+#class "Gtk*Paned" style "gorilla-paned"
+
+widget "*.tasklist-button" style "gorilla-unrounded"
+widget_class "*.GtkTreeView.*" style "gorilla-tree"
+widget_class "*.GtkList.*" style "gorilla-tree"
+widget_class "*.GtkCList.*" style "gorilla-tree"
+widget_class "*.ETree.*" style "gorilla-tree"
+widget_class "*.ETable.*" style "gorilla-tree"
+
+class "GtkNotebook" style "gorilla-wide"
+class "GtkWidget" style "gorilla-default"
+class "GtkButton" style "gorilla-wide"
+class "GtkRange" style "gorilla-wide"
+class "GtkMenu" style "gorilla-wide"
+class "GtkFrame" style "gorilla-wide"
+class "GtkStatusbar" style "gorilla-wide"
+class "GtkMenuItem" style "gorilla-menu"
+widget_class "*.GtkMenuItem.*" style "gorilla-menu"
+widget_class "*.GtkAccelMenuItem.*" style "gorilla-menu"
+widget_class "*.GtkRadioMenuItem.*" style "gorilla-menu"
+widget_class "*.GtkCheckMenuItem.*" style "gorilla-menu"
+widget_class "*.GtkImageMenuItem.*" style "gorilla-menu"
+widget_class "*.GtkSeparatorMenuItem.*" style "gorilla-menu-separator"
+class "GtkEntry" style "gorilla-wide"
+widget_class "*.tooltips.*.GtkToggleButton" style "gorilla-tasklist"
+widget_class "*.GtkFrame.GtkLabel" style "gorilla-frame-title"
+widget_class "*.GtkFrame.GtkCheckButton.GtkLabel" style "gorilla-frame-title"
+#class "MetaFrames" style "metacity-frame"
+class "GtkVScrollbar" style "gorilla-arrows"
+class "GtkHScrollbar" style "gorilla-arrows"
+widget_class "BasePWidget.GtkEventBox.GtkTable.GtkFrame" style "gorilla-panel"
+widget "gtk-tooltips" style "gorilla-tooltips"

@@ -101,3 +101,75 @@ style "icon-style" {
   stock["gtk-stock-reset"] = {{ "stock_reset.svg" }}
 }
 class "GtkWidget" style "icon-style"
+
+style "panel-icons"
+{
+        #stock ["panel-run"] =           {{"stock_run.svg"}}
+        #stock ["panel-searchtool"] =    {{"stock_searchtool.svg"}}
+        #stock ["panel-screenshot"] =    {{"stock_screenshot.svg"}}
+        #stock ["panel-lockscreen"] =    {{"stock_lockscreen.svg"}}
+        #stock ["panel-logout"] =        {{"stock_logout.svg"}}
+        #stock ["panel-gnome-logo"] =    {{"stock_gnome-logo.svg"}}
+
+        #stock ["panel-cde"] =           {{"stock_cde-menu.svg"}}
+#TBD    stock ["panel-debian"] =        {{""}}
+#TBD    stock ["panel-kde"] =           {{""}}
+#TBD    stock ["panel-suse"] =          {{""}}
+
+	     #stock ["panel-amusements"] =    {{"stock_amusements.svg"}}
+	     #stock ["panel-accessories"] =   {{"stock_accessories.svg"}}
+        #stock ["panel-multimedia"] =    {{"stock_multimedia.svg"}}
+
+        #stock ["panel-internet"] =      {{"stock_internet.svg"}}
+        #stock ["panel-utility"] =       {{"stock_gnome-util.svg"}}
+
+        #stock ["panel-corner-type"] =   {{"stock_corner-panel.svg"}}
+        #stock ["panel-edge-type"] =     {{"stock_edge-panel.svg"}}
+        #stock ["panel-floating-type"] = {{"stock_floating-panel.svg"}}
+        #stock ["panel-sliding-type"] =  {{"stock_sliding-panel.svg"}}
+        #stock ["panel-menu-type"] =     {{"stock_menu-panel.svg"}}
+
+        #stock ["panel-launcher"] =      {{"stock_launcher-program.svg"}}
+
+        #stock ["panel-drawer"] =        {{"stock_drawer.svg"}}
+#       stock ["panel-applet"] =        {{""}}
+#       stock ["panel-desktop"] =       {{""}}
+
+	#stock ["commandline-browser"] =	{{"stock_commandline-browser.xpm"}}
+	#stock ["commandline-history"] =	{{"stock_commandline-history.xpm"}}
+
+}
+
+class "GtkWidget" style "panel-icons"
+style "media-icons"
+{
+
+        #stock ["cdplayer-stop"] =       {{"media-stop.svg"}}
+        #stock ["cdplayer-play"] = 	{{"media-play.svg"}}
+        #stock ["cdplayer-pause"] = 	{{"media-pause.svg"}}
+        #stock ["cdplayer-prev"] =       {{"media-prev.svg"}}
+        #stock ["cdplayer-next"] =       {{"media-next.svg"}}
+        #stock ["cdplayer-eject"] =      {{"media-eject.svg"}}
+
+	     #stock ["volume-mute"] =      	{{"volume-mute.svg"}}
+        #stock ["volume-zero"] =      	{{"volume-zero.svg"}}
+        #stock ["volume-min"] =      	{{"volume-min.svg"}}
+        #stock ["volume-med"] =      	{{"volume-medium.svg"}}
+        #stock ["volume-max"] =      	{{"volume-max.svg"}}
+
+}
+
+class "GtkWidget" style "media-icons"
+
+style "capplet-icons"
+{
+
+        #stock ["mouse-dblclck-maybe"] =    {{"double-click-maybe.svg"}}
+        #stock ["mouse-dblclck-on"] =       {{"double-click-on.svg"}}
+        #stock ["mouse-dblclck-off"] =      {{"double-click-off.svg"}}
+
+}
+
+
+
+class "GtkWidget" style "default"
