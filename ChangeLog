@@ -1,5 +1,11 @@
 2003-06-08  Jakub Steiner <jimmac@ximian.com>
 
+	* Gorilla/metacity-1/Makefile.am:
+	* Gorilla/Makefile.am:
+	* configure.in: automagick for metacity theme
+	
+2003-06-08  Jakub Steiner <jimmac@ximian.com>
+
 	* Gorilla/metacity-1/metacity-theme-1.xml
 	* Gorilla/metacity-1/wm-close.svg
 	* Gorilla/metacity-1/wm-max.svg
