@@ -1,0 +1,65 @@
+AC_PREREQ(2.52)
+AC_INIT(README)
+
+AM_CONFIG_HEADER(config.h)
+
+AM_INIT_AUTOMAKE(gnome-themes-extras, 0.1)
+
+# Honor aclocal flags
+ACLOCAL="$ACLOCAL $ACLOCAL_FLAGS"
+
+
+GETTEXT_PACKAGE=gnome-themes-extra
+AC_SUBST(GETTEXT_PACKAGE)
+
+AM_MAINTAINER_MODE
+
+AC_PROG_INTLTOOL([0.23])
+AC_PROG_CC
+AM_PROG_LIBTOOL
+
+PKG_CHECK_MODULES(GTKTHEME,
+		  gtk+-2.0 >= 1.3.11
+		  gdk-pixbuf-2.0 >= 1.3.11)
+
+AC_SUBST(GTKTHEME_CFLAGS)
+AC_SUBST(GTKTHEME_LIBS)
+
+GTK_BINARY_VERSION=`$PKG_CONFIG --variable=gtk_binary_version gtk+-2.0`
+AC_SUBST(GTK_BINARY_VERSION)
+
+# Checks for header files.
+AC_HEADER_STDC
+
+# Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+
+# Checks for endianness (needed by GdkRgb).
+AC_C_BIGENDIAN
+
+# Checks for library functions.
+AC_TYPE_SIGNAL
+AC_FUNC_MMAP
+AC_FUNC_ALLOCA
+AC_CHECK_FUNCS(setenv putenv)
+
+
+GTK_VERSION=`$PKG_CONFIG --variable=gtk_binary_version gtk+-2.0`
+AC_SUBST(GTK_VERSION)
+
+ALL_LINGUAS=""
+AM_GLIB_GNU_GETTEXT
+
+AC_OUTPUT([
+Makefile
+Gorilla/Makefile
+Gorilla/gtk-2.0/Makefile
+Gorilla/icons/Makefile
+Gorilla/icons/scalable/Makefile
+Gorilla/icons/scalable/devices/Makefile
+Gorilla/icons/scalable/emblems/Makefile
+Gorilla/icons/scalable/filesystems/Makefile
+Gorilla/icons/scalable/mimetypes/Makefile
+po/Makefile.in
+])
+

@@ -1,0 +1,10 @@
+[Desktop Entry]
+_Name=Gorilla
+Type=X-GNOME-Metatheme
+_Comment=The vector mono Godess
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Gorilla
+MetacityTheme=Gorilla
+IconTheme=Gorilla
