@@ -33,6 +33,7 @@ icon_DATA = \
         gnome-mime-text-x-java.svg \
 		  gnome-mime-text-x-lyx.svg \
 		  gnome-mime-text-x-makefile.svg \
+		  gnome-mime-text-x-troff-man.svg \
         gnome-mime-video.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
