@@ -23,13 +23,18 @@ icon_DATA = \
 	gnome-mime-text-x-sh.svg \
 	gnome-mime-text-x-yacc.svg \
 	gnome-mime-video.svg \
+	gnome-compressed.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 
 install-data-local:
 	mkdir -p $(DESTDIR)$(icondir)
 	cd $(icondir) && \
-	ln -sf gnome-mime-audio.svg gnome-mime-application-x-ogg.svg
+	ln -sf gnome-mime-audio.svg gnome-mime-application-x-ogg.svg && \
+	ln -sf gnome-compressed.svg gnome-mime-application-x-stuffit.svg && \
+	ln -sf gnome-compressed.svg gnome-mime-application-x-tgz.svg
 
 uninstall-local:
-	rm -rf $(icondir)/gnome-mime-application-x-ogg.svg
+	rm -rf $(icondir)/gnome-mime-application-x-ogg.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-stuffit.svg && \
+	rm -rf $(icondir)/gnome-mime-application-x-tgz.svg
