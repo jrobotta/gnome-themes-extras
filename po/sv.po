@@ -9,13 +9,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras\n"
-"POT-Creation-Date: 2003-07-31 01:25+0200\n"
-"PO-Revision-Date: 2003-07-31 01:26+0200\n"
+"POT-Creation-Date: 2003-08-23 12:23+0200\n"
+"PO-Revision-Date: 2003-08-23 12:25+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
+msgid "Amaranth"
+msgstr "Amarant"
+
+#: Amaranth/icons/index.theme.in.h:2
+msgid "Silver Vector Theme"
+msgstr "Vektortemat Silver"
+
+#: Amaranth/index.theme.in.h:2
+msgid "Sterling Silver "
+msgstr "Gedigen "
 
 #: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
 msgid "Gorilla"
@@ -53,6 +65,15 @@ msgstr "Geting"
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "Tema i BeOS-stil"
+
+#~ msgid "Sterling Silver"
+#~ msgstr "Gedigen"
+
+#~ msgid "Silver"
+#~ msgstr "Silver"
+
+#~ msgid "Vector Themes"
+#~ msgstr "Vektorteman"
 
 #~ msgid "Galaxy"
 #~ msgstr "Galaxy"
