@@ -11,63 +11,55 @@ msgstr ""
 "Last-Translator: Mai Hao Hui <mhh@ricetons.com>\n"
 "Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=GB18030\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Report-Msgid-Bugs-To: \n"
 
-# File: Amaranth/icons/index.theme.in.h, line: 1
-# File: Amaranth/index.theme.in.h, line: 1
+#: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
 msgid "Amaranth"
-msgstr "×Ïºì"
+msgstr "ç´«çº¢"
 
-# File: Amaranth/icons/index.theme.in.h, line: 2
+#: Amaranth/icons/index.theme.in.h:2
 msgid "Silver Vector Theme"
-msgstr "ÒøÉ«¶¥µãÖ÷Ìâ"
+msgstr "é“¶è‰²é¡¶ç‚¹ä¸»é¢˜"
 
-# File: Amaranth/index.theme.in.h, line: 2
+#: Amaranth/index.theme.in.h:2
 msgid "Sterling Silver"
-msgstr "´¿Òø"
+msgstr "çº¯é“¶"
 
-# File: Gorilla/icons/index.theme.in.h, line: 1
-# File: Gorilla/index.theme.in.h, line: 1
+#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
 msgid "Gorilla"
-msgstr "´óĞÉĞÉ"
+msgstr "å¤§çŒ©çŒ©"
 
-# File: Gorilla/icons/index.theme.in.h, line: 2
-# File: Lush/icons/index.theme.in.h, line: 2
-# File: Nuvola/icons/index.theme.in.h, line: 2
-# File: Wasp/icons/index.theme.in.h, line: 1
+#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
 msgid "Vector Theme"
-msgstr "¶¥µãÖ÷Ìâ"
+msgstr "é¡¶ç‚¹ä¸»é¢˜"
 
-# File: Gorilla/index.theme.in.h, line: 2
+#: Gorilla/index.theme.in.h:2
 msgid "The vector mono Godess"
 msgstr ""
 
-# File: Lush/icons/index.theme.in.h, line: 1
-# File: Lush/index.theme.in.h, line: 1
+#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
 msgid "Lush"
-msgstr "·±ÈÙ"
+msgstr "ç¹è£"
 
-# File: Lush/index.theme.in.h, line: 2
+#: Lush/index.theme.in.h:2
 msgid "Mild green theme"
-msgstr "ÎÂºÍµÄÂÌÉ«Ö÷Ìâ"
+msgstr "æ¸©å’Œçš„ç»¿è‰²ä¸»é¢˜"
 
-# File: Nuvola/icons/index.theme.in.h, line: 1
-# File: Nuvola/index.theme.in.h, line: 1
-#, Nuvola is a Italy seaside city.
+#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
 msgid "Nuvola"
 msgstr "Nuvola"
 
-# File: Nuvola/index.theme.in.h, line: 2
+#: Nuvola/index.theme.in.h:2
 msgid "The Blue Style Surf"
-msgstr "À¶É«³åÀË"
+msgstr "è“è‰²å†²æµª"
 
-# File: Wasp/icons/index.theme.in.h, line: 2
-# File: Wasp/index.theme.in.h, line: 2
+#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
 msgid "Wasp"
-msgstr "»Æ·ä"
+msgstr "é»„èœ‚"
 
-# File: Wasp/index.theme.in.h, line: 1
+#: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
-msgstr "BeOS ·ç¸ñÖ÷Ìâ"
+msgstr "BeOS é£æ ¼ä¸»é¢˜"
