@@ -1,10 +1,6 @@
-<?xml version="1.0" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"
-[
- <!ATTLIST svg
-  xmlns:xlink CDATA #FIXED "http://www.w3.org/1999/xlink">
-]>
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
 <svg
    xml:space="preserve"
@@ -12,11 +8,12 @@
    height="128pt"
    viewBox="0 0 507.946 507.946"
    id="svg49"
-   sodipodi:version="0.27"
-   sodipodi:docname="/mnt/windows/Themes/Work/Blue-Sphere/configure-b.svg"
-   sodipodi:docbase="/mnt/windows/Themes/Work/Blue-Sphere/"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/BlueSphere/icons/scalable/stock/configure-b.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/BlueSphere/icons/scalable/stock/"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
    xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs62">
@@ -109,13 +106,13 @@
     <radialGradient
        xlink:href="#radialGradient194"
        id="radialGradient89"
-       cx="6.45111e-10"
-       cy="1.77847e-09"
-       fx="6.45111e-10"
-       fy="1.77847e-09"
-       r="0.680479"
-       gradientUnits="objectBoundingBox"
-       gradientTransform="matrix(1.08053,0,0,0.925469,0.24371,0.671872)"
+       cx="124.016"
+       cy="257.02"
+       fx="124.016"
+       fy="257.02"
+       r="172.498"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(1.05692,0.946145)"
        spreadMethod="pad" />
     <radialGradient
        cx="1.06812e-14"

@@ -1,10 +1,6 @@
-<?xml version="1.0" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"
-[
- <!ATTLIST svg
-  xmlns:xlink CDATA #FIXED "http://www.w3.org/1999/xlink">
-]>
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
 <svg
    xml:space="preserve"
@@ -12,11 +8,12 @@
    height="48pt"
    viewBox="0 0 507.946 507.946"
    id="svg49"
-   sodipodi:version="0.27"
-   sodipodi:docname="/mnt/windows/Themes/Work/Blue-Sphere/bookmark.svg"
-   sodipodi:docbase="/mnt/windows/Themes/Work/Blue-Sphere/"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/BlueSphere/icons/scalable/stock/star-button.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/BlueSphere/icons/scalable/stock/"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
    xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs62">
@@ -71,6 +68,17 @@
        gradientUnits="objectBoundingBox"
        gradientTransform="matrix(-1.03249,-2.75617e-18,2.35534e-18,-0.968529,0.691727,0.609377)"
        spreadMethod="pad" />
+    <radialGradient
+       xlink:href="#aigrd1"
+       id="radialGradient167"
+       cx="-98.9343"
+       cy="-119.562"
+       fx="-98.9343"
+       fy="-119.562"
+       r="66.9634"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1.05683,-2.6927e-18,2.41087e-18,-0.946225,1.13768e-06,1.36185e-05)"
+       spreadMethod="pad" />
   </defs>
   <sodipodi:namedview
      id="base" />
@@ -81,7 +89,7 @@
      transform="matrix(1.89511,0,0,1.91236,-231.458,-247.971)" />
   <g
      id="g268"
-     style="stroke:#1c6671;stroke-opacity:0.988235;fill:url(#radialGradient1367);stroke-width:2.09412;stroke-linecap:butt;stroke-linejoin:round;"
+     style="stroke:#1c6671;stroke-opacity:0.988235;fill:url(#radialGradient167);stroke-width:2.09412;stroke-linecap:butt;stroke-linejoin:round;"
      transform="matrix(-4.00273,1.0325e-17,-1.01985e-17,-4.05236,608.917,664.798)">
     <path
        d=" M 116 60 L 110.193 91.7471 L 133.053 114.529 L 101.065 118.816 L 86.4621 147.597 L 72.5 118.5 L 40.6149 113.506 L 63.9737 91.2355 L 58.8703 59.3677 L 87.2689 74.7013 L 116 60Z"
@@ -95,6 +103,6 @@
        stroke-linejoin="miter"
        stroke-miterlimit="10"
        id="path269"
-       style="stroke:#1c6671;stroke-opacity:0.988235;fill:url(#radialGradient1367);stroke-width:2.09412;stroke-linecap:butt;stroke-linejoin:round;" />
+       style="stroke:#1c6671;stroke-opacity:0.988235;fill:url(#radialGradient167);stroke-width:2.09412;stroke-linecap:butt;stroke-linejoin:round;" />
   </g>
 </svg>

@@ -1,18 +1,14 @@
-<?xml version="1.0" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"
-[
- <!ATTLIST svg
-  xmlns:xlink CDATA #FIXED "http://www.w3.org/1999/xlink">
-]>
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
 <svg
    width="24pt"
    height="24pt"
    id="svg1"
-   sodipodi:version="0.28"
-   sodipodi:docname="/usr/share/icons/BlueSphere/scalable/stock/stock_save-as.svg"
-   sodipodi:docbase="/usr/share/icons/BlueSphere/scalable/stock/"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/BlueSphere/icons/scalable/stock/filesaveas.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/BlueSphere/icons/scalable/stock/"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -249,12 +245,12 @@
     <linearGradient
        xlink:href="#linearGradient408"
        id="linearGradient210"
-       x1="0.240647"
-       y1="1.19614"
-       x2="0.248069"
-       y2="-0.301604"
-       gradientUnits="objectBoundingBox"
-       gradientTransform="matrix(0.945877,-1.683e-07,5.89965e-08,1.05722,0.264368,0.249996)"
+       x1="58.756"
+       y1="367.845"
+       x2="59.0012"
+       y2="318.375"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.49396,-4.58331e-08,2.14214e-07,0.286208,2.70023e-06,-2.04546e-06)"
        spreadMethod="pad" />
     <linearGradient
        xlink:href="#linearGradient320"
@@ -289,13 +285,13 @@
     <radialGradient
        xlink:href="#linearGradient408"
        id="radialGradient280"
-       cx="2.70788e-09"
-       cy="-3.26342e-10"
-       fx="2.70788e-09"
-       fy="-3.26342e-10"
-       r="0.275509"
-       gradientUnits="objectBoundingBox"
-       gradientTransform="matrix(0.805302,0,0,1.24177,0.385752,0.36746)"
+       cx="62.4166"
+       cy="52.8589"
+       fx="62.4166"
+       fy="52.8589"
+       r="31.9632"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.805301,0,0,1.24177,-3.41368e-07,1.77525e-06)"
        spreadMethod="pad" />
     <linearGradient
        x1="-0.000235766"

@@ -2,6 +2,8 @@
 	
 	* Change version to 0.3
 	* Add new and updated Nuvola icons from David Vignoni
+	* Fix many BlueSphere icons to use userspaceonuse instead 
+	  of objectboundingbox
 
 2003-07-13 Christian Schaller <Uraeus@gnome.org>
 

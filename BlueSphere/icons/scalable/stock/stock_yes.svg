@@ -9,8 +9,8 @@
    viewBox="0 0 507.946 507.946"
    id="svg49"
    sodipodi:version="0.32pre"
-   sodipodi:docname="/home/cschalle/spherecrystal/SphereCrystal/icons/scalable/stock/stock_yes2.svg"
-   sodipodi:docbase="/home/cschalle/spherecrystal/SphereCrystal/icons/scalable/stock/"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/BlueSphere/icons/scalable/stock/stock_yes.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/BlueSphere/icons/scalable/stock/"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -66,13 +66,13 @@
     <radialGradient
        xlink:href="#aigrd1"
        id="radialGradient92"
-       cx="0.321913"
-       cy="0.325358"
-       fx="0.321913"
-       fy="0.325358"
-       r="0.516722"
-       gradientUnits="objectBoundingBox"
-       gradientTransform="scale(1.06784,0.936469)"
+       cx="207.072"
+       cy="238.162"
+       fx="207.072"
+       fy="238.162"
+       r="106.709"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.06784,0,0,0.936472,3.64312e-07,-1.65632e-06)"
        spreadMethod="pad" />
   </defs>
   <sodipodi:namedview

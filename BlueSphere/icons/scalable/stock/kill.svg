@@ -1,18 +1,14 @@
-<?xml version="1.0" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"
-[
- <!ATTLIST svg
-  xmlns:xlink CDATA #FIXED "http://www.w3.org/1999/xlink">
-]>
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
 <svg
    width="24pt"
    height="24pt"
    id="svg1"
-   sodipodi:version="0.28"
-   sodipodi:docname="/usr/share/icons/BlueSphere/scalable/stock/stock_close.svg"
-   sodipodi:docbase="/usr/share/icons/BlueSphere/scalable/stock/"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/BlueSphere/icons/scalable/stock/kill.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/BlueSphere/icons/scalable/stock/"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -224,12 +220,12 @@
     <linearGradient
        xlink:href="#linearGradient120"
        id="linearGradient845"
-       x1="0.779058"
-       y1="0.420106"
-       x2="0.193979"
-       y2="0.56702"
-       gradientUnits="objectBoundingBox"
-       gradientTransform="matrix(1,1.19764e-06,2.31807e-06,1,2.97097e-06,-1.80656e-06)"
+       x1="339.72"
+       y1="234.454"
+       x2="193.697"
+       y2="271.12"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0005,1.25826e-06,2.2822e-06,0.999497,-8.27913e-06,-6.28805e-06)"
        spreadMethod="pad" />
   </defs>
   <sodipodi:namedview

@@ -1,18 +1,14 @@
-<?xml version="1.0" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"
-[
- <!ATTLIST svg
-  xmlns:xlink CDATA #FIXED "http://www.w3.org/1999/xlink">
-]>
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
 <svg
    width="24pt"
    height="24pt"
    id="svg1"
-   sodipodi:version="0.28"
-   sodipodi:docname="/usr/share/icons/BlueSphere/scalable/stock/stock_paste.svg"
-   sodipodi:docbase="/usr/share/icons/BlueSphere/scalable/stock/"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/BlueSphere/icons/scalable/stock/editpaste-2.1.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/BlueSphere/icons/scalable/stock/"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -116,15 +112,15 @@
          xlink:href="#linearGradient57" />
     </defs>
     <radialGradient
-       cx="3.03981e-14"
-       cy="1.05578e-10"
-       r="0.773346"
-       fx="3.03981e-14"
-       fy="1.05578e-10"
-       xlink:href="#linearGradient168"
+       xlink:href="#linearGradient1857"
        id="radialGradient88"
-       gradientUnits="objectBoundingBox"
-       gradientTransform="matrix(0.945877,0,0,1.05722,0.264368,0.249996)"
+       cx="-25.664"
+       cy="816.137"
+       fx="-25.664"
+       fy="816.137"
+       r="68.2523"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.66995,-1.6277,0.299143,0.307246,-1.55788e-07,1.22645e-05)"
        spreadMethod="pad" />
     <linearGradient
        x1="2.69643"
@@ -149,19 +145,19 @@
     <radialGradient
        xlink:href="#linearGradient1857"
        id="radialGradient1860"
-       cx="-5.51513e-06"
-       cy="-1.48419e-06"
-       fx="-5.51513e-06"
-       fy="-1.48419e-06"
-       r="0.694199"
-       gradientUnits="objectBoundingBox"
-       gradientTransform="matrix(1.6481,-1.64928,0.295229,0.311319,0.00343702,0.809113)"
+       cx="-25.664"
+       cy="816.137"
+       fx="-25.664"
+       fy="816.137"
+       r="68.2523"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.66995,-1.6277,0.299143,0.307246,-7.8107e-06,-5.86961e-06)"
        spreadMethod="pad" />
   </defs>
   <sodipodi:namedview
      id="base" />
   <path
-     style="font-size:12;opacity:0.7;fill:url(#radialGradient1860);stroke:#580400;stroke-width:2.42279;stroke-opacity:0.992157;"
+     style="font-size:12;opacity:0.7;fill:url(#radialGradient88);stroke:#580400;stroke-width:2.42279;stroke-opacity:0.992157;"
      d="M 299.557 233.836 C 301.989 231.417 299.796 224.3 295.342 219.077 C 291.394 214.373 281.751 212.585 278.998 215.277 L 202.982 289.07 C 198.452 293.604 202.344 302.694 206.183 306.165 C 210.528 310.156 218.291 313.11 222.188 309.238 L 299.557 233.836 z "
      id="path44"
      transform="matrix(0.154616,0.520913,-0.150619,0.534729,15.9065,-256.464)"
