@@ -1,13 +1,14 @@
-# SOME DESCRIPTIVE TITLE.
+# Czech translation of gnome-themes-extras
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Miloslav Trmac <mitr@volny.cz>, 2003.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras VERSION\n"
-"POT-Creation-Date: 2003-07-13 15:01+0200\n"
-"PO-Revision-Date: 2003-05-21 10:41+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-07-21 12:24+0200\n"
+"PO-Revision-Date: 2003-07-21 22:53+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -40,8 +41,8 @@ msgid "Lush"
 msgstr "Svěží"
 
 #: Lush/index.theme.in.h:2
-msgid "Lushy SVG icons"
-msgstr "Svěží ikony SVG"
+msgid "Mild green theme"
+msgstr "Jemné zelené téma"
 
 #: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
 msgid "Nuvola"
@@ -58,3 +59,6 @@ msgstr "Vosa"
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "Téma ve stylu BeOS"
+
+#~ msgid "Lushy SVG icons"
+#~ msgstr "Svěží ikony SVG"
