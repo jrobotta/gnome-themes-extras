@@ -43,6 +43,14 @@ icon_DATA = \
 	vanity.svg \
 	ximian-evolution-calendar.svg \
 	ximian-redhat-config-nfs.svg \
+	gnome-help.svg \
+	gnome-home.svg \
+	gnome-ccdesktop.svg \
+	mouse-capplet.svg \
+	login-photo.svg \
+	keyboard-capplet.svg \
+	keyboard-shortcut.svg \
+	redhat-config-date.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 
@@ -66,7 +74,9 @@ install-data-local:
 	ln -sf gnome-logo.svg redhat-main-menu.svg && \
 	ln -sf gnome-logo.svg gnome-main-menu.svg && \
 	ln -sf gnome-multimedia.svg redhat-sound_video.svg && \
-	ln -sf gnome-devel.svg redhat-programming.svg
+	ln -sf gnome-devel.svg redhat-programming.svg && \
+	ln -sf gnome-home.svg redhat-home.svg && \
+	ln -sf gnome-ccdesktop.svg redhat-preferences.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/system-tools-32.svg && \

@@ -22,7 +22,8 @@ icon_DATA = \
 	realplayer.svg \
 	system-floppy.svg \
 	system-search-32.svg \
-	web-browser.svg \
+	mouse-capplet.svg \
+	network.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 
@@ -43,7 +44,8 @@ install-data-local:
 	ln -sf gnome-logo.svg redhat-main-menu.svg && \
 	ln -sf gnome-logo.svg gnome-main-menu.svg && \
 	ln -sf gnome-multimedia.svg redhat-sound_video.svg && \
-	ln -sf gnome-devel.svg redhat-programming.svg
+	ln -sf gnome-devel.svg redhat-programming.svg && \
+	ln -sf gnome-ccdesktop.svg redhat-preferences.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \

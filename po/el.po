@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: el\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-11-20 09:16+0200\n"
+"POT-Creation-Date: 2003-11-21 19:49+0100\n"
 "PO-Revision-Date: 2003-11-20 09:17+0200\n"
 "Last-Translator: Kostas Papadimas <pkst@gnome.org>\n"
 "Language-Team: Greek <nls@tux.hellug.gr>\n"
@@ -64,4 +64,3 @@ msgstr "Wasp"
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "Θέμα στυλ  BeOS"
-
