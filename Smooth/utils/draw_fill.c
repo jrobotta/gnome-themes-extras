@@ -317,38 +317,19 @@ gdk_draw_shaded_gradient (GdkWindow * window,
 }
 
 /* the following are pixbuf fill routines */
-
-#if GTK1
-static GdkPixbuf *
-internal_gdk_pixbuf_get_by_name(gchar * file_name)
-{
-  return NULL;
-}
-
-static void
-internal_gdk_pixbuf_unref(gchar * file_name)
-{  
-}
-#endif
-
-#if GTK2
 static GHashTable* pixbuf_cache = NULL;
 
 typedef struct
   {
     gchar       *file_name;
     GdkPixbuf   *pixbuf;
-    GdkPixmap   *pixmap;
-    GdkGC       *pixmap_gc;
     gint 	ref_count;
   } GdkCachedPixbuf;
 
 static void
 free_cache(GdkCachedPixbuf *cache)
 {
-  /*g_object_unref(cache->pixmap_gc);
-  g_object_unref(cache->pixmap);*/
-  g_object_unref(cache->pixbuf);
+  gdk_pixbuf_unref(cache->pixbuf);
   g_free(cache->file_name);
   g_free(cache);
 }
@@ -361,7 +342,14 @@ new_cache(gchar * file_name)
    result = g_new0(GdkCachedPixbuf, 1);
    result->ref_count = 1;
    result->file_name = g_strdup(file_name);
+   
+#if GTK1
+   result->pixbuf = gdk_pixbuf_new_from_file(file_name);
+#endif
+
+#if GTK2
    result->pixbuf = gdk_pixbuf_new_from_file(file_name, NULL);
+#endif
 
    return result;
 }
@@ -373,8 +361,7 @@ internal_gdk_pixbuf_get_by_name(gchar * file_name)
    GdkPixbuf *result=NULL;
    
    if (!pixbuf_cache)
-     pixbuf_cache= g_hash_table_new_full(g_str_hash, g_str_equal,
-                           		 NULL, NULL);
+     pixbuf_cache=g_hash_table_new(g_str_hash, g_str_equal);
 
    cache = g_hash_table_lookup(pixbuf_cache, file_name);
    
@@ -408,7 +395,6 @@ internal_gdk_pixbuf_unref(gchar * file_name)
      }   
    }   
 }
-#endif
 
 void
 gdk_tile_pixbuf_fill (GdkWindow * window,
@@ -422,11 +408,13 @@ gdk_tile_pixbuf_fill (GdkWindow * window,
 		      gboolean noclip)
 {
   GdkRectangle clip;
-  GdkPixbuf *pixbuf = internal_gdk_pixbuf_get_by_name(file_name);
-  GdkPixmap *tmp_pixmap;
+  GdkPixbuf *pixbuf = NULL;
+  GdkPixmap *tmp_pixmap = NULL;
   GdkGC *tmp_gc;
   gint pixbuf_width=-1, pixbuf_height=-1;
   
+  pixbuf = internal_gdk_pixbuf_get_by_name(file_name);
+
   if (!pixbuf)
     return;
     

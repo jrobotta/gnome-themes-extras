@@ -68,13 +68,6 @@ typedef gchar			detail_char;
 #define GRADIENT_EDGE	3
 #define XPM_EDGE	4
 
-void
-get_tab_status (GtkNotebook *notebook,
-		int          x,
-		int          y, 
-		int         *position, 
-		int         *selected);
-
 gboolean
 sanitize_parameters(GtkStyle * style,
   	            GdkWindow * window,
@@ -111,6 +104,7 @@ rounded_extension_points(gint x,
                          gint y, 
 			 gint width, 
 			 gint height,
+			 gboolean selected,
 			 gboolean fill,
 			 GtkPositionType position,
 			 GdkPoint points[8]);
@@ -120,6 +114,17 @@ square_extension_points(gint x,
                          gint y, 
 			 gint width, 
 			 gint height,
+			 gboolean selected,
+			 gboolean fill,
+			 GtkPositionType position,
+			 GdkPoint points[8]);
+
+gboolean
+triangle_extension_points(gint x,
+                         gint y, 
+			 gint width, 
+			 gint height,
+			 gboolean selected,
 			 gboolean fill,
 			 GtkPositionType position,
 			 GdkPoint points[8]);

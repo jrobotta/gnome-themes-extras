@@ -1,3 +1,12 @@
+2003-08-22 Christian Schaller <Uraeus@gnome.org>
+ 
+	* Added Amaranth to translation list
+	* Updated Smooth engine to latest from Andrew
+	* Fixed Wasp window managed maximize button, it is not aligned with
+	  close button
+	* Fix typo in Jakub's changelog entry ;)
+	* Add gtkrc patch from Andrew to Nuvola
+
 2003-08-22  Jakub Steiner <jimmac@ximian.com>
 
 	* configure.in
@@ -7,7 +16,7 @@
 	* Gorilla/icons/24x24/apps/Makefile.am
 	* Gorilla/icons/24x24/apps/gnome-spinner-rest.png
 	* Gorilla/icons/24x24/apps/gnome-spinner.png: spinner for Gorilla
-	  (I'll investigate the possibility to make it ssvg as well)
+	  (I'll investigate the possibility to make it svg as well)
 
 2003-08-20  Kjartan Maraas  <kmaraas@gnome.org>
 

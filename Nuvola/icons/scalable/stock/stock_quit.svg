@@ -9,22 +9,23 @@
    overflow="visible"
    enable-background="new 0 0 256 256"
    xml:space="preserve"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xml="http://www.w3.org/XML/1998/namespace"
-   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    id="svg153"
    sodipodi:version="0.32pre"
    sodipodi:docname="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/stock/stock_quit.svg"
-   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/stock">
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/stock/"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs205" />
   <sodipodi:namedview
      id="base" />
   <g
      id="Layer_1"
-     stroke="#000000">
+     stroke="#000000"
+     transform="matrix(0.96463,0,0,0.96463,3.2926,6.5852)">
     <path
        fill="none"
        stroke="none"
@@ -33,7 +34,8 @@
   </g>
   <g
      id="Layer_2"
-     stroke="#000000">
+     stroke="#000000"
+     transform="matrix(0.96463,0,0,0.96463,3.2926,6.5852)">
     <path
        opacity="0.2"
        stroke="none"

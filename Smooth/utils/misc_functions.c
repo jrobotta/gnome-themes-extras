@@ -31,43 +31,6 @@ sanitize_parameters(GtkStyle * style,
   return TRUE;  
 }
 
-/* The following is taken for the most part straight from 
- * GTK-Engines Metal 2.0.
- */
-#define FUZZY_COMPARE(i, j, fudge) ((i>j)?(i - j <= fudge):(j - i <= fudge))
-void
-get_tab_status (GtkNotebook *notebook,
-		int          x,
-		int          y, 
-		int         *position, 
-		int         *selected)
-{
-  GtkWidget *label;
-  int pos = 0;
-  int border;
-  int n_pages = g_list_length (notebook->children);
-
-  border = GTK_CONTAINER (notebook)->border_width;
-
-  /* Find tab in notebook based on (x,y) position
-     Matches within 5 pixels, what a hack */
-  for (pos = 0; pos < n_pages; pos++)
-    {
-      label = gtk_notebook_get_tab_label (notebook,
-					  gtk_notebook_get_nth_page (notebook, pos));
-
-      if (FUZZY_COMPARE (x, label->allocation.x, 5) &&
-	  FUZZY_COMPARE (y, label->allocation.y, 5))
-	break;
-    }
-
-  if (pos == n_pages)
-    pos = 0;
-
-  *position = pos;
-  *selected = (pos == gtk_notebook_get_current_page (notebook));
-}
-
 /* From GTK-Engines Metal 2.0:
  * 
  * This function makes up for some brokeness in gtkrange.c
@@ -214,52 +177,57 @@ rounded_extension_points(gint x,
                          gint y, 
 			 gint width, 
 			 gint height,
+			 gboolean selected,
 			 gboolean fill,
 			 GtkPositionType position,
 			 GdkPoint points[8])
 {
-  gint x2 = x + width - 1, y2 = y + height - 1;
+  gint x2 = x + width, y2 = y + height;
   switch (position) {
     case GTK_POS_BOTTOM:
-      if (fill) y2 += 1;
-      points[0].x = x2;		points[0].y = y2;
-      points[1].x = x2;		points[1].y = y+5;
-      points[2].x = x2-2;	points[2].y = y+2;
-      points[3].x = x2-5;	points[3].y = y;
+      y2 += ((fill)?1:0) + ((selected)?0:-1);
+      points[0].x = x2-1;	points[0].y = y2;
+      points[1].x = x2-1;	points[1].y = y+5;
+      points[2].x = x2-3;	points[2].y = y+2;
+      points[3].x = x2-6;	points[3].y = y;
       points[4].x = x+5;	points[4].y = y;
       points[5].x = x+2;	points[5].y = y+2;
       points[6].x = x;		points[6].y = y+5;
       points[7].x = x;		points[7].y = y2;
       break;
 	
-    case GTK_POS_TOP:
-      if (fill) y -= 1;
-      points[0].x = x;		points[0].y = y;
-      points[1].x = x;		points[1].y = y2-5;
-      points[2].x = x+2;	points[2].y = y2-2;
-      points[3].x = x+5;	points[3].y = y2;
-      points[4].x = x2-5;	points[4].y = y2;
-      points[5].x = x2-2;	points[5].y = y2-2;
-      points[6].x = x2;		points[6].y = y2-5;
-      points[7].x = x2;		points[7].y = y;
-      break;
-    
     case GTK_POS_RIGHT:
+      x2 += ((fill)?1:0) + ((selected)?0:-1);
       points[0].y = y;		points[0].x = x2;
       points[1].y = y;		points[1].x = x+5;
       points[2].y = y+2;	points[2].x = x+2;
       points[3].y = y+5;	points[3].x = x;
-      points[4].y = y2-5;	points[4].x = x;
-      points[5].y = y2-2;	points[5].x = x+2;
-      points[6].y = y2;		points[6].x = x+5;
-      points[7].y = y2;		points[7].x = x2;
+      points[4].y = y2-6;	points[4].x = x;
+      points[5].y = y2-3;	points[5].x = x+2;
+      points[6].y = y2-1;	points[6].x = x+5;
+      points[7].y = y2-1;	points[7].x = x2;
       break;
 			
+    case GTK_POS_TOP:
+      y -= ((fill)?1:0) + ((selected)?1:0);
+      y2 += ((selected)?-1:0) - 1;
+      points[0].x = x;		points[0].y = y;
+      points[1].x = x;		points[1].y = y2-5;
+      points[2].x = x+2;	points[2].y = y2-2;
+      points[3].x = x+5;	points[3].y = y2;
+      points[4].x = x2-6;	points[4].y = y2;
+      points[5].x = x2-3;	points[5].y = y2-2;
+      points[6].x = x2-1;	points[6].y = y2-5;
+      points[7].x = x2-1;	points[7].y = y;
+      break;
+    
     case GTK_POS_LEFT:
-      points[0].y = y2;		points[0].x = x;
-      points[1].y = y2;		points[1].x = x2-5;
-      points[2].y = y2-2;	points[2].x = x2-2;
-      points[3].y = y2-5;	points[3].x = x2;
+      x -= ((fill)?1:0) + ((selected)?1:0);
+      x2 += ((selected)?-1:0) - 1;
+      points[0].y = y2-1;	points[0].x = x;
+      points[1].y = y2-1;	points[1].x = x2-5;
+      points[2].y = y2-3;	points[2].x = x2-2;
+      points[3].y = y2-6;	points[3].x = x2;
       points[4].y = y+5;	points[4].x = x2;
       points[5].y = y+2;	points[5].x = x2-2;
       points[6].y = y;		points[6].x = x2-5;
@@ -278,57 +246,61 @@ square_extension_points(gint x,
                          gint y, 
 			 gint width, 
 			 gint height,
+			 gboolean selected,
 			 gboolean fill,
 			 GtkPositionType position,
 			 GdkPoint points[8])
 {
-  gint x2 = x + width - 1, y2 = y + height - 1;
+  gint x2 = x + width, y2 = y + height;
 
-  gint c1=0, c2=1;
   switch (position) {
     case GTK_POS_BOTTOM:
-      if (fill) y2 += 1;
-      points[0].x = x2;		points[0].y = y2;
-      points[1].x = x2;		points[1].y = y+c2;
-      points[2].x = x2-c1;	points[2].y = y+c1;
-      points[3].x = x2-c2;	points[3].y = y;
-      points[4].x = x+c2;	points[4].y = y;
-      points[5].x = x+c1;	points[5].y = y+c1;
-      points[6].x = x;		points[6].y = y+c2;
+      y2 += ((fill)?1:0) + ((selected)?0:-1);
+      points[0].x = x2-1;	points[0].y = y2;
+      points[1].x = x2-1;	points[1].y = y+1;
+      points[2].x = x2-1;	points[2].y = y;
+      points[3].x = x2-2;	points[3].y = y;
+      points[4].x = x+1;	points[4].y = y;
+      points[5].x = x;		points[5].y = y;
+      points[6].x = x;		points[6].y = y+1;
       points[7].x = x;		points[7].y = y2;
       break;
 	
-    case GTK_POS_TOP:
-      if (fill) y -= 1;
-      points[0].x = x;		points[0].y = y;
-      points[1].x = x;		points[1].y = y2-c2;
-      points[2].x = x+c1;	points[2].y = y2-c1;
-      points[3].x = x+c2;	points[3].y = y2;
-      points[4].x = x2-c2;	points[4].y = y2;
-      points[5].x = x2-c1;	points[5].y = y2-c1;
-      points[6].x = x2;		points[6].y = y2-c2;
-      points[7].x = x2;		points[7].y = y;
-      break;
-    
     case GTK_POS_RIGHT:
+      x2 += ((fill)?1:0) + ((selected)?0:-1);
       points[0].y = y;		points[0].x = x2;
-      points[1].y = y;		points[1].x = x+c2;
-      points[2].y = y+c1;	points[2].x = x+c1;
-      points[3].y = y+c2;	points[3].x = x;
-      points[4].y = y2-c2;	points[4].x = x;
-      points[5].y = y2-c1;	points[5].x = x+c1;
-      points[6].y = y2;		points[6].x = x+c2;
-      points[7].y = y2;		points[7].x = x2;
+      points[1].y = y;		points[1].x = x+1;
+      points[2].y = y;		points[2].x = x;
+      points[3].y = y+1;	points[3].x = x;
+      points[4].y = y2-2;	points[4].x = x;
+      points[5].y = y2-1;	points[5].x = x;
+      points[6].y = y2-1;	points[6].x = x+1;
+      points[7].y = y2-1;	points[7].x = x2;
       break;
 			
+    case GTK_POS_TOP:
+      y -= ((fill)?1:0) + ((selected)?1:0);
+      y2 += ((selected)?-1:0) - 1;
+      points[0].x = x;		points[0].y = y;
+      points[1].x = x;		points[1].y = y2-1;
+      points[2].x = x;		points[2].y = y2;
+      points[3].x = x+1;	points[3].y = y2;
+      points[4].x = x2-2;	points[4].y = y2;
+      points[5].x = x2-1;	points[5].y = y2;
+      points[6].x = x2-1;	points[6].y = y2-1;
+      points[7].x = x2-1;	points[7].y = y;
+      break;
+    
     case GTK_POS_LEFT:
-      points[0].y = y2;		points[0].x = x;
-      points[1].y = y2;		points[1].x = x2-c2;
-      points[2].y = y2-c1;	points[2].x = x2-c1;
-      points[3].y = y2-c2;	points[3].x = x2;
-      points[4].y = y+c2;	points[4].x = x2;
-      points[5].y = y+c1;	points[5].x = x2-c1;
-      points[6].y = y;		points[6].x = x2-c2;
+      x -= ((fill)?1:0) + ((selected)?1:0);
+      x2 += ((selected)?-1:0) - 1;
+      points[0].y = y2-1;	points[0].x = x;
+      points[1].y = y2-1;	points[1].x = x2-1;
+      points[2].y = y2-1;	points[2].x = x2;
+      points[3].y = y2-2;	points[3].x = x2;
+      points[4].y = y+1;	points[4].x = x2;
+      points[5].y = y;		points[5].x = x2;
+      points[6].y = y;		points[6].x = x2-1;
       points[7].y = y;		points[7].x = x;
       break;
          
@@ -338,6 +310,91 @@ square_extension_points(gint x,
   return TRUE;     
 }
 
+/* This function is based on a portion of Xenophilia's xeno_draw_extension */
+gboolean
+triangle_extension_points(gint x,
+                         gint y, 
+			 gint width, 
+			 gint height,
+			 gboolean selected,
+			 gboolean fill,
+			 GtkPositionType position,
+			 GdkPoint points[8])
+{
+  gint x2 = x + width, y2 = y + height;
+  gint i = 0;
+
+  switch (position) {
+    case GTK_POS_BOTTOM:
+      i = (height - 5 + 2) / 3;
+
+      if (!(i > 0)) return square_extension_points(x, y, width, height, selected, fill, position, points);
+
+      y2 = y + i*3 + 5 + ((fill)?1:0) + ((selected)?0:-1);
+         
+      points[0].x = x2-1;	points[0].y = y2;
+      points[1].x = x2-i-1;	points[1].y = y+4;
+      points[2].x = x2-i-3;	points[2].y = y+2;
+      points[3].x = x2-i-6;	points[3].y = y;
+      points[4].x = x+i+5;	points[4].y = y;
+      points[5].x = x+i+2;	points[5].y = y+2;
+      points[6].x = x+i;		points[6].y = y+4;
+      points[7].x = x;		points[7].y = y2;
+      break;
+	
+    case GTK_POS_RIGHT:
+      i = (width- 5 + 2) / 3;
+      if (!(i > 0)) return square_extension_points(x, y, width, height, selected, fill, position, points);
+
+      x2 = x + i*3 + 5 + ((fill)?1:0) + ((selected)?0:-1);
+      points[0].y = y;		points[0].x = x2;
+      points[1].y = y+i;	points[1].x = x+4;
+      points[2].y = y+i+2;	points[2].x = x+2;
+      points[3].y = y+i+5;	points[3].x = x;
+      points[4].y = y2-i-6;	points[4].x = x;
+      points[5].y = y2-i-3;	points[5].x = x+2;
+      points[6].y = y2-i-1;	points[6].x = x+4;
+      points[7].y = y2-1;	points[7].x = x2;
+      break;
+
+    case GTK_POS_TOP:
+      i = (height - 5 + 2) / 3;
+      if (!(i > 0)) return square_extension_points(x, y, width, height, selected, fill, position, points);
+
+      y -= (i*3 + 5 - height) + ((fill)?1:0) + ((selected)?1:0);
+      y2 += ((selected)?-1:0) - 1;
+      points[0].x = x;		points[0].y = y;
+      points[1].x = x+i;		points[1].y = y2-4;
+      points[2].x = x+i+2;	points[2].y = y2-2;
+      points[3].x = x+i+5;	points[3].y = y2;
+      points[4].x = x2-i-6;	points[4].y = y2;
+      points[5].x = x2-i-3;	points[5].y = y2-2;
+      points[6].x = x2-i-1;	points[6].y = y2-4;
+      points[7].x = x2-1;	points[7].y = y;
+      break;
+             
+    case GTK_POS_LEFT:
+      i = (width- 5 + 2) / 3;
+      if (!(i > 0)) return square_extension_points(x, y, width, height, selected, fill, position, points);
+
+      x -= (i*3 + 5 - width) + ((fill)?1:0) + ((selected)?1:0);
+      x2 += ((selected)?-1:0) - 1;
+      points[0].y = y2-1;	points[0].x = x;
+      points[1].y = y2-i-1;	points[1].x = x2-4;
+      points[2].y = y2-i-3;	points[2].x = x2-2;
+      points[3].y = y2-i-6;	points[3].x = x2;
+      points[4].y = y+i+5;	points[4].x = x2;
+      points[5].y = y+i+2;	points[5].x = x2-2;
+      points[6].y = y+i;	points[6].x = x2-4;
+      points[7].y = y;		points[7].x = x;
+      break;
+
+    default :
+      return square_extension_points(x, y, width, height, selected, fill, position, points);
+  }  
+  return TRUE;     
+}
+		
 void
 rounded_box_points(gint x,
                    gint y, 
@@ -371,8 +428,8 @@ rounded_box_points(gint x,
   	points[5].x = x+2;	points[5].y = y;
   	points[6].x = x2-2;	points[6].y = y;
   	points[7].x = x2-1;	points[7].y = y+1;
-  	points[8].x = x2;	points[8].y = y+2;
-  	points[9].x = x2;	points[9].y = y2-2;
+  	points[8].x = x2;		points[8].y = y+2;
+  	points[9].x = x2;		points[9].y = y2-2;
   	points[10].x = x2-1;	points[10].y = y2-1;
   	points[11].x = x2-2;	points[11].y = y2;
   	points[12].x = x+2;	points[12].y = y2;
@@ -481,7 +538,7 @@ do_draw_shadow_with_gap(GdkWindow * window,
         gdk_draw_line(window, br_gc, x, y + height-1, x + width-1, y + height-1);
       else {
         if (gap_pos > 0)
-          gdk_draw_line(window, br_gc, x, y + height-1, x + gap_pos - 1, y + height-1);
+          gdk_draw_line(window, br_gc, x, y + height-1, x + gap_pos, y + height-1);
         if ((width - (gap_pos + gap_size)) > 0)
           gdk_draw_line(window, br_gc, x + gap_pos + gap_size - 1, y + height-1, x + width - 1, y + height-1);
       }
@@ -498,15 +555,17 @@ do_draw_shadow_with_gap(GdkWindow * window,
         gdk_draw_line(window, br_gc, x + width-1, y, x + width-1, y + height-1);
       } 
 
+       gdk_draw_line(window, tl_gc, x, y, x + width -1, y);
+    
       if (gap_size <= 0)
         gdk_draw_line(window, tl_gc, x, y, x, y + height-1);
       else {
         if (gap_pos > 0)
-          gdk_draw_line(window, tl_gc, x, y, x, y + gap_pos - 1);
-       if ((height - (gap_pos + gap_size)) > 0)
-          gdk_draw_line(window, tl_gc, x, y + gap_pos + gap_size - 1, x, y + height-1);
+          gdk_draw_line(window, tl_gc, x, y, x, y + gap_pos);
+          
+        if ((height - (gap_pos + gap_size)) > 0)
+	  gdk_draw_line (window, tl_gc,  x, y + gap_pos + gap_size - 1, x, y + height - 1);
       }
-      gdk_draw_line(window, tl_gc, x, y, x + width-1, y);
 
       if (!topleft_overlap) {
         gdk_draw_line(window, br_gc, x, y + height-1, x + width-1, y + height-1);
@@ -524,9 +583,10 @@ do_draw_shadow_with_gap(GdkWindow * window,
         gdk_draw_line(window, br_gc, x + width-1, y, x + width-1, y + height-1);
       else {
         if (gap_pos > 0)
-          gdk_draw_line(window, br_gc, x + width-1, y, x + width-1, y + gap_pos - 1);
+          gdk_draw_line(window, br_gc, x + width-1, y, x + width-1, y + gap_pos);
+          
        if ((height - (gap_pos + gap_size)) > 0)
-          gdk_draw_line(window, br_gc, x + width-1, y + gap_pos + gap_size - 1, x + width-1, y + height-1);
+          gdk_draw_line(window, br_gc, x + width-1, y + gap_pos + gap_size -1, x + width-1, y + height-1);
       }
 
       if (topleft_overlap) {
