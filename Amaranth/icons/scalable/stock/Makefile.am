@@ -4,6 +4,8 @@ icon_DATA = \
         gnome-logo.svg \
 	stock_about.svg \
 	stock_cdrom.svg \
+	stock_copy.svg \
+	stock_cut.svg \
 	stock_dialog_error.png \
 	stock_dialog_info.png \
 	stock_dialog_warning.png \
@@ -19,6 +21,7 @@ icon_DATA = \
 	stock_lockscreen.svg \
 	stock_new.svg \
 	stock_open.svg \
+	stock_paste.svg \
 	stock_preferences.svg \
 	stock_print-preview.svg \
 	stock_print.svg \
@@ -27,6 +30,7 @@ icon_DATA = \
 	stock_refresh.svg \
 	stock_reset.svg \
 	stock_run.svg \
+	stock_search.svg \
 	stock_stop.svg \
 	stock_undo.svg \
 	$(NULL)
