@@ -44,9 +44,9 @@ NUVOLA_TAR_FILES = \
 	
 tarballs: $(GORILLA_TAR_FILES) $(BLUESPHERE_TAR_FILES) $(GALAXY_TAR_FILES) $(LUSH_TAR_FILES) $(NUVOLA_TAR_FILES)
 	mkdir -p tarballs
-	${TAR} czf Gorilla.tar.gz $(GORILLA_TAR_FILES); \
-	${TAR} czf Bluesphere.tar.gz $(BLUESPHERE_TAR_FILES); \
-	${TAR} czf Galaxy.tar.gz $(GALAXY_TAR_FILES); \
-	${TAR} czf Lush.tar.gz $(LUSH_TAR_FILES); \
-	${TAR} czf Nuvola.tar.gz $(NUVOLA_TAR_FILES)
+	tar czf Gorilla.tar.gz $(GORILLA_TAR_FILES); \
+	tar czf Bluesphere.tar.gz $(BLUESPHERE_TAR_FILES); \
+	tar czf Galaxy.tar.gz $(GALAXY_TAR_FILES); \
+	tar czf Lush.tar.gz $(LUSH_TAR_FILES); \
+	tar czf Nuvola.tar.gz $(NUVOLA_TAR_FILES)
 	mv Gorilla.tar.gz Bluesphere.tar.gz Galaxy.tar.gz Lush.tar.gz Nuvola.tar.gz tarballs
