@@ -29,6 +29,6 @@ EXTRA_DIST = $(icon_DATA)
 
 install-data-local:
 	mkdir -p $(DESTDIR)$(icondir)
-	cd $(DESTDIR)$(icondir) && \
+	cd $(DESTDIR)$(icondir)
 
 uninstall-local:

@@ -1,5 +1,10 @@
 2004-06-10  Jakub Steiner <jimmac@ximian.com>
 
+	* Gorilla/icons/scalable/filesystems/Makefile.am:
+	  fix makefile after Christian ;)
+
+2004-06-10  Jakub Steiner <jimmac@ximian.com>
+
 	* my-computer.svg: remove the duplicate
 
 2004-06-09  Christian Schaller <christian@fluendo.com>
