@@ -1,3 +1,8 @@
+2003-03-06  Jakub Steiner <jimmac@ximian.com>
+
+	* COPYING: it should have a license
+	* AUTHORS: ..and authors
+
 2003-02-05  Jakub Steiner <jimmac@ximian.com>
 
 	* my-computer.svg: perfectioning the shadow, fixed a stroke type
