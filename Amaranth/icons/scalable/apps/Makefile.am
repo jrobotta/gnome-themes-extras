@@ -7,6 +7,7 @@ icon_DATA = \
 	advanced-directory.svg \
 	apacheconf.svg \
 	camera.svg \
+	downloadmanager.svg \
 	email.svg \
 	evolution.svg \
 	file-roller.svg \
@@ -20,6 +21,7 @@ icon_DATA = \
 	gnome-cdplayer.svg \
 	gnome-devel.svg \
 	gnome-help.svg \
+	gnome-home.svg \
 	gnome-icq.svg \
 	gnome-lockscreen.svg \
 	gnome-media-player.svg \
@@ -33,6 +35,7 @@ icon_DATA = \
 	icon-gfx.svg \
 	icon-globe.svg \
 	icon-media.svg \
+	icon-system-tools.svg \
 	icon-panel-menu.svg \
 	icon-update.svg \
 	monitor.svg \
@@ -54,15 +57,19 @@ install-data-local:
 	mkdir -p $(DESTDIR)$(icondir)
 	cd $(DESTDIR)$(icondir) && \
 	ln -sf accessories.svg redhat-accessories.svg && \
-	ln -sf advanced-directory.svg system-tools-32.svg && \
+	ln -sf icon-system-tools.svg system-tools-32.svg && \
+	ln -sf icon-system-tools.svg redhat-system_tools.svg && \
 	ln -sf advanced-directory.svg redhat-system_settings.svg && \
+	ln -sf downloadmanager.svg up2date.svg && \
 	ln -sf gnome-settings.svg redhat-preferences.svg && \
 	ln -sf gnome-envelope.svg evolution-1.4.svg && \
+	ln -sf gnome-home.svg redhat-home.svg && \
 	ln -sf gaim.svg gnome-gaim.svg && \
 	ln -sf gnome-calc3.svg gcalctool.svg && \
 	ln -sf gedit.svg gedit-icon.svg && \
 	ln -sf gimp.svg gnome-palette.svg && \
 	ln -sf gimp.svg gnome-gimp.svg && \
+	ln -sf mouse-capplet.svg gnome-mouse.svg && \
 	ln -sf mozilla-icon.svg redhat-web-browser.svg && \
 	ln -sf mozilla-icon.svg mozilla-star.svg && \
 	ln -sf gnome-applications.svg redhat-office.svg && \
@@ -77,6 +84,7 @@ install-data-local:
 	ln -sf icon-gfx.svg gnome-graphics.svg && \
 	ln -sf icon-gfx.svg redhat-graphics.svg && \
 	ln -sf email.svg gnome-envelope.svg && \
+	ln -sf email.svg mozilla-mail-icon.svg && \
 	ln -sf icon-globe.svg gnome-globe.svg && \
 	ln -sf icon-globe.svg web-browser.svg && \
 	ln -sf icon-globe.svg redhat-internet.svg && \
@@ -84,7 +92,8 @@ install-data-local:
 	ln -sf icon-panel-menu.svg redhat-main-menu.svg && \
 	ln -sf icon-media.svg gnome-multimedia.svg && \
 	ln -sf icon-media.svg redhat-sound_video.svg && \
-	ln -sf sound-juicer.svg gripicon.svg
+	ln -sf sound-juicer.svg gripicon.svg && \
+	ln -sf gpdf.svg xpdf.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/system-tools-32.svg && \
@@ -118,4 +127,9 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gedit-icon.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-accessories.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gcalctool.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gripicon.svg
+	rm -rf $(DESTDIR)$(icondir)/gripicon.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-mouse.svg && \
+	rm -rf $(DESTDIR)$(icondir)/redhat-system_tools.svg && \
+	rm -rf $(DESTDIR)$(icondir)/redhat-home.svg && \
+	rm -rf $(DESTDIR)$(icondir)/xpdf.svg && \
+	rm -rf $(DESTDIR)$(icondir)/up2date.svg
