@@ -1,0 +1,52 @@
+# traditional Chinese translation of gnome-themes-extras.
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# Abel Cheung <maddog@linux.org.hk>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras 0.1\n"
+"POT-Creation-Date: 2003-05-09 09:48+0800\n"
+"PO-Revision-Date: 2003-05-09 09:48+0800\n"
+"Last-Translator: Abel Cheung <maddog@linux.org.hk>\n"
+"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Galaxy/index.theme.in.h:1
+msgid "Galaxy"
+msgstr "Galaxy"
+
+#: Galaxy/index.theme.in.h:2
+msgid "Mandrake Linux theme"
+msgstr "Mandrake Linux 佈景主題"
+
+#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "Gorilla"
+
+#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2
+msgid "Vector Theme"
+msgstr "向量佈景主題"
+
+# FIXME: What the heck is this? -- Abel
+#: Gorilla/index.theme.in.h:2
+msgid "The vector mono Godess"
+msgstr ""
+
+#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "Lush"
+
+#: Lush/index.theme.in.h:2
+msgid "Lushy SVG icons with Mandrake Galaxy"
+msgstr ""
+
+#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "藍天白雲"
+
+#: Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr ""
