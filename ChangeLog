@@ -1,3 +1,7 @@
+2003-02-05  Jakub Steiner <jimmac@ximian.com>
+
+	* Gorilla/icons/scalable/mimetypes/Makefile.am: stuffit symlink
+
 2003-02-03  Jakub Steiner <jimmac@ximian.com>
 
 	* gnome-mime-application-x-rpm.svg:
