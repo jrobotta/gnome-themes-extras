@@ -1,13 +1,14 @@
 # Lush metatheme
 # (c) 2002-2003 David Vignoni <dvgn@libero.it>
+# (c) 2002-2003 Christian Schaller <uraesu@gnome.org>
 
 [Desktop Entry]
 _Name=Lush
 Type=X-GNOME-Metatheme
-_Comment=Lushy SVG icons with Mandrake Galaxy
+_Comment=Lushy SVG icons
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Galaxy
-MetacityTheme=Galaxy
+GtkTheme=Lush
+MetacityTheme=Lush
 IconTheme=Lush
