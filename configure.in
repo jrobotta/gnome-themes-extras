@@ -27,15 +27,9 @@ AM_DISABLE_STATIC
 # Initialize libtool
 AM_PROG_LIBTOOL
 
-PKG_CHECK_MODULES(GTK,
-		  gtk+-2.0 >= 2.0.0,,
-		AC_MSG_ERROR([GTK+-2.0 is required to compile gtk-engines]))
-
-GTK_BINARY_VERSION=`$PKG_CONFIG --variable=gtk_binary_version gtk+-2.0`
-
-AC_SUBST(GTK_CFLAGS)
-AC_SUBST(GTK_LIBS)
-AC_SUBST(GTK_BINARY_VERSION)
+PKG_CHECK_MODULES(GTK_ENGINES_2,
+		  gtk-engines-2 >= 2.6.0,,
+		  AC_MSG_ERROR([gtk-engines-2 is required to compile gnome-themes-extras]))
 
 # Checks for header files.
 AC_HEADER_STDC
@@ -126,8 +120,5 @@ Wasp/icons/scalable/emblems/Makefile
 Wasp/icons/scalable/filesystems/Makefile
 Wasp/icons/scalable/mimetypes/Makefile
 Wasp/icons/scalable/stock/Makefile
-Industrial/Makefile
-Industrial/gtk-2.0/gtkrc
-Industrial/gtk-2.0/Makefile
 po/Makefile.in
 ])

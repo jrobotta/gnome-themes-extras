@@ -1,3 +1,12 @@
+2004-12-22  Thomas Wood  <thos@gnome.org>
+
+	* Makefile.am:
+	* configure.in:
+	Depend on new gtk-engines
+
+	* Industrial/: Remove Industrial engine as it is in gtk-engines now
+	* Smooth/.cvsignore: Removed (no longer needed)
+
 2004-11-27  Christian Schaller <uraeus@gnome.org>
 
 	* Fix make-dist, we now depend on Automake 1.9 
