@@ -34,6 +34,7 @@ icon_DATA = \
         gnome-mime-text-css.svg \
         gnome-mime-text-html.svg \
         gnome-mime-text-x-authors.svg \
+        gnome-mime-text-x-copying.svg \
         gnome-mime-text-x-install.svg \
         gnome-mime-text-x-java.svg \
 		  gnome-mime-text-x-lyx.svg \
