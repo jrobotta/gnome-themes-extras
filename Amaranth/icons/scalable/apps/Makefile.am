@@ -51,6 +51,7 @@ install-data-local:
 	ln -sf gimp.svg gnome-gimp.svg && \
 	ln -sf mozilla-icon.svg redhat-web-browser.svg && \
 	ln -sf mozilla-icon.svg mozilla-star.svg && \
+        ln -sf gnome-cdplayer.svg gnome-cdplayer-icon.svg && \
 	ln -sf monitor.svg redhat-config-xfree86.svg && \
 	ln -sf my-computer.svg gnome-starthere.svg
 	
@@ -60,6 +61,7 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gnome-gaim.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-gimp.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-palette.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-cdplayer-icon.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-web-browser.svg && \
 	rm -rf $(DESTDIR)$(icondir)/mozilla-star.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-config-xfree86.svg  && \
