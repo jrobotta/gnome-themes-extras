@@ -7,21 +7,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2003-07-21 12:24+0200\n"
-"PO-Revision-Date: 2003-07-21 22:53+0200\n"
+"POT-Creation-Date: 2003-08-29 20:27+0200\n"
+"PO-Revision-Date: 2003-08-30 18:31+0200\n"
 "Last-Translator: Miloslav Trmac <mitr@volny.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Galaxy/index.theme.in.h:1
-msgid "Galaxy"
-msgstr "Galaxie"
+#: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
+msgid "Amaranth"
+msgstr "Amaranth"
 
-#: Galaxy/index.theme.in.h:2
-msgid "Mandrake Linux theme"
-msgstr "Téma Mandrake Linuxu"
+#: Amaranth/icons/index.theme.in.h:2
+msgid "Silver Vector Theme"
+msgstr "Stříbrné vektorové téma"
+
+#: Amaranth/index.theme.in.h:2
+msgid "Sterling Silver"
+msgstr "Čisté stříbro"
 
 #: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
 msgid "Gorilla"
@@ -59,6 +63,12 @@ msgstr "Vosa"
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "Téma ve stylu BeOS"
+
+#~ msgid "Galaxy"
+#~ msgstr "Galaxie"
+
+#~ msgid "Mandrake Linux theme"
+#~ msgstr "Téma Mandrake Linuxu"
 
 #~ msgid "Lushy SVG icons"
 #~ msgstr "Svěží ikony SVG"
