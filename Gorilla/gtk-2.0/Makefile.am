@@ -56,6 +56,7 @@ stock_line-in.svg \
 stock_mic.svg \
 stock_missing-image.svg \
 stock_new.svg \
+stock_no.svg \
 stock_ok.svg \
 stock_open.svg \
 stock_paste.svg \

@@ -1,3 +1,7 @@
+2003-01-23  Jakub Steiner <jimmac * ximian * com>
+
+	* Gorilla/gtk-2.0/Makefile.am: add missing stock_no.svg
+
 2003-01-23  Alex Duggan  <aldug@astrolinux.com>
 	
 	* Initial autotools work
