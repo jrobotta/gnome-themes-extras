@@ -7,7 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extra 0.1\n"
-"POT-Creation-Date: 2003-07-13 15:01+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-07-17 16:23+0200\n"
 "PO-Revision-Date: 2003-05-20 18:29+0200\n"
 "Last-Translator: Christian Neumair <chris@gnome-de.org>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
@@ -15,6 +16,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+# Eigenname
+#: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
+msgid "Amaranth"
+msgstr "Amaranth"
+
+#: Amaranth/icons/index.theme.in.h:2
+msgid "Silver Vector Theme"
+msgstr "Slibernes Vektorthema"
+
+#: Amaranth/index.theme.in.h:2
+msgid "Sterling Silver "
+msgstr "Sterling Silber"
+
+# Eigenname
 #: Galaxy/index.theme.in.h:1
 msgid "Galaxy"
 msgstr "Galaxy"
@@ -23,6 +38,7 @@ msgstr "Galaxy"
 msgid "Mandrake Linux theme"
 msgstr "Mandrakes Linux-Thema"
 
+# Eigenname
 #: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
 msgid "Gorilla"
 msgstr "Gorilla"
@@ -36,14 +52,16 @@ msgstr "Vektorthema"
 msgid "The vector mono Godess"
 msgstr "Die einzig wahre Vektor-Gottheit"
 
+# Eigenname
 #: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
 msgid "Lush"
-msgstr "Satt"
+msgstr "Lush"
 
 #: Lush/index.theme.in.h:2
 msgid "Lushy SVG icons"
 msgstr "Satte SVG-Symbole"
 
+# Eigenname
 #: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
 msgid "Nuvola"
 msgstr "Nuvola"
@@ -52,13 +70,11 @@ msgstr "Nuvola"
 msgid "The Blue Style Surf"
 msgstr "Blau wie die Brandung"
 
+# Eigenname
 #: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
 msgid "Wasp"
-msgstr "Wespe"
+msgstr "Wasp"
 
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "Thema im BeOS-Stil"
-
-#~ msgid "Lushy SVG icons with Mandrake Galaxy"
-#~ msgstr "Satte SVG-Symbole und Mandrakes Galaxy-Thema"
