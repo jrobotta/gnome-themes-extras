@@ -7,6 +7,6 @@ themedir = $(datadir)/themes/$(THEME_NAME)
  
 theme_DATA = index.theme
 
-SUBDIRS= gtk-2.0 metacity
+SUBDIRS= gtk-2.0 metacity-1
 ## 'gtk' should be added above also
 EXTRA_DIST = index.theme.in index.theme README AUTHORS
