@@ -1,32 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
-"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd"
-[
- <!ATTLIST svg
-  xmlns:xlink CDATA #FIXED "http://www.w3.org/1999/xlink">
-]>
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
 <svg
    id="svg173"
    sodipodi:version="0.32pre"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    width="48pt"
    height="48pt"
-   sodipodi:docbase="/home/cschalle/svg-graphics/Amaranth/2nd SVG"
-   sodipodi:docname="/home/cschalle/svg-graphics/Amaranth/2nd SVG/forward2.svg">
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/stock"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/stock/stock_stop.svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs175" />
   <sodipodi:namedview
      id="base" />
   <g
      id="Layer_1"
-     i:layer="yes"
-     i:dimmedPercent="50"
-     i:rgbTrio="#4F008000FFFF"
+     layer="yes"
+     dimmedPercent="50"
+     rgbTrio="#4F008000FFFF"
      stroke="#000000"
-     transform="matrix(3.84348,0,0,3.84368,2.40908,2.40903)">
+     transform="matrix(4.01375,0,0,3.98756,0.653237,1.03594)">
     <linearGradient
        id="XMLID_1_"
        gradientUnits="userSpaceOnUse"
@@ -40,23 +36,23 @@
          id="stop157" />
       <stop
          offset="1"
-         style="stop-color:#195F99"
+         style="stop-color:#F8190D"
          id="stop158" />
-      <a:midPointStop
+      <midPointStop
          offset="0"
          style="stop-color:#FFFFFF"
          id="midPointStop159" />
-      <a:midPointStop
+      <midPointStop
          offset="0.5"
          style="stop-color:#FFFFFF"
          id="midPointStop160" />
-      <a:midPointStop
+      <midPointStop
          offset="1"
-         style="stop-color:#195F99"
+         style="stop-color:#F8190D"
          id="midPointStop161" />
     </linearGradient>
     <path
-       i:knockout="Off"
+       knockout="Off"
        fill="url(#XMLID_1_)"
        stroke-width="0.5"
        stroke-linejoin="round"
@@ -65,41 +61,41 @@
     <linearGradient
        id="XMLID_2_"
        gradientUnits="userSpaceOnUse"
-       x1="-2.5083"
-       y1="17.0684"
-       x2="2.9224"
-       y2="11.6377"
-       gradientTransform="matrix(1 0 0 -1 7.2539 21.7754)">
+       x1="7.4111"
+       y1="13.3115"
+       x2="7.4111"
+       y2="1.5073"
+       gradientTransform="matrix(-0.7071 0.7071 -0.7071 -0.7071 17.8544 7.3719)">
       <stop
          offset="0"
          style="stop-color:#FFFFFF"
          id="stop164" />
       <stop
          offset="1"
-         style="stop-color:#4C4C4C"
+         style="stop-color:#F98F6E"
          id="stop165" />
-      <a:midPointStop
+      <midPointStop
          offset="0"
          style="stop-color:#FFFFFF"
          id="midPointStop166" />
-      <a:midPointStop
+      <midPointStop
          offset="0.5"
          style="stop-color:#FFFFFF"
          id="midPointStop167" />
-      <a:midPointStop
+      <midPointStop
          offset="1"
-         style="stop-color:#4C4C4C"
+         style="stop-color:#F98F6E"
          id="midPointStop168" />
     </linearGradient>
     <path
-       i:knockout="Off"
+       knockout="Off"
        fill="url(#XMLID_2_)"
-       stroke-width="0.5"
+       stroke-width="0.25"
        stroke-linejoin="round"
-       d="M8.039,8.063v4.212l4.887-4.887    L8.039,2.501l0.01,4.354L2.6,6.852v1.211L8.039,8.063z"
+       d="M8.208,7.42l3.779-3.779    l-0.831-0.832L7.398,6.568l-3.78-3.782L2.787,3.617l3.757,3.805L2.81,11.156l0.832,0.83l3.712-3.712l3.779,3.69l0.831-0.831    L8.208,7.42z"
        id="path169" />
     <path
-       i:knockout="Off"
+       knockout="Off"
        opacity="0.3"
        fill="#FAFAFA"
        stroke="none"

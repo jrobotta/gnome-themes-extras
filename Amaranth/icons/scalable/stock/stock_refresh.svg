@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   i:viewOrigin="296.2915 407.3779"
+   i:rulerOrigin="-295 -385"
+   i:pageBounds="295 407 317 385"
+   width="48pt"
+   height="48pt"
+   viewBox="0 0 19.958 22.257"
+   overflow="visible"
+   enable-background="new 0 0 19.958 22.257"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:ns="http://ns.adobe.com/Variables/1.0/"
+   xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   id="svg153"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/stock/stock_reload.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/stock">
+  <defs
+     id="defs170" />
+  <sodipodi:namedview
+     id="base" />
+  <metadata
+     id="metadata154">
+    <sfw>
+      <slices />
+      <sliceSourceBounds
+         x="294.5"
+         y="382.5"
+         width="24"
+         height="26"
+         bottomLeftOrigin="true" />
+    </sfw>
+    <ns:variableSets>
+      <ns:variableSet
+         varSetName="binding1"
+         locked="none">
+        <ns:variables />
+        <ns:sampleDataSets />
+      </ns:variableSet>
+    </ns:variableSets>
+  </metadata>
+  <g
+     id="g158"
+     style="font-size:12;stroke:#000000;">
+    <linearGradient
+       id="XMLID_1_"
+       gradientUnits="userSpaceOnUse"
+       x1="4.4644"
+       y1="5.6133"
+       x2="15.4956"
+       y2="16.6446">
+      <stop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="stop160" />
+      <stop
+         offset="1"
+         style="stop-color:#000000"
+         id="stop161" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#FFFFFF"
+         id="midPointStop162" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#FFFFFF"
+         id="midPointStop163" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#000000"
+         id="midPointStop164" />
+    </linearGradient>
+    <path
+       i:knockout="Off"
+       fill="url(#XMLID_1_)"
+       stroke="none"
+       d="M10.383,7.004c0,0-2.982-0.808-5.289,1.063      C2.369,10.28,0.25,15.219,0.25,15.074c0-12.123,10.133-10.985,10.133-10.985H10.4V0.25l5.617,5.617L10.4,11.484v-4.48H10.383z       M9.558,15.253v-4.48L3.94,16.39l5.618,5.617v-3.839h0.017c0,0,10.134,1.137,10.134-10.985c0-0.145-2.12,4.795-4.846,7.008      c-2.306,1.87-5.288,1.063-5.288,1.063H9.558z"
+       id="path165" />
+    <path
+       i:knockout="Off"
+       fill="none"
+       stroke-width="0.5"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       d="M10.383,7.004      c0,0-2.982-0.808-5.289,1.063C2.369,10.28,0.25,15.219,0.25,15.074c0-12.123,10.133-10.985,10.133-10.985H10.4V0.25l5.617,5.617      L10.4,11.484v-4.48H10.383z M9.558,15.253v-4.48L3.94,16.39l5.618,5.617v-3.839h0.017c0,0,10.134,1.137,10.134-10.985      c0-0.145-2.12,4.795-4.846,7.008c-2.306,1.87-5.288,1.063-5.288,1.063H9.558z"
+       id="path166" />
+  </g>
+  <path
+     i:knockout="Off"
+     opacity="0.3"
+     fill="#FFFFFF"
+     stroke="none"
+     d="M1.042,9.934c2.386-6.625,9.341-5.845,9.341-5.845H10.4    V0.25l3.51,3.509c0,0-3.159,2.911-6.993,2.202S0.548,11.306,1.042,9.934z"
+     id="path167"
+     style="font-size:12;opacity:0.3;fill:#ffffff;" />
+  <path
+     i:knockout="Off"
+     opacity="0.3"
+     fill="#FFFFFF"
+     stroke="none"
+     d="M9.558,15.253v-4.48L3.94,16.39l3.589,3.59    c0,0-0.607-2.408,1.27-3.413c2.088-1.118,10.909,2.738,10.909-9.384c0-0.145-2.12,4.795-4.846,7.008    c-2.306,1.87-5.288,1.063-5.288,1.063H9.558z"
+     id="path168"
+     style="font-size:12;opacity:0.3;fill:#ffffff;" />
+</svg>

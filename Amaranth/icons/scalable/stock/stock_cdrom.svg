@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   i:viewOrigin="239 469"
+   i:rulerOrigin="-242 -332"
+   i:pageBounds="242 460 370 332"
+   width="48pt"
+   height="48pt"
+   viewBox="0 0 136 142"
+   overflow="visible"
+   enable-background="new 0 0 136 142"
+   xml:space="preserve"
+   id="svg153"
+   sodipodi:version="0.32pre"
+   sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/stock/stock_cdrom.svg"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/stock"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:ns="http://ns.adobe.com/Variables/1.0/"
+   xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs
+     id="defs183">
+    <linearGradient
+       id="XMLID_1_"
+       gradientUnits="userSpaceOnUse"
+       x1="25.0254"
+       y1="31.1392"
+       x2="106.8136"
+       y2="112.9274">
+      <stop
+         offset="0"
+         style="stop-color:#FFFFFA"
+         id="stop159" />
+      <stop
+         offset="1"
+         style="stop-color:#0F2C33"
+         id="stop160" />
+      <a:midPointStop
+         offset="0"
+         style="stop-color:#FFFFFA"
+         id="midPointStop161" />
+      <a:midPointStop
+         offset="0.5"
+         style="stop-color:#FFFFFA"
+         id="midPointStop162" />
+      <a:midPointStop
+         offset="1"
+         style="stop-color:#0F2C33"
+         id="midPointStop163" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base">
+    <sodipodi:guide
+       orientation="horizontal"
+       position="100.424"
+       id="guide180" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata154">
+    <sfw>
+      <slices />
+      <sliceSourceBounds
+         x="239"
+         y="327"
+         width="136"
+         height="142"
+         bottomLeftOrigin="true" />
+    </sfw>
+    <ns:variableSets>
+      <ns:variableSet
+         varSetName="binding1"
+         locked="none">
+        <ns:variables />
+        <ns:sampleDataSets />
+      </ns:variableSet>
+    </ns:variableSets>
+  </metadata>
+  <path
+     i:knockout="Off"
+     fill="url(#XMLID_1_)"
+     d="M65.917,129.833C33.93,129.833,8,103.903,8,71.917     c0-23.445,13.931-43.636,33.966-52.748C49.265,15.849,57.375,14,65.917,14c3.12,0,6.183,0.247,9.169,0.722     c27.629,4.394,48.747,28.328,48.747,57.195C123.833,103.903,97.903,129.833,65.917,129.833z M77.546,71.917     c0-6.423-5.206-11.63-11.629-11.63c-6.423,0-11.63,5.207-11.63,11.63c0,6.423,5.207,11.629,11.63,11.629     C72.34,83.546,77.546,78.34,77.546,71.917z"
+     id="path164"
+     style="font-size:12;fill:url(#XMLID_1_);stroke:#000000;" />
+  <g
+     i:knockout="Off"
+     id="g178"
+     style="font-size:12;stroke:#000000;">
+    <path
+       i:knockout="Off"
+       opacity="0.25"
+       fill="#FFFFFF"
+       stroke="none"
+       d="M68.579,69.686c18.823,21.503,43.54,37.719,38.368,42.951     c-2.647,2.677-5.556,5.098-8.681,7.221C93.644,122.999,81.9,95.461,63.16,74.179c-18.828-21.38-44.631-36.523-39.809-41.706     c2.644-2.841,5.569-5.416,8.732-7.681C36.828,21.396,49.757,48.184,68.579,69.686z"
+       id="path179" />
+  </g>
+  <g
+     i:knockout="Off"
+     id="g180"
+     style="font-size:12;stroke:#000000;">
+    <path
+       i:knockout="Off"
+       opacity="0.25"
+       fill="#FFFFFF"
+       stroke="none"
+       d="M68.757,68.935c18.559,21.305,46.746,32.79,43.021,37.746     c-5.27,7.01-12.092,12.784-19.956,16.814c-3.954,2.025-10.9-27.427-28.96-48.369c-18.06-20.945-47.234-33.379-43.533-38.244     c5.289-6.953,12.115-12.673,19.971-16.656C43.134,18.283,51.061,48.622,68.757,68.935z"
+       id="path181" />
+  </g>
+  <path
+     i:knockout="Off"
+     opacity="0.25"
+     fill="#FFFFFF"
+     stroke="none"
+     d="M8,71.917C8,39.93,33.93,14,65.917,14     c22.229,0,41.532,12.523,51.24,30.898c4.263,8.066-30.54,4.921-52.637,27.019C42.424,94.013,8,71.917,8,71.917z"
+     id="path177"
+     style="font-size:12;opacity:0.25;fill:#ffffff;" />
+</svg>

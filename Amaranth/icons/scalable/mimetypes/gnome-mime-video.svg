@@ -15,7 +15,7 @@
    id="svg153"
    sodipodi:version="0.32pre"
    sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/mimetypes/gnome-mime-video.svg"
-   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/mimetypes"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/mimetypes/"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:ns="http://ns.adobe.com/Variables/1.0/"
@@ -62,7 +62,7 @@
   </metadata>
   <g
      id="g281"
-     transform="matrix(1.17304,0,0,1.1511,-11.6909,5.02424)">
+     transform="matrix(1.24042,0,0,1.18291,-12.7938,4.99243)">
     <g
        i:knockout="On"
        id="g157"
@@ -125,7 +125,8 @@
   </g>
   <g
      id="g170"
-     style="font-size:12;stroke:#000000;">
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.05744,0,0,1.02764,-0.431371,-0.170664)">
     <path
        i:knockout="Off"
        opacity="0.3"
@@ -136,7 +137,8 @@
   </g>
   <g
      id="g174"
-     style="font-size:12;stroke:#000000;">
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.05744,0,0,1.02764,-0.431371,-0.170664)">
     <path
        i:knockout="Off"
        stroke="none"
@@ -151,7 +153,8 @@
   </g>
   <g
      id="g179"
-     style="font-size:12;stroke:#000000;">
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.05744,0,0,1.02764,-0.431371,-0.170664)">
     <linearGradient
        id="XMLID_2_"
        gradientUnits="userSpaceOnUse"
@@ -195,7 +198,8 @@
   </g>
   <g
      id="g190"
-     style="font-size:12;stroke:#000000;">
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.05744,0,0,1.02764,-0.431371,-0.170664)">
     <path
        i:knockout="Off"
        opacity="0"
@@ -211,7 +215,8 @@
   </g>
   <g
      id="g195"
-     style="font-size:12;stroke:#000000;">
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.05744,0,0,1.02764,-0.431371,-0.170664)">
     <path
        i:knockout="Off"
        opacity="0"
@@ -227,7 +232,8 @@
   </g>
   <g
      id="g200"
-     style="font-size:12;stroke:#000000;">
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.05744,0,0,1.02764,-0.431371,-0.170664)">
     <path
        i:knockout="Off"
        opacity="0"
@@ -243,7 +249,8 @@
   </g>
   <g
      id="g205"
-     style="font-size:12;stroke:#000000;">
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.05744,0,0,1.02764,-0.431371,-0.170664)">
     <path
        i:knockout="Off"
        opacity="0"
@@ -266,7 +273,8 @@
      stroke-dasharray="15"
      d="    M11.338,87.61L91.948,7"
      id="path208"
-     style="font-size:12;fill:#ffffff;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-dasharray:15 ;" />
+     style="font-size:12;fill:#ffffff;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-dasharray:15 ;"
+     transform="matrix(1.05744,0,0,1.02764,-0.431371,-0.170664)" />
   <path
      i:knockout="Off"
      fill="#FFFFFF"
@@ -276,5 +284,6 @@
      stroke-dasharray="15"
      d="    M32.673,108.945l82.731-82.732"
      id="path209"
-     style="font-size:12;fill:#ffffff;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-dasharray:15 ;" />
+     style="font-size:12;fill:#ffffff;stroke:#ffffff;stroke-width:3;stroke-linecap:round;stroke-dasharray:15 ;"
+     transform="matrix(1.05744,0,0,1.02764,-0.431371,-0.170664)" />
 </svg>

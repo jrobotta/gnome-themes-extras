@@ -857,23 +857,31 @@ style "6nome-stock-icons"
   stock["gtk-dialog-info"] =    {{ "stock_dialog_info.png" }}
   stock["gtk-dialog-error"] =   {{ "stock_dialog_error.png" }}
   stock["gtk-dialog-warning"] = {{ "stock_dialog_warning.png" }}
+  stock["gtk-cdrom"] =	        {{ "stock_cdrom.svg" }}
   stock["gtk-dnd"] =            {{ "stock_new.svg" }}
   stock["gtk-floppy"] =         {{ "stock_floppy.svg" }}
   stock["gtk-go-back"] =        {{ "stock_go-back.svg" }}
   stock["gtk-go-forward"] =     {{ "stock_go-forward.svg" }}
   stock["gtk-go-up"] =          {{ "stock_go-up.svg" }}
+  stock["gtk-sort-ascending"] =	{{ "stock_gtk-sort-ascending" }}
+  stock["gtk-sort-descending"] ={{ "stock_gtk-sort-descending" }}
+  stock["gtk-stop"] =		{{ "stock_stop.svg" }}
   stock["gtk-help"] =           {{ "stock_help.svg" }}
   stock["gtk-home"] =           {{ "stock_home.svg" }}
   stock["gtk-new"] =            {{ "stock_new.svg" }}
   stock["gtk-open"] =           {{ "stock_open.svg" }}
+  stock["gtk-print"] =		{{ "stock_print.svg" }}
+  stock["gtk-print-preview"] =	{{ "stock_print-preview.svg" }}
   stock["gtk-preferences"] =	{{ "stock_preferences.svg" }}
   stock["gtk-quit"] =		{{ "stock_quit.svg" }}
   stock["gtk-redo"] =		{{ "stock_redo.svg" }}
+  stock["gtk-refresh"] =	{{ "stock_refresh.svg" }}
   stock["gtk-stock-reset"] = 	{{ "stock_reset.svg" }}
   stock["gtk-undo"] =		{{ "stock_undo.svg" }}
   stock["gtk-save"] =           {{ "stock_floppy.svg" }}
   stock ["panel-lockscreen"] =  {{"stock_lockscreen.svg"}}
   stock ["panel-gnome-logo"]  = {{"gnome-logo.svg"}}
+  stock ["panel-logout"] =      {{"stock_logout.svg"}}
 }
 
 

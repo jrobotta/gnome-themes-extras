@@ -15,7 +15,7 @@
    id="svg153"
    sodipodi:version="0.32pre"
    sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/mimetypes/gnome-mime-application-x-rpm.svg"
-   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/mimetypes"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/mimetypes/"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:ns="http://ns.adobe.com/Variables/1.0/"
@@ -50,7 +50,8 @@
   <g
      i:knockout="On"
      id="g157"
-     style="font-size:12;stroke:#000000;">
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.08534,0,0,1.09679,-0.293403,1.81079)">
     <path
        i:knockout="Off"
        fill="none"
@@ -98,7 +99,8 @@
      i:knockout="On"
      opacity="0.3"
      id="g166"
-     style="font-size:12;opacity:0.3;stroke:#000000;">
+     style="font-size:12;opacity:0.3;stroke:#000000;"
+     transform="matrix(1.08534,0,0,1.09679,-0.293403,1.81079)">
     <path
        i:knockout="Off"
        fill="#FFFFFF"
@@ -108,7 +110,8 @@
   </g>
   <g
      id="g170"
-     style="font-size:12;stroke:#000000;">
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.08534,0,0,1.09679,-0.293403,1.81079)">
     <g
        id="g171">
       <path
@@ -130,7 +133,8 @@
   </g>
   <g
      id="g177"
-     style="font-size:12;stroke:#000000;">
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.08534,0,0,1.09679,-0.293403,1.81079)">
     <linearGradient
        id="XMLID_2_"
        gradientUnits="userSpaceOnUse"
@@ -168,7 +172,8 @@
   </g>
   <g
      id="g187"
-     style="font-size:12;stroke:#000000;">
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.08534,0,0,1.09679,-0.293403,1.81079)">
     <linearGradient
        id="XMLID_3_"
        gradientUnits="userSpaceOnUse"

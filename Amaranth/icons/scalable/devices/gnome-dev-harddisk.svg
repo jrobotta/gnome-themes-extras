@@ -15,7 +15,7 @@
    id="svg153"
    sodipodi:version="0.32pre"
    sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/devices/gnome-dev-harddisk.svg"
-   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/devices"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/devices/"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:ns="http://ns.adobe.com/Variables/1.0/"
@@ -287,57 +287,6 @@
      d="M62.104,35.283c0-1.546-1.262-2.808-2.807-2.808h-10.29     c-1.544,0-2.807,1.262-2.807,2.808v6.08c0,1.543,1.263,2.806,2.807,2.806h10.29c1.545,0,2.807-1.263,2.807-2.806V35.283z"
      id="path220"
      style="font-size:12;fill:url(#XMLID_6_);stroke:#000000;" />
-  <g
-     display="none"
-     id="g221"
-     style="font-size:12;stroke:#000000;">
-    <linearGradient
-       id="XMLID_7_"
-       gradientUnits="userSpaceOnUse"
-       x1="71.8936"
-       y1="30.3936"
-       x2="124.1186"
-       y2="82.6186">
-      <stop
-         offset="0.3427"
-         style="stop-color:#38A22B"
-         id="stop223" />
-      <stop
-         offset="1"
-         style="stop-color:#FFFFD9"
-         id="stop224" />
-      <a:midPointStop
-         offset="0.3427"
-         style="stop-color:#38A22B"
-         id="midPointStop225" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#38A22B"
-         id="midPointStop226" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#FFFFD9"
-         id="midPointStop227" />
-    </linearGradient>
-    <path
-       i:knockout="Off"
-       display="inline"
-       fill="url(#XMLID_7_)"
-       d="M125,53.166c0-1.65-1.35-3-3-3h-19     c-1.65,0-4.033-0.869-5.296-1.932L74.961,29.098c-1.262-1.063-1.584-0.784-0.715,0.618l15.84,25.567     c0.869,1.402,1.58,3.899,1.58,5.55V80.5c0,1.65,1.35,3,3,3H122c1.65,0,3-1.35,3-3V53.166z"
-       id="path228" />
-    <g
-       i:knockout="Off"
-       display="inline"
-       id="g229">
-      <path
-         i:knockout="Off"
-         opacity="0.25"
-         fill="#FFFFFF"
-         stroke="none"
-         d="M125,74.083V53.166c0-1.65-1.35-3-3-3h-19      c-1.65,0-4.033-0.869-5.296-1.932L74.961,29.098c-1.262-1.063-1.584-0.784-0.715,0.618l9.921,16.014      c0,0,15.505,17.754,24.919,13.554S125,74.083,125,74.083z"
-         id="path230" />
-    </g>
-  </g>
   <g
      i:knockout="Off"
      id="g231"

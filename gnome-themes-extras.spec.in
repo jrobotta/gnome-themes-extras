@@ -40,9 +40,13 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_libdir}/gtk-2.0/@GTK_BINARY_VERSION@/engines/*.so*
 %{_datadir}/icons/*
 %{_datadir}/themes/*
+%{_datadir}/locale/*/LC_MESSAGES/gnome-themes-extra.mo
 %doc AUTHORS MAINTAINERS ChangeLog COPYING README license_dsg license_lgpl license_gpl TODO
 
 %changelog
+* Mon Jul 14 2003 Håvard Wigtil <havardw@stud.ntnu.no>
+- Add translations to files section
+
 * Thu May 01 2003 Yanko Kaneti <yaneti@declera.com>
 - use the GTK_BINARY_VERSION autoconf variable
 

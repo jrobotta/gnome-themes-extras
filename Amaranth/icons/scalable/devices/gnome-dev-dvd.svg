@@ -15,7 +15,7 @@
    id="svg153"
    sodipodi:version="0.32pre"
    sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/devices/gnome-dev-dvd.svg"
-   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/devices"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/devices/"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:ns="http://ns.adobe.com/Variables/1.0/"
@@ -194,12 +194,6 @@
        d="M68.757,62.935c18.559,21.305,46.746,32.79,43.021,37.746     c-5.27,7.01-12.092,12.784-19.956,16.814c-3.954,2.025-10.9-27.427-28.96-48.369c-18.06-20.945-47.234-33.379-43.533-38.244     c5.289-6.953,12.115-12.673,19.971-16.656C43.134,12.283,51.061,42.622,68.757,62.935z"
        id="path170" />
   </g>
-  <path
-     i:knockout="Off"
-     fill="url(#XMLID_2_)"
-     d="M118,92.333c0-1.65-1.35-3-3-3H96c-1.65,0-4.033-0.869-5.296-1.932L67.961,68.265    c-1.262-1.063-1.584-0.784-0.715,0.619l15.84,25.567c0.869,1.402,1.58,3.899,1.58,5.55v19.667c0,1.65,1.35,3,3,3H115    c1.65,0,3-1.35,3-3V92.333z"
-     id="path177"
-     style="font-size:12;fill:url(#XMLID_2_);stroke:#000000;" />
   <g
      i:knockout="Off"
      id="g178"

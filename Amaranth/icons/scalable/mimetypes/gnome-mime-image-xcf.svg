@@ -15,7 +15,7 @@
    id="svg153"
    sodipodi:version="0.32pre"
    sodipodi:docname="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/mimetypes/gnome-mime-image-xcf.svg"
-   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/mimetypes"
+   sodipodi:docbase="/home/cschalle/gnome-themes-extras/Amaranth/icons/scalable/mimetypes/"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:ns="http://ns.adobe.com/Variables/1.0/"
@@ -50,7 +50,8 @@
   <g
      i:knockout="On"
      id="g157"
-     style="font-size:12;stroke:#000000;">
+     style="font-size:12;stroke:#000000;"
+     transform="matrix(1.09775,0,0,1.07886,-2.50532,2.2102)">
     <path
        i:knockout="Off"
        fill="none"
@@ -98,7 +99,8 @@
      i:knockout="On"
      opacity="0.3"
      id="g166"
-     style="font-size:12;opacity:0.3;stroke:#000000;">
+     style="font-size:12;opacity:0.3;stroke:#000000;"
+     transform="matrix(1.09775,0,0,1.07886,-2.50532,2.2102)">
     <path
        i:knockout="Off"
        fill="#FFFFFF"
@@ -110,7 +112,7 @@
      i:knockout="Off"
      id="g161"
      style="font-size:12;stroke:#000000;"
-     transform="matrix(0.403155,0,0,0.370047,32.9675,21.0861)">
+     transform="matrix(0.442562,0,0,0.399231,33.6847,24.9592)">
     <path
        i:knockout="Off"
        fill="#948C72"
@@ -127,7 +129,7 @@
      i:knockout="Off"
      id="g241"
      style="font-size:12;stroke:#000000;fill:#343627;fill-opacity:0.927007;"
-     transform="matrix(0.403155,0,0,0.370047,32.9675,21.0861)">
+     transform="matrix(0.442562,0,0,0.399231,33.6847,24.9592)">
     <linearGradient
        id="linearGradient242"
        gradientUnits="userSpaceOnUse"
@@ -181,7 +183,7 @@
      d="M57.249,40.849     c0-6.229-5.05-11.28-11.28-11.28s-11.28,5.05-11.28,11.28s5.05,11.28,11.28,11.28S57.249,47.078,57.249,40.849z"
      id="path177"
      style="font-size:12;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;"
-     transform="matrix(0.403155,0,0,0.370047,32.9675,21.0861)" />
+     transform="matrix(0.442562,0,0,0.399231,33.6847,24.9592)" />
   <path
      i:knockout="Off"
      fill="url(#XMLID_2_)"
@@ -189,7 +191,7 @@
      d="M52.621,44.608c0-1.917-1.554-3.471-3.471-3.471     c-1.917,0-3.471,1.554-3.471,3.471c0,1.917,1.554,3.471,3.471,3.471C51.067,48.079,52.621,46.526,52.621,44.608z"
      id="path186"
      style="font-size:12;stroke:#000000;stroke-width:2;"
-     transform="matrix(0.403155,0,0,0.370047,32.9675,21.0861)" />
+     transform="matrix(0.442562,0,0,0.399231,33.6847,24.9592)" />
   <path
      i:knockout="Off"
      fill="#FFFFFF"
@@ -199,7 +201,7 @@
      d="M80.098,44.319     c0-8.146-6.604-14.75-14.75-14.75c-8.146,0-14.751,6.604-14.751,14.75c0,8.147,6.604,14.75,14.751,14.75     C73.493,59.07,80.098,52.466,80.098,44.319z"
      id="path189"
      style="font-size:12;fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;"
-     transform="matrix(0.403155,0,0,0.370047,32.9675,21.0861)" />
+     transform="matrix(0.442562,0,0,0.399231,33.6847,24.9592)" />
   <path
      i:knockout="Off"
      fill="url(#XMLID_3_)"
@@ -207,7 +209,7 @@
      d="M74.603,45.476c0-2.715-2.201-4.917-4.917-4.917     s-4.917,2.201-4.917,4.917c0,2.716,2.201,4.917,4.917,4.917S74.603,48.192,74.603,45.476z"
      id="path198"
      style="font-size:12;stroke:#000000;stroke-width:2;"
-     transform="matrix(0.403155,0,0,0.370047,32.9675,21.0861)" />
+     transform="matrix(0.442562,0,0,0.399231,33.6847,24.9592)" />
   <path
      i:knockout="Off"
      opacity="0.25"
@@ -216,5 +218,5 @@
      d="M95.214,54.961c-0.201-0.604-0.616-0.641-0.924-0.084      c0,0-5.805,10.556-13.325,14.315c-7.52,3.761-29.214,5.133-29.214,5.133c-0.635,0.041-0.634,0.093,0.002,0.115l29.791,1.073      c0.637,0.022,1.668-0.054,2.293-0.172c0,0,12.746-2.389,12.746-9.33C96.583,59.07,95.214,54.961,95.214,54.961z"
      id="path202"
      style="font-size:12;opacity:0.25;fill:#ffffff;"
-     transform="matrix(0.403155,0,0,0.370047,32.9675,21.0861)" />
+     transform="matrix(0.442562,0,0,0.399231,33.6847,24.9592)" />
 </svg>

@@ -23,5 +23,6 @@ icon_DATA = \
 	stock_internet.svg \
 	stock_lockscreen.svg \
 	stock_multimedia.svg \
-	stock_searchtool.svg
+	stock_searchtool.svg \
+	stock_dialog_info.svg
 EXTRA_DIST = $(icon_DATA)

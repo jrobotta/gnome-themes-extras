@@ -1,3 +1,9 @@
+2003-07-31 Christian Schaller <Uraeus@gnome.org>
+
+	* Added lots of new Amaranth icons from Michael Doches
+	* Added Gorilla inheritance fix from James Ogley
+	* Added .mo files to SPEC file fix from Håvard Wigtil
+
 2003-07-28  Jakub Steiner <jimmac@ximian.com>
 
 	* Gorilla/metacity-1/metacity-theme-1.xml: temporarily revert
