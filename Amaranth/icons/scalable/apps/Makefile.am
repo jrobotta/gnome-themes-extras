@@ -31,7 +31,7 @@ icon_DATA = \
 	gnome-terminal.svg \
 	gnumeric.svg \
 	gucharmap.svg \
-	gpdf.svg \
+	gnome-pdf.svg \
 	gnome-joystick.svg \
 	gnome-graphics.svg \
 	gnome-globe.svg \
