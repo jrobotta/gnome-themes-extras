@@ -1,8 +1,11 @@
 2003-03-21  Jakub Steiner <jimmac@ximian.com>
 
-	* emblems/emblem-video.svg -> emblem-multimedia: rename
+	* emblems/emblem-video.svg -> emblem-multimedia: 
+	* emblems/emblem-seal.svg -> emblem-distinguished: rename
 	* emblem-danger.svg:
 	* emblem-ohno.svg:
+	* emblem-important.svg:
+	* emblem-generic.svg:
 	* emblem-cool.svg: replace the default
 
 2003-03-06  Jakub Steiner <jimmac@ximian.com>
