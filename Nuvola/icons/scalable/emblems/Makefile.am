@@ -1,13 +1,12 @@
 icondir = $(datadir)/icons/Nuvola/scalable/emblems
 NULL = 
 icon_DATA = \
-        emblem-audio.svg \
         emblem-camera.svg \
         emblem-cool.svg \
         emblem-danger.svg \
         emblem-distinguished.svg \
         emblem-documents.svg \
-	emblem-favourite.svg \
+	emblem-favorite.svg \
         emblem-fun.svg \
         emblem-generic.svg \
         emblem-important.svg \
@@ -17,6 +16,7 @@ icon_DATA = \
         emblem-package.svg \
         emblem-pictures.svg \
         emblem-relax.svg \
+	emblem-sound.svg \
         emblem-symbolic-link.svg \
         emblem-multimedia.svg \
         emblem-web.svg \

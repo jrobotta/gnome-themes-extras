@@ -416,7 +416,7 @@ style "metacity-frame"
   ythickness = 0
   bg[SELECTED] = "#8f8f8f"
   bg[INSENSITIVE] = "#CDCDCD"
-  fg[SELECTED] = "#ffffff"
+  fg[SELECTED] = "#000000"
   fg[PRELIGHT] = "#ffffff"
   fg[NORMAL] = "#ffffff"
 } 

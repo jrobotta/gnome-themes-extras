@@ -1,7 +1,6 @@
 icondir = $(datadir)/icons/Gorilla/scalable/emblems
 NULL = 
 icon_DATA = \
-        emblem-audio.svg \
         emblem-camera.svg \
         emblem-cool.svg \
         emblem-danger.svg \
@@ -16,6 +15,7 @@ icon_DATA = \
         emblem-package.svg \
         emblem-pictures.svg \
         emblem-relax.svg \
+	emblem-sound.svg \
         emblem-symbolic-link.svg \
         emblem-multimedia.svg \
         emblem-urgent.svg \
