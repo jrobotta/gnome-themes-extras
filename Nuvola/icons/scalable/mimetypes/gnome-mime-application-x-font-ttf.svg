@@ -3,17 +3,13 @@
 "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
 <svg
-   i:viewOrigin="178 524"
-   i:rulerOrigin="-178 -268"
-   i:pageBounds="178 524 434 268"
    width="48pt"
    height="48pt"
    viewBox="0 0 256 256"
-   style="overflow:visible;enable-background:new 0 0 256 256"
+   overflow="visible"
+   enable-background="new 0 0 256 256"
    xml:space="preserve"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:ns="&amp;ns_vars;"
-   xmlns:i="&amp;ns_ai;"
    xmlns:xml="http://www.w3.org/XML/1998/namespace"
    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,7 +19,17 @@
    sodipodi:docname="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/mimetypes/gnome-mime-application-x-font-ttf.svg"
    sodipodi:docbase="/home/cschalle/gnome-themes-extras/Nuvola/icons/scalable/mimetypes">
   <defs
-     id="defs192">
+     id="defs179" />
+  <sodipodi:namedview
+     id="base" />
+  <g
+     id="Layer_3"
+     stroke="#000000">
+    <path
+       opacity="0.2"
+       stroke="none"
+       d="M49,19c-9.374,0-17,7.626-17,17v200c0,9.374,7.626,17,17,17h176c9.374,0,17-7.626,17-17V36    c0-9.374-7.626-17-17-17H49z"
+       id="path155" />
     <linearGradient
        id="XMLID_1_"
        gradientUnits="userSpaceOnUse"
@@ -34,24 +40,34 @@
       <stop
          offset="0"
          style="stop-color:#A7ABAC"
-         id="stop158" />
+         id="stop157" />
       <stop
          offset="1"
          style="stop-color:#85898A"
-         id="stop159" />
+         id="stop158" />
       <a:midPointStop
          offset="0"
          style="stop-color:#A7ABAC"
-         id="midPointStop160" />
+         id="midPointStop159" />
       <a:midPointStop
          offset="0.5"
          style="stop-color:#A7ABAC"
-         id="midPointStop161" />
+         id="midPointStop160" />
       <a:midPointStop
          offset="1"
          style="stop-color:#85898A"
-         id="midPointStop162" />
+         id="midPointStop161" />
     </linearGradient>
+    <path
+       fill="url(#XMLID_1_)"
+       stroke="none"
+       d="M40,13c-9.374,0-17,7.626-17,17v200c0,9.374,7.626,17,17,17h176    c9.374,0,17-7.626,17-17V30c0-9.374-7.626-17-17-17H40z"
+       id="path162" />
+    <path
+       fill="#99CCFF"
+       stroke="none"
+       d="M28,230c0,6.627,5.373,12,12,12h176c6.627,0,12-5.373,12-12V30c0-6.627-5.373-12-12-12H40    c-6.627,0-12,5.373-12,12V230z"
+       id="path163" />
     <linearGradient
        id="XMLID_2_"
        gradientUnits="userSpaceOnUse"
@@ -62,164 +78,58 @@
       <stop
          offset="0"
          style="stop-color:#FFFFFF"
-         id="stop166" />
+         id="stop165" />
       <stop
          offset="1"
          style="stop-color:#99CCFF"
-         id="stop167" />
+         id="stop166" />
       <a:midPointStop
          offset="0"
+         style="stop-color:#FFFFFF"
+         id="midPointStop167" />
+      <a:midPointStop
+         offset="0.5"
          style="stop-color:#FFFFFF"
          id="midPointStop168" />
       <a:midPointStop
-         offset="0.5"
-         style="stop-color:#FFFFFF"
-         id="midPointStop169" />
-      <a:midPointStop
          offset="1"
          style="stop-color:#99CCFF"
-         id="midPointStop170" />
+         id="midPointStop169" />
     </linearGradient>
-    <radialGradient
-       id="XMLID_3_"
-       cx="91.5063"
-       cy="89.4985"
-       r="149.2253"
-       fx="91.5063"
-       fy="89.4985"
-       gradientUnits="userSpaceOnUse">
-      <stop
-         offset="0"
-         style="stop-color:#3399FF"
-         id="stop174" />
-      <stop
-         offset="1"
-         style="stop-color:#0066CC"
-         id="stop175" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#3399FF"
-         id="midPointStop176" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#3399FF"
-         id="midPointStop177" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#0066CC"
-         id="midPointStop178" />
-    </radialGradient>
-    <radialGradient
-       id="XMLID_4_"
-       cx="53.7324"
-       cy="47.9302"
-       r="74.9396"
-       fx="53.7324"
-       fy="47.9302"
-       gradientUnits="userSpaceOnUse">
-      <stop
-         offset="0"
-         style="stop-color:#FF9966"
-         id="stop181" />
-      <stop
-         offset="1"
-         style="stop-color:#FF6633"
-         id="stop182" />
-      <a:midPointStop
-         offset="0"
-         style="stop-color:#FF9966"
-         id="midPointStop183" />
-      <a:midPointStop
-         offset="0.5"
-         style="stop-color:#FF9966"
-         id="midPointStop184" />
-      <a:midPointStop
-         offset="1"
-         style="stop-color:#FF6633"
-         id="midPointStop185" />
-    </radialGradient>
-  </defs>
-  <sodipodi:namedview
-     id="base" />
-  <metadata
-     id="metadata154">
-    <ns:variableSets>
-      <ns:variableSet
-         varSetName="binding1"
-         locked="none">
-        <ns:variables />
-        <ns:sampleDataSets />
-      </ns:variableSet>
-    </ns:variableSets>
-  </metadata>
-  <path
-     i:knockout="Off"
-     style="font-size:12;opacity:0.2;"
-     d="M49,19c-9.374,0-17,7.626-17,17v200c0,9.374,7.626,17,17,17h176c9.374,0,17-7.626,17-17    V36c0-9.374-7.626-17-17-17H49z"
-     id="path156" />
-  <path
-     i:knockout="Off"
-     style="font-size:12;fill:url(#XMLID_1_);"
-     d="M40,13c-9.374,0-17,7.626-17,17v200c0,9.374,7.626,17,17,17h176c9.374,0,17-7.626,17-17    V30c0-9.374-7.626-17-17-17H40z"
-     id="path163" />
-  <path
-     i:knockout="Off"
-     style="font-size:12;fill:#99ccff;"
-     d="M28,230c0,6.627,5.373,12,12,12h176c6.627,0,12-5.373,12-12V30c0-6.627-5.373-12-12-12H40    c-6.627,0-12,5.373-12,12V230z"
-     id="path164" />
-  <path
-     i:knockout="Off"
-     style="font-size:12;fill:url(#XMLID_2_);"
-     d="M40,23c-3.859,0-7,3.14-7,7v200c0,3.859,3.141,7,7,7h176c3.859,0,7-3.141,7-7V30    c0-3.86-3.141-7-7-7H40z"
-     id="path171" />
-  <g
-     id="Layer_2"
-     i:layer="yes"
-     i:editable="no"
-     i:dimmedPercent="50"
-     i:rgbTrio="#FFFF4F004F00"
-     style="stroke:#000000;">
     <path
-       i:knockout="Off"
-       style="fill:none;stroke:none;"
-       d="M256,256H0V0h256V256z"
-       id="path190" />
-  </g>
-  <path
-     i:knockout="Off"
-     style="font-size:12;opacity:0.4;fill:#ffffff;"
-     d="M163,108c18.593-17.431,40.938-26.006,65-30.265V30c0-6.627-5.373-12-12-12H40    c-6.627,0-12,5.373-12,12v143.268C77.582,177.009,124.478,142.51,163,108z"
-     id="path172"
-     transform="translate(0.611008,1.22186)" />
-  <g
-     id="g635"
-     transform="translate(0,-3.8147e-06)">
-    <text
-       transform="translate(59,179.504)"
-       id="text602"
-       style="font-size:12;stroke:#000000;">
-      <tspan
-         x="0"
-         y="0"
+       fill="url(#XMLID_2_)"
+       stroke="none"
+       d="M40,23c-3.859,0-7,3.14-7,7v200c0,3.859,3.141,7,7,7h176c3.859,0,7-3.141,7-7V30    c0-3.86-3.141-7-7-7H40z"
+       id="path170" />
+    <path
+       opacity="0.4"
+       fill="#FFFFFF"
+       stroke="none"
+       d="M163,108c18.593-17.431,40.938-26.006,65-30.265V30c0-6.627-5.373-12-12-12    H40c-6.627,0-12,5.373-12,12v143.268C77.582,177.009,124.478,142.51,163,108z"
+       id="path171" />
+    <g
+       id="g172">
+      <path
          stroke="none"
-         font-family="'Myriad-Roman'"
-         font-size="150"
-         id="tspan603">
-t</tspan>
-    </text>
-    <text
-       transform="translate(108,183.949)"
-       id="text605"
-       style="font-size:12;stroke:#000000;">
-      <tspan
-         x="0"
-         y="0"
+         d="M85.85,89.503v17.4h18.9v10.05h-18.9v39.15c0,9,2.55,14.101,9.9,14.101c3.6,0,5.7-0.3,7.65-0.9l0.6,10.05     c-2.55,0.9-6.6,1.801-11.7,1.801c-6.15,0-11.1-2.101-14.25-5.551c-3.6-4.05-5.1-10.5-5.1-19.05v-39.601H61.7v-10.05h11.25v-13.35     L85.85,89.503z"
+         id="path173" />
+    </g>
+    <g
+       id="g174">
+      <path
          fill="#0066CC"
          stroke="none"
-         font-family="'Tahoma-Bold'"
-         font-size="150"
-         id="tspan606">
-T</tspan>
-    </text>
+         d="M140.25,183.949v-88.5H108v-20.5h92v20.5h-32.25v88.5H140.25z"
+         id="path175" />
+    </g>
+  </g>
+  <g
+     id="Layer_2"
+     stroke="#000000">
+    <path
+       fill="none"
+       stroke="none"
+       d="M256,256H0V0h256V256z"
+       id="path177" />
   </g>
 </svg>
