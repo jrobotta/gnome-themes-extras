@@ -20,7 +20,7 @@
 	<!ENTITY st16 "fill:none;stroke:#0C0B0B;stroke-width:8.081411e-003;stroke-miterlimit:3.8637;">
 	<!ENTITY st17 "fill:url(#aigrd4);stroke:none;">
 ]>
-<svg  width="42.5px" height="48px" viewBox="0 0 42.5 48" xml:space="preserve">
+<svg  width="42.5pt" height="48pt" viewBox="0 0 42.5 48" xml:space="preserve">
 	<g id="Layer_x0020_1" style="&st6;">
 		<path style="&st2;" d="M8.2,3.6C5.3,3.6,3,5.9,3,8.8v30.8c0,2.9,2.3,5.2,5.2,5.2h27.5c2.9,0,5.2-2.3,5.2-5.2V8.8c0-2.9-2.3-5.2-5.2-5.2H8.2z"/>
 		<linearGradient id="aigrd1" gradientUnits="userSpaceOnUse" x1="12.2363" y1="7.7627" x2="31.5515" y2="41.3164">

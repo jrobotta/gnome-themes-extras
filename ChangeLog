@@ -1,5 +1,12 @@
 2003-01-24  Jakub Steiner <jimmac@ximian.com>
 
+	* *.svg: s/px/pt/ - be resolution independent. I hope Nautilus
+	  will scale the cions appropriately on different DPI settings
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-msword.svg:
+	  MS word files
+
+2003-01-24  Jakub Steiner <jimmac@ximian.com>
+
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-font.svg,
 	  gnome-mime-application-x-font.svg,
 	  Makefile.am: rename, add some symlinks, force symlinks

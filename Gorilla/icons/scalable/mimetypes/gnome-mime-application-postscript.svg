@@ -15,7 +15,7 @@
 	<!ENTITY st11 "stroke:none;">
 	<!ENTITY st12 "fill:url(#aigrd4);stroke:none;">
 ]>
-<svg  width="44.6px" height="48px" viewBox="0 0 44.6 48" xml:space="preserve">
+<svg  width="44.6pt" height="48pt" viewBox="0 0 44.6 48" xml:space="preserve">
 	<g id="Layer_x0020_1" style="&st5;">
 		<path style="&st2;" d="M9.3,2.6c-2.9,0-5.2,2.3-5.2,5.2v30.8c0,2.9,2.3,5.2,5.2,5.2h27.5c2.9,0,5.2-2.3,5.2-5.2V7.8c0-2.9-2.3-5.2-5.2-5.2H9.3z"/>
 		<linearGradient id="aigrd1" gradientUnits="userSpaceOnUse" x1="13.375" y1="6.7632" x2="32.6902" y2="40.3169">

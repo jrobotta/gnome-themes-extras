@@ -27,7 +27,7 @@
 	<!ENTITY st23 "fill:#F79710;stroke:none;">
 	<!ENTITY st24 "fill:#7B7D5B;stroke:none;">
 ]>
-<svg  width="70px" height="60px" viewBox="0 0 70 60" xml:space="preserve">
+<svg  width="70pt" height="60pt" viewBox="0 0 70 60" xml:space="preserve">
 	<g id="Layer_x0020_3" style="&st20;">
 		<path style="&st18;" d="M70,60H0V0h70v60z"/>
 	</g>

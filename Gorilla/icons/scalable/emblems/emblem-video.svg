@@ -17,7 +17,7 @@
 	<!ENTITY st13 "stroke:none;">
 	<!ENTITY st14 "fill:url(#aigrd4);stroke:none;">
 ]>
-<svg  width="45.5px" height="39.5px" viewBox="0 0 45.5 39.5" xml:space="preserve">
+<svg  width="45.5pt" height="39.5pt" viewBox="0 0 45.5 39.5" xml:space="preserve">
 	<g id="Layer_x0020_2" style="&st12;">
 		<path style="&st9;" d="M45.5,39H1.7V0h43.8v39z"/>
 	</g>

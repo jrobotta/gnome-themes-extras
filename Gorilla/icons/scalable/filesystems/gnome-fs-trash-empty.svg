@@ -15,7 +15,7 @@
 	<!ENTITY st11 "fill:#6E6E6E;stroke:none;">
 	<!ENTITY st12 "stroke:none;">
 ]>
-<svg  width="40px" height="48px" viewBox="0 0 40 48" xml:space="preserve">
+<svg  width="40pt" height="48pt" viewBox="0 0 40 48" xml:space="preserve">
 	<g id="Layer_x0020_1" style="&st10;">
 		<path style="&st3;" d="M13.3,47.3l6.2-2.5c7.9,1.2,21.6-4.9,16.6-11.7c-3.6-4.9-17.6-2-17.6-2l-5.2,16.2"/>
 		<path style="&st12;" d="M3.7,13.3v4.9c0,0.8,0.3,2,1.5,3.3c0,1.1,0,16.6,0,16.6c0,2,1.5,3.7,4.4,5c2.4,1.1,5.7,1.6,9.1,1.6c3.4,0,6.6-0.6,9.1-1.6c2.8-1.2,4.3-3,4.3-5c0,0,0-15.6,0-16.7c1.1-1.2,1.4-2.4,1.4-3.2v-4.9c0-4.1-6.4-7.2-14.8-7.2S3.7,9.2,3.7,13.3z"/>

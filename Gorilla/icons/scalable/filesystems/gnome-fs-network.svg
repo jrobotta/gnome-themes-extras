@@ -55,7 +55,7 @@
 	<!ENTITY st51 "fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;">
 	<!ENTITY st52 "stroke:none;">
 ]>
-<svg  width="66px" height="48px" viewBox="0 0 66 48" xml:space="preserve">
+<svg  width="66pt" height="48pt" viewBox="0 0 66 48" xml:space="preserve">
 	<g id="Layer_x0020_1" style="&st51;">
 		<g style="&st43;">
 			<linearGradient id="aigrd1" gradientUnits="userSpaceOnUse" x1="35.082" y1="21.3579" x2="35.0998" y2="21.7131">

@@ -12,7 +12,7 @@
 	<!ENTITY st8 "opacity:0.33;fill:url(#aigrd5);">
 	<!ENTITY st9 "opacity:0.33;fill:url(#aigrd6);">
 ]>
-<svg  width="48px" height="48px" viewBox="0 0 48 48" xml:space="preserve">
+<svg  width="48pt" height="48pt" viewBox="0 0 48 48" xml:space="preserve">
 	<g id="Layer_x0020_1" style="&st5;">
 		<g style="&st6;">
 			<path d="M15.8,7.2c-0.9,0-1.6,0.7-1.6,1.6c0,0,0,0.3,0,0.6c-0.5,0.3-0.8,0.8-0.8,1.4v5.2c0,0.4,0.2,0.8,0.4,1.1c-0.3,0.3-0.4,0.7-0.4,1.1v5.2c0,0.6,0.3,1.1,0.8,1.4c0,1.6,0,15.2,0,15.2c0,0.9,0.7,1.6,1.6,1.6h18.1c0.9,0,1.6-0.7,1.6-1.6V10.1

@@ -2,6 +2,7 @@ icondir = $(datadir)/icons/Gorilla/scalable/mimetypes
 NULL = 
 icon_DATA = \
         gnome-compressed.svg \
+        gnome-mime-application-msword.svg \
         gnome-mime-application-pdf.svg \
         gnome-mime-application-pgp.svg \
         gnome-mime-application-postscript.svg \

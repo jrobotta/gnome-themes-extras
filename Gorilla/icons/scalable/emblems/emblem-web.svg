@@ -8,7 +8,7 @@
 	<!ENTITY st4 "fill-rule:evenodd;clip-rule:evenodd;fill:url(#aigrd2);stroke:none;">
 	<!ENTITY st5 "fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;">
 ]>
-<svg  width="48px" height="48px" viewBox="0 0 48 48" xml:space="preserve">
+<svg  width="48pt" height="48pt" viewBox="0 0 48 48" xml:space="preserve">
 	<g id="Layer_x0020_3" style="&st5;">
 		<radialGradient id="aigrd1" cx="19.5688" cy="15.2549" r="28.1322" fx="19.5688" fy="15.2549" gradientUnits="userSpaceOnUse">
 			<stop  offset="0" style="stop-color:#2286B7"/>

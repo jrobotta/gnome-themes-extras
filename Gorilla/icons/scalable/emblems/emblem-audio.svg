@@ -17,7 +17,7 @@
 	<!ENTITY st13 "opacity:9.000000e-002;fill:url(#aigrd5);stroke:#000000;">
 	<!ENTITY st14 "fill:#888888;stroke:none;">
 ]>
-<svg  width="48px" height="48px" viewBox="0 0 48 48" xml:space="preserve">
+<svg  width="48pt" height="48pt" viewBox="0 0 48 48" xml:space="preserve">
 	<g id="Layer_x0020_1" style="&st8;">
 		<linearGradient id="aigrd1" gradientUnits="userSpaceOnUse" x1="9.458" y1="0.8105" x2="39.7716" y2="47.3746">
 			<stop  offset="0" style="stop-color:#FFFFFF"/>
