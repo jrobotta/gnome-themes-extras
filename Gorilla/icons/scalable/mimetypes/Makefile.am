@@ -16,6 +16,7 @@ icon_DATA = \
         gnome-mime-application-x-rpm.svg \
 		  gnome-mime-application-x-shared-library.svg \
         gnome-mime-application-vnd.ms-excel.svg \
+        gnome-mime-application-vnd.ms-powerpoint.svg \
         gnome-mime-application-vnd.rn-realmedia.svg \
         gnome-mime-application-vnd.sun.xml.calc.svg \
         gnome-mime-application-vnd.sun.xml.draw.svg \
