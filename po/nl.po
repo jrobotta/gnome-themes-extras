@@ -18,15 +18,15 @@ msgstr ""
 
 #: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
 msgid "Amaranth"
-msgstr "Amaranth"
+msgstr "Amarant"
 
 #: Amaranth/icons/index.theme.in.h:2
 msgid "Silver Vector Theme"
-msgstr "Zilvervector thema"
+msgstr "Zilver vectorthema"
 
 #: Amaranth/index.theme.in.h:2
 msgid "Sterling Silver"
-msgstr "Sterling zilver"
+msgstr "Puur zilver"
 
 #: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
 msgid "Gorilla"
@@ -35,11 +35,11 @@ msgstr "Gorilla"
 #: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
 #: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
 msgid "Vector Theme"
-msgstr "Vector thema"
+msgstr "Vectorthema"
 
 #: Gorilla/index.theme.in.h:2
 msgid "The Vector Mono Goddess"
-msgstr "De vector mono Godin"
+msgstr "De Godin van de vector"
 
 #: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
 msgid "Lush"
@@ -47,7 +47,7 @@ msgstr "Weelde"
 
 #: Lush/index.theme.in.h:2
 msgid "Mild green theme"
-msgstr "Mild groen thema"
+msgstr "Zachtgroen thema"
 
 #: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
 msgid "Nuvola"
@@ -55,7 +55,7 @@ msgstr "Nuvola"
 
 #: Nuvola/index.theme.in.h:2
 msgid "The Blue Style Surf"
-msgstr "De Blauwe Stijl Surf"
+msgstr "De blauwe branding"
 
 #: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
 msgid "Wasp"
@@ -63,4 +63,4 @@ msgstr "Wesp"
 
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
-msgstr "BeOS-stijl thema"
+msgstr "Het BeOS-thema"
