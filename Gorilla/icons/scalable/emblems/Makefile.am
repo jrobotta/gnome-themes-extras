@@ -10,6 +10,7 @@ icon_DATA = \
         emblem-package.svg \
         emblem-pictures.svg \
         emblem-relax.svg \
+        emblem-seal.svg \
         emblem-symbolic-link.svg \
         emblem-video.svg \
         emblem-web.svg \

@@ -9,6 +9,12 @@
 	* Gorilla/icons/scalable/filesystems/Makefile.am: add missing
 	.icon files
 
+	* Gorilla/icons/scalable/emblems/emblem-seal.svg,
+	Makefile.am: the 'seal of approval' emblem
+
+	* ~mimetypes/gnome-mime-application-x-gnome-app-info.svg,
+	Makefile.am: .desktop files
+
 2003-01-23  Alex Duggan  <aldug@astrolinux.com>
 
 	* .cvsignore: Add a .cvsignore
