@@ -96,6 +96,7 @@ Lush/gtk-2.0/iconrc
 Lush/metacity-1/Makefile
 Lush/icons/Makefile
 Lush/icons/scalable/Makefile
+Lush/icons/scalable/apps/Makefile
 Lush/icons/scalable/devices/Makefile
 Lush/icons/scalable/emblems/Makefile
 Lush/icons/scalable/filesystems/Makefile
