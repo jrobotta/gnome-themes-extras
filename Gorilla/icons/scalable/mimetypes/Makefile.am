@@ -10,6 +10,7 @@ icon_DATA = \
         gnome-mime-application-x-backup.svg \
         gnome-mime-application-x-deb.svg \
         gnome-mime-application-x-dvi.svg \
+        gnome-mime-application-x-executable.svg \
         gnome-mime-application-x-gnome-app-info.svg \
         gnome-mime-application-x-gnucash.svg \
         gnome-mime-application-x-font.svg \
@@ -65,7 +66,6 @@ install-data-local:
 	ln -sf gnome-mime-video.svg gnome-mime-video-x-ms-wmv.svg && \
 	ln -sf gnome-mime-video.svg gnome-mime-video-mpeg.svg && \
 	ln -sf gnome-mime-text-html.svg gnome-mime-application-x-php.svg && \
-	ln -sf gnome-fs-executable.svg gnome-mime-application-x-executable.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-ttf.svg && \
@@ -78,4 +78,3 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-ogg.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-php.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-stuffit.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-executable.svg
