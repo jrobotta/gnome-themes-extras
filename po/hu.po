@@ -1,0 +1,68 @@
+# translation of gnome-themes-extras to Hungarian
+# This file is distributed under the same license as the gnome-themes-extras package.
+# Copyright (C) 2005, Free Software Foundation, Inc.
+# Szabolcs Varga <shirokuma@shirokuma.hu>, 2005.
+# Gabor Kelemen <kelemeng@gnome.hu>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-03-17 12:11+0100\n"
+"PO-Revision-Date: 2005-03-18 10:04+0100\n"
+"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
+"Language-Team: Hungarian <gnome@gnome.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
+"Plural-Forms:  nplurals=1; plural=0;\n"
+
+#: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
+msgid "Amaranth"
+msgstr "Amaránt"
+
+#: Amaranth/icons/index.theme.in.h:2
+msgid "Silver Vector Theme"
+msgstr "Ezüst vektor téma"
+
+#: Amaranth/index.theme.in.h:2
+msgid "Sterling Silver"
+msgstr "Sterling-ezüst"
+
+#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "Gorilla"
+
+#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
+msgid "Vector Theme"
+msgstr "Vektor téma"
+
+#: Gorilla/index.theme.in.h:2
+msgid "The Vector Mono Goddess"
+msgstr "A Vektor Mono istennő"
+
+#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "Dús"
+
+#: Lush/index.theme.in.h:2
+msgid "Mild green theme"
+msgstr "Enyhe zöld téma"
+
+#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "Nuvola"
+
+#: Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "Kék szörf stílus"
+
+#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "Darázs"
+
+#: Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "BeOS-stílusú téma"
