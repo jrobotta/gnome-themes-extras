@@ -53,6 +53,7 @@ icon_DATA = \
 	redhat-config-date.svg \
 	user_auth.svg \
 	gnome-logo.svg \
+	webbrowser.svg \
 	$(NULL)
 EXTRA_DIST = $(icon_DATA)
 
@@ -65,7 +66,6 @@ install-data-local:
 	ln -sf gnome-gimp.svg gnome-palette.svg && \
 	ln -sf gnome-envelope.svg evolution-1.4.svg && \
 	ln -sf mozilla-star.svg redhat-web-browser.svg && \
-	ln -sf mozilla-star.svg web-browser.svg && \
 	ln -sf gnome-applications.svg redhat-office.svg && \
 	ln -sf my-computer.svg redhat-home.svg && \
 	ln -sf gnome-joystick.svg redhat-games.svg && \

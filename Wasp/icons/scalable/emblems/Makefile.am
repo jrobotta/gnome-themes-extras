@@ -4,6 +4,7 @@ icon_DATA = \
         emblem-camera.svg \
         emblem-cool.svg \
         emblem-danger.svg \
+	emblem-desktop.svg \
         emblem-distinguished.svg \
         emblem-documents.svg \
 	emblem-favorite.svg \
