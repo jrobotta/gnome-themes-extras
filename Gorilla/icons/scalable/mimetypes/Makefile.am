@@ -28,6 +28,7 @@ icon_DATA = \
         gnome-mime-text-x-authors.svg \
         gnome-mime-text-x-install.svg \
         gnome-mime-text-x-java.svg \
+		  gnome-mime-text-x-lyx.svg \
 		  gnome-mime-text-x-makefile.svg \
         gnome-mime-video.svg \
 	$(NULL)
