@@ -1,0 +1,62 @@
+# Turkish translation of gnome-themes-extras
+# This file is distributed under the same license as the gnome-themes-extras package.
+# Copyright (C) 2003 gnome-themes-extras' COPYRIGHT HOLDER
+# Sami Onur Zaim <onurzaim@hotmail.com>, 2003
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-06-15 12:40+0200\n"
+"PO-Revision-Date: 2003-06-18 00:18+0300\n"
+"Last-Translator: Sami Onur Zaim <onurzaim@hotmail.com>\n"
+"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Galaxy/index.theme.in.h:1
+msgid "Galaxy"
+msgstr "Galaksi"
+
+#: Galaxy/index.theme.in.h:2
+msgid "Mandrake Linux theme"
+msgstr "Mandrake Linux teması"
+
+#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "Goril"
+
+#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
+msgid "Vector Theme"
+msgstr "Vector teması"
+
+#: Gorilla/index.theme.in.h:2
+msgid "The vector mono Godess"
+msgstr "Vektör mono Godess"
+
+#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "Lush"
+
+#: Lush/index.theme.in.h:2
+msgid "Lushy SVG icons"
+msgstr "Lushy SVG ikonları"
+
+#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "Nuvola"
+
+#: Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "Mavi Stil Surf'ü"
+
+#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "Wasp"
+
+#: Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "BeOS stili"
+
