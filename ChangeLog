@@ -1,3 +1,10 @@
+2004-02-27  Remi Cohen-Scali  <rcoscali@cvs.gnome.org>
+
+	* configure.in: Added an 's' to GETTEXT_PACKAGE
+	in order to obtain gnome-themes-extras (instead
+	of gnome-themes-extra). 
+	fix Bug# 135563
+
 2004-02-09  Robert Sedak  <robert.sedak@sk.htnet.hr>
 
         * configure.in: Added "hr" (Croatian) to ALL_LINGUAS.
