@@ -1,6 +1,8 @@
 2003-02-05  Jakub Steiner <jimmac@ximian.com>
 
 	* Gorilla/icons/scalable/mimetypes/Makefile.am: stuffit symlink
+	* my-computer.svg: drop the gnome foot, too complex. color,
+     bounding box.
 
 2003-02-03  Jakub Steiner <jimmac@ximian.com>
 
