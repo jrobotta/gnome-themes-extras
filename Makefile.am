@@ -2,3 +2,49 @@ SUBDIRS= Gorilla Nuvola Lush Galaxy BlueSphere po
 EXTRA_DIST = \
 	gnome-themes-extras.spec gnome-themes-extras.spec.in \
 	intltool-extract.in  intltool-merge.in  intltool-update.in
+
+GORILLA_TAR_FILES = \
+	Gorilla/index.theme \
+	Gorilla/gtk/gtkrc \
+	Gorilla/gtk-2.0/gtkrc Gorilla/gtk-2.0/*.svg \
+	Gorilla/icons/index.theme \
+	Gorilla/icons/scalable/apps/*.svg \
+	Gorilla/icons/scalable/devices/*.svg \
+	Gorilla/icons/scalable/emblems/*.svg \
+	Gorilla/icons/scalable/filesystems/*.svg \
+	Gorilla/icons/scalable/mimetypes/*.svg
+
+BLUESPHERE_TAR_FILES = \
+	BlueSphere/gtk-2.0/gtkrc BlueSphere/gtk-2.0/*.png BlueSphere/gtk-2.0/*.svg \
+	BlueSphere/icons/index.theme BlueSphere/icons/scalable/stock/*.svg \
+	BlueSphere/metacity-1/metacity-theme-1.xml BlueSphere/metacity-1/*.png
+	
+GALAXY_TAR_FILES = \
+	Galaxy/index.theme \
+	Galaxy/metacity-1/metacity-theme-1.xml Galaxy/metacity-1/*.png
+
+LUSH_TAR_FILES = \
+	Lush/index.theme \
+	Lush/icons/index.theme \
+	Lush/icons/scalable/devices/*.svg \
+	Lush/icons/scalable/emblems/*.svg \
+	Lush/icons/scalable/filesystems/*.svg \
+	Lush/icons/scalable/mimetypes/*.svg
+
+NUVOLA_TAR_FILES = \
+	Nuvola/index.theme \
+	Nuvola/icons/index.theme \
+	Nuvola/icons/scalable/apps/*.svg \
+	Nuvola/icons/scalable/devices/*.svg \
+	Nuvola/icons/scalable/emblems/*.svg \
+	Nuvola/icons/scalable/filesystems/*.svg \
+	Nuvola/icons/scalable/mimetypes/*.svg
+	
+tarballs: $(GORILLA_TAR_FILES) $(BLUESPHERE_TAR_FILES) $(GALAXY_TAR_FILES) $(LUSH_TAR_FILES) $(NUVOLA_TAR_FILES)
+	mkdir -p tarballs
+	${TAR} czf Gorilla.tar.gz $(GORILLA_TAR_FILES); \
+	${TAR} czf Bluesphere.tar.gz $(BLUESPHERE_TAR_FILES); \
+	${TAR} czf Galaxy.tar.gz $(GALAXY_TAR_FILES); \
+	${TAR} czf Lush.tar.gz $(LUSH_TAR_FILES); \
+	${TAR} czf Nuvola.tar.gz $(NUVOLA_TAR_FILES)
+	mv Gorilla.tar.gz Bluesphere.tar.gz Galaxy.tar.gz Lush.tar.gz Nuvola.tar.gz tarballs

@@ -1,5 +1,10 @@
 2003-04-17  Alex Duggan  <aldug@astrolinux.com>
 
+	* Makefile.am: impliment a 'make tarballs' target which will
+	build tarballs of the themes.
+
+2003-04-17  Alex Duggan  <aldug@astrolinux.com>
+
 	* configure.in:
 	* Galaxy/Makefile.am:
 	move metacity theme from metacity to metacity-1
