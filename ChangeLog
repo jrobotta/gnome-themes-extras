@@ -1,3 +1,7 @@
+2003-07-23 Christian Schaler <Uraeus@gnome.org>
+
+	* Switch mazimize and restore icons in Wasp, they where wrong now
+
 2003-07-18  Christophe Merlet  <redfox@redfoxcenter.org>
 
 	* */*/*/*/Makefile.am: Add DESTDIR variable.
