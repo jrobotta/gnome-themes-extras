@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-themes-extra\n"
+"Project-Id-Version: gnome-themes-extras.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2004-06-09 17:57+0200\n"
-"PO-Revision-Date: 2004-03-06 16:42+0100\n"
+"PO-Revision-Date: 2004-07-01 19:36+0200\n"
 "Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
 "Language-Team: Albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -37,9 +37,8 @@ msgid "Vector Theme"
 msgstr "Temë vektoriale"
 
 #: Gorilla/index.theme.in.h:2
-#, fuzzy
 msgid "The Vector Mono Goddess"
-msgstr "The vector mono Godess"
+msgstr "The Vector Mono Goddess"
 
 #: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
 msgid "Lush"
@@ -64,3 +63,4 @@ msgstr "Grenza"
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "Temë në stil BeOS"
+
