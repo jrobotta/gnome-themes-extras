@@ -1,24 +1,27 @@
 <?xml version="1.0"?>
+
 <metacity_theme>
 <info>
   <name>Amaranth Panther</name>
-  <author>GrandMasta, Doches and Uraeus</author>
+  <author>GrandMasta, Doches, Uraeus and Defendguin</author>
   <copyright> - </copyright>
   <date>July 2003</date>
   <description>Amaranth Panther</description>
 </info>
 
+
 <frame_geometry name="normal" rounded_top_left="true" rounded_bottom_left="false" rounded_top_right="true" rounded_bottom_right="false" title_scale="medium">
+  
   <distance name="left_width" value="3"/>
   <distance name="right_width" value="3"/>
   <distance name="bottom_height" value="1"/>
   <distance name="left_titlebar_edge" value="4"/>
   <distance name="right_titlebar_edge" value="6"/>
-  <distance name="button_width" value="21"/>
-  <distance name="button_height" value="21"/>
+  <distance name="button_width" value="15"/>
+  <distance name="button_height" value="15"/>
   <distance name="title_vertical_pad" value="0"/>
   <border name="title_border" left="0" right="0" top="0" bottom="0"/>
-  <border name="button_border" left="0" right="0" top="0" bottom="0"/>
+  <border name="button_border" left="3" right="3" top="3" bottom="3"/>
 </frame_geometry>
 
 <frame_geometry name="borderless" rounded_top_left="true" rounded_top_right="true" parent="normal">
@@ -27,13 +30,11 @@
   <distance name="bottom_height" value="0"/>
 </frame_geometry>
 
-
-
 <!-- Border and Titlebar -->
 
 <draw_ops name="bg">
   <rectangle color="#ffffff" x="0" y="0" width="width" height="height" filled="false"/>
-<!--  <rectangle color="white" x="0" y="0" width="width - 1" height="height - 2" filled="false"/> -->
+<!--  <rectangle color="white" x="0" y="0" width="width" height="height - 2" filled="false"/> -->
 </draw_ops>
 
 <draw_ops name="title_tile">
@@ -52,7 +53,7 @@
 
   <piece position="title">
     <draw_ops>
-      <title color="#63d663d663d6" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
+      <title color="gtk:fg[INSENSITIVE]" x="1 + (width - title_width) / 2" y="(height - title_height) / 2"/>
     </draw_ops>
   </piece>
 
@@ -68,13 +69,13 @@
 
   <button function="close" state="normal">
     <draw_ops>
-      <image filename="button-inactive.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-restore.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
   <button function="close" state="pressed">
     <draw_ops>
-      <image filename="button-inactive.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-restore.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
@@ -82,39 +83,39 @@
 
   <button function="minimize" state="normal">
     <draw_ops>
-      <image filename="button-inactive.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-restore.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
   <button function="minimize" state="pressed">
     <draw_ops>
-      <image filename="button-inactive.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-restore.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
 
-
   <button function="maximize" state="normal">
     <draw_ops>
-      <image filename="button-inactive.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-restore.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
   <button function="maximize" state="pressed">
     <draw_ops>
-      <image filename="button-inactive.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-restore.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
-  <button function="menu" state="normal">
+ 
+ <button function="menu" state="normal">
     <draw_ops>
-      <image filename="menu-button.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-menu.svg" x="0" y="1 + height/4" width="width" height="height/2"/>
     </draw_ops>
   </button>
 
   <button function="menu" state="pressed">
     <draw_ops>
-      <image filename="menu-button-pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-menu-focus.svg" x="0" y="1+ height/4" width="width" height="height/2"/>
     </draw_ops>
   </button>
 
@@ -136,7 +137,7 @@
 
   <piece position="title">
     <draw_ops>
-      <title color="#000000" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
+      <title color="gtk:fg[SELECTED]" x="1 + (width - title_width) / 2" y="(height - title_height) / 2"/>
     </draw_ops>
   </piece>
 
@@ -148,73 +149,73 @@
 
   <button function="close" state="normal">
     <draw_ops>
-      <image filename="button-close.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-close.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
   <button function="close" state="pressed">
     <draw_ops>
-      <image filename="button-inactive.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-restore.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
   <button function="close" state="prelight">
     <draw_ops>
-      <image filename="button-close-focus.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-close-focus.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
   <button function="minimize" state="normal">
     <draw_ops>
-      <image filename="button-min.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-min.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
   <button function="minimize" state="pressed">
     <draw_ops>
-      <image filename="button-inactive.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-restore.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
 <button function="minimize" state="prelight">
     <draw_ops>
-      <image filename="button-min-focus.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-min-focus.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
   <button function="maximize" state="normal">
     <draw_ops>
-      <image filename="button-max.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-max.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
   <button function="maximize" state="pressed">
     <draw_ops>
-      <image filename="button-inactive.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-restore.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
 <button function="maximize" state="prelight">
     <draw_ops>
-      <image filename="button-max-focus.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-max-focus.svg" x="0" y="0" width="width" height="height"/>
     </draw_ops>
   </button>
 
   <button function="menu" state="normal">
     <draw_ops>
-      <image filename="menu-button.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-menu.svg" x="0" y="1 + height/4" width="width" height="height/2"/>
     </draw_ops>
   </button>
 
   <button function="menu" state="pressed">
     <draw_ops>
-      <image filename="menu-button-pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-menu-focus.svg" x="0" y="1 + height/4" width="width" height="height/2"/>
     </draw_ops>
   </button>
 
 <button function="menu" state="prelight">
     <draw_ops>
-      <image filename="menu-button-pressed.png" x="0" y="0" width="object_width" height="object_height"/>
+      <image filename="wm-menu-focus.svg" x="0" y="1 + height/4" width="width" height="height/2"/>
     </draw_ops>
   </button>
 
@@ -245,29 +246,20 @@
 
 <menu_icon function="maximize" state="normal">
   <draw_ops>
-    <image filename="button-max.png" 
-           x="(width - object_width) / 2"
-           y="(height - object_height) / 2"
-           width="object_width" height="object_height"/>
+    <image filename="wm-max.svg" x="(width - object_width) / 2" y="(height - object_height) / 2" width="width" height="height"/>
   </draw_ops>
 </menu_icon>
 
 
 <menu_icon function="close" state="normal">
   <draw_ops>
-    <image filename="button-close.png" 
-           x="(width - object_width) / 2"
-           y="(height - object_height) / 2"
-           width="object_width" height="object_height"/>
+    <image filename="wm-close.svg" x="(width - object_width) / 2" y="(height - object_height) / 2" width="width" height="height"/>
   </draw_ops>
 </menu_icon>
 
 <menu_icon function="minimize" state="normal">
   <draw_ops>
-    <image filename="button-min.png" 
-           x="(width - object_width) / 2"
-           y="(height - object_height) / 2"
-           width="object_width" height="object_height"/>
+    <image filename="wm-min.svg" x="(width - object_width) / 2" y="(height - object_height) / 2" width="width" height="height"/>
   </draw_ops>
 </menu_icon>
 
