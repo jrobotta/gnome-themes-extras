@@ -27,11 +27,10 @@ install-data-local:
 	cd $(DESTDIR)$(icondir) && \
 	ln -sf evolution-1.4.svg redhat-email.svg && \
 	ln -sf gnome-gimp.svg gnome-palette.svg && \
-	ln -sf mozilla-star.svg web-browser.svg && \
-	ln -sf mozilla-start.svg redhat-web-browser.svg
+	ln -sf mozilla.svg mozilla-star.svg && \
+	ln -sf mozilla.svg redhat-web-browser.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-palette.svg && \
-	rm -rf $(DESTDIR)$(icondir)/web-browser.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-web-browser.svg
