@@ -6,8 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras 0.1\n"
-"POT-Creation-Date: 2003-06-11 22:43+0200\n"
-"PO-Revision-Date: 2003-05-07 18:38+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2003-06-13 13:56+0200\n"
+"PO-Revision-Date: 2003-06-13 14:06+0200\n"
 "Last-Translator: Jordi Mallach <jordi@sindominio.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -43,7 +44,7 @@ msgstr "Lush"
 
 #: Lush/index.theme.in.h:2
 msgid "Lushy SVG icons"
-msgstr ""
+msgstr "Sucoses icones SVG"
 
 #: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
 msgid "Nuvola"
@@ -53,13 +54,12 @@ msgstr "Nuvola"
 msgid "The Blue Style Surf"
 msgstr "El surf d'estil blau"
 
+# De moment no traduiré aquest tema (Wasp vol dir Avispa, aproximadament)
+# pq no sé pq li han ficat aquest nom... quan el veja... jm
 #: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
 msgid "Wasp"
-msgstr ""
+msgstr "Wasp"
 
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
-msgstr ""
-
-#~ msgid "Lushy SVG icons with Mandrake Galaxy"
-#~ msgstr "Sucoses icones SVG amb Mandrake Galaxy"
+msgstr "Tema amb un estil BeOS"
