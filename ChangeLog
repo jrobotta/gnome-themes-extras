@@ -9,6 +9,7 @@
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-text-x-java.svg:
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-vnd.ms-excel.svg:
 	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-x-gnucash.svg:
+	* Gorilla/icons/scalable/mimetypes/gnome-mime-application-vnd.rn-realmedia.svg:
 	* Gorilla/icons/scalable/mimetypes/Makefile.am:
 	  more mimetype porting from older Gorilla
 
