@@ -42,4 +42,4 @@ tarballs: $(GORILLA_TAR_FILES) $(LUSH_TAR_FILES) $(NUVOLA_TAR_FILES)
 	tar czf Gorilla.tar.gz $(GORILLA_TAR_FILES); \
 	tar czf Lush.tar.gz $(LUSH_TAR_FILES); \
 	tar czf Nuvola.tar.gz $(NUVOLA_TAR_FILES)
-	mv Gorilla.tar.gz Galaxy.tar.gz Lush.tar.gz Nuvola.tar.gz tarballs
+	mv Gorilla.tar.gz Lush.tar.gz Nuvola.tar.gz tarballs

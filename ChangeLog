@@ -3,6 +3,7 @@
 	* Update Smooth engine to use latest from smooth CVS
 	* Fix a couple of Nuvola icons
 	* Update Nuvola license to LGPL (thanks David!)
+	* Remove Galaxy and BlueSphere from package
 
 2003-07-23 Christian Schaller <Uraeus@gnome.org>
 
