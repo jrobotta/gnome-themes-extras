@@ -84,6 +84,8 @@ Gorilla/icons/scalable/emblems/Makefile
 Gorilla/icons/scalable/filesystems/Makefile
 Gorilla/icons/scalable/mimetypes/Makefile
 Gorilla/icons/scalable/stock/Makefile
+Gorilla/icons/24x24/Makefile
+Gorilla/icons/24x24/apps/Makefile
 Gorilla/metacity-1/Makefile
 Nuvola/Makefile
 Nuvola/gtk-2.0/Makefile

@@ -1,4 +1,4 @@
-SUBDIRS=scalable
+SUBDIRS=scalable 24x24
 THEME_IN_FILES=index.theme.in
  
 %.theme:   %.theme.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*.po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache

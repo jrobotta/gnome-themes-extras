@@ -5,7 +5,7 @@
 _Name=Gorilla
 _Comment=Vector Theme
 Inherits=gnome
-Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices
+Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices,24x24/apps
 Example=gnome-theme-preview.svg
 
 [scalable/actions]
@@ -47,4 +47,9 @@ MinSize=1
 Size=54
 MaxSize=128
 Context=MimeTypes
+Type=Scalable
+
+[24x24/apps]
+Size=24
+Context=Applications
 Type=Scalable
