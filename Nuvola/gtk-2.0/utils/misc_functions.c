@@ -191,6 +191,7 @@ reverse_engineer_arrow_box (GtkWidget    *widget,
       *width += 2;
       *height += 2;
       *x -= 1;
+      *y -= 1;
   }  
   #endif  
   #if GTK1
@@ -213,13 +214,14 @@ rounded_extension_points(gint x,
                          gint y, 
 			 gint width, 
 			 gint height,
+			 gboolean fill,
 			 GtkPositionType position,
 			 GdkPoint points[8])
 {
   gint x2 = x + width - 1, y2 = y + height - 1;
   switch (position) {
     case GTK_POS_BOTTOM:
-      y2 +=1;
+      if (fill) y2 += 1;
       points[0].x = x2;		points[0].y = y2;
       points[1].x = x2;		points[1].y = y+5;
       points[2].x = x2-2;	points[2].y = y+2;
@@ -231,6 +233,7 @@ rounded_extension_points(gint x,
       break;
 	
     case GTK_POS_TOP:
+      if (fill) y -= 1;
       points[0].x = x;		points[0].y = y;
       points[1].x = x;		points[1].y = y2-5;
       points[2].x = x+2;	points[2].y = y2-2;
@@ -263,6 +266,72 @@ rounded_extension_points(gint x,
       points[7].y = y;		points[7].x = x;
       break;
 
+    default :
+      return FALSE;     
+  }  
+  return TRUE;     
+}
+
+/* This function is based on a portion of Xenophilia's xeno_draw_extension */
+gboolean
+square_extension_points(gint x,
+                         gint y, 
+			 gint width, 
+			 gint height,
+			 gboolean fill,
+			 GtkPositionType position,
+			 GdkPoint points[8])
+{
+  gint x2 = x + width - 1, y2 = y + height - 1;
+
+  gint c1=0, c2=1;
+  switch (position) {
+    case GTK_POS_BOTTOM:
+      if (fill) y2 += 1;
+      points[0].x = x2;		points[0].y = y2;
+      points[1].x = x2;		points[1].y = y+c2;
+      points[2].x = x2-c1;	points[2].y = y+c1;
+      points[3].x = x2-c2;	points[3].y = y;
+      points[4].x = x+c2;	points[4].y = y;
+      points[5].x = x+c1;	points[5].y = y+c1;
+      points[6].x = x;		points[6].y = y+c2;
+      points[7].x = x;		points[7].y = y2;
+      break;
+	
+    case GTK_POS_TOP:
+      if (fill) y -= 1;
+      points[0].x = x;		points[0].y = y;
+      points[1].x = x;		points[1].y = y2-c2;
+      points[2].x = x+c1;	points[2].y = y2-c1;
+      points[3].x = x+c2;	points[3].y = y2;
+      points[4].x = x2-c2;	points[4].y = y2;
+      points[5].x = x2-c1;	points[5].y = y2-c1;
+      points[6].x = x2;		points[6].y = y2-c2;
+      points[7].x = x2;		points[7].y = y;
+      break;
+    
+    case GTK_POS_RIGHT:
+      points[0].y = y;		points[0].x = x2;
+      points[1].y = y;		points[1].x = x+c2;
+      points[2].y = y+c1;	points[2].x = x+c1;
+      points[3].y = y+c2;	points[3].x = x;
+      points[4].y = y2-c2;	points[4].x = x;
+      points[5].y = y2-c1;	points[5].x = x+c1;
+      points[6].y = y2;		points[6].x = x+c2;
+      points[7].y = y2;		points[7].x = x2;
+      break;
+			
+    case GTK_POS_LEFT:
+      points[0].y = y2;		points[0].x = x;
+      points[1].y = y2;		points[1].x = x2-c2;
+      points[2].y = y2-c1;	points[2].x = x2-c1;
+      points[3].y = y2-c2;	points[3].x = x2;
+      points[4].y = y+c2;	points[4].x = x2;
+      points[5].y = y+c1;	points[5].x = x2-c1;
+      points[6].y = y;		points[6].x = x2-c2;
+      points[7].y = y;		points[7].x = x;
+      break;
+         
     default :
       return FALSE;     
   }  

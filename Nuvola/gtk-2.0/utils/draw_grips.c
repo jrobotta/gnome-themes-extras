@@ -19,31 +19,31 @@ do_draw_lines(GdkWindow * window,
 
 
 	if (area) {
-		gdk_gc_set_clip_rectangle (light, area);
-		gdk_gc_set_clip_rectangle (dark, area);
-		gdk_gc_set_clip_rectangle (mid, area);
+	    if (light) gdk_gc_set_clip_rectangle (light, area);
+            if (dark) gdk_gc_set_clip_rectangle (dark, area);
+	    if (mid) gdk_gc_set_clip_rectangle (mid, area);
 	}
 	
 	if (orientation == GTK_ORIENTATION_HORIZONTAL) {
 		for (i = y + ((height % 3) & 0x01); i < y + height; i += 3) {
-			gdk_draw_line  (window, light,	x,			i,		x+width-2,	i  );
-			gdk_draw_line  (window, dark,	x+1, 		i+1,	x+width-1,	i+1);
-			gdk_draw_point (window, mid,		x,			i+1);
-			gdk_draw_point (window, mid,		x+width-1,	i);
+			if (light) gdk_draw_line  (window, light,	x,			i,		x+width-2,	i  );
+			if (dark) gdk_draw_line  (window, dark,	x+1, 		i+1,	x+width-1,	i+1);
+			if (mid) gdk_draw_point (window, mid,		x,			i+1);
+			if (mid) gdk_draw_point (window, mid,		x+width-1,	i);
 		}
 	} else {
 		for (i = x + ((width % 3) & 0x01); i < x + width; i += 3) {
-			gdk_draw_line  (window, light,	i,		y,   	i,   y+height-2);
-			gdk_draw_line  (window, dark,	i+1,	y+1, 	i+1, y+height-1);
-			gdk_draw_point (window, mid,		i+1,	y);
-			gdk_draw_point (window, mid,		i,		y+height-1);
+			if (light) gdk_draw_line  (window, light,	i,		y,   	i,   y+height-2);
+			if (dark) gdk_draw_line  (window, dark,	i+1,	y+1, 	i+1, y+height-1);
+			if (mid) gdk_draw_point (window, mid,		i+1,	y);
+			if (mid) gdk_draw_point (window, mid,		i,		y+height-1);
 		}
 	}
 	
 	if (area) {
-		gdk_gc_set_clip_rectangle (mid, NULL);
-		gdk_gc_set_clip_rectangle (dark, NULL);
-		gdk_gc_set_clip_rectangle (light, NULL);
+		if (mid) gdk_gc_set_clip_rectangle (mid, NULL);
+		if (dark) gdk_gc_set_clip_rectangle (dark, NULL);
+		if (light) gdk_gc_set_clip_rectangle (light, NULL);
 	}
 }
 
@@ -76,8 +76,8 @@ do_draw_fixed_midlines(GdkWindow * window,
 
   if (invert) {light=dark_gc;dark=light_gc;}
   
-  gdk_gc_set_clip_rectangle (light, area);
-  gdk_gc_set_clip_rectangle (dark, area);
+  if (light) gdk_gc_set_clip_rectangle (light, area);
+  if (dark) gdk_gc_set_clip_rectangle (dark, area);
   
 
   for (i = 0, offset = delta; (i < count); offset += (spacing + 2), i++)
@@ -85,25 +85,25 @@ do_draw_fixed_midlines(GdkWindow * window,
      gint xthick = thick, ythick = thick;
      if ((((bar) && (!diagonal)) && (orientation != GTK_ORIENTATION_HORIZONTAL)) || (orientation == GTK_ORIENTATION_HORIZONTAL)) {
        if  (!diagonal) xthick = 0;
-       gdk_draw_line (window, dark, 
+       if (dark) gdk_draw_line (window, dark, 
           offset + xthick, centery - ythick, 
 	  offset - xthick, centery + ythick);
-       gdk_draw_line (window, light, 
+       if (light) gdk_draw_line (window, light, 
           offset + xthick + 1, centery - ythick, 
 	  offset - xthick + 1, centery + ythick);
      } else {
        if  (!diagonal) ythick = 0;
-       gdk_draw_line (window, dark, 
+       if (dark) gdk_draw_line (window, dark, 
           centerx - xthick, offset + ythick, 
 	  centerx + xthick, offset - ythick);
-       gdk_draw_line (window, light, 
+       if (light) gdk_draw_line (window, light, 
           centerx - xthick, offset + ythick + 1, 
 	  centerx + xthick, offset - ythick + 1);
      }
   }
   
-  gdk_gc_set_clip_rectangle (light, NULL);
-  gdk_gc_set_clip_rectangle (dark, NULL);
+  if (light) gdk_gc_set_clip_rectangle (light, NULL);
+  if (dark) gdk_gc_set_clip_rectangle (dark, NULL);
 }
 
 /* This function is taken for the most part from CleanIce */
@@ -129,9 +129,9 @@ do_draw_fixed_dots(GdkWindow * window,
   gint delta=(orientation==GTK_ORIENTATION_HORIZONTAL?centerx:centery) - delta_offset;
   
    if (area) {
-     gdk_gc_set_clip_rectangle (dark_gc, area);
-     gdk_gc_set_clip_rectangle (light_gc, area);
-     gdk_gc_set_clip_rectangle (mid_gc, area);
+     if (dark_gc) gdk_gc_set_clip_rectangle (dark_gc, area);
+     if (light_gc) gdk_gc_set_clip_rectangle (light_gc, area);
+     if (mid_gc) gdk_gc_set_clip_rectangle (mid_gc, area);
    }
 
   for (i=0; i < count*(spacing + size); i += (spacing + size))
@@ -147,34 +147,34 @@ do_draw_fixed_dots(GdkWindow * window,
     }
 
     if (small) {
-      gdk_draw_point(window, light_gc, dot_x, dot_y);
-      gdk_draw_point(window, dark_gc, dot_x+1, dot_y+1);
+      if (light_gc) gdk_draw_point(window, light_gc, dot_x, dot_y);
+      if (dark_gc) gdk_draw_point(window, dark_gc, dot_x+1, dot_y+1);
 
-      gdk_draw_point(window, mid_gc, dot_x+1, dot_y);
-      gdk_draw_point(window, mid_gc, dot_x, dot_y+1);
+      if (mid_gc) gdk_draw_point(window, mid_gc, dot_x+1, dot_y);
+      if (mid_gc) gdk_draw_point(window, mid_gc, dot_x, dot_y+1);
     } else {
       GdkPoint points[3];
       points[0].x = dot_x-1; points[0].y = dot_y;
       points[1].x = dot_x-1; points[1].y = dot_y-1;
       points[2].x = dot_x;   points[2].y = dot_y-1;
 
-      gdk_draw_points(window, light_gc, points, 3);
+      if (light_gc) gdk_draw_points(window, light_gc, points, 3);
 
       points[0].x = dot_x+1; points[0].y = dot_y;
       points[1].x = dot_x+1; points[1].y = dot_y+1;
       points[2].x = dot_x;   points[2].y = dot_y+1;
 
-      gdk_draw_points(window, dark_gc, points, 3);
+      if (dark_gc) gdk_draw_points(window, dark_gc, points, 3);
 
-      gdk_draw_point(window, mid_gc, dot_x+1, dot_y-1);
-      gdk_draw_point(window, mid_gc, dot_x-1, dot_y+1);
+      if (mid_gc) gdk_draw_point(window, mid_gc, dot_x+1, dot_y-1);
+      if (mid_gc) gdk_draw_point(window, mid_gc, dot_x-1, dot_y+1);
     }   
   }
   
    if (area) {
-     gdk_gc_set_clip_rectangle (mid_gc, NULL);
-     gdk_gc_set_clip_rectangle (light_gc, NULL);
-     gdk_gc_set_clip_rectangle (dark_gc, NULL);
+     if (mid_gc) gdk_gc_set_clip_rectangle (mid_gc, NULL);
+     if (light_gc) gdk_gc_set_clip_rectangle (light_gc, NULL);
+     if (dark_gc) gdk_gc_set_clip_rectangle (dark_gc, NULL);
    }
 }
 
@@ -195,9 +195,9 @@ do_draw_buds(GdkWindow * window,
    gint	x2, y2;
    
    if (area) {
-     gdk_gc_set_clip_rectangle (dark_gc, area);
-     gdk_gc_set_clip_rectangle (light_gc, area);
-     gdk_gc_set_clip_rectangle (mid_gc, area);
+     if (dark_gc) gdk_gc_set_clip_rectangle (dark_gc, area);
+     if (light_gc) gdk_gc_set_clip_rectangle (light_gc, area);
+     if (mid_gc) gdk_gc_set_clip_rectangle (mid_gc, area);
    }
        
    if (orientation == GTK_ORIENTATION_VERTICAL && ns) {
@@ -206,18 +206,18 @@ do_draw_buds(GdkWindow * window,
      /* netscape - style */
      for (y2 = y+1; y2 < y+height-1; y2 += 3) {
        for (x2 = x; x2 < x+width-1; x2 += 6) {
-         gdk_draw_point (window, light_gc,x2,y2);
-         gdk_draw_point (window, dark_gc,x2 + 1, y2 + 1);
-         gdk_draw_point (window, mid_gc,x2 + 1,y2);
-         gdk_draw_point (window, mid_gc,x2,y2 + 1);
+         if (light_gc) gdk_draw_point (window, light_gc,x2,y2);
+         if (dark_gc) gdk_draw_point (window, dark_gc,x2 + 1, y2 + 1);
+         if (mid_gc) gdk_draw_point (window, mid_gc,x2 + 1,y2);
+         if (mid_gc) gdk_draw_point (window, mid_gc,x2,y2 + 1);
        }
      }
      for (y2 = y; y2 < y+height-1; y2 += 3) {
        for (x2 = x+3; x2 < x+width-1; x2 += 6) {
-         gdk_draw_point (window, light_gc, x2,y2);
-         gdk_draw_point (window, dark_gc, x2 + 1, y2 + 1);
-         gdk_draw_point (window, mid_gc,x2 + 1,y2);
-         gdk_draw_point (window, mid_gc,x2,y2 + 1);
+         if (light_gc) gdk_draw_point (window, light_gc, x2,y2);
+         if (dark_gc) gdk_draw_point (window, dark_gc, x2 + 1, y2 + 1);
+         if (mid_gc) gdk_draw_point (window, mid_gc,x2 + 1,y2);
+         if (mid_gc) gdk_draw_point (window, mid_gc,x2,y2 + 1);
        }
      }
    } else {
@@ -227,18 +227,18 @@ do_draw_buds(GdkWindow * window,
       
      for (y2 = y; y2 < y+height-1; y2 += 3) {
        for (x2 = x; x2 < x+width-1; x2 += 3) {
-         gdk_draw_point (window, light_gc,x2,y2);
-         gdk_draw_point (window, mid_gc,x2+1,y2);
-         gdk_draw_point (window, mid_gc,x2,y2+1);
-         gdk_draw_point (window, dark_gc,x2+1,y2+1);
+         if (light_gc) gdk_draw_point (window, light_gc,x2,y2);
+         if (mid_gc) gdk_draw_point (window, mid_gc,x2+1,y2);
+         if (mid_gc) gdk_draw_point (window, mid_gc,x2,y2+1);
+         if (dark_gc) gdk_draw_point (window, dark_gc,x2+1,y2+1);
        }
      }
    }
        
    if (area) {
-     gdk_gc_set_clip_rectangle (mid_gc, NULL);
-     gdk_gc_set_clip_rectangle (light_gc, NULL);
-     gdk_gc_set_clip_rectangle (dark_gc, NULL);
+     if (mid_gc) gdk_gc_set_clip_rectangle (mid_gc, NULL);
+     if (light_gc) gdk_gc_set_clip_rectangle (light_gc, NULL);
+     if (dark_gc) gdk_gc_set_clip_rectangle (dark_gc, NULL);
    }
 }
 

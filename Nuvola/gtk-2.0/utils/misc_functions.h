@@ -31,7 +31,7 @@
 #define gdk_pixmap_unref(pixmap) (g_object_unref(pixmap))
 #define gdk_pixbuf_ref(pixbuf) (g_object_ref(pixbuf))
 #define gdk_pixmap_ref(pixmap) (g_object_ref(pixmap))
-#define gdk_gc_destroy(gc) (g_object_ref(gc))
+#define gdk_gc_destroy(gc) (g_object_unref(gc))
 
 typedef const gchar		detail_char;
 
@@ -111,9 +111,18 @@ rounded_extension_points(gint x,
                          gint y, 
 			 gint width, 
 			 gint height,
+			 gboolean fill,
 			 GtkPositionType position,
 			 GdkPoint points[8]);
 
+gboolean
+square_extension_points(gint x,
+                         gint y, 
+			 gint width, 
+			 gint height,
+			 gboolean fill,
+			 GtkPositionType position,
+			 GdkPoint points[8]);
 
 void
 rounded_box_points(gint x,
