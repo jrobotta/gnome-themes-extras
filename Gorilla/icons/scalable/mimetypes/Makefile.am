@@ -39,7 +39,10 @@ icon_DATA = \
         gnome-mime-text-x-java.svg \
 		  gnome-mime-text-x-lyx.svg \
 		  gnome-mime-text-x-makefile.svg \
+		  gnome-mime-text-x-patch.svg \
+		  gnome-mime-text-x-readme.svg \
 		  gnome-mime-text-x-sh.svg \
+		  gnome-mime-text-x-sql.svg \
 		  gnome-mime-text-x-troff-man.svg \
         gnome-mime-video.svg \
 	$(NULL)
