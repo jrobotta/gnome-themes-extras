@@ -26,11 +26,11 @@ style "icon-style"
 #  stock["gtk-clear"] =	       {{ "editdelete-2.1.svg" }}
 #  stock["gtk-close"] =	       {{ "kill.svg" }}
 #  stock["gtk-convert"] =       {{ "stock_convert.svg" }}
-#   stock["gtk-copy"] =	       {{ "editcopy.svg" }}
-#   stock["gtk-cut"] =	       {{ "editdelete.svg" }}
+   stock["gtk-copy"] =	       {{ "stock_copy.svg" }}
+   stock["gtk-cut"] =	       {{ "stock_cut.svg" }}
 #   stock["gtk-delete"] =	       {{ "editdelete.svg" }}
 #  stock["gtk-execute"] =       {{ "exec-small.svg" }}
-#   stock["gtk-find"] =	       {{ "find.svg" }}
+   stock["gtk-find"] =	       {{ "stock_search.svg" }}
 #   stock["gtk-find-and-replace"] = {{ "findreplace.svg" }}
    stock["gtk-floppy"] =		{{ "stock_floppy.svg" }}
    stock["gtk-go-back"] =	{{ "stock_go-back.svg" }}
@@ -52,7 +52,7 @@ style "icon-style"
 #  stock["gtk-no"] =		{{ "stock_no.svg" }} 
 #  stock["gtk-ok"] =		{{ "button_ok.svg" }}
    stock["gtk-open"] =		{{ "stock_open.svg" }} 
-#  stock["gtk-paste"] =		{{ "editpaste.svg" }}
+   stock["gtk-paste"] =		{{ "stock_paste.svg" }}
    stock["gtk-print"] =		{{ "stock_print.svg" }}
    stock["gtk-print-preview"] =	{{ "stock_print-preview.svg" }}
    stock["gtk-preferences"] =	{{ "stock_preferences.svg" }}
