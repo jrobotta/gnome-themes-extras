@@ -89,9 +89,6 @@ Lush/icons/scalable/emblems/Makefile
 Lush/icons/scalable/filesystems/Makefile
 Lush/icons/scalable/mimetypes/Makefile
 Lush/icons/scalable/stock/Makefile
-Galaxy/Makefile
-Galaxy/gtk-2.0/Makefile
-Galaxy/metacity-1/Makefile
 BlueSphere/Makefile
 BlueSphere/gtk-2.0/Makefile
 BlueSphere/gtk-2.0/iconrc

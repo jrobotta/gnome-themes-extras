@@ -4,7 +4,7 @@
 	* Ugly kludge fix to Wasp wm theme
 	* Re-instate the symlinks for Gorilla
 	* Fix so Nuvola gnome-logo pops up in menu
-	* Fix Lush applications icon no show bug 
+	* Removed Galaxy from build, nothing uses it anymore
 
 2003-06-10  Christian Schaller <Uraeus@gnome.org>
 
