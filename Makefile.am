@@ -7,13 +7,15 @@ EXTRA_DIST = \
 GORILLA_TAR_FILES = \
 	Gorilla/index.theme \
 	Gorilla/gtk/gtkrc \
-	Gorilla/gtk-2.0/gtkrc Gorilla/gtk-2.0/*.svg \
+	Gorilla/gtk-2.0/gtkrc \
 	Gorilla/icons/index.theme \
+	Gorilla/metacity-1/metacity-theme-1.xml Gorilla/metacity-1/*.svg \
 	Gorilla/icons/scalable/apps/*.svg \
 	Gorilla/icons/scalable/devices/*.svg \
 	Gorilla/icons/scalable/emblems/*.svg \
 	Gorilla/icons/scalable/filesystems/*.svg \
-	Gorilla/icons/scalable/mimetypes/*.svg
+	Gorilla/icons/scalable/mimetypes/*.svg \
+	Gorilla/icons/scalable/stock/*.svg
 
 BLUESPHERE_TAR_FILES = \
 	BlueSphere/gtk-2.0/gtkrc BlueSphere/gtk-2.0/*.png BlueSphere/gtk-2.0/*.svg \
