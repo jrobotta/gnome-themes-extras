@@ -1,3 +1,10 @@
+2004-05-03 Christian Schaller <Uraeus@gnome.org>
+
+	* Tons of bugfixes from Josselin Mouette <joss@debian.org>
+	* Firefox icon from Tobias Jakobs
+	* Suse symlinks from James Ogley
+	* Disable translations, they currently break the build
+
 2004-04-19 Christian Schaller <Uraeus@gnome.org>
 	
 	* Released 0.7

@@ -39,7 +39,7 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_libdir}/gtk-2.0/@GTK_BINARY_VERSION@/engines/*.so*
 %{_datadir}/icons/*
 %{_datadir}/themes/*
-%{_datadir}/locale/*
+# %{_datadir}/locale/*
 %doc AUTHORS MAINTAINERS ChangeLog COPYING README license_dsg license_lgpl license_gpl TODO
 
 %changelog

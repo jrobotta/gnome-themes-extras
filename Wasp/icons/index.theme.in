@@ -5,6 +5,7 @@
 [Icon Theme]
 _Name=Wasp
 _Comment=Vector Theme
+Inherits=gnome
 Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices
 Example=gnome-theme-preview.svg
 

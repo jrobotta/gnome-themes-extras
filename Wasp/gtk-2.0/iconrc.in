@@ -132,7 +132,7 @@ style "icon-style"
 	# stock ["gaim-dialog-info"] =	{{"gaim-dialog-info"}}
 	stock ["gaim-icon-away"] =	{{"gaim_offline.svg"}}
 	stock ["gaim-icon-online"] =	{{"gaim_online.svg"}}
-	stock ["gaim-info"]	=	{{"gaim-dialog-info"}}
+	stock ["gaim-info"]	=	{{"gaim_info.svg"}}
 	
 	     #stock ["volume-mute"] =      	{{"volume-mute.svg"}}
         #stock ["volume-zero"] =      	{{"volume-zero.svg"}}

@@ -39,6 +39,7 @@ icon_DATA = \
 	stock-media-rewind.svg \
 	stock-media-stop.svg \
 	stock-media-pause.svg \
+	stock_ok.svg \
 	stock_quit.svg \
 	stock_redo.svg \
 	stock_reload.svg \

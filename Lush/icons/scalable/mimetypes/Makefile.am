@@ -56,7 +56,7 @@ install-data-local:
 	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-linux-psf.svg &&\
 	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-bdf.svg && \
 	ln -sf gnome-mime-application-x-font.svg gnome-mime-application-x-font-afm.svg && \
-	ln -sf gnome-mime-audio.svg gnome-mime-application-x-ogg.svg && \
+	ln -sf gnome-mime-audio.svg gnome-mime-application-ogg.svg && \
 	ln -sf gnome-mime-text-html.svg gnome-mime-application-x-php.svg 
 
 uninstall-local:
@@ -66,5 +66,5 @@ uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-linux-psf.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-bdf.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-font-afm.svg && \
-	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-ogg.svg && \
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-ogg.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-php.svg

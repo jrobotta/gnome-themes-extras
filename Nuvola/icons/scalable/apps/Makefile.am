@@ -5,6 +5,7 @@ icon_DATA = \
 	accessories.svg \
 	camera.svg \
 	evolution-1.4.svg \
+	firefox.svg \
 	gedit.svg \
 	gnome-applications.svg \
 	gnome-ccdesktop.svg \
@@ -56,12 +57,17 @@ install-data-local:
 	cd $(DESTDIR)$(icondir) && \
 	ln -sf evolution-1.4.svg redhat-email.svg && \
 	ln -sf gnome-gimp.svg gnome-palette.svg && \
+	ln -sf gnome-gimp.svg wilber-icon.svg && \
 	ln -sf mozilla.svg mozilla-star.svg && \
+	ln -sf mozilla.svg mozilla-orig.svg && \
 	ln -sf mozilla.svg redhat-web-browser.svg && \
+	ln -sf mozilla-mail-icon.svg mozilla--mail.svg && \
+	ln -sf mozilla-compose-icon.svg mozilla-composer.svg && \
 	ln -sf gnome-applications.svg redhat-office.svg && \
 	ln -sf accessories.svg redhat-accessories.svg && \
 	ln -sf my-computer.svg redhat-home.svg && \
 	ln -sf gedit.svg gedit-icon.svg && \
+	ln -sf gnome-envelope.svg thunderbird.svg && \
 	ln -sf gnome-joystick.svg redhat-games.svg && \
 	ln -sf gnome-graphics.svg redhat-graphics.svg && \
 	ln -sf gnome-globe.svg web-browser.svg && \
@@ -80,7 +86,12 @@ install-data-local:
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-palette.svg && \
+	rm -rf $(DESTDIR)$(icondir)/wilber-icon.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-*.svg && \
+	rm -rf $(DESTDIR)$(icondir)/mozilla-orig.svg && \
+	rm -rf $(DESTDIR)$(icondir)/mozilla-mail.svg && \
+	rm -rf $(DESTDIR)$(icondir)/mozilla-composer.svg && \
+	rm -rf $(DESTDIR)$(icondir)/thunderbird.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-main-menu.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-mouse.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-audio.svg && \

@@ -20,7 +20,7 @@ style "icon-style"
    stock["gtk-add"] =	       {{ "bookmark_add.svg" }}
 #  stock["gtk-apply"] =	       {{ "stock_apply.svg" }}
 #  stock["gtk-bold"] =	       {{ "text_bold.svg" }} 
-   stock["gtk-cancel"] =	       {{ "stock_stock.svg" }}
+   stock["gtk-cancel"] =	       {{ "stock_stop.svg" }}
    stock["gtk-cdrom"] =	       {{ "stock_cdrom.svg" }}
 #  stock["gtk-clear"] =	       {{ "editdelete-2.1.svg" }}
 #  stock["gtk-close"] =	       {{ "kill.svg" }}

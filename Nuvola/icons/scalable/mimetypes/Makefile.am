@@ -68,8 +68,8 @@ install-data-local:
 	cd $(DESTDIR)$(icondir) && \
 	ln -sf gnome-compressed.svg gnome-mime-application-x-stuffit.svg && \
 	ln -sf gnome-mime-application-vnd.ms-excel.svg gnome-mime-application-x-gnumeric.svg && \
-	ln -sf gnome-mime-audio.svg gnome-mime-application-x-ogg.svg
+	ln -sf gnome-mime-audio.svg gnome-mime-application-ogg.svg
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-stuffit.svg
 	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-gnumeric.svg
-	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-x-ogg.svg
+	rm -rf $(DESTDIR)$(icondir)/gnome-mime-application-ogg.svg

@@ -35,7 +35,7 @@ icon_DATA = \
 	gnome-media-player.svg \
 	gnome-mixer.svg \
 	gnome-multimedia.svg \
-	gnome-pdf.svg
+	gnome-pdf.svg \
 	gnome-settings.svg \
 	gnome-terminal.svg \
 	gnumeric.svg \
@@ -67,6 +67,7 @@ install-data-local:
 	ln -sf icon-system-tools.svg redhat-system_tools.svg && \
 	ln -sf advanced-directory.svg redhat-system_settings.svg && \
 	ln -sf downloadmanager.svg up2date.svg && \
+	ln -sf email.svg thunderbird.svg && \
 	ln -sf gnome-settings.svg redhat-preferences.svg && \
 	ln -sf gnome-envelope.svg evolution-1.4.svg && \
 	ln -sf gnome-home.svg redhat-home.svg && \
@@ -75,9 +76,12 @@ install-data-local:
 	ln -sf gedit.svg gedit-icon.svg && \
 	ln -sf gimp.svg gnome-palette.svg && \
 	ln -sf gimp.svg gnome-gimp.svg && \
+	ln -sf gimp.svg wilber-icon.svg && \
 	ln -sf mouse-capplet.svg gnome-mouse.svg && \
 	ln -sf mozilla-icon.svg redhat-web-browser.svg && \
 	ln -sf mozilla-icon.svg mozilla-star.svg && \
+	ln -sf mozilla-icon.svg mozilla.svg && \
+	ln -sf mozilla-icon.svg mozilla-orig.svg && \
 	ln -sf gnome-applications.svg redhat-office.svg && \
 	ln -sf gnome-cdplayer.svg gnome-cdplayer-icon.svg && \
 	ln -sf gnome-devel.svg redhat-programming.svg && \
@@ -95,19 +99,23 @@ install-data-local:
 	ln -sf gnome-logo.svg gnome-main-menu.svg && \
 	ln -sf gnome-multimedia.svg redhat-sound_video.svg && \
 	ln -sf sound-juicer.svg gripicon.svg && \
-	ln -sf gpdf.svg xpdf.svg
+	ln -sf gnome-pdf.svg xpdf.svg
 
 uninstall-local:
 	rm -rf $(DESTDIR)$(icondir)/system-tools-32.svg && \
 	rm -rf $(DESTDIR)$(icondir)/evolution-1.4.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-gaim.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-gimp.svg && \
+	rm -rf $(DESTDIR)$(icondir)/wilber-icon.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-palette.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gedit-icon.svg && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-cdplayer-icon.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-web-browser.svg && \
 	rm -rf $(DESTDIR)$(icondir)/web-browser.svg && \
 	rm -rf $(DESTDIR)$(icondir)/mozilla-star.svg && \
+	rm -rf $(DESTDIR)$(icondir)/mozilla.svg && \
+	rm -rf $(DESTDIR)$(icondir)/mozilla-orig.svg && \
+	rm -rf $(DESTDIR)$(icondir)/thunderbird.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-config-xfree86.svg  && \
 	rm -rf $(DESTDIR)$(icondir)/gnome-starthere.svg && \
 	rm -rf $(DESTDIR)$(icondir)/redhat-email.svg && \
