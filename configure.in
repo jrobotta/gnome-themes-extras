@@ -56,6 +56,7 @@ gnome-themes-extras.spec
 Gorilla/Makefile
 Gorilla/gtk/Makefile
 Gorilla/gtk-2.0/Makefile
+Gorilla/gtk-2.0/iconrc
 Gorilla/icons/Makefile
 Gorilla/icons/scalable/Makefile
 Gorilla/icons/scalable/apps/Makefile
@@ -63,6 +64,7 @@ Gorilla/icons/scalable/devices/Makefile
 Gorilla/icons/scalable/emblems/Makefile
 Gorilla/icons/scalable/filesystems/Makefile
 Gorilla/icons/scalable/mimetypes/Makefile
+Gorilla/icons/scalable/stock/Makefile
 Gorilla/metacity-1/Makefile
 Nuvola/Makefile
 Nuvola/gtk-2.0/Makefile

@@ -1,5 +1,10 @@
 2003-06-08  Jakub Steiner <jimmac@ximian.com>
 
+	* Gorilla/gtk-2.0/*.svg:
+	* Gorilla/icons/stock/*.svg: move to the icon theme
+
+2003-06-08  Jakub Steiner <jimmac@ximian.com>
+
 	* Gorilla/metacity-1/Makefile.am:
 	* Gorilla/Makefile.am:
 	* configure.in: automagick for metacity theme
