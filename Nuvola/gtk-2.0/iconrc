@@ -18,7 +18,7 @@ style "icon-style"
 #  stock["gtk-dialog-warning"] =  {{ "stock_dialog_warning.svg" }}
    stock["gtk-dnd"] = {{ "filenew.svg" }} 
 #  stock["gtk-dnd-multiple"] = {{ "queue-b.svg" }} 
-#  stock["gtk-add"] =	       {{ "edit_add.svg" }}
+   stock["gtk-add"] =	       {{ "bookmark_add.svg" }}
 #  stock["gtk-apply"] =	       {{ "stock_apply.svg" }}
 #  stock["gtk-bold"] =	       {{ "text_bold.svg" }} 
 #  stock["gtk-cancel"] =	       {{ "button_cancel.svg" }}
@@ -32,7 +32,7 @@ style "icon-style"
 #  stock["gtk-execute"] =       {{ "exec-small.svg" }}
 #  stock["gtk-find"] =	       {{ "find.svg" }}
 #  stock["gtk-find-and-replace"] = {{ "stock_find-and-replace.svg" }}
-   stock["gtk-floppy"] =		{{ "filesave.svg" }}
+  stock["gtk-floppy"] =		{{ "filesave.svg" }}
   stock["gtk-go-back"] =	{{ "back.svg" }}
   stock["gtk-go-down"] =	{{ "down.svg" }}
   stock["gtk-go-forward"] =	{{ "forward.svg" }}
@@ -62,7 +62,7 @@ style "icon-style"
 #  stock["gtk-refresh"] =	{{ "reload-2.0.svg" }}
 #  stock["gtk-remove"] =		{{ "viewmag-_2.svg" }}
 #  stock["gtk-revert-to-saved"] ={{ "revert-small.svg" }}
-#  stock["gtk-save"] =		{{ "filesave-small.svg" }}
+   stock["gtk-save"] =		{{ "filesave.svg" }}
 #  stock["gtk-save-as"] =	{{ "filesaveas.svg" }}
 #  stock["gtk-select-color"] =	{{ "stock_select-color.svg" }}
 #  stock["gtk-select-font"] =	{{ "stock_select-font.svg" }}
