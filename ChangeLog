@@ -1,3 +1,11 @@
+2003-05-07  Christian Neumair  <chris@gnome-de.org>
+
+	* Nuvola/metacity-1/.cvsignore: Added.
+	* Galaxy/index.theme.in: Marked Name and Comment fields
+	for translation.
+	* Galaxy/index.theme: Removed.
+	* configure.in: Added "de" to ALL_LINGUAS.
+
 2003-05-07  Christian Rose  <menthos@menthos.com>
 
 	* configure.in: Added "sv" to ALL_LINGUAS.

@@ -1,0 +1,53 @@
+# German gnome-themes-extra translation.
+# Copyright (C) 2002-2003 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-themes-extra
+# package.
+# Christian Neumair <chris@gnome-de.org>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extra 0.6\n"
+"POT-Creation-Date: 2003-05-07 15:11+0200\n"
+"PO-Revision-Date: 2003-04-16 01:42+0200\n"
+"Last-Translator: Christian Neumair <chris@gnome-de.org>\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: Galaxy/index.theme.in.h:1
+msgid "Galaxy"
+msgstr "Galaxy"
+
+#: Galaxy/index.theme.in.h:2
+msgid "Mandrake Linux theme"
+msgstr "Mandrakes Linux-Thema"
+
+#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "Gorilla"
+
+#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
+#: Nuvola/icons/index.theme.in.h:2
+msgid "Vector Theme"
+msgstr "Vektorthema"
+
+#: Gorilla/index.theme.in.h:2
+msgid "The vector mono Godess"
+msgstr "Die einzig wahre Vektor-Gottheit"
+
+#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "Satt"
+
+#: Lush/index.theme.in.h:2
+msgid "Lushy SVG icons with Mandrake Galaxy"
+msgstr "Satte SVG-Symbole und Mandrakes Galaxy-Thema"
+
+#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "Nuvola"
+
+#: Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "Blau wie die Brandung"
