@@ -1,0 +1,66 @@
+# translation of gnome-themes-extras.HEAD.po to Galego
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Ignacio Casal Quinteiro <nacho.resa@gmail.com>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-06-10 16:49+0200\n"
+"PO-Revision-Date: 2005-06-10 16:47+0200\n"
+"Last-Translator: Ignacio Casal Quinteiro <nacho.resa@gmail.com>\n"
+"Language-Team: Galego\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: ../Amaranth/icons/index.theme.in.h:1 ../Amaranth/index.theme.in.h:1
+msgid "Amaranth"
+msgstr "Amaranto"
+
+#: ../Amaranth/icons/index.theme.in.h:2
+msgid "Silver Vector Theme"
+msgstr "Tema vectorial prateado"
+
+#: ../Amaranth/index.theme.in.h:2
+msgid "Sterling Silver"
+msgstr "Prata de ley"
+
+#: ../Gorilla/icons/index.theme.in.h:1 ../Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "Gorila"
+
+#: ../Gorilla/icons/index.theme.in.h:2 ../Lush/icons/index.theme.in.h:2
+#: ../Nuvola/icons/index.theme.in.h:2 ../Wasp/icons/index.theme.in.h:1
+msgid "Vector Theme"
+msgstr "Tema vectorial"
+
+#: ../Gorilla/index.theme.in.h:2
+msgid "The Vector Mono Goddess"
+msgstr "A diosa mono vectorial"
+
+#: ../Lush/icons/index.theme.in.h:1 ../Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "Lozano"
+
+#: ../Lush/index.theme.in.h:2
+msgid "Mild green theme"
+msgstr "Tema verde suave"
+
+#: ../Nuvola/icons/index.theme.in.h:1 ../Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "Nuvola"
+
+#: ../Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "O surf do estilo azul"
+
+#: ../Wasp/icons/index.theme.in.h:2 ../Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "Avispa"
+
+#: ../Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "Tema de estilo BeOS"
