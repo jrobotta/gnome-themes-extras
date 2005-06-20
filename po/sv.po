@@ -1,8 +1,8 @@
 # Swedish messages for gnome-themes-extras.
-# Copyright (C) 2003 Free Software Foundation, Inc.
+# Copyright (C) 2003, 2005 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-themes-extras
 # package.
-# Christian Rose <menthos@menthos.com>, 2003.
+# Christian Rose <menthos@menthos.com>, 2003, 2005.
 #
 # $Id$
 #
@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-31 17:10+0200\n"
-"PO-Revision-Date: 2003-08-23 12:25+0200\n"
+"POT-Creation-Date: 2005-06-20 07:56+0200\n"
+"PO-Revision-Date: 2005-06-20 07:56+0200\n"
 "Last-Translator: Christian Rose <menthos@menthos.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -40,9 +40,8 @@ msgid "Vector Theme"
 msgstr "Vektortema"
 
 #: Gorilla/index.theme.in.h:2
-#, fuzzy
 msgid "The Vector Mono Goddess"
-msgstr "Vektorgudinnan"
+msgstr "Vektorgudinnan Mono"
 
 #: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
 msgid "Lush"
@@ -67,6 +66,9 @@ msgstr "Geting"
 #: Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "Tema i BeOS-stil"
+
+#~ msgid "The Vector Goddess"
+#~ msgstr "Vektorgudinnan"
 
 #~ msgid "Sterling Silver "
 #~ msgstr "Gedigen "
