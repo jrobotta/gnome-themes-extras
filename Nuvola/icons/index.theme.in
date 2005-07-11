@@ -4,9 +4,9 @@
 [Icon Theme]
 _Name=Nuvola
 _Comment=Vector Theme
-Inherits=gnome,crystalsvg
-Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices
-Example=gnome-theme-preview.svg
+Inherits=gnome,hicolor,crystalsvg
+Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices,scalable/stock
+Example=folder
 
 [scalable/actions]
 MinSize=1
@@ -47,4 +47,9 @@ MinSize=1
 Size=48
 MaxSize=128
 Context=MimeTypes
+Type=Scalable
+
+[scalable/stock]
+Size=48
+Context=Stock
 Type=Scalable

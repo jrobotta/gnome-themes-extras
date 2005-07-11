@@ -1,3 +1,7 @@
+2005-07-11  Christian Schaller <uraeus@gnome.org>
+
+	* Nuvola: rename stock icons to follow icon naming spec
+	
 2005-06-10  Ignacio Casal Quinteiro  <nacho.resa@gmail.com>
 
 	* configure.in: Added 'gl' to ALL_LINGUAS.
