@@ -1,3 +1,7 @@
+2005-08-09  Maxim Dziumanenko <mvd@mylinux.ua>
+
+	* configure.in: Added 'uk' to ALL_LINGUAS.
+
 2005-07-11  Christian Schaller <uraeus@gnome.org>
 
 	* Nuvola: rename stock icons to follow icon naming spec
