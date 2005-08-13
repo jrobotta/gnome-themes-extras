@@ -1,0 +1,68 @@
+# Finnish messages for gnome-themes-extras
+# Copyright (C) 2005, Ilkka Tuohela.
+# This file is distributed under the same license as the gnome-themes-extras package.
+# Suomennos: http://gnome-fi.sourceforge.net/
+# Ilkka Tuohela <hile@iki.fi>, 2002-2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-08-13 12:22+0300\n"
+"PO-Revision-Date: 2005-08-13 12:22+0300\n"
+"Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
+"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../Amaranth/icons/index.theme.in.h:1 ../Amaranth/index.theme.in.h:1
+msgid "Amaranth"
+msgstr "Amaranth"
+
+#: ../Amaranth/icons/index.theme.in.h:2
+msgid "Silver Vector Theme"
+msgstr "Hopeinen vektoriteema"
+
+#: ../Amaranth/index.theme.in.h:2
+msgid "Sterling Silver"
+msgstr "Aito hopea"
+
+#: ../Gorilla/icons/index.theme.in.h:1 ../Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "Gorilla"
+
+#: ../Gorilla/icons/index.theme.in.h:2 ../Lush/icons/index.theme.in.h:2
+#: ../Nuvola/icons/index.theme.in.h:2 ../Wasp/icons/index.theme.in.h:1
+msgid "Vector Theme"
+msgstr "Vektoriteema"
+
+#: ../Gorilla/index.theme.in.h:2
+msgid "The Vector Mono Goddess"
+msgstr "Vektoreiden jumalatar"
+
+#: ../Lush/icons/index.theme.in.h:1 ../Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "Rehevä"
+
+#: ../Lush/index.theme.in.h:2
+msgid "Mild green theme"
+msgstr "Miedon vihreä teema"
+
+#: ../Nuvola/icons/index.theme.in.h:1 ../Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "Nuvola"
+
+#: ../Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "Sininen tyylisurffailu"
+
+#: ../Wasp/icons/index.theme.in.h:2 ../Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "Ampiainen"
+
+#: ../Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "BeOS-tyylinen teema"
+
