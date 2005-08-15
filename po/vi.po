@@ -1,0 +1,66 @@
+# Vietnamese translation for Gnome Themes Extra.
+# Copyright © 2005 Free Software Foundation, Inc.
+# Clytie Siddall <clytie@riverland.net.au>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras Gnome HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-08-14 11:38+0000\n"
+"PO-Revision-Date: 2005-08-15 22:42+0930\n"
+"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
+"Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"X-Generator: LocFactoryEditor 1.2.2\n"
+
+#: ../Amaranth/icons/index.theme.in.h:1 ../Amaranth/index.theme.in.h:1
+msgid "Amaranth"
+msgstr "Hoa không tàn"
+
+#: ../Amaranth/icons/index.theme.in.h:2
+msgid "Silver Vector Theme"
+msgstr "Sắn thái véctơ bạc"
+
+#: ../Amaranth/index.theme.in.h:2
+msgid "Sterling Silver"
+msgstr "Bạc thật"
+
+#: ../Gorilla/icons/index.theme.in.h:1 ../Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "Gô-ri-la"
+
+#: ../Gorilla/icons/index.theme.in.h:2 ../Lush/icons/index.theme.in.h:2
+#: ../Nuvola/icons/index.theme.in.h:2 ../Wasp/icons/index.theme.in.h:1
+msgid "Vector Theme"
+msgstr "Sắn thái véctơ"
+
+#: ../Gorilla/index.theme.in.h:2
+msgid "The Vector Mono Goddess"
+msgstr "Nữ thần nguồn đơn véctơ"
+
+#: ../Lush/icons/index.theme.in.h:1 ../Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "Sum sê"
+
+#: ../Lush/index.theme.in.h:2
+msgid "Mild green theme"
+msgstr "Sắc thái xanh lá cây nhẹ"
+
+#: ../Nuvola/icons/index.theme.in.h:1 ../Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "Nuvola"
+
+#: ../Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "Sóng nhào kiểu dạng xanh nước biển"
+
+#: ../Wasp/icons/index.theme.in.h:2 ../Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "Ong bắp cày"
+
+#: ../Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "Sắc thái kiểu dạng BeOS"
