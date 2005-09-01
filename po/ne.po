@@ -1,0 +1,68 @@
+# translation of gnome-themes-extras.HEAD.po to Nepali
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Pawan Chitrakar <pawan@mpp.org.np>, 2005.
+# Jaydeep Bhusal <zaydeep@hotmail.com>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-09-01 07:28+0545\n"
+"PO-Revision-Date: 2005-06-02 15:48+0545\n"
+"Last-Translator: Jaydeep Bhusal <zaydeep@hotmail.com>\n"
+"Language-Team: Nepali <info@mpp.org.np>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+"Plural-Forms: Nplurals=2;plural=(n!=0)\n"
+
+#: ../Amaranth/icons/index.theme.in.h:1 ../Amaranth/index.theme.in.h:1
+msgid "Amaranth"
+msgstr "एमेरेन्थ"
+
+#: ../Amaranth/icons/index.theme.in.h:2
+msgid "Silver Vector Theme"
+msgstr "चाँदि भेक्टर विषयवस्तु"
+
+#: ../Amaranth/index.theme.in.h:2
+msgid "Sterling Silver"
+msgstr "स्टर्लिंग चाँदि"
+
+#: ../Gorilla/icons/index.theme.in.h:1 ../Gorilla/index.theme.in.h:1
+msgid "Gorilla"
+msgstr "गोरिल्ला"
+
+#: ../Gorilla/icons/index.theme.in.h:2 ../Lush/icons/index.theme.in.h:2
+#: ../Nuvola/icons/index.theme.in.h:2 ../Wasp/icons/index.theme.in.h:1
+msgid "Vector Theme"
+msgstr "भेक्टर विषयवस्तु"
+
+#: ../Gorilla/index.theme.in.h:2
+msgid "The Vector Mono Goddess"
+msgstr "भेक्टर एकल देवि"
+
+#: ../Lush/icons/index.theme.in.h:1 ../Lush/index.theme.in.h:1
+msgid "Lush"
+msgstr "लश"
+
+#: ../Lush/index.theme.in.h:2
+msgid "Mild green theme"
+msgstr "हल्का हरियो विषयवस्तु"
+
+#: ../Nuvola/icons/index.theme.in.h:1 ../Nuvola/index.theme.in.h:1
+msgid "Nuvola"
+msgstr "नुभोला"
+
+#: ../Nuvola/index.theme.in.h:2
+msgid "The Blue Style Surf"
+msgstr "नीलो शैली को सर्फ"
+
+#: ../Wasp/icons/index.theme.in.h:2 ../Wasp/index.theme.in.h:2
+msgid "Wasp"
+msgstr "बारुला"
+
+#: ../Wasp/index.theme.in.h:1
+msgid "BeOS style theme"
+msgstr "बिओएस शैली विषयवस्तु"
