@@ -7,60 +7,59 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-31 17:10+0200\n"
-"PO-Revision-Date: 2004-02-11 23:14+0800\n"
+"POT-Creation-Date: 2005-10-16 03:03+0200\n"
+"PO-Revision-Date: 2005-10-16 17:54+0800\n"
 "Last-Translator: Mai Hao Hui <mhh@ricetons.com>\n"
 "Language-Team: zh_CN <i18n-translation@lists.linux.net.cn>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
+#: ../Amaranth/icons/index.theme.in.h:1 ../Amaranth/index.theme.in.h:1
 msgid "Amaranth"
 msgstr "紫红"
 
-#: Amaranth/icons/index.theme.in.h:2
+#: ../Amaranth/icons/index.theme.in.h:2
 msgid "Silver Vector Theme"
 msgstr "银色顶点主题"
 
-#: Amaranth/index.theme.in.h:2
+#: ../Amaranth/index.theme.in.h:2
 msgid "Sterling Silver"
 msgstr "纯银"
 
-#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
+#: ../Gorilla/icons/index.theme.in.h:1 ../Gorilla/index.theme.in.h:1
 msgid "Gorilla"
 msgstr "大猩猩"
 
-#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
-#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
+#: ../Gorilla/icons/index.theme.in.h:2 ../Lush/icons/index.theme.in.h:2
+#: ../Nuvola/icons/index.theme.in.h:2 ../Wasp/icons/index.theme.in.h:1
 msgid "Vector Theme"
 msgstr "顶点主题"
 
-#: Gorilla/index.theme.in.h:2
-#, fuzzy
+#: ../Gorilla/index.theme.in.h:2
 msgid "The Vector Mono Goddess"
-msgstr "顶点高地主题"
+msgstr "顶点单色主题"
 
-#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
+#: ../Lush/icons/index.theme.in.h:1 ../Lush/index.theme.in.h:1
 msgid "Lush"
 msgstr "繁荣"
 
-#: Lush/index.theme.in.h:2
+#: ../Lush/index.theme.in.h:2
 msgid "Mild green theme"
 msgstr "温和的绿色主题"
 
-#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
+#: ../Nuvola/icons/index.theme.in.h:1 ../Nuvola/index.theme.in.h:1
 msgid "Nuvola"
 msgstr "Nuvola"
 
-#: Nuvola/index.theme.in.h:2
+#: ../Nuvola/index.theme.in.h:2
 msgid "The Blue Style Surf"
 msgstr "蓝色冲浪"
 
-#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
+#: ../Wasp/icons/index.theme.in.h:2 ../Wasp/index.theme.in.h:2
 msgid "Wasp"
 msgstr "黄蜂"
 
-#: Wasp/index.theme.in.h:1
+#: ../Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "BeOS 风格主题"
