@@ -10,7 +10,6 @@ gtk-cancel.svg \
 gtk-cdrom.svg \
 gtk-clear.svg \
 gtk-close.svg \
-gtk-connect.svg \
 gtk-convert.svg \
 gtk-copy.svg \
 gtk-cut.svg \
@@ -19,7 +18,6 @@ gtk-dialog-error.svg \
 gtk-dialog-info.svg \
 gtk-dialog-question.svg \
 gtk-dialog-warning.svg \
-gtk-disconnect.svg \
 gtk-dnd.svg \
 gtk-dnd-multiple.svg \
 gtk-edit.svg \
@@ -85,6 +83,8 @@ gtk-zoom-100.svg \
 gtk-zoom-fit.svg \
 gtk-zoom-in.svg \
 gtk-zoom-out.svg \
+stock-connect.svg \
+stock-disconnect.svg \
 stock_volume-max.svg \
 stock_volume-min.svg \
 stock_volume-0.svg \
