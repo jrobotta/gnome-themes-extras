@@ -2,7 +2,7 @@
 
 	* Switch Gorilla to icon naming for stock icons
 	* Add more icons to Nuvola from David Vignoni
-	* Add volume icons from Josselin
+	* Add volume icons from Josselin Mouette
 	* Fix executable name in Nuvola
 	* Update version to 0.9.0
 	* Update Amaranth and Wasp for better coverage of device icons
