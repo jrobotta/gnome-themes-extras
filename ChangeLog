@@ -1,3 +1,7 @@
+2005-12-06  Kjartan Maraas  <kmaraas@gnome.org>
+
+	* configure.in: Added Norwegian bokmål to ALL_LINGUAS.
+
 2005-12-06  Christian Schaller <uraeus@gnome.org>
 
 	* Switch Gorilla to icon naming for stock icons
