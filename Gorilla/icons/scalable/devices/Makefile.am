@@ -10,10 +10,7 @@ icon_DATA = \
         gnome-dev-mouse.svg \
         gnome-dev-network.svg \
         gnome-dev-rw.svg \
-        $(NULL)
-EXTRA_DIST = $(icon_DATA)
+	gnome-dev-removable.svg \
+	$(NULL)
 
-install-data-local:
-	mkdir -p $(DESTDIR)$(icondir)
-	cd $(DESTDIR)$(icondir) && \
-	ln -sf gnome-dev-rw.svg gnome-dev-removable.svg && \
+EXTRA_DIST = $(icon_DATA)

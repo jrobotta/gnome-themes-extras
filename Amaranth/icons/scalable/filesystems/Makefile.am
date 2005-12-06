@@ -2,6 +2,7 @@ icondir = $(datadir)/icons/Amaranth/scalable/filesystems
 NULL = 
 icon_DATA = \
         gnome-fs-blockdev.svg \
+	gnome-fs-client.svg \
         gnome-fs-directory-accept.svg \
         gnome-fs-directory-accept.icon \
         gnome-fs-directory.svg \

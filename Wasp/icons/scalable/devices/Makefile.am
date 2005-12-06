@@ -11,6 +11,7 @@ icon_DATA = \
 	gnome-dev-harddisk.svg \
 	gnome-dev-palm.svg \
 	gnome-dev-printer.svg \
+	gnome-dev-removeable.svg \
 	gnome-dev-zipdisk.svg \
         gnome-dev-symlink.svg \
 	gnome-dev-tape.svg \

@@ -1,4 +1,4 @@
-vinaricondir = $(datadir)/icons/Nuvola/scalable/mimetypes
+icondir = $(datadir)/icons/Nuvola/scalable/mimetypes
 NULL = 
 icon_DATA = \
         gnome-compressed.svg \

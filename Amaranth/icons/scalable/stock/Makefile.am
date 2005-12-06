@@ -1,6 +1,7 @@
 icondir = $(datadir)/icons/Amaranth/scalable/stock
 NULL =
 icon_DATA = \
+	applets-screenshooter.svg \
         gnome-logo.svg \
 	stock_about.svg \
 	stock_cdrom.svg \

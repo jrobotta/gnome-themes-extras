@@ -54,6 +54,7 @@ icon_DATA = \
 	seti.svg \
 	sound-juicer.svg \
 	system-floppy.svg \
+	system-search-32.svg \
 	tex.svg \
 	xmms.svg \
 	$(NULL)
