@@ -3,6 +3,7 @@ icon_DATA = \
         applets-screenshooter.svg \
 	bookmark_add.svg \
 	bookmark.svg \
+	epiphany-new-tab.svg \
 	folder_new.svg \
 	gaim_insert-smiley-small.svg \
 	gaim_send-im.svg \

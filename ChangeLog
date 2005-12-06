@@ -1,3 +1,8 @@
+2005-12-06 Christian Schaller <uraeus@gnome.org>
+
+	* Added epiphany new-tab icon to Nuvola
+	* Added gnome-fs-client to Amaranth
+
 2005-12-06  Kjartan Maraas  <kmaraas@gnome.org>
 
 	* configure.in: Added Norwegian bokmål to ALL_LINGUAS.
