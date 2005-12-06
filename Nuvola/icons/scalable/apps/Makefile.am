@@ -4,6 +4,7 @@ icon_DATA = \
 	accessibility-directory.svg \
 	accessories.svg \
 	acroread.svg \
+	button_tell_a_friend.png \
 	camera.svg \
 	chess.svg \
 	disks.svg \
@@ -14,6 +15,7 @@ icon_DATA = \
 	gcalctool.svg \
 	gdict.svg \
 	gedit.svg \
+	gftp.svg \
 	gnome-applications.svg \
 	gnome-ccdesktop.svg \
 	gnome-cd.svg \
@@ -38,17 +40,19 @@ icon_DATA = \
 	gnome-settings-background.svg \
 	gnome-settings-keybindings.svg \
 	gnome-settings-theme.svg \
-	gnome-system-config.svg \
 	gnome-system.svg \
+	gnome-system-config.svg \
 	gnome-terminal.svg \
 	go.svg \
+	gswitchit-applet.svg \
+	gswitchit-properties-capplet.svg \
 	hwbrowser.svg \
 	inkscape.svg \
 	kasteroids.svg \
 	mouse-capplet.svg \
+	mozilla.svg \
 	mozilla-compose-icon.svg \
 	mozilla-mail-icon.svg \
-	mozilla.svg \
 	mplayer.svg \
 	my-computer.svg \
 	network.svg \
@@ -65,6 +69,7 @@ icon_DATA = \
 	screensaver.svg \
 	sdm.svg \
 	sodipodi.svg \
+	system-config-users.svg \
 	system-floppy.svg \
 	system-search-32.svg \
 	tsclient.svg \

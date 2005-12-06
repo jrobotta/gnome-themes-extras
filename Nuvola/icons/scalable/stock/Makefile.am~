@@ -55,8 +55,6 @@ icon_DATA = \
 	gtk-save-as.svg \
 	gtk-save.svg \
 	gtk-stop.svg \
-	gtk-strikethrough.svg \
-	gtk-underline.svg \
 	gtk-undo-ltr.svg \
 	gtk-zoom-100.svg \
 	gtk-zoom-fit.svg \
