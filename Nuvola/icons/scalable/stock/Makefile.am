@@ -14,6 +14,7 @@ icon_DATA = \
 	gtk-bold.svg \
 	gtk-brokenimage.svg \
 	gtk-cdrom.svg \
+	gtk-close.svg \
 	gtk-copy.svg \
 	gtk-cut.svg \
 	gtk-delete.svg \

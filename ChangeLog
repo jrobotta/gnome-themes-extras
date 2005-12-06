@@ -2,6 +2,11 @@
 
 	* Added epiphany new-tab icon to Nuvola
 	* Added gnome-fs-client to Amaranth
+	* Moved mixer animation from Nuvola to Lush
+	* Added new mixer animation based on icons from David
+	* Added gtk-close to Nuvola
+	* Tried sizing down the Gorilla gtk-close icon to make 
+	  it fit gedit tabs
 
 2005-12-06  Kjartan Maraas  <kmaraas@gnome.org>
 

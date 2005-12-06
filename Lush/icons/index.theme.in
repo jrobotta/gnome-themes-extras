@@ -4,8 +4,8 @@
 [Icon Theme]
 _Name=Lush
 _Comment=Vector Theme
-Inherits=gnome,crystalsvg,industrial
-Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices
+Inherits=gnome,Nuvola
+Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices,scalable/stock
 Example=gnome-theme-preview.svg
 
 [scalable/actions]
@@ -47,4 +47,9 @@ MinSize=1
 Size=48
 MaxSize=128
 Context=MimeTypes
+Type=Scalable
+
+[scalable/stock]
+Size=48
+Context=Stock
 Type=Scalable

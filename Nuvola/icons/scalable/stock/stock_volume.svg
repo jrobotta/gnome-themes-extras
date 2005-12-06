@@ -3,15 +3,41 @@
 <svg
    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
    xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.0"
-   width="48pt"
-   height="48pt"
+   width="32pt"
+   height="32pt"
    viewBox="0 0 256 256"
    id="svg2"
-   xml:space="preserve"><defs
+   xml:space="preserve"
+   sodipodi:version="0.32"
+   inkscape:version="0.42+devel"
+   sodipodi:docname="stock_volume.svg"
+   sodipodi:docbase="/home/cschalle/gnome/gnome-themes-extras/Nuvola/icons/scalable/stock"><metadata
+   id="metadata121"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+   inkscape:cy="417.84947"
+   inkscape:cx="305.25953"
+   inkscape:zoom="0.43415836"
+   inkscape:window-height="553"
+   inkscape:window-width="814"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   inkscape:window-x="6"
+   inkscape:window-y="54"
+   inkscape:current-layer="svg2" /><defs
    id="defs221" />
 	
 		<g
