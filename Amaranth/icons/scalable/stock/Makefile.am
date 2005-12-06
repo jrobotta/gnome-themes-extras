@@ -37,6 +37,10 @@ icon_DATA = \
 	stock_search.svg \
 	stock_stop.svg \
 	stock_undo.svg \
+	stock_volume-0.svg \
+	stock_volume-med.svg \
+	stock_volume-max.svg \
+	stock_volume-min.svg \
 	$(NULL)
 
 EXTRA_DIST = $(icon_DATA)

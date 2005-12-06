@@ -1,4 +1,4 @@
-icondir = $(datadir)/icons/Nuvola/scalable/mimetypes
+vinaricondir = $(datadir)/icons/Nuvola/scalable/mimetypes
 NULL = 
 icon_DATA = \
         gnome-compressed.svg \
@@ -19,7 +19,7 @@ icon_DATA = \
 	gnome-mime-application-x-core-file.svg \
 	gnome-mime-application-x-deb.svg \
 	gnome-mime-application-x-dvi.svg \
-	gnome-mime-application-x-executable-binary.svg \
+	gnome-mime-application-x-executable.svg \
 	gnome-mime-application-x-font-afm.svg \
 	gnome-mime-application-x-font-bdf.svg \
 	gnome-mime-application-x-font-pcf.svg \

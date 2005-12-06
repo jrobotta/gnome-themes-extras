@@ -1,6 +1,5 @@
 # Gorilla gtk theme
 # (c) 2002-2003 Jakub 'jimmac' Steiner <jimmac@ximian.com>
-include "iconrc"
 
 style "gorilla-default"
 {

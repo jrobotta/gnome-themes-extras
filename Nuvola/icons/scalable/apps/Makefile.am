@@ -41,6 +41,7 @@ icon_DATA = \
 	gnome-settings-keybindings.svg \
 	gnome-settings-theme.svg \
 	gnome-system.svg \
+	gnome-show-desktop.svg \
 	gnome-system-config.svg \
 	gnome-terminal.svg \
 	go.svg \

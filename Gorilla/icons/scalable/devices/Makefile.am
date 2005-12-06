@@ -12,3 +12,8 @@ icon_DATA = \
         gnome-dev-rw.svg \
         $(NULL)
 EXTRA_DIST = $(icon_DATA)
+
+install-data-local:
+	mkdir -p $(DESTDIR)$(icondir)
+	cd $(DESTDIR)$(icondir) && \
+	ln -sf gnome-dev-rw.svg gnome-dev-removable.svg && \

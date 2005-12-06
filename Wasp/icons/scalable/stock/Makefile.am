@@ -31,5 +31,11 @@ icon_DATA = \
 	gaim_error.svg \
 	gaim_info.svg \
 	gaim_offline.svg \
-	gaim_online.svg
+	gaim_online.svg \
+	stock_volume-0.svg \
+	stock_volume-med.svg \
+	stock_volume-mute.svg \
+	stock_volume-max.svg \
+	stock_volume-min.svg
+
 EXTRA_DIST = $(icon_DATA)

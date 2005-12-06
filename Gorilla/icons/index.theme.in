@@ -4,8 +4,8 @@
 [Icon Theme]
 _Name=Gorilla
 _Comment=Vector Theme
-Inherits=gnome
-Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices,24x24/apps
+Inherits=gnome,hicolor,crystalsvg
+Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices,24x24/apps,scalable/stock
 Example=gnome-theme-preview.svg
 
 [scalable/actions]
@@ -53,3 +53,9 @@ Type=Scalable
 Size=24
 Context=Applications
 Type=Scalable
+
+[scalable/stock]
+Size=48
+Context=Stock
+Type=Scalable
+

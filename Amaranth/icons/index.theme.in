@@ -1,11 +1,11 @@
 # Amaranth vector icon theme
-# (c) 2002-2003 David Vignoni <dvgn@libero.it>
+
 
 [Icon Theme]
 _Name=Amaranth
 _Comment=Silver Vector Theme
 Inherits=gnome,crystalsvg
-Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices
+Directories=scalable/apps,scalable/filesystems,scalable/mimetypes,scalable/emblems,scalable/devices,scalable/stock
 Example=gnome-theme-preview.svg
 
 [scalable/actions]
@@ -47,4 +47,9 @@ MinSize=1
 Size=48
 MaxSize=128
 Context=MimeTypes
+Type=Scalable
+
+[scalable/stock]
+Size=48
+Context=Stock
 Type=Scalable

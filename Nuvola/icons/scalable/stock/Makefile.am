@@ -63,6 +63,16 @@ icon_DATA = \
 	gtk-zoom-in.svg \
 	gtk-zoom-out.svg \
 	panel-lockscreen.svg \
-	searchtool.svg
+	searchtool.svg	\
+	stock_alarm.svg \
+	stock_desktop.svg \
+	stock_keyring.svg \
+	stock_post_message.svg \
+	stock_volume-0.svg \
+	stock_volume-max.svg \
+	stock_volume-med.svg \
+	stock_volume-min.svg \
+	stock_volume-mute.svg \
+	stock_volume.svg
 	
 EXTRA_DIST = $(icon_DATA)
