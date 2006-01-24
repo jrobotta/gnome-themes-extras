@@ -1,4 +1,8 @@
-2005-12-06 Christian Schaller <uraeus@gnome.org>
+2006-01-24  Clytie Siddall <clytie@riverland.net.au>
+
+	* configure.in	Added vi in ALL_LINGUAS line.
+	
+	2005-12-06 Christian Schaller <uraeus@gnome.org>
 
 	* Added epiphany new-tab icon to Nuvola
 	* Added gnome-fs-client to Amaranth
