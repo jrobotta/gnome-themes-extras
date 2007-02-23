@@ -1,65 +1,73 @@
-# Danish translation of gnome-themes-extras
-# Copyright (C) 2003, 04 Free Software Foundation.
+# Danish translation of gnome-themes-extras.
+# Copyright (C) 2003-07 Free Software Foundation, Inc.
 # Ole Laursen <olau@hardworking.dk>, 2003, 04.
+# Peter Bach <bach.peter@gmail.com>, 2007.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-31 17:10+0200\n"
-"PO-Revision-Date: 2004-02-01 20:44+0100\n"
-"Last-Translator: Ole Laursen <olau@hardworking.dk>\n"
-"Language-Team: Danish <dansk@klid.dk>\n"
+"POT-Creation-Date: 2007-02-23 09:18+0200\n"
+"PO-Revision-Date: 2007-02-23 09:20+0200\n"
+"Last-Translator: Peter Bach <bach.peter@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Amaranth/icons/index.theme.in.h:1 Amaranth/index.theme.in.h:1
+#: ../Amaranth/icons/index.theme.in.h:1
+#: ../Amaranth/index.theme.in.h:1
 msgid "Amaranth"
 msgstr "Amaranth"
 
-#: Amaranth/icons/index.theme.in.h:2
+#: ../Amaranth/icons/index.theme.in.h:2
 msgid "Silver Vector Theme"
 msgstr "Sølvvektortema"
 
-#: Amaranth/index.theme.in.h:2
+#: ../Amaranth/index.theme.in.h:2
 msgid "Sterling Silver"
 msgstr "Sterlingsølv"
 
-#: Gorilla/icons/index.theme.in.h:1 Gorilla/index.theme.in.h:1
+#: ../Gorilla/icons/index.theme.in.h:1
+#: ../Gorilla/index.theme.in.h:1
 msgid "Gorilla"
 msgstr "Gorilla"
 
-#: Gorilla/icons/index.theme.in.h:2 Lush/icons/index.theme.in.h:2
-#: Nuvola/icons/index.theme.in.h:2 Wasp/icons/index.theme.in.h:1
+#: ../Gorilla/icons/index.theme.in.h:2
+#: ../Lush/icons/index.theme.in.h:2
+#: ../Nuvola/icons/index.theme.in.h:2
+#: ../Wasp/icons/index.theme.in.h:1
 msgid "Vector Theme"
 msgstr "Vektortema"
 
-#: Gorilla/index.theme.in.h:2
-#, fuzzy
+#: ../Gorilla/index.theme.in.h:2
 msgid "The Vector Mono Goddess"
-msgstr "Vektormonogudinden"
+msgstr "Vektor-monogudinden"
 
-#: Lush/icons/index.theme.in.h:1 Lush/index.theme.in.h:1
+#: ../Lush/icons/index.theme.in.h:1
+#: ../Lush/index.theme.in.h:1
 msgid "Lush"
 msgstr "Frodighed"
 
-#: Lush/index.theme.in.h:2
+#: ../Lush/index.theme.in.h:2
 msgid "Mild green theme"
 msgstr "Mildt grønt tema"
 
-#: Nuvola/icons/index.theme.in.h:1 Nuvola/index.theme.in.h:1
+#: ../Nuvola/icons/index.theme.in.h:1
+#: ../Nuvola/index.theme.in.h:1
 msgid "Nuvola"
 msgstr "Nuvola"
 
-#: Nuvola/index.theme.in.h:2
+#: ../Nuvola/index.theme.in.h:2
 msgid "The Blue Style Surf"
 msgstr "Den blå stilsurf"
 
-#: Wasp/icons/index.theme.in.h:2 Wasp/index.theme.in.h:2
+#: ../Wasp/icons/index.theme.in.h:2
+#: ../Wasp/index.theme.in.h:2
 msgid "Wasp"
 msgstr "Hveps"
 
-#: Wasp/index.theme.in.h:1
+#: ../Wasp/index.theme.in.h:1
 msgid "BeOS style theme"
 msgstr "BeOS-lignende tema"
+
