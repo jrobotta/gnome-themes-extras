@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-17 21:14+0000\n"
-"PO-Revision-Date: 2006-11-18 00:37+0100\n"
+"PO-Revision-Date: 2007-04-07 11:11+0100\n"
 "Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
@@ -20,62 +20,56 @@ msgstr ""
 #: ../Amaranth/icons/index.theme.in.h:1
 #: ../Amaranth/index.theme.in.h:1
 msgid "Amaranth"
-msgstr ""
+msgstr "أجواني"
 
 #: ../Amaranth/icons/index.theme.in.h:2
-#, fuzzy
 msgid "Silver Vector Theme"
-msgstr "ليس أرشيف سِمة"
+msgstr "سمة فضية متّجهية"
 
 #: ../Amaranth/index.theme.in.h:2
-#, fuzzy
 msgid "Sterling Silver"
-msgstr "سلفر ستي"
+msgstr "فضة خالصة"
 
 #: ../Gorilla/icons/index.theme.in.h:1
 #: ../Gorilla/index.theme.in.h:1
 msgid "Gorilla"
-msgstr ""
+msgstr "غوريلا"
 
 #: ../Gorilla/icons/index.theme.in.h:2
 #: ../Lush/icons/index.theme.in.h:2
 #: ../Nuvola/icons/index.theme.in.h:2
 #: ../Wasp/icons/index.theme.in.h:1
-#, fuzzy
 msgid "Vector Theme"
-msgstr "هل أحذف السمة \"%s\" ؟"
+msgstr "سمة متّجهية"
 
 #: ../Gorilla/index.theme.in.h:2
 msgid "The Vector Mono Goddess"
-msgstr ""
+msgstr "خطي هندسي"
 
 #: ../Lush/icons/index.theme.in.h:1
 #: ../Lush/index.theme.in.h:1
 msgid "Lush"
-msgstr ""
+msgstr "مزدهر"
 
 #: ../Lush/index.theme.in.h:2
-#, fuzzy
 msgid "Mild green theme"
-msgstr "ليس أرشيف سِمة"
+msgstr "سمة خضراء خفيفة"
 
 #: ../Nuvola/icons/index.theme.in.h:1
 #: ../Nuvola/index.theme.in.h:1
 msgid "Nuvola"
-msgstr ""
+msgstr "نوڤيولا"
 
 #: ../Nuvola/index.theme.in.h:2
-#, fuzzy
 msgid "The Blue Style Surf"
-msgstr "إفتراضي"
+msgstr "الأمواج الزرقاء"
 
 #: ../Wasp/icons/index.theme.in.h:2
 #: ../Wasp/index.theme.in.h:2
 msgid "Wasp"
-msgstr ""
+msgstr "واسب"
 
 #: ../Wasp/index.theme.in.h:1
-#, fuzzy
 msgid "BeOS style theme"
-msgstr "ليس أرشيف سِمة"
+msgstr "سمة بأسلوب BeOS"
 
