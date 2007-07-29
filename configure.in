@@ -1,5 +1,5 @@
 AC_PREREQ(2.52)
-AC_INIT(gnome-themes-extras, 0.9.1)
+AC_INIT(gnome-themes-extras, 0.10.0)
 
 AM_CONFIG_HEADER(config.h)
 
@@ -28,7 +28,7 @@ AM_DISABLE_STATIC
 AM_PROG_LIBTOOL
 
 PKG_CHECK_MODULES(GTK_ENGINES_2,
-		  gtk-engines-2 >= 2.6.0,,
+		  gtk-engines-2 >= 2.11.0,,
 		  AC_MSG_ERROR([gtk-engines-2 is required to compile gnome-themes-extras]))
 
 # Checks for header files.
@@ -54,70 +54,5 @@ AM_GLIB_GNU_GETTEXT
 AC_OUTPUT([
 Makefile
 gnome-themes-extras.spec
-Amaranth/Makefile
-Amaranth/gtk-2.0/Makefile
-Amaranth/gtk-2.0/iconrc
-Amaranth/metacity-1/Makefile
-Amaranth/icons/Makefile
-Amaranth/icons/scalable/Makefile
-Amaranth/icons/scalable/apps/Makefile
-Amaranth/icons/scalable/devices/Makefile
-Amaranth/icons/scalable/emblems/Makefile
-Amaranth/icons/scalable/filesystems/Makefile
-Amaranth/icons/scalable/mimetypes/Makefile
-Amaranth/icons/scalable/stock/Makefile
-Gorilla/Makefile
-Gorilla/gtk/Makefile
-Gorilla/gtk-2.0/Makefile
-Gorilla/icons/Makefile
-Gorilla/icons/scalable/Makefile
-Gorilla/icons/scalable/apps/Makefile
-Gorilla/icons/scalable/devices/Makefile
-Gorilla/icons/scalable/emblems/Makefile
-Gorilla/icons/scalable/filesystems/Makefile
-Gorilla/icons/scalable/mimetypes/Makefile
-Gorilla/icons/scalable/stock/Makefile
-Gorilla/icons/24x24/Makefile
-Gorilla/icons/24x24/apps/Makefile
-Gorilla/metacity-1/Makefile
-Nuvola/Makefile
-Nuvola/gtk-2.0/Makefile
-Nuvola/gtk-2.0/iconrc
-Nuvola/gtk-1.0/Makefile
-Nuvola/metacity-1/Makefile
-Nuvola/icons/Makefile
-Nuvola/icons/scalable/Makefile
-Nuvola/icons/scalable/apps/Makefile
-Nuvola/icons/scalable/devices/Makefile
-Nuvola/icons/scalable/emblems/Makefile
-Nuvola/icons/scalable/filesystems/Makefile
-Nuvola/icons/scalable/mimetypes/Makefile
-Nuvola/icons/scalable/stock/Makefile
-Nuvola-old/Makefile
-Nuvola-old/metacity-1/Makefile
-Lush/Makefile
-Lush/gtk-2.0/Makefile
-Lush/gtk-2.0/iconrc
-Lush/metacity-1/Makefile
-Lush/icons/Makefile
-Lush/icons/scalable/Makefile
-Lush/icons/scalable/apps/Makefile
-Lush/icons/scalable/devices/Makefile
-Lush/icons/scalable/emblems/Makefile
-Lush/icons/scalable/filesystems/Makefile
-Lush/icons/scalable/mimetypes/Makefile
-Lush/icons/scalable/stock/Makefile
-Wasp/Makefile
-Wasp/gtk-2.0/Makefile
-Wasp/gtk-2.0/iconrc
-Wasp/metacity-1/Makefile
-Wasp/icons/Makefile
-Wasp/icons/scalable/Makefile
-Wasp/icons/scalable/apps/Makefile
-Wasp/icons/scalable/devices/Makefile
-Wasp/icons/scalable/emblems/Makefile
-Wasp/icons/scalable/filesystems/Makefile
-Wasp/icons/scalable/mimetypes/Makefile
-Wasp/icons/scalable/stock/Makefile
 po/Makefile.in
 ])
