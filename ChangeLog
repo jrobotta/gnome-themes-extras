@@ -1,3 +1,8 @@
+2007-07-30  Andrea Cimitan <andrea.cimitan@gmail.com>
+
+	* configure.in:
+	start with a new version 0.10.0
+
 2007-02-24  Matic Zgur  <mr.zgur@gmail.com>
 
 	* configure.in: Added 'sl' to ALL_LINGUAS.
