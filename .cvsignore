@@ -22,5 +22,3 @@ intltool-update
 intltool-update.in
 autom4te.cache
 gnome-themes-extras.spec
-tarballs
-Galaxy
