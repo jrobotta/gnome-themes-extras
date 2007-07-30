@@ -3,7 +3,7 @@ context = actions
 
 iconsdir = $(datadir)/icons/Gion/$(size)/$(context)
 
-icons_DATA =				\
+icons_DATA = \
 	bookmark-new.png \
 	browser-download.png \
 	dialog-cancel.png \

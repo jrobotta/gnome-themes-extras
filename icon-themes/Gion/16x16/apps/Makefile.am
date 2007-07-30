@@ -3,7 +3,7 @@ context = apps
 
 iconsdir = $(datadir)/icons/Gion/$(size)/$(context)
 
-icons_DATA =				\
+icons_DATA = \
 	accessories-archiver.png \
 	evolution.png \
 	help-browser.png \

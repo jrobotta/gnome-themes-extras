@@ -3,7 +3,7 @@ context = mimetypes
 
 iconsdir = $(datadir)/icons/Gion/$(size)/$(context)
 
-icons_DATA =				\
+icons_DATA = \
 	package-x-generic.png \
 	text-html.png
 

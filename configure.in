@@ -1,5 +1,5 @@
 AC_PREREQ(2.53)
-AC_INIT(gnome-themes-extras, 0.10.0)
+AC_INIT(gnome-themes-extras, 2.19.5)
 
 AM_CONFIG_HEADER(config.h)
 
@@ -131,5 +131,50 @@ icon-themes/Gion/scalable/devices/Makefile
 icon-themes/Gion/scalable/mimetypes/Makefile
 icon-themes/Gion/scalable/places/Makefile
 icon-themes/Gion/scalable/status/Makefile
+icon-themes/Neu/Makefile
+icon-themes/Neu/22x22/Makefile
+icon-themes/Neu/22x22/actions/Makefile
+icon-themes/Neu/22x22/apps/Makefile
+icon-themes/Neu/22x22/categories/Makefile
+icon-themes/Neu/22x22/devices/Makefile
+icon-themes/Neu/22x22/emblems/Makefile
+icon-themes/Neu/22x22/mimetypes/Makefile
+icon-themes/Neu/22x22/places/Makefile
+icon-themes/Neu/22x22/status/Makefile
+icon-themes/Neu/24x24/Makefile
+icon-themes/Neu/24x24/actions/Makefile
+icon-themes/Neu/24x24/apps/Makefile
+icon-themes/Neu/24x24/categories/Makefile
+icon-themes/Neu/24x24/devices/Makefile
+icon-themes/Neu/24x24/mimetypes/Makefile
+icon-themes/Neu/24x24/places/Makefile
+icon-themes/Neu/24x24/status/Makefile
+icon-themes/Neu/48x48/Makefile
+icon-themes/Neu/48x48/actions/Makefile
+icon-themes/Neu/48x48/apps/Makefile
+icon-themes/Neu/48x48/categories/Makefile
+icon-themes/Neu/48x48/devices/Makefile
+icon-themes/Neu/48x48/emblems/Makefile
+icon-themes/Neu/48x48/mimetypes/Makefile
+icon-themes/Neu/48x48/places/Makefile
+icon-themes/Neu/48x48/status/Makefile
+icon-themes/Neu/128x128/Makefile
+icon-themes/Neu/128x128/actions/Makefile
+icon-themes/Neu/128x128/apps/Makefile
+icon-themes/Neu/128x128/categories/Makefile
+icon-themes/Neu/128x128/devices/Makefile
+icon-themes/Neu/128x128/emblems/Makefile
+icon-themes/Neu/128x128/mimetypes/Makefile
+icon-themes/Neu/128x128/places/Makefile
+icon-themes/Neu/128x128/status/Makefile
+icon-themes/Neu/scalable/Makefile
+icon-themes/Neu/scalable/actions/Makefile
+icon-themes/Neu/scalable/apps/Makefile
+icon-themes/Neu/scalable/categories/Makefile
+icon-themes/Neu/scalable/devices/Makefile
+icon-themes/Neu/scalable/emblems/Makefile
+icon-themes/Neu/scalable/mimetypes/Makefile
+icon-themes/Neu/scalable/places/Makefile
+icon-themes/Neu/scalable/status/Makefile
 po/Makefile.in
 ])

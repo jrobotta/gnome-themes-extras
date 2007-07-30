@@ -3,7 +3,7 @@ context = places
 
 iconsdir = $(datadir)/icons/Gion/$(size)/$(context)
 
-icons_DATA =				\
+icons_DATA = \
 	user-home.png \
 	folder.png \
 	user-trash.png
