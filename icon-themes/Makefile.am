@@ -1,1 +1,1 @@
-SUBDIRS = Foxtrot
+SUBDIRS = Foxtrot Gion

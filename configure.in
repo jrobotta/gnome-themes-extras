@@ -52,7 +52,6 @@ AM_GLIB_GNU_GETTEXT
 
 UTILS_REQUIRED=0.8.1
 
-
 AC_MSG_CHECKING([icon-naming-utils >= $UTILS_REQUIRED])
 PKG_CHECK_EXISTS(icon-naming-utils >= $UTILS_REQUIRED,
                  have_utils=yes, have_utils=no)
@@ -88,5 +87,49 @@ icon-themes/Foxtrot/scalable/categories/Makefile
 icon-themes/Foxtrot/scalable/devices/Makefile
 icon-themes/Foxtrot/scalable/places/Makefile
 icon-themes/Foxtrot/scalable/status/Makefile
+icon-themes/Gion/Makefile
+icon-themes/Gion/16x16/Makefile
+icon-themes/Gion/16x16/actions/Makefile
+icon-themes/Gion/16x16/apps/Makefile
+icon-themes/Gion/16x16/mimetypes/Makefile
+icon-themes/Gion/16x16/places/Makefile
+icon-themes/Gion/22x22/Makefile
+icon-themes/Gion/22x22/actions/Makefile
+icon-themes/Gion/22x22/apps/Makefile
+icon-themes/Gion/22x22/devices/Makefile
+icon-themes/Gion/22x22/mimetypes/Makefile
+icon-themes/Gion/22x22/places/Makefile
+icon-themes/Gion/22x22/status/Makefile
+icon-themes/Gion/24x24/Makefile
+icon-themes/Gion/24x24/actions/Makefile
+icon-themes/Gion/24x24/apps/Makefile
+icon-themes/Gion/24x24/devices/Makefile
+icon-themes/Gion/24x24/mimetypes/Makefile
+icon-themes/Gion/24x24/places/Makefile
+icon-themes/Gion/24x24/status/Makefile
+icon-themes/Gion/48x48/Makefile
+icon-themes/Gion/48x48/actions/Makefile
+icon-themes/Gion/48x48/apps/Makefile
+icon-themes/Gion/48x48/categories/Makefile
+icon-themes/Gion/48x48/devices/Makefile
+icon-themes/Gion/48x48/mimetypes/Makefile
+icon-themes/Gion/48x48/places/Makefile
+icon-themes/Gion/48x48/status/Makefile
+icon-themes/Gion/128x128/Makefile
+icon-themes/Gion/128x128/actions/Makefile
+icon-themes/Gion/128x128/apps/Makefile
+icon-themes/Gion/128x128/categories/Makefile
+icon-themes/Gion/128x128/devices/Makefile
+icon-themes/Gion/128x128/mimetypes/Makefile
+icon-themes/Gion/128x128/places/Makefile
+icon-themes/Gion/128x128/status/Makefile
+icon-themes/Gion/scalable/Makefile
+icon-themes/Gion/scalable/actions/Makefile
+icon-themes/Gion/scalable/apps/Makefile
+icon-themes/Gion/scalable/categories/Makefile
+icon-themes/Gion/scalable/devices/Makefile
+icon-themes/Gion/scalable/mimetypes/Makefile
+icon-themes/Gion/scalable/places/Makefile
+icon-themes/Gion/scalable/status/Makefile
 po/Makefile.in
 ])

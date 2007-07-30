@@ -1,5 +1,107 @@
 2007-07-30  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
+	* configure.in:
+	* icon-themes/Gion/128x128/Makefile.am:
+	* icon-themes/Gion/128x128/actions/Makefile.am:
+	* icon-themes/Gion/128x128/apps/Makefile.am:
+	* icon-themes/Gion/128x128/categories/Makefile.am:
+	* icon-themes/Gion/128x128/devices/Makefile.am:
+	* icon-themes/Gion/128x128/mimetypes/Makefile.am:
+	* icon-themes/Gion/128x128/places/Makefile.am:
+	* icon-themes/Gion/128x128/status/Makefile.am:
+	* icon-themes/Gion/16x16/Makefile.am:
+	* icon-themes/Gion/16x16/actions/Makefile.am:
+	* icon-themes/Gion/16x16/apps/Makefile.am:
+	* icon-themes/Gion/16x16/mimetypes/Makefile.am:
+	* icon-themes/Gion/16x16/places/Makefile.am:
+	* icon-themes/Gion/22x22/Makefile.am:
+	* icon-themes/Gion/22x22/actions/Makefile.am:
+	* icon-themes/Gion/22x22/apps/Makefile.am:
+	* icon-themes/Gion/22x22/devices/Makefile.am:
+	* icon-themes/Gion/22x22/mimetypes/Makefile.am:
+	* icon-themes/Gion/22x22/places/Makefile.am:
+	* icon-themes/Gion/22x22/status/Makefile.am:
+	* icon-themes/Gion/24x24/Makefile.am:
+	* icon-themes/Gion/24x24/actions/Makefile.am:
+	* icon-themes/Gion/24x24/apps/Makefile.am:
+	* icon-themes/Gion/24x24/devices/Makefile.am:
+	* icon-themes/Gion/24x24/mimetypes/Makefile.am:
+	* icon-themes/Gion/24x24/places/Makefile.am:
+	* icon-themes/Gion/24x24/status/Makefile.am:
+	* icon-themes/Gion/48x48/Makefile.am:
+	* icon-themes/Gion/48x48/actions/Makefile.am:
+	* icon-themes/Gion/48x48/apps/Makefile.am:
+	* icon-themes/Gion/48x48/categories/Makefile.am:
+	* icon-themes/Gion/48x48/devices/Makefile.am:
+	* icon-themes/Gion/48x48/mimetypes/Makefile.am:
+	* icon-themes/Gion/48x48/places/Makefile.am:
+	* icon-themes/Gion/48x48/status/Makefile.am:
+	* icon-themes/Gion/AUTHORS:
+	* icon-themes/Gion/COPYING:
+	* icon-themes/Gion/Makefile.am:
+	* icon-themes/Gion/README:
+	* icon-themes/Gion/index.theme:
+	* icon-themes/Gion/scalable/Makefile.am:
+	* icon-themes/Gion/scalable/actions/Makefile.am:
+	* icon-themes/Gion/scalable/actions/bookmark-new.svg:
+	* icon-themes/Gion/scalable/actions/document-open.svg:
+	* icon-themes/Gion/scalable/actions/go-down.svg:
+	* icon-themes/Gion/scalable/actions/go-next.svg:
+	* icon-themes/Gion/scalable/actions/go-previous.svg:
+	* icon-themes/Gion/scalable/actions/go-up.svg:
+	* icon-themes/Gion/scalable/actions/process-stop.svg:
+	* icon-themes/Gion/scalable/actions/view-refresh.svg:
+	* icon-themes/Gion/scalable/apps/Makefile.am:
+	* icon-themes/Gion/scalable/apps/accessories-archiver.svg:
+	* icon-themes/Gion/scalable/apps/evolution.svg:
+	* icon-themes/Gion/scalable/apps/internet-mail.svg:
+	* icon-themes/Gion/scalable/apps/internet-web-browser.svg:
+	* icon-themes/Gion/scalable/apps/music-player.svg:
+	* icon-themes/Gion/scalable/apps/utilities-terminal.svg:
+	* icon-themes/Gion/scalable/categories/Makefile.am:
+	* icon-themes/Gion/scalable/categories/applications-internet.svg:
+	* icon-themes/Gion/scalable/devices/Makefile.am:
+	* icon-themes/Gion/scalable/devices/computer.svg:
+	* icon-themes/Gion/scalable/devices/drive-harddisk.svg:
+	* icon-themes/Gion/scalable/devices/drive-removable-media.svg:
+	* icon-themes/Gion/scalable/devices/media-cdrom-audio.svg:
+	* icon-themes/Gion/scalable/devices/media-cdrom.svg:
+	* icon-themes/Gion/scalable/devices/media-cdrw.svg:
+	* icon-themes/Gion/scalable/devices/media-dvd.svg:
+	* icon-themes/Gion/scalable/devices/media-dvdrw.svg:
+	* icon-themes/Gion/scalable/mimetypes/Makefile.am:
+	* icon-themes/Gion/scalable/mimetypes/application-certificate.svg:
+	* icon-themes/Gion/scalable/mimetypes/audio-x-generic.svg:
+	* icon-themes/Gion/scalable/mimetypes/image-x-generic.svg:
+	* icon-themes/Gion/scalable/mimetypes/package-x-generic.svg:
+	* icon-themes/Gion/scalable/mimetypes/text-html.svg:
+	* icon-themes/Gion/scalable/mimetypes/text-x-authors.svg:
+	* icon-themes/Gion/scalable/mimetypes/text-x-changelog.svg:
+	* icon-themes/Gion/scalable/mimetypes/text-x-copying.svg:
+	* icon-themes/Gion/scalable/mimetypes/text-x-generic.svg:
+	* icon-themes/Gion/scalable/mimetypes/text-x-install.svg:
+	* icon-themes/Gion/scalable/mimetypes/text-x-readme.svg:
+	* icon-themes/Gion/scalable/mimetypes/text-x-script.svg:
+	* icon-themes/Gion/scalable/mimetypes/text-x-source.svg:
+	* icon-themes/Gion/scalable/mimetypes/x-office-document.svg:
+	* icon-themes/Gion/scalable/mimetypes/x-office-spreadsheet.svg:
+	* icon-themes/Gion/scalable/places/Makefile.am:
+	* icon-themes/Gion/scalable/places/folder-remote.svg:
+	* icon-themes/Gion/scalable/places/folder-saved-search.svg:
+	* icon-themes/Gion/scalable/places/folder.svg:
+	* icon-themes/Gion/scalable/places/user-desktop.svg:
+	* icon-themes/Gion/scalable/places/user-home.svg:
+	* icon-themes/Gion/scalable/places/user-trash.svg:
+	* icon-themes/Gion/scalable/status/Makefile.am:
+	* icon-themes/Gion/scalable/status/folder-drag-accept.svg:
+	* icon-themes/Gion/scalable/status/folder-open.svg:
+	* icon-themes/Gion/scalable/status/folder-visiting.svg:
+	* icon-themes/Gion/scalable/status/user-trash-full.svg:
+	* icon-themes/Makefile.am:
+	Added Gion icon theme :)
+
+2007-07-30  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
 	* gtk-themes/Makefile.am:
 	Added a dummy gtk-themes directory with its Makefile.am
 
