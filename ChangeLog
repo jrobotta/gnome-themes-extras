@@ -1,5 +1,10 @@
 2007-07-30  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
+	* icon-themes/Makefile.am:
+	Added the Makefile.am
+	
+2007-07-30  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
 	* Foxtrot/16x16/Makefile.am:
 	* Foxtrot/16x16/actions/Makefile.am:
 	* Foxtrot/16x16/places/Makefile.am:
