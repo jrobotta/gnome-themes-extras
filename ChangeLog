@@ -1,5 +1,70 @@
 2007-07-30  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
+	* Foxtrot/16x16/Makefile.am:
+	* Foxtrot/16x16/actions/Makefile.am:
+	* Foxtrot/16x16/places/Makefile.am:
+	* Foxtrot/22x22/Makefile.am:
+	* Foxtrot/22x22/actions/Makefile.am:
+	* Foxtrot/22x22/places/Makefile.am:
+	* Foxtrot/22x22/status/Makefile.am:
+	* Foxtrot/24x24/Makefile.am:
+	* Foxtrot/24x24/actions/Makefile.am:
+	* Foxtrot/24x24/places/Makefile.am:
+	* Foxtrot/Makefile.am:
+	* Foxtrot/README:
+	* Foxtrot/index.theme:
+	* Foxtrot/index.theme.in:
+	* Foxtrot/scalable/Makefile.am:
+	* Foxtrot/scalable/actions/Makefile.am:
+	* Foxtrot/scalable/actions/document-open.svg:
+	* Foxtrot/scalable/actions/folder-new.svg:
+	* Foxtrot/scalable/actions/go-bottom.svg:
+	* Foxtrot/scalable/actions/go-down.svg:
+	* Foxtrot/scalable/actions/go-first.svg:
+	* Foxtrot/scalable/actions/go-home.svg:
+	* Foxtrot/scalable/actions/go-last.svg:
+	* Foxtrot/scalable/actions/go-next.svg:
+	* Foxtrot/scalable/actions/go-previous.svg:
+	* Foxtrot/scalable/actions/go-top.svg:
+	* Foxtrot/scalable/actions/go-up.svg:
+	* Foxtrot/scalable/actions/list-add.svg:
+	* Foxtrot/scalable/actions/list-remove.svg:
+	* Foxtrot/scalable/actions/system-search.svg:
+	* Foxtrot/scalable/actions/view-refresh.svg:
+	* Foxtrot/scalable/categories/Makefile.am:
+	* Foxtrot/scalable/categories/preferences-system.svg:
+	* Foxtrot/scalable/devices/Makefile.am:
+	* Foxtrot/scalable/devices/computer.svg:
+	* Foxtrot/scalable/devices/video-display.svg:
+	* Foxtrot/scalable/places/Makefile.am:
+	* Foxtrot/scalable/places/folder-remote.svg:
+	* Foxtrot/scalable/places/folder.svg:
+	* Foxtrot/scalable/places/gnome-fs-desktop.svg:
+	* Foxtrot/scalable/places/gnome-fs-trash-full.svg:
+	* Foxtrot/scalable/places/network-workgroup.svg:
+	* Foxtrot/scalable/places/user-desktop.svg:
+	* Foxtrot/scalable/places/user-home-folder.svg:
+	* Foxtrot/scalable/places/user-home.svg:
+	* Foxtrot/scalable/places/user-trash-full.svg:
+	* Foxtrot/scalable/places/user-trash.svg:
+	* Foxtrot/scalable/places/x-directory-normal.svg:
+	* Foxtrot/scalable/places/x-directory-remote.svg:
+	* Foxtrot/scalable/status/Makefile.am:
+	* Foxtrot/scalable/status/folder-accept.svg:
+	* Foxtrot/scalable/status/folder-drag-accept.svg:
+	* Foxtrot/scalable/status/folder-open.svg:
+	* Foxtrot/scalable/status/gnome-fs-accept.svg:
+	* Foxtrot/scalable/status/user-trash-full.svg:
+	* Foxtrot/scalable/status/x-directory-drag-accept.svg:
+	* Foxtrot/scalable/status/x-directory-normal-accept.svg:
+	* Foxtrot/scalable/status/x-directory-normal-open.svg:
+	* Makefile.am:
+	* configure.in:
+	* icon-themes/Foxtrot/index.theme:
+	Moved to icon-themes
+
+2007-07-30  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
 	* Foxtrot/16x16/actions/Makefile.am:
 	* Foxtrot/16x16/places/Makefile.am:
 	* Foxtrot/22x22/actions/Makefile.am:
