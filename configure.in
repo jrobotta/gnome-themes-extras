@@ -1,4 +1,4 @@
-AC_PREREQ(2.52)
+AC_PREREQ(2.53)
 AC_INIT(gnome-themes-extras, 0.10.0)
 
 AM_CONFIG_HEADER(config.h)
@@ -10,7 +10,6 @@ AM_INIT_AUTOMAKE([1.9 tar-pax])
 
 # Honor aclocal flags
 ACLOCAL="$ACLOCAL $ACLOCAL_FLAGS"
-
 
 GETTEXT_PACKAGE=gnome-themes-extras
 AC_SUBST(GETTEXT_PACKAGE)
@@ -48,11 +47,43 @@ AC_FUNC_MMAP
 AC_FUNC_ALLOCA
 AC_CHECK_FUNCS(setenv putenv)
 
-ALL_LINGUAS="ar az bg ca cs da de dz el en_CA en_GB es fi fr gl he hr hu it ja ko lt nb ne nl pa pl pt pt_BR ru rw sk sl sq sr sr@Latn sv tr uk vi zh_CN zh_TW"
+ALL_LINGUAS=""
 AM_GLIB_GNU_GETTEXT
 
+UTILS_REQUIRED=0.8.1
+
+AC_MSG_CHECKING([icon-naming-utils >= $UTILS_REQUIRED])
+PKG_CHECK_EXISTS(icon-naming-utils >= $UTILS_REQUIRED,
+                 have_utils=yes, have_utils=no)
+if test "x$have_utils" = "xyes"; then
+	UTILS_PATH="`$PKG_CONFIG --variable=program_path icon-naming-utils`"
+	ICONMAP="$UTILS_PATH/icon-name-mapping"
+	AC_SUBST(ICONMAP)
+	AC_MSG_RESULT([yes])
+else
+	AC_MSG_RESULT([no])
+	AC_MSG_ERROR([icon-naming-utils >= $UTILS_REQUIRED is required to build
+	                and install gnome-icon-theme])
+fi
+
 AC_OUTPUT([
-Makefile
 gnome-themes-extras.spec
+Foxtrot/Makefile
+Foxtrot/16x16/Makefile
+Foxtrot/16x16/actions/Makefile
+Foxtrot/16x16/places/Makefile
+Foxtrot/22x22/Makefile
+Foxtrot/22x22/actions/Makefile
+Foxtrot/22x22/places/Makefile
+Foxtrot/22x22/status/Makefile
+Foxtrot/24x24/Makefile
+Foxtrot/24x24/actions/Makefile
+Foxtrot/24x24/places/Makefile
+Foxtrot/scalable/Makefile
+Foxtrot/scalable/actions/Makefile
+Foxtrot/scalable/categories/Makefile
+Foxtrot/scalable/devices/Makefile
+Foxtrot/scalable/places/Makefile
+Foxtrot/scalable/status/Makefile
 po/Makefile.in
 ])
