@@ -1,3 +1,22 @@
+2007-07-30  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* Foxtrot/16x16/actions/Makefile.am:
+	* Foxtrot/16x16/places/Makefile.am:
+	* Foxtrot/22x22/actions/Makefile.am:
+	* Foxtrot/22x22/places/Makefile.am:
+	* Foxtrot/22x22/status/Makefile.am:
+	* Foxtrot/24x24/actions/Makefile.am:
+	* Foxtrot/24x24/places/Makefile.am:
+	* Foxtrot/Makefile.am:
+	* Foxtrot/scalable/actions/Makefile.am:
+	* Foxtrot/scalable/categories/Makefile.am:
+	* Foxtrot/scalable/devices/Makefile.am:
+	* Foxtrot/scalable/places/Makefile.am:
+	* Foxtrot/scalable/status/Makefile.am:
+	* NEWS:
+	* configure.in:
+	Foxtrot icon theme.  :)
+
 2007-07-30  Andrea Cimitan <andrea.cimitan@gmail.com>
 
 	* configure.in:

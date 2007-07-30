@@ -52,6 +52,7 @@ AM_GLIB_GNU_GETTEXT
 
 UTILS_REQUIRED=0.8.1
 
+
 AC_MSG_CHECKING([icon-naming-utils >= $UTILS_REQUIRED])
 PKG_CHECK_EXISTS(icon-naming-utils >= $UTILS_REQUIRED,
                  have_utils=yes, have_utils=no)
@@ -67,6 +68,7 @@ else
 fi
 
 AC_OUTPUT([
+Makefile
 gnome-themes-extras.spec
 Foxtrot/Makefile
 Foxtrot/16x16/Makefile

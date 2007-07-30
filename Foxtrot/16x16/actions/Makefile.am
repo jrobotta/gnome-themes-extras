@@ -1,7 +1,7 @@
 size = 16x16
 context = actions
 
-iconsdir = $(themedir)/$(size)/$(context)
+iconsdir = $(datadir)/icons/Foxtrot/$(size)/$(context)
 
 icons_DATA =				\
 	document-open.png		\
@@ -24,7 +24,7 @@ MAINTAINERCLEANFILES =			\
 	Makefile.in
 
 install-data-local: install-iconsDATA
-	(cd $(DESTDIR)$(themedir)/$(size) && $(ICONMAP) -c $(context))
+	(cd $(DESTDIR)$(datadir)/icons/Foxtrot/$(size) && $(ICONMAP) -c $(context))
 
 check:
 	if test -r CVS/Entries; then \
