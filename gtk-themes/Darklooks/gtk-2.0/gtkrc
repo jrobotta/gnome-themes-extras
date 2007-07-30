@@ -1,4 +1,3 @@
-
 gtk_color_scheme = "fg_color:#E6E6E6\nbg_color:#555753\nbase_color:#2E3436\ntext_color:#B3B3B3\nselected_bg_color:#41423F\nselected_fg_color:#7AA3CC"
 
 style "clearlooks-default"
