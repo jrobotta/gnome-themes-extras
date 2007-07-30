@@ -69,6 +69,11 @@ fi
 AC_OUTPUT([
 Makefile
 gnome-themes-extras.spec
+desktop-themes/Makefile
+desktop-themes/Darklooks/Makefile
+gtk-themes/Makefile
+gtk-themes/Darklooks/Makefile
+gtk-themes/Darklooks/gtk-2.0/Makefile
 icon-themes/Makefile
 icon-themes/Foxtrot/Makefile
 icon-themes/Foxtrot/16x16/Makefile

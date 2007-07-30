@@ -32,7 +32,7 @@ rm -rf ${RPM_BUILD_ROOT}
 %{_datadir}/icons/*
 %{_datadir}/themes/*
 %{_datadir}/locale/*
-%doc AUTHORS MAINTAINERS ChangeLog COPYING README license_dsg license_lgpl license_gpl TODO
+%doc AUTHORS MAINTAINERS ChangeLog COPYING README TODO
 
 %changelog
 * Mon Jul 30 2007 Andrea Cimitan <andrea.cimitan@gmail.com>

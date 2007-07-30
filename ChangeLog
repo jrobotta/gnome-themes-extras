@@ -1,5 +1,23 @@
 2007-07-30  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
+	* AUTHORS:
+	* Makefile.am:
+	* autogen.sh:
+	* configure.ac:
+	* configure.in:
+	* desktop-themes/Darklooks/Makefile.am:
+	* desktop-themes/Darklooks/index.theme.in:
+	* desktop-themes/Makefile.am:
+	* gnome-themes-extras.spec.in:
+	* gtk-themes/Darklooks/Makefile.am:
+	* gtk-themes/Darklooks/gtk-2.0/Makefile.am:
+	* gtk-themes/Darklooks/gtk-2.0/gtkrc:
+	* gtk-themes/Makefile.am:
+	Added Darklooks gtk theme
+	Moved to configure.ac
+
+2007-07-30  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
 	* icon-themes/Foxtrot/AUTHORS:
 	Added AUTHORS file to Foxtrot
 
