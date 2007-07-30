@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=Foxtrot
 Comment=A tangonized theme with Bluecurve colors
-Inherits=Tango,gnome
+Inherits=gnome
 Example=x-directory-normal
 
 # Directory list
