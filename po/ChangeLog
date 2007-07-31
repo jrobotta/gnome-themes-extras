@@ -1,3 +1,8 @@
+2007-07-31  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* POTFILES.in:
+	Removed old stuff
+
 2007-07-30  Andrea Cimitan <andrea.cimitan@gmail.com>
 
 	Removed all the *.po because all themes were removed

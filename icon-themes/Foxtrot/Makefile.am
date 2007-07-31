@@ -8,5 +8,5 @@ iconsdir = $(datadir)/icons/$(THEME_NAME)
 icons_DATA = index.theme
 
 SUBDIRS = 16x16 22x22 24x24 scalable 
-EXTRA_DIST=index.theme.in index.theme
-
+EXTRA_DIST = index.theme.in index.theme
+DISTCLEANFILES = index.theme

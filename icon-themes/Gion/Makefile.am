@@ -9,4 +9,4 @@ icons_DATA = index.theme
 
 SUBDIRS = 16x16 22x22 24x24 48x48 128x128 scalable 
 EXTRA_DIST = index.theme.in index.theme
-
+DISTCLEANFILES = index.theme
