@@ -96,6 +96,7 @@ icon-themes/Gion/Makefile
 icon-themes/Gion/16x16/Makefile
 icon-themes/Gion/16x16/actions/Makefile
 icon-themes/Gion/16x16/apps/Makefile
+icon-themes/Gion/16x16/devices/Makefile
 icon-themes/Gion/16x16/mimetypes/Makefile
 icon-themes/Gion/16x16/places/Makefile
 icon-themes/Gion/22x22/Makefile

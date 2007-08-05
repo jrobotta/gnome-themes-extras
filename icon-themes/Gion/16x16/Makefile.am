@@ -1,1 +1,1 @@
-SUBDIRS = actions apps mimetypes places
+SUBDIRS = actions apps devices mimetypes places

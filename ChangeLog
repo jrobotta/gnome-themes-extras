@@ -1,3 +1,11 @@
+2007-08-05  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* configure.ac:
+	* icon-themes/Gion/16x16/Makefile.am:
+	* icon-themes/Gion/16x16/devices/Makefile.am:
+	* icon-themes/Gion/16x16/mimetypes/Makefile.am:
+	Added more 16x16 mipetypes and devices icons
+
 2007-07-31  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
 	* Makefile.am:
