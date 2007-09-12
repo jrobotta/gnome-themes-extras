@@ -1,3 +1,11 @@
+2007-09-12  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* configure.ac:
+	2.20 release
+	
+	* gtk-themes/Darklooks/gtk-2.0/gtkrc:
+	Darken selected_bg
+
 2007-09-11  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
 	* gtk-themes/Darklooks/gtk-2.0/gtkrc:

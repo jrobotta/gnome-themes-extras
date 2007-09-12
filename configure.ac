@@ -1,5 +1,5 @@
 AC_PREREQ(2.53)
-AC_INIT(gnome-themes-extras, 2.19.92)
+AC_INIT(gnome-themes-extras, 2.20)
 
 AM_CONFIG_HEADER(config.h)
 
@@ -27,7 +27,7 @@ AM_DISABLE_STATIC
 AM_PROG_LIBTOOL
 
 PKG_CHECK_MODULES(GTK_ENGINES_2,
-		  gtk-engines-2 >= 2.11.0,,
+		  gtk-engines-2 >= 2.11.7,,
 		  AC_MSG_ERROR([gtk-engines-2 is required to compile gnome-themes-extras]))
 
 # Checks for header files.
