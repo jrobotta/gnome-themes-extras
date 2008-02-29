@@ -1,6 +1,6 @@
 [Icon Theme]
-Name=Foxtrot
-Comment=A tangonized theme with Bluecurve colors
+_Name=Foxtrot
+_Comment=A tangonized theme with Bluecurve colors
 Inherits=gnome
 Example=x-directory-normal
 

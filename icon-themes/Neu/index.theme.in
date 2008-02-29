@@ -1,6 +1,6 @@
 [Icon Theme]
-Name=Dropline Neu!
-Comment=Dropline Neu! Icon Theme
+_Name=Dropline Neu!
+_Comment=Dropline Neu! Icon Theme
 Inherits=gnome
 Example=x-directory-normal
 DisplayDepth=32

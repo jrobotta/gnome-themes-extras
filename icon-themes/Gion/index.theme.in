@@ -1,6 +1,6 @@
 [Icon Theme]
-Name=Gion
-Comment=Gion Icon Theme
+_Name=Gion
+_Comment=Gion Icon Theme
 Inherits=gnome
 Example=x-directory-normal
 DisplayDepth=32

@@ -1,3 +1,14 @@
+2008-02-29  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* AUTHORS:
+	* COPYING:
+	* desktop-themes/Darklooks/index.theme.in:
+	* icon-themes/Foxtrot/index.theme.in:
+	* icon-themes/Gion/index.theme.in:
+	* icon-themes/Neu/index.theme.in:
+	Fixing bug #496096.
+	Patch by Werner Pantke
+
 2007-10-14  Yannig Marchegay  <yannig@marchegay.org>
 
 	* configure.ac: Added 'oc' to ALL_LINGUAS.
