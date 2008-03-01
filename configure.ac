@@ -1,5 +1,5 @@
 AC_PREREQ(2.53)
-AC_INIT(gnome-themes-extras, 2.20)
+AC_INIT(gnome-themes-extras, 2.21.92)
 
 AM_CONFIG_HEADER(config.h)
 
