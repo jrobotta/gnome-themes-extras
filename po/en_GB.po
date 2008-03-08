@@ -1,0 +1,49 @@
+# English (British) translation.
+# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-themes-extras package.
+#
+# Philip Withnall <pwithnall@svn.gnome.org>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-08 11:55+0000\n"
+"PO-Revision-Date: 2008-03-08 11:55+0000\n"
+"Last-Translator: Philip Withnall <pwithnall@svn.gnome.org>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:1
+msgid "A dark Clearlooks theme"
+msgstr "A dark Clearlooks theme"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:2
+msgid "Darklooks"
+msgstr "Darklooks"
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:1
+msgid "A tangonized theme with Bluecurve colors"
+msgstr "A Tangoised theme with Bluecurve colours"
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:2
+msgid "Foxtrot"
+msgstr "Foxtrot"
+
+#: ../icon-themes/Gion/index.theme.in.h:1
+msgid "Gion"
+msgstr "Gion"
+
+#: ../icon-themes/Gion/index.theme.in.h:2
+msgid "Gion Icon Theme"
+msgstr "Gion Icon Theme"
+
+#: ../icon-themes/Neu/index.theme.in.h:1
+msgid "Dropline Neu!"
+msgstr "Dropline Neu!"
+
+#: ../icon-themes/Neu/index.theme.in.h:2
+msgid "Dropline Neu! Icon Theme"
+msgstr "Dropline Neu! Icon Theme"
