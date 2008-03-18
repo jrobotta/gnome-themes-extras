@@ -1,6 +1,11 @@
 2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
 	* gtk-themes/Unity/gtk-2.0/gtkrc:
+	Better code
+
+2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* gtk-themes/Unity/gtk-2.0/gtkrc:
 	Removed useless code
 
 2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>

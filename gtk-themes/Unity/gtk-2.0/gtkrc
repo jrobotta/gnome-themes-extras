@@ -235,33 +235,30 @@ style "clearlooks-spinbutton"
 	}
 }
 
-style "clearlooks-scale"
+style "clearlooks-scale-bg"
 {
 	bg[NORMAL]   = shade (1.07, @bg_color)
 	bg[PRELIGHT] = shade (1.09, @bg_color)
+}
 
+style "clearlooks-scale" = "clearlooks-scale-bg"
+{
 	engine "clearlooks"
 	{
 		hint	= "scale"
 	}
 }
 
-style "clearlooks-hscale"
+style "clearlooks-hscale" = "clearlooks-scale-bg"
 {
-	bg[NORMAL]   = shade (1.07, @bg_color)
-	bg[PRELIGHT] = shade (1.09, @bg_color)
-
 	engine "clearlooks"
 	{
 		hint	= "hscale"
 	}
 }
 
-style "clearlooks-vscale"
+style "clearlooks-vscale" = "clearlooks-scale-bg"
 {
-	bg[NORMAL]   = shade (1.07, @bg_color)
-	bg[PRELIGHT] = shade (1.09, @bg_color)
-
 	engine "clearlooks"
 	{
 		hint	= "vscale"
