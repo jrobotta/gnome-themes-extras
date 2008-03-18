@@ -239,7 +239,6 @@ style "clearlooks-scale"
 {
 	bg[NORMAL]   = shade (1.07, @bg_color)
 	bg[PRELIGHT] = shade (1.09, @bg_color)
-	bg[ACTIVE]   = shade (0.85, @bg_color)
 
 	engine "clearlooks"
 	{
@@ -251,7 +250,6 @@ style "clearlooks-hscale"
 {
 	bg[NORMAL]   = shade (1.07, @bg_color)
 	bg[PRELIGHT] = shade (1.09, @bg_color)
-	bg[ACTIVE]   = shade (0.85, @bg_color)
 
 	engine "clearlooks"
 	{
@@ -263,7 +261,6 @@ style "clearlooks-vscale"
 {
 	bg[NORMAL]   = shade (1.07, @bg_color)
 	bg[PRELIGHT] = shade (1.09, @bg_color)
-	bg[ACTIVE]   = shade (0.85, @bg_color)
 
 	engine "clearlooks"
 	{
