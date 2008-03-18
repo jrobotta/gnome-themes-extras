@@ -107,7 +107,7 @@ style "clearlooks-button"
 
 style "clearlooks-notebook-bg"
 {
-	bg[NORMAL] = shade (1.04, @bg_color)
+	bg[NORMAL] = shade (1.05, @bg_color)
 }
 
 style "clearlooks-notebook" = "clearlooks-notebook-bg"
@@ -237,6 +237,10 @@ style "clearlooks-spinbutton"
 
 style "clearlooks-scale"
 {
+	bg[NORMAL]   = shade (1.07, @bg_color)
+	bg[PRELIGHT] = shade (1.09, @bg_color)
+	bg[ACTIVE]   = shade (0.85, @bg_color)
+
 	engine "clearlooks"
 	{
 		hint	= "scale"
@@ -245,6 +249,10 @@ style "clearlooks-scale"
 
 style "clearlooks-hscale"
 {
+	bg[NORMAL]   = shade (1.07, @bg_color)
+	bg[PRELIGHT] = shade (1.09, @bg_color)
+	bg[ACTIVE]   = shade (0.85, @bg_color)
+
 	engine "clearlooks"
 	{
 		hint	= "hscale"
@@ -253,6 +261,10 @@ style "clearlooks-hscale"
 
 style "clearlooks-vscale"
 {
+	bg[NORMAL]   = shade (1.07, @bg_color)
+	bg[PRELIGHT] = shade (1.09, @bg_color)
+	bg[ACTIVE]   = shade (0.85, @bg_color)
+
 	engine "clearlooks"
 	{
 		hint	= "vscale"
@@ -436,7 +448,7 @@ style "clearlooks-evo-new-button-workaround"
 	GtkMenuBar     ::shadow-type          = GTK_SHADOW_NONE
 	GtkToolbar     ::shadow-type          = GTK_SHADOW_NONE
 
-	bg[NORMAL]        = @bg_color
+	bg[NORMAL]      = @bg_color
 
 	engine "clearlooks"
 	{

@@ -1,5 +1,11 @@
 2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
+	* desktop-themes/Unity/Makefile.am:
+	* gtk-themes/Unity/gtk-2.0/gtkrc:
+	I broke Darklooks's metatheme, now fixed
+
+2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
 	* gtk-themes/Unity/gtk-2.0/gtkrc:
 	More radius
 
