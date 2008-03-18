@@ -28,7 +28,7 @@ AM_PROG_LIBTOOL
 
 PKG_CHECK_MODULES(GTK_ENGINES_2,
 	gtk-engines-2 >= 2.14.0,,
-	AC_MSG_ERROR([gtk-engines-2 is required to compile gnome-themes-extras]))
+	AC_MSG_ERROR([gtk-engines-2 >= 2.14.0 is required to compile gnome-themes-extras]))
 
 # Checks for header files.
 AC_HEADER_STDC
