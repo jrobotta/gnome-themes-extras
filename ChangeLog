@@ -1,6 +1,11 @@
 2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
 	* gtk-themes/Unity/gtk-2.0/gtkrc:
+	Less bright notebook
+
+2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* gtk-themes/Unity/gtk-2.0/gtkrc:
 	Better code
 
 2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
