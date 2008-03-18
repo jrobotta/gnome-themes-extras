@@ -1,5 +1,36 @@
 2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
+	* desktop-themes/Unity/Makefile.in:
+	* desktop-themes/Unity/index.theme.ine:
+	* desktop-themes/Unity/index.themee:
+	* gtk-themes/Unity/Makefile.in:
+	* gtk-themes/Unity/gtk-2.0/Makefile.in:
+	* icon-themes/gnome-alternative/16x16/Makefile.in:
+	* icon-themes/gnome-alternative/16x16/actions/Makefile.in:
+	* icon-themes/gnome-alternative/16x16/places/Makefile.in:
+	* icon-themes/gnome-alternative/16x16/status/Makefile.in:
+	* icon-themes/gnome-alternative/22x22/Makefile.in:
+	* icon-themes/gnome-alternative/22x22/actions/Makefile.in:
+	* icon-themes/gnome-alternative/22x22/places/Makefile.in:
+	* icon-themes/gnome-alternative/22x22/status/Makefile.in:
+	* icon-themes/gnome-alternative/24x24/Makefile.in:
+	* icon-themes/gnome-alternative/24x24/actions/Makefile.in:
+	* icon-themes/gnome-alternative/24x24/places/Makefile.in:
+	* icon-themes/gnome-alternative/24x24/status/Makefile.in:
+	* icon-themes/gnome-alternative/32x32/Makefile.in:
+	* icon-themes/gnome-alternative/32x32/actions/Makefile.in:
+	* icon-themes/gnome-alternative/32x32/places/Makefile.in:
+	* icon-themes/gnome-alternative/32x32/status/Makefile.in:
+	* icon-themes/gnome-alternative/Makefile.in:
+	* icon-themes/gnome-alternative/scalable/Makefile.in:
+	* icon-themes/gnome-alternative/scalable/actions/Makefile.in:
+	* icon-themes/gnome-alternative/scalable/places/Makefile.in:
+	* icon-themes/gnome-alternative/scalable/status/Makefile.in:
+	* metacity-themes/Makefile.in:
+	Makefile.in files are genereated locally by autogen, should be removed
+
+2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
 	* COPYING:
 	* Makefile.am:
 	* configure.ac:
