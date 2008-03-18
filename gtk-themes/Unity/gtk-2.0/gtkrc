@@ -107,7 +107,8 @@ style "clearlooks-button"
 
 style "clearlooks-notebook-bg"
 {
-	bg[NORMAL] = shade (1.04, @bg_color)
+	bg[NORMAL] = shade (1.05, @bg_color)
+	bg[ACTIVE] = shade (0.98, @bg_color)
 }
 
 style "clearlooks-notebook" = "clearlooks-notebook-bg"
