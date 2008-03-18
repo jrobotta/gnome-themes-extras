@@ -1,5 +1,10 @@
 2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
+	* configure.ac:
+	gnome-themes-extras depends on gtk-engines 2.14.0 (gnome 2.22.0)
+
+2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
 	* COPYING:
 	GNOME_alternative is now gnome-alternative
 

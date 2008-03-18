@@ -27,8 +27,8 @@ AM_DISABLE_STATIC
 AM_PROG_LIBTOOL
 
 PKG_CHECK_MODULES(GTK_ENGINES_2,
-		  gtk-engines-2 >= 2.11.7,,
-		  AC_MSG_ERROR([gtk-engines-2 is required to compile gnome-themes-extras]))
+	gtk-engines-2 >= 2.14.0,,
+	AC_MSG_ERROR([gtk-engines-2 is required to compile gnome-themes-extras]))
 
 # Checks for header files.
 AC_HEADER_STDC
@@ -63,7 +63,7 @@ if test "x$have_utils" = "xyes"; then
 else
 	AC_MSG_RESULT([no])
 	AC_MSG_ERROR([icon-naming-utils >= $UTILS_REQUIRED is required to build
-	                and install gnome-icon-theme])
+	and install gnome-icon-theme])
 fi
 
 AC_OUTPUT([
