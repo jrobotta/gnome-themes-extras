@@ -1,5 +1,10 @@
 2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
+	* gtk-themes/Unity/gtk-2.0/gtkrc:
+	More radius
+
+2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
 	* configure.ac:
 	* desktop-themes/Unity/index.theme.in:
 	Fixed desktop metatheme

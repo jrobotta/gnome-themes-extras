@@ -70,7 +70,7 @@ style "clearlooks-default"
 		toolbarstyle       = 1      # 0 = flat, 1 = enable effects
 		animation          = FALSE
 		style              = GUMMY
-		radius             = 3.0
+		radius             = 4.0
 
 		# Set a hint to disable backward compatibility fallbacks.
 		hint = "use-hints"
