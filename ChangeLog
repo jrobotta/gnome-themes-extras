@@ -1,5 +1,10 @@
 2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
+	* COPYING:
+	GNOME_alternative is now gnome-alternative
+
+2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
 	* desktop-themes/Unity/Makefile.in:
 	* desktop-themes/Unity/index.theme.ine:
 	* desktop-themes/Unity/index.themee:
