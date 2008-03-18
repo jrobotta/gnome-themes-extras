@@ -1,5 +1,5 @@
 AC_PREREQ(2.53)
-AC_INIT(gnome-themes-extras, 2.21.92)
+AC_INIT(gnome-themes-extras, 2.22.0)
 
 AM_CONFIG_HEADER(config.h)
 
@@ -71,9 +71,12 @@ Makefile
 gnome-themes-extras.spec
 desktop-themes/Makefile
 desktop-themes/Darklooks/Makefile
+desktop-themes/Unity/Makefile
 gtk-themes/Makefile
 gtk-themes/Darklooks/Makefile
 gtk-themes/Darklooks/gtk-2.0/Makefile
+gtk-themes/Unity/Makefile
+gtk-themes/Unity/gtk-2.0/Makefile
 icon-themes/Makefile
 icon-themes/Foxtrot/Makefile
 icon-themes/Foxtrot/16x16/Makefile
@@ -137,6 +140,27 @@ icon-themes/Gion/scalable/devices/Makefile
 icon-themes/Gion/scalable/mimetypes/Makefile
 icon-themes/Gion/scalable/places/Makefile
 icon-themes/Gion/scalable/status/Makefile
+icon-themes/gnome-alternative/Makefile
+icon-themes/gnome-alternative/16x16/Makefile
+icon-themes/gnome-alternative/16x16/actions/Makefile
+icon-themes/gnome-alternative/16x16/places/Makefile
+icon-themes/gnome-alternative/16x16/status/Makefile
+icon-themes/gnome-alternative/22x22/Makefile
+icon-themes/gnome-alternative/22x22/actions/Makefile
+icon-themes/gnome-alternative/22x22/places/Makefile
+icon-themes/gnome-alternative/22x22/status/Makefile
+icon-themes/gnome-alternative/24x24/Makefile
+icon-themes/gnome-alternative/24x24/actions/Makefile
+icon-themes/gnome-alternative/24x24/places/Makefile
+icon-themes/gnome-alternative/24x24/status/Makefile
+icon-themes/gnome-alternative/32x32/Makefile
+icon-themes/gnome-alternative/32x32/actions/Makefile
+icon-themes/gnome-alternative/32x32/places/Makefile
+icon-themes/gnome-alternative/32x32/status/Makefile
+icon-themes/gnome-alternative/scalable/Makefile
+icon-themes/gnome-alternative/scalable/actions/Makefile
+icon-themes/gnome-alternative/scalable/places/Makefile
+icon-themes/gnome-alternative/scalable/status/Makefile
 icon-themes/Neu/Makefile
 icon-themes/Neu/22x22/Makefile
 icon-themes/Neu/22x22/actions/Makefile
@@ -182,5 +206,6 @@ icon-themes/Neu/scalable/emblems/Makefile
 icon-themes/Neu/scalable/mimetypes/Makefile
 icon-themes/Neu/scalable/places/Makefile
 icon-themes/Neu/scalable/status/Makefile
+metacity-themes/Makefile
 po/Makefile.in
 ])

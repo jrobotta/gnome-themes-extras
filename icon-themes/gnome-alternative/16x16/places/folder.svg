@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.45+devel"
+   version="1.0"
+   sodipodi:docname="folder.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient6091"
+       inkscape:collect="always">
+      <stop
+         id="stop6093"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+      <stop
+         id="stop6095"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0.37327189" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6073">
+      <stop
+         style="stop-color:#9a9d88;stop-opacity:1"
+         offset="0"
+         id="stop6075" />
+      <stop
+         style="stop-color:#888a78;stop-opacity:1"
+         offset="1"
+         id="stop6077" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6065">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop6067" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.5437788"
+         offset="1"
+         id="stop6069" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6091"
+       id="linearGradient6071"
+       x1="4"
+       y1="-20"
+       x2="9"
+       y2="-12"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,26)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6073"
+       id="linearGradient6079"
+       x1="2.8995874"
+       y1="-24.003139"
+       x2="3.4071698"
+       y2="-21.356157"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,26)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6065"
+       id="linearGradient6089"
+       x1="3.5"
+       y1="-25"
+       x2="4.4973979"
+       y2="-21.038136"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,26)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#f6aaaa"
+     borderopacity="1"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8"
+     inkscape:cx="36.458463"
+     inkscape:cy="19.621153"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     width="16px"
+     height="16px"
+     inkscape:showpageshadow="false"
+     showgrid="false"
+     gridspacingx="0.5px"
+     gridspacingy="0.5px"
+     gridempspacing="2"
+     inkscape:grid-points="true"
+     inkscape:window-width="1019"
+     inkscape:window-height="726"
+     inkscape:window-x="5"
+     inkscape:window-y="69"
+     inkscape:object-paths="true"
+     inkscape:object-nodes="true"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:snap-bbox="true"
+     inkscape:snap-nodes="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5333"
+       spacingx="0.5px"
+       spacingy="0.5px"
+       empspacing="2" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Ulisse Perusin</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/GPL/2.0/" />
+        <dc:source>uli.peru@gmail.com</dc:source>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:url(#linearGradient6079);fill-opacity:1;fill-rule:evenodd;stroke:#555753;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 14.5,2.5 L 6.5,2.5 L 6.5,0.5 L 0.5,0.5 L 0.566667,12.499998 L 14.5,12.499998 L 14.5,2.5 z"
+       id="path6061"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="opacity:0.37327187;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient6089);stroke-width:1;stroke-linecap:square;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 13.5,3.5 L 6.5,3.5 C 6,3.5 5.5,3 5.5,2.5 L 5.5,1.5 L 1.5,1.5 L 1.5,13.5 L 13.5,13.5 L 13.5,3.5 z"
+       id="path6081"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       style="fill:#b9baa4;fill-opacity:1;fill-rule:evenodd;stroke:#555753;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 1.5,5.5 L 6,5.5 L 7,4.5 L 13,4.5 C 14,4.5 14.5,5 14.5,6 L 14.5,13.5 C 14.5,14.5 14.5,14.5 13.5,14.5 L 1.5,14.5 C 0.5,14.5 0.5,14.5 0.5,13.5 L 0.5,6.5 C 0.5,6 1,5.5 1.5,5.5 z"
+       id="rect5481"
+       sodipodi:nodetypes="ccccccccccc" />
+    <path
+       style="opacity:0.60829492;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient6071);stroke-width:1.00000012;stroke-linecap:square;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="M 1.5,6.5 L 6.5,6.5 L 7.5,5.5 L 13.5,5.5 L 13.5,13.5 L 1.5,13.5 L 1.5,6.5 z"
+       id="path6063"
+       sodipodi:nodetypes="ccccccc" />
+  </g>
+</svg>

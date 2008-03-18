@@ -1,1 +1,1 @@
-SUBDIRS = Foxtrot Gion Neu
+SUBDIRS = Foxtrot Gion gnome-alternative Neu

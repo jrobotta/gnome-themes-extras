@@ -1,3 +1,155 @@
+2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* COPYING:
+	* Makefile.am:
+	* configure.ac:
+	* desktop-themes/Makefile.am:
+	* desktop-themes/Unity/AUTHORS:
+	* desktop-themes/Unity/Makefile.am:
+	* desktop-themes/Unity/Makefile.in:
+	* desktop-themes/Unity/index.theme.in:
+	* desktop-themes/Unity/index.theme.ine:
+	* desktop-themes/Unity/index.themee:
+	* gtk-themes/Darklooks/gtk-2.0/gtkrc:
+	* gtk-themes/Makefile.am:
+	* gtk-themes/Unity/AUTHORS:
+	* gtk-themes/Unity/Makefile.am:
+	* gtk-themes/Unity/Makefile.in:
+	* gtk-themes/Unity/gtk-2.0/Makefile.am:
+	* gtk-themes/Unity/gtk-2.0/Makefile.in:
+	* gtk-themes/Unity/gtk-2.0/gtkrc:
+	* icon-themes/Gion/COPYING:
+	* icon-themes/Makefile.am:
+	* icon-themes/Neu/COPYING:
+	* icon-themes/gnome-alternative/16x16/Makefile.am:
+	* icon-themes/gnome-alternative/16x16/Makefile.in:
+	* icon-themes/gnome-alternative/16x16/actions/Makefile.am:
+	* icon-themes/gnome-alternative/16x16/actions/Makefile.in:
+	* icon-themes/gnome-alternative/16x16/places/Makefile.am:
+	* icon-themes/gnome-alternative/16x16/places/Makefile.in:
+	* icon-themes/gnome-alternative/16x16/places/folder-remote-ftp.svg:
+	* icon-themes/gnome-alternative/16x16/places/folder-remote-smb.svg:
+	* icon-themes/gnome-alternative/16x16/places/folder-remote-ssh.svg:
+	* icon-themes/gnome-alternative/16x16/places/folder-remote.icon:
+	* icon-themes/gnome-alternative/16x16/places/folder-remote.svg:
+	* icon-themes/gnome-alternative/16x16/places/folder-saved-search.sv
+	g:
+	* icon-themes/gnome-alternative/16x16/places/folder.icon:
+	* icon-themes/gnome-alternative/16x16/places/folder.svg:
+	* icon-themes/gnome-alternative/16x16/places/gnome-fs-dav.svg:
+	* icon-themes/gnome-alternative/16x16/places/user-home.svg:
+	* icon-themes/gnome-alternative/16x16/status/Makefile.am:
+	* icon-themes/gnome-alternative/16x16/status/Makefile.in:
+	* icon-themes/gnome-alternative/16x16/status/folder-drag-accept.ico
+	n:
+	* icon-themes/gnome-alternative/16x16/status/folder-open.icon:
+	* icon-themes/gnome-alternative/16x16/status/folder-visiting.icon:
+	* icon-themes/gnome-alternative/22x22/Makefile.am:
+	* icon-themes/gnome-alternative/22x22/Makefile.in:
+	* icon-themes/gnome-alternative/22x22/actions/Makefile.am:
+	* icon-themes/gnome-alternative/22x22/actions/Makefile.in:
+	* icon-themes/gnome-alternative/22x22/actions/document-open.svg:
+	* icon-themes/gnome-alternative/22x22/actions/folder-new.svg:
+	* icon-themes/gnome-alternative/22x22/places/Makefile.am:
+	* icon-themes/gnome-alternative/22x22/places/Makefile.in:
+	* icon-themes/gnome-alternative/22x22/places/folder-remote-ftp.svg:
+	* icon-themes/gnome-alternative/22x22/places/folder-remote-smb.svg:
+	* icon-themes/gnome-alternative/22x22/places/folder-remote-ssh.svg:
+	* icon-themes/gnome-alternative/22x22/places/folder-remote.icon:
+	* icon-themes/gnome-alternative/22x22/places/folder-remote.svg:
+	* icon-themes/gnome-alternative/22x22/places/folder-saved-search.sv
+	g:
+	* icon-themes/gnome-alternative/22x22/places/folder.icon:
+	* icon-themes/gnome-alternative/22x22/places/folder.svg:
+	* icon-themes/gnome-alternative/22x22/places/gnome-fs-dav.svg:
+	* icon-themes/gnome-alternative/22x22/places/user-home.svg:
+	* icon-themes/gnome-alternative/22x22/status/Makefile.am:
+	* icon-themes/gnome-alternative/22x22/status/Makefile.in:
+	* icon-themes/gnome-alternative/22x22/status/folder-drag-accept.ico
+	n:
+	* icon-themes/gnome-alternative/22x22/status/folder-drag-accept.svg
+	:
+	* icon-themes/gnome-alternative/22x22/status/folder-open.icon:
+	* icon-themes/gnome-alternative/22x22/status/folder-open.svg:
+	* icon-themes/gnome-alternative/22x22/status/folder-visiting.icon:
+	* icon-themes/gnome-alternative/22x22/status/folder-visiting.svg:
+	* icon-themes/gnome-alternative/24x24/Makefile.am:
+	* icon-themes/gnome-alternative/24x24/Makefile.in:
+	* icon-themes/gnome-alternative/24x24/actions/Makefile.am:
+	* icon-themes/gnome-alternative/24x24/actions/Makefile.in:
+	* icon-themes/gnome-alternative/24x24/places/Makefile.am:
+	* icon-themes/gnome-alternative/24x24/places/Makefile.in:
+	* icon-themes/gnome-alternative/24x24/status/Makefile.am:
+	* icon-themes/gnome-alternative/24x24/status/Makefile.in:
+	* icon-themes/gnome-alternative/32x32/Makefile.am:
+	* icon-themes/gnome-alternative/32x32/Makefile.in:
+	* icon-themes/gnome-alternative/32x32/actions/Makefile.am:
+	* icon-themes/gnome-alternative/32x32/actions/Makefile.in:
+	* icon-themes/gnome-alternative/32x32/actions/document-open.svg:
+	* icon-themes/gnome-alternative/32x32/actions/folder_new.svg:
+	* icon-themes/gnome-alternative/32x32/places/Makefile.am:
+	* icon-themes/gnome-alternative/32x32/places/Makefile.in:
+	* icon-themes/gnome-alternative/32x32/places/folder-remote-ftp.svg:
+	* icon-themes/gnome-alternative/32x32/places/folder-remote-smb.svg:
+	* icon-themes/gnome-alternative/32x32/places/folder-remote-ssh.svg:
+	* icon-themes/gnome-alternative/32x32/places/folder-remote.svg:
+	* icon-themes/gnome-alternative/32x32/places/folder-saved-search.sv
+	g:
+	* icon-themes/gnome-alternative/32x32/places/folder.svg:
+	* icon-themes/gnome-alternative/32x32/places/folder_home.svg:
+	* icon-themes/gnome-alternative/32x32/status/Makefile.am:
+	* icon-themes/gnome-alternative/32x32/status/Makefile.in:
+	* icon-themes/gnome-alternative/32x32/status/folder-drag-accept.ico
+	n:
+	* icon-themes/gnome-alternative/32x32/status/folder-drag-accept.svg
+	:
+	* icon-themes/gnome-alternative/32x32/status/folder-open.icon:
+	* icon-themes/gnome-alternative/32x32/status/folder-open.svg:
+	* icon-themes/gnome-alternative/32x32/status/folder-visiting.icon:
+	* icon-themes/gnome-alternative/32x32/status/folder-visiting.svg:
+	* icon-themes/gnome-alternative/AUTHORS:
+	* icon-themes/gnome-alternative/Makefile.am:
+	* icon-themes/gnome-alternative/Makefile.in:
+	* icon-themes/gnome-alternative/index.theme.in:
+	* icon-themes/gnome-alternative/scalable/Makefile.am:
+	* icon-themes/gnome-alternative/scalable/Makefile.in:
+	* icon-themes/gnome-alternative/scalable/actions/Makefile.am:
+	* icon-themes/gnome-alternative/scalable/actions/Makefile.in:
+	* icon-themes/gnome-alternative/scalable/actions/document-open.svg:
+	* icon-themes/gnome-alternative/scalable/actions/folder-new.svg:
+	* icon-themes/gnome-alternative/scalable/places/Makefile.am:
+	* icon-themes/gnome-alternative/scalable/places/Makefile.in:
+	* icon-themes/gnome-alternative/scalable/places/folder-remote-ftp.s
+	vg:
+	* icon-themes/gnome-alternative/scalable/places/folder-remote-smb.s
+	vg:
+	* icon-themes/gnome-alternative/scalable/places/folder-remote-ssh.s
+	vg:
+	* icon-themes/gnome-alternative/scalable/places/folder-remote.icon:
+	* icon-themes/gnome-alternative/scalable/places/folder-remote.svg:
+	* icon-themes/gnome-alternative/scalable/places/folder-saved-search
+	.svg:
+	* icon-themes/gnome-alternative/scalable/places/folder.icon:
+	* icon-themes/gnome-alternative/scalable/places/folder.svg:
+	* icon-themes/gnome-alternative/scalable/places/user-home.svg:
+	* icon-themes/gnome-alternative/scalable/status/Makefile.am:
+	* icon-themes/gnome-alternative/scalable/status/Makefile.in:
+	* icon-themes/gnome-alternative/scalable/status/document-open.svg:
+	* icon-themes/gnome-alternative/scalable/status/folder-drag-accept.
+	icon:
+	* icon-themes/gnome-alternative/scalable/status/folder-drag-accept.
+	svg:
+	* icon-themes/gnome-alternative/scalable/status/folder-open.icon:
+	* icon-themes/gnome-alternative/scalable/status/folder-open.svg:
+	* icon-themes/gnome-alternative/scalable/status/folder-visiting.ico
+	n:
+	* icon-themes/gnome-alternative/scalable/status/folder-visiting.svg
+	:
+	* metacity-themes/Makefile.am:
+	* metacity-themes/Makefile.in:
+	* metacity-themes/Unity/metacity-theme-1.xml:
+	First upload of Unity and GNOME-Alternative, may be problematic
+
 2008-02-29  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
 	* AUTHORS:
