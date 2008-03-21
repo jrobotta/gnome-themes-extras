@@ -27,11 +27,6 @@ Size=22
 Context=Actions
 Type=Fixed
 
-[22x22/categories]
-Size=22
-Context=Categories
-Type=Fixed
-
 [22x22/places]
 Size=22
 Context=Places

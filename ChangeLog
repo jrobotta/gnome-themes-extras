@@ -1,3 +1,9 @@
+2008-03-21  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* gtk-themes/Unity/gtk-2.0/gtkrc:
+	* icon-themes/gnome-alternative/index.theme.in:
+	Fixes in the Unity's treeview header
+
 2008-03-18  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
 	* gtk-themes/Unity/gtk-2.0/gtkrc:
