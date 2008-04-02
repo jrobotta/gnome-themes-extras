@@ -26,17 +26,13 @@ AM_DISABLE_STATIC
 # Initialize libtool
 AM_PROG_LIBTOOL
 
-PKG_CHECK_MODULES(GTK_ENGINES_2,
-	gtk-engines-2 >= 2.14.0,,
-	AC_MSG_ERROR([gtk-engines-2 >= 2.14.0 is required to compile gnome-themes-extras]))
+PKG_CHECK_MODULES(GTK_ENGINES_2, gtk-engines-2 >= 2.14.0,, AC_MSG_ERROR([gtk-engines-2 >= 2.14.0 is required to compile gnome-themes-extras]))
 
 # Checks for header files.
 AC_HEADER_STDC
 
 # Checks for typedefs, structures, and compiler characteristics.
 AC_C_CONST
-
-AS_AC_EXPAND(DATADIR, $datadir)
 
 # Checks for endianness (needed by GdkRgb).
 AC_C_BIGENDIAN
@@ -53,8 +49,7 @@ AM_GLIB_GNU_GETTEXT
 UTILS_REQUIRED=0.8.1
 
 AC_MSG_CHECKING([icon-naming-utils >= $UTILS_REQUIRED])
-PKG_CHECK_EXISTS(icon-naming-utils >= $UTILS_REQUIRED,
-                 have_utils=yes, have_utils=no)
+PKG_CHECK_EXISTS(icon-naming-utils >= $UTILS_REQUIRED, have_utils=yes, have_utils=no)
 if test "x$have_utils" = "xyes"; then
 	UTILS_PATH="`$PKG_CONFIG --variable=program_path icon-naming-utils`"
 	ICONMAP="$UTILS_PATH/icon-name-mapping"
