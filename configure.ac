@@ -82,6 +82,7 @@ icon-themes/Foxtrot/Makefile
 icon-themes/Foxtrot/16x16/Makefile
 icon-themes/Foxtrot/16x16/actions/Makefile
 icon-themes/Foxtrot/16x16/places/Makefile
+icon-themes/Foxtrot/16x16/status/Makefile
 icon-themes/Foxtrot/22x22/Makefile
 icon-themes/Foxtrot/22x22/actions/Makefile
 icon-themes/Foxtrot/22x22/places/Makefile
@@ -89,6 +90,7 @@ icon-themes/Foxtrot/22x22/status/Makefile
 icon-themes/Foxtrot/24x24/Makefile
 icon-themes/Foxtrot/24x24/actions/Makefile
 icon-themes/Foxtrot/24x24/places/Makefile
+icon-themes/Foxtrot/24x24/status/Makefile
 icon-themes/Foxtrot/scalable/Makefile
 icon-themes/Foxtrot/scalable/actions/Makefile
 icon-themes/Foxtrot/scalable/categories/Makefile

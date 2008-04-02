@@ -1,3 +1,22 @@
+2008-04-02  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
+	* NEWS:
+	* configure.ac:
+	* gtk-themes/Unity/gtk-2.0/gtkrc:
+	* icon-themes/Foxtrot/16x16/Makefile.am:
+	* icon-themes/Foxtrot/16x16/places/Makefile.am:
+	* icon-themes/Foxtrot/16x16/places/user-trash.svg:
+	* icon-themes/Foxtrot/16x16/status/Makefile.am:
+	* icon-themes/Foxtrot/16x16/status/user-trash-full.svg:
+	* icon-themes/Foxtrot/22x22/places/Makefile.am:
+	* icon-themes/Foxtrot/22x22/places/user-trash.svg:
+	* icon-themes/Foxtrot/22x22/status/Makefile.am:
+	* icon-themes/Foxtrot/22x22/status/user-trash-full.svg:
+	* icon-themes/Foxtrot/24x24/Makefile.am:
+	* icon-themes/Foxtrot/24x24/status/Makefile.am:
+	Added few icons to Foxtrot.
+	Bumped version to 2.22.0
+
 2008-03-21  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
 	* gtk-themes/Unity/gtk-2.0/gtkrc:

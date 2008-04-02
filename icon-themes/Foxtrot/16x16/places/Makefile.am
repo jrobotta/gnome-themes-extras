@@ -10,6 +10,7 @@ icons_DATA =				\
 	user-desktop.png		\
 	user-home-folder.png		\
 	user-home.png			\
+	user-trash.png			\
 	x-directory-normal-home.png	\
 	x-directory-normal-open.png	\
 	x-directory-normal.png		\

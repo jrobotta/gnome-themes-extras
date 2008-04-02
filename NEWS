@@ -1,3 +1,17 @@
+2.22.0
+===
+Welcome 2.22.0 release!
+
+New themes since 2.20:
+* Unity Gtk Theme
+* Unity Metacity Theme
+* GNOME-Alternative Icon Theme
+
+Themes updated since 2.20:
+* Foxtrot Icon Theme
+
+--- Andrea Cimitan
+
 2.20
 ====
 Welcome 2.20 release!
@@ -9,7 +23,7 @@ New themes since GNOME 2.18:
 * Darklooks Gtk Theme
 
 Themes updated since 2.19.5:
-* Darklooks
+* Darklooks Gtk Theme
 
 --- Andrea Cimitan
 

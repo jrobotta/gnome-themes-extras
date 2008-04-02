@@ -1,13 +1,10 @@
-size = 22x22
+size = 16x16
 context = status
 
 iconsdir = $(datadir)/icons/Foxtrot/$(size)/$(context)
 
 icons_DATA =				\
-	folder-drag-accept.png		\
-	folder-open.png			\
-	user-trash-full.png		\
-	x-directory-normal-accept.png
+	user-trash-full.png
 
 EXTRA_DIST =				\
 	$(icons_DATA)

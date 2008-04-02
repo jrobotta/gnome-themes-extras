@@ -8,6 +8,7 @@ icons_DATA =				\
 	user-desktop.png		\
 	user-home.png			\
 	user_home-folder.png		\
+	user-trash.png		\
 	x-directory-normal.png		\
 	x-directory-remote.png
 

@@ -1,1 +1,1 @@
-SUBDIRS = actions places
+SUBDIRS = actions places status

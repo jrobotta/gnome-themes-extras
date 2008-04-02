@@ -23,9 +23,9 @@ style "clearlooks-default"
 	GtkScrollbar   ::min-slider-length    = 30
 
 	GtkMenuBar     ::internal-padding     = 0
-	GtkExpander    ::expander-size        = 16
+	GtkExpander    ::expander-size        = 14
 	GtkToolbar     ::internal-padding     = 1
-	GtkTreeView    ::expander-size        = 14
+	GtkTreeView    ::expander-size        = 12
 	GtkTreeView    ::vertical-separator   = 0
 
 	GtkMenu        ::horizontal-padding   = 0
