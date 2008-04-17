@@ -1,5 +1,10 @@
 2008-04-17  Andrea Cimitan  <andrea.cimitan@gmail.com>
 
+	* configure.in:
+	Fix to http://bugzilla.gnome.org/show_bug.cgi?id=526377
+
+2008-04-17  Andrea Cimitan  <andrea.cimitan@gmail.com>
+
 	* gtk-themes/Darklooks/gtk-2.0/gtkrc:
 	Fix to http://bugzilla.gnome.org/show_bug.cgi?id=528322
 
