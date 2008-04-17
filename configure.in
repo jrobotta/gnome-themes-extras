@@ -17,31 +17,9 @@ AC_SUBST(GETTEXT_PACKAGE)
 AM_MAINTAINER_MODE
 
 IT_PROG_INTLTOOL([0.35.5])
-AC_PROG_CC
 AC_PROG_INSTALL
 
-# No static please
-AM_DISABLE_STATIC
-
-# Initialize libtool
-AM_PROG_LIBTOOL
-
 PKG_CHECK_MODULES(GTK_ENGINES_2, gtk-engines-2 >= 2.14.0,, AC_MSG_ERROR([gtk-engines-2 >= 2.14.0 is required to compile gnome-themes-extras]))
-
-# Checks for header files.
-AC_HEADER_STDC
-
-# Checks for typedefs, structures, and compiler characteristics.
-AC_C_CONST
-
-# Checks for endianness (needed by GdkRgb).
-AC_C_BIGENDIAN
-
-# Checks for library functions.
-AC_TYPE_SIGNAL
-AC_FUNC_MMAP
-AC_FUNC_ALLOCA
-AC_CHECK_FUNCS(setenv putenv)
 
 AM_GLIB_GNU_GETTEXT
 
