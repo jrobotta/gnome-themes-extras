@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-02 00:13+0100\n"
-"PO-Revision-Date: 2008-03-02 00:14+0100\n"
+"POT-Creation-Date: 2008-06-24 11:38+0200\n"
+"PO-Revision-Date: 2008-06-24 11:39+0100\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "MIME-Version: 1.0\n"
@@ -46,4 +46,20 @@ msgstr "Dropline Neu!"
 #: ../icon-themes/Neu/index.theme.in.h:2
 msgid "Dropline Neu! Icon Theme"
 msgstr "Ikontemat Dropline Neu!"
+
+#: ../desktop-themes/Unity/index.theme.in.h:1
+msgid "A smooth variation of the Clearlooks theme"
+msgstr "Ett mjuk variant av Clearlooks-temat"
+
+#: ../desktop-themes/Unity/index.theme.in.h:2
+msgid "Unity"
+msgstr "Unity"
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:1
+msgid "GNOME Icon Theme with alternative folders"
+msgstr "GNOME-ikontema med alternativa mappar"
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:2
+msgid "GNOME-Alternative"
+msgstr "GNOME-Alternativ"
 
