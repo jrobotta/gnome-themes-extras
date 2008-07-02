@@ -1,0 +1,65 @@
+# Occitan translation of gnome-themes-extras.po
+# Copyright (C) 2008 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2006-2008
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-02 19:52+0200\n"
+"PO-Revision-Date: 2008-07-02 19:52+0200\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:1
+msgid "A dark Clearlooks theme"
+msgstr ""
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:2
+msgid "Darklooks"
+msgstr ""
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:1
+msgid "A tangonized theme with Bluecurve colors"
+msgstr ""
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:2
+msgid "Foxtrot"
+msgstr ""
+
+#: ../icon-themes/Gion/index.theme.in.h:1
+msgid "Gion"
+msgstr ""
+
+#: ../icon-themes/Gion/index.theme.in.h:2
+msgid "Gion Icon Theme"
+msgstr ""
+
+#: ../icon-themes/Neu/index.theme.in.h:1
+msgid "Dropline Neu!"
+msgstr ""
+
+#: ../icon-themes/Neu/index.theme.in.h:2
+msgid "Dropline Neu! Icon Theme"
+msgstr ""
+
+#: ../desktop-themes/Unity/index.theme.in.h:1
+msgid "A smooth variation of the Clearlooks theme"
+msgstr ""
+
+#: ../desktop-themes/Unity/index.theme.in.h:2
+msgid "Unity"
+msgstr ""
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:1
+msgid "GNOME Icon Theme with alternative folders"
+msgstr ""
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:2
+msgid "GNOME-Alternative"
+msgstr ""
