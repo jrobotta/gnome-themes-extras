@@ -8,96 +8,85 @@ msgstr ""
 "Project-Id-Version: Project\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-31 11:07+0100\n"
-"PO-Revision-Date: 2007-04-07 11:11+0100\n"
+"PO-Revision-Date: 2008-08-02 10:19+0100\n"
 "Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n == 0 ? 0 : n == 1 ? 1 : n == 2 ? 2 : n >= "
-"3 && n <= 10 ? 3 : n >= 11 && n <= 99 ? 4 : 5;\n"
+"Plural-Forms: nplurals=6; plural=n == 0 ? 0 : n == 1 ? 1 : n == 2 ? 2 : n >= 3 && n <= 10 ? 3 : n >= 11 && n <= 99 ? 4 : 5;\n"
 "X-Poedit-Language: Arabic\n"
 
 #: ../desktop-themes/Darklooks/index.theme.in.h:1
 msgid "A dark Clearlooks theme"
-msgstr ""
+msgstr "نسق داكن"
 
 #: ../desktop-themes/Darklooks/index.theme.in.h:2
 msgid "Darklooks"
-msgstr ""
+msgstr "المظهر الداكن"
 
 #: ../icon-themes/Foxtrot/index.theme.in.h:1
 msgid "A tangonized theme with Bluecurve colors"
-msgstr ""
+msgstr "نسق تونغو بألوان بلوكارف"
 
 #: ../icon-themes/Foxtrot/index.theme.in.h:2
 msgid "Foxtrot"
-msgstr ""
+msgstr "فوكستروت"
 
 #: ../icon-themes/Gion/index.theme.in.h:1
 msgid "Gion"
-msgstr ""
+msgstr "جيون"
 
 #: ../icon-themes/Gion/index.theme.in.h:2
 msgid "Gion Icon Theme"
-msgstr ""
+msgstr "تيمة الأيقونات جيون"
 
 #: ../icon-themes/Neu/index.theme.in.h:1
 msgid "Dropline Neu!"
-msgstr ""
+msgstr "دروبلاين نو!"
 
 #: ../icon-themes/Neu/index.theme.in.h:2
 msgid "Dropline Neu! Icon Theme"
-msgstr ""
+msgstr "نسق أيقونات دروبلاين نو!"
 
 #: ../desktop-themes/Unity/index.theme.in.h:1
 msgid "A smooth variation of the Clearlooks theme"
-msgstr ""
+msgstr "نوع من نسق Clearlooks"
 
 #: ../desktop-themes/Unity/index.theme.in.h:2
 msgid "Unity"
-msgstr ""
+msgstr "الوحدة"
 
 #: ../icon-themes/gnome-alternative/index.theme.in.h:1
 msgid "GNOME Icon Theme with alternative folders"
-msgstr ""
+msgstr "نسق ايقونات جنوم بمجلدات بديلة"
 
 #: ../icon-themes/gnome-alternative/index.theme.in.h:2
 msgid "GNOME-Alternative"
-msgstr ""
+msgstr "بديل جنوم"
 
 #~ msgid "Amaranth"
 #~ msgstr "أجواني"
-
 #~ msgid "Silver Vector Theme"
 #~ msgstr "سمة فضية متّجهية"
-
 #~ msgid "Sterling Silver"
 #~ msgstr "فضة خالصة"
-
 #~ msgid "Gorilla"
 #~ msgstr "غوريلا"
-
 #~ msgid "Vector Theme"
 #~ msgstr "سمة متّجهية"
-
 #~ msgid "The Vector Mono Goddess"
 #~ msgstr "خطي هندسي"
-
 #~ msgid "Lush"
 #~ msgstr "مزدهر"
-
 #~ msgid "Mild green theme"
 #~ msgstr "سمة خضراء خفيفة"
-
 #~ msgid "Nuvola"
 #~ msgstr "نوڤيولا"
-
 #~ msgid "The Blue Style Surf"
 #~ msgstr "الأمواج الزرقاء"
-
 #~ msgid "Wasp"
 #~ msgstr "واسب"
-
 #~ msgid "BeOS style theme"
 #~ msgstr "سمة بأسلوب BeOS"
+
