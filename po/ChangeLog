@@ -1,8 +1,14 @@
+2008-12-06  Leonardo Ferreira Fontenelle  <leonardof@gnome.org>
+
+	* LINGUAS: Added pt_BR.
+	* pt_BR.po: Added Brazilian Portuguese translation. Contributed by
+	Carlos Eduardo Santos, reviewed by Vladimir Melo.
+
 2008-08-27  Inaki Larranaga Murgoitio  <dooteo@euskalgnu.org>
 
 	* eu.po: Updated Basque translation.
 
-2008-08-2  Djihed Afifi <djihed@gmail.com> 
+2008-08-02  Djihed Afifi <djihed@gmail.com> 
 
 	* ar.po: Updated Arabic Translation by Djihed Afifi.
 
