@@ -1,15 +1,15 @@
 # Traducció del gnome-themes-extras de l'equip de Softcatalà.
-# Copyright © 2008 Free Software Foundation, Inc.
+# Copyright © 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the gnome-themes-extras package.
 # Jordi Mallach <jordi@sindominio.net>, 2003.
-# Joan Duran <jodufi@gmail.com>, 2008.
+# Joan Duran <jodufi@gmail.com>, 2008, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-themes-extras\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-03-09 04:02+0000\n"
-"PO-Revision-Date: 2008-03-09 21:55+0100\n"
+"POT-Creation-Date: 2009-01-20 19:24+0100\n"
+"PO-Revision-Date: 2009-01-20 16:11+0100\n"
 "Last-Translator: Joan Duran <jodufi@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,7 @@ msgstr "Gion"
 
 #: ../icon-themes/Gion/index.theme.in.h:2
 msgid "Gion Icon Theme"
-msgstr "Tema de icones Gion"
+msgstr "Tema d'icones Gion"
 
 #: ../icon-themes/Neu/index.theme.in.h:1
 msgid "Dropline Neu!"
@@ -48,4 +48,20 @@ msgstr "Dropline Neu!"
 
 #: ../icon-themes/Neu/index.theme.in.h:2
 msgid "Dropline Neu! Icon Theme"
-msgstr "Tema de icones Dropline Neu!"
+msgstr "Tema d'icones Dropline Neu!"
+
+#: ../desktop-themes/Unity/index.theme.in.h:1
+msgid "A smooth variation of the Clearlooks theme"
+msgstr "Una variant suavitzada del tema Clearlooks"
+
+#: ../desktop-themes/Unity/index.theme.in.h:2
+msgid "Unity"
+msgstr "Unity"
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:1
+msgid "GNOME Icon Theme with alternative folders"
+msgstr "Tema d'icones del GNOME amb capetes alternatives"
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:2
+msgid "GNOME-Alternative"
+msgstr "GNOME-Alternative"
