@@ -1,3 +1,8 @@
+2009-03-07  Milo Casagrande  <milo@ubuntu.com>
+
+	* it.po: Added Italian translation by Gianvito Cavasoli.
+	* LINGUAS: Added it to languages list.
+
 2009-02-22  Timo Jyrinki  <timo.jyrinki@iki.fi>
 
 	* fi.po: Add Finnish translation.
