@@ -1,3 +1,8 @@
+2009-03-18  Christian Kirbach  <Christian.Kirbach@googlemail.com>
+
+	* de.po: Added German translation.
+	* LINGUAS: Added 'de' to languages list.
+
 2009-03-10  Duarte Loreto <happyguy_pt@hotmail.com>
 
 	* pt.po: Added Portuguese translation by António Lima
