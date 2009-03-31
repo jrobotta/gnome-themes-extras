@@ -1,0 +1,64 @@
+# Czech translation of gnome-themes-extras.
+# Copyright (C) 2009 the author(s) of gnome-themes-extras.
+# This file is distributed under the same license as the gnome-themes-extras package.
+# Kamil Páral <ripper42@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-03-31 15:51+0200\n"
+"PO-Revision-Date: 2009-03-30 22:25+0100\n"
+"Last-Translator: Kamil Páral <ripper42@gmail.com>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:1
+msgid "A dark Clearlooks theme"
+msgstr "Temný motiv založený na Clearlooks"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:2
+msgid "Darklooks"
+msgstr "Darklooks"
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:1
+msgid "A tangonized theme with Bluecurve colors"
+msgstr "Motiv založený na Tangu s barvami Bluecurve"
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:2
+msgid "Foxtrot"
+msgstr "Foxtrot"
+
+#: ../icon-themes/Gion/index.theme.in.h:1
+msgid "Gion"
+msgstr "Gion"
+
+#: ../icon-themes/Gion/index.theme.in.h:2
+msgid "Gion Icon Theme"
+msgstr "Motiv ikon Gion"
+
+#: ../icon-themes/Neu/index.theme.in.h:1
+msgid "Dropline Neu!"
+msgstr "Dropline Neu!"
+
+#: ../icon-themes/Neu/index.theme.in.h:2
+msgid "Dropline Neu! Icon Theme"
+msgstr "Motiv ikon Dropline Neu!"
+
+#: ../desktop-themes/Unity/index.theme.in.h:1
+msgid "A smooth variation of the Clearlooks theme"
+msgstr "Hladká variace na motiv Clearlooks"
+
+#: ../desktop-themes/Unity/index.theme.in.h:2
+msgid "Unity"
+msgstr "Unity"
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:1
+msgid "GNOME Icon Theme with alternative folders"
+msgstr "Motiv ikon GNOME s alternativními složkami"
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:2
+msgid "GNOME-Alternative"
+msgstr "GNOME-Alternativní"
