@@ -1,0 +1,68 @@
+# translation of bn_IN.po to Bengali INDIA
+# Bengali (India) translation of gnome-themes-extras.
+# Copyright (C) 2009 gnome-themes-extras's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-themes-extras package.
+#
+# Runa Bhattacharjee <runab@redhat.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: bn_IN\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-themes-extras&component=general\n"
+"POT-Creation-Date: 2009-06-13 01:49+0000\n"
+"PO-Revision-Date: 2009-06-18 12:47+0530\n"
+"Last-Translator: Runa Bhattacharjee <runab@redhat.com>\n"
+"Language-Team: Bengali INDIA <discuss@lists.ankur.org.in>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:1
+msgid "A dark Clearlooks theme"
+msgstr "ক্লিয়ার-লুক্স থিমের কৃষ্ণাভ সংস্করণ"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:2
+msgid "Darklooks"
+msgstr "ডার্ক-লুক্স"
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:1
+msgid "A tangonized theme with Bluecurve colors"
+msgstr "ব্লু-কার্ভের রংয়ের সাথে ট্যাঙ্গো নাচের থিম"
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:2
+msgid "Foxtrot"
+msgstr "ফক্স-ট্রট"
+
+#: ../icon-themes/Gion/index.theme.in.h:1
+msgid "Gion"
+msgstr "গিওন"
+
+#: ../icon-themes/Gion/index.theme.in.h:2
+msgid "Gion Icon Theme"
+msgstr "গিওন আইকন থিম"
+
+#: ../icon-themes/Neu/index.theme.in.h:1
+msgid "Dropline Neu!"
+msgstr "ড্রপ-লাইন নিউ!"
+
+#: ../icon-themes/Neu/index.theme.in.h:2
+msgid "Dropline Neu! Icon Theme"
+msgstr "ড্রপ-লাইন নিউ! আইকন থিম"
+
+#: ../desktop-themes/Unity/index.theme.in.h:1
+msgid "A smooth variation of the Clearlooks theme"
+msgstr "ক্লিয়ার-লুক্স থিমের একটি মশ্রিণ সংস্করণ"
+
+#: ../desktop-themes/Unity/index.theme.in.h:2
+msgid "Unity"
+msgstr "ইউনিটি"
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:1
+msgid "GNOME Icon Theme with alternative folders"
+msgstr "বিকল্প ফোল্ডার সহ GNOME আইকন থিম"
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:2
+msgid "GNOME-Alternative"
+msgstr "GNOME-Alternative"
+
