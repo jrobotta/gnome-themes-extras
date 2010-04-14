@@ -1,6 +1,12 @@
+# Slovenian translation of gnome-themes-extras.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-themes-extras package.
+#
+# Andrej Žnidaršič <andrej.znidarsic@gmail.com>, 2009 - 2010.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Gnome themes extras\n"
+"Project-Id-Version: gnome-themes-extras master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-themes-extras&component=general\n"
 "POT-Creation-Date: 2009-07-14 12:21+0000\n"
 "PO-Revision-Date: \n"
@@ -16,7 +22,7 @@ msgstr ""
 
 #: ../desktop-themes/Darklooks/index.theme.in.h:1
 msgid "A dark Clearlooks theme"
-msgstr "Temen Clearlooks slog"
+msgstr "Potemnjen slog Clearlooks"
 
 #: ../desktop-themes/Darklooks/index.theme.in.h:2
 msgid "Darklooks"
@@ -28,7 +34,7 @@ msgstr "Tangoniziran slog z Bluecurve barvami "
 
 #: ../icon-themes/Foxtrot/index.theme.in.h:2
 msgid "Foxtrot"
-msgstr "Fokstrot"
+msgstr "Foxtrot"
 
 #: ../icon-themes/Gion/index.theme.in.h:1
 msgid "Gion"
@@ -48,11 +54,11 @@ msgstr "Dropline Neu! ikonski slog"
 
 #: ../desktop-themes/Unity/index.theme.in.h:1
 msgid "A smooth variation of the Clearlooks theme"
-msgstr "Fina različica sloga Clearlooks teme"
+msgstr "Zglajena različica sloga Clearlooks"
 
 #: ../desktop-themes/Unity/index.theme.in.h:2
 msgid "Unity"
-msgstr "Enotnost"
+msgstr "Unity"
 
 #: ../icon-themes/gnome-alternative/index.theme.in.h:1
 msgid "GNOME Icon Theme with alternative folders"
@@ -61,4 +67,3 @@ msgstr "GNOME ikonski slog z drugačnimi mapami"
 #: ../icon-themes/gnome-alternative/index.theme.in.h:2
 msgid "GNOME-Alternative"
 msgstr "Drugačen GNOME"
-
