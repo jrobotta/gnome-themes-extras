@@ -1,0 +1,70 @@
+# Ukrainian translation for gnome-themes-extras.
+# Copyright (C) 2011 gnome-themes-extras's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-themes-extras package.
+# Sergiy Gavrylov <sergiovana@bigmir.net>, 2011.
+
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
+"cgi?product=gnome-themes-extras&component=general\n"
+"POT-Creation-Date: 2011-01-23 21:16+0000\n"
+"PO-Revision-Date: 2011-04-16 15:28+0300\n"
+"Last-Translator: Sergiy Gavrylov <sergiovana@bigmir.net>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: uk\n"
+"X-Generator: Lokalize 1.2\n"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:1
+msgid "A dark Clearlooks theme"
+msgstr "Темна тема Clearlooks"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:2
+msgid "Darklooks"
+msgstr "Darklooks"
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:1
+msgid "A tangonized theme with Bluecurve colors"
+msgstr "Тема на основі Tango з кольорами Bluecurve"
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:2
+msgid "Foxtrot"
+msgstr "Foxtrot"
+
+#: ../icon-themes/Gion/index.theme.in.h:1
+msgid "Gion"
+msgstr "Gion"
+
+#: ../icon-themes/Gion/index.theme.in.h:2
+msgid "Gion Icon Theme"
+msgstr "Тема піктограм Gion"
+
+#: ../icon-themes/Neu/index.theme.in.h:1
+msgid "Dropline Neu!"
+msgstr "Dropline Neu!"
+
+#: ../icon-themes/Neu/index.theme.in.h:2
+msgid "Dropline Neu! Icon Theme"
+msgstr "Тема піктограм Dropline Neu!"
+
+#: ../desktop-themes/Unity/index.theme.in.h:1
+msgid "A smooth variation of the Clearlooks theme"
+msgstr "Згладжений різновид теми Clearlooks"
+
+#: ../desktop-themes/Unity/index.theme.in.h:2
+msgid "Unity"
+msgstr "Unity"
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:1
+msgid "GNOME Icon Theme with alternative folders"
+msgstr "Тема піктограм GNOME з альтернативними теками"
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:2
+msgid "GNOME-Alternative"
+msgstr "GNOME-Alternative"
+
