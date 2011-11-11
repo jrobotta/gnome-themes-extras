@@ -1,0 +1,66 @@
+# Esperanto translation for gnome-themes-extras.
+# Copyright (C) 2011 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-themes-extras package.
+# Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"themes-extras&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-08-25 19:35+0000\n"
+"PO-Revision-Date: 2011-11-11 19:51+0100\n"
+"Last-Translator: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>\n"
+"Language-Team: Esperanto <gnome-l10n-eo@lists.launchpad.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:1
+msgid "A dark Clearlooks theme"
+msgstr "Malhela 'CLearlooks'-etoso"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:2
+msgid "Darklooks"
+msgstr "Malhela aspekto"
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:1
+msgid "A tangonized theme with Bluecurve colors"
+msgstr "Al la Tango-projekto adaptita etoso kun koloroj de 'Bluecurve'"
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:2
+msgid "Foxtrot"
+msgstr "Fokstroto"
+
+#: ../icon-themes/Gion/index.theme.in.h:1
+msgid "Gion"
+msgstr "Gion"
+
+#: ../icon-themes/Gion/index.theme.in.h:2
+msgid "Gion Icon Theme"
+msgstr "Giona piktogram-etoso"
+
+#: ../icon-themes/Neu/index.theme.in.h:1
+msgid "Dropline Neu!"
+msgstr ""
+
+#: ../icon-themes/Neu/index.theme.in.h:2
+msgid "Dropline Neu! Icon Theme"
+msgstr ""
+
+#: ../desktop-themes/Unity/index.theme.in.h:1
+msgid "A smooth variation of the Clearlooks theme"
+msgstr "Glata variaĵo de la 'CLearlooks'-etoso"
+
+#: ../desktop-themes/Unity/index.theme.in.h:2
+msgid "Unity"
+msgstr ""
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:1
+msgid "GNOME Icon Theme with alternative folders"
+msgstr "GNOME-a piktogram-etoso kun alternativaj dosieroj"
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:2
+msgid "GNOME-Alternative"
+msgstr "GNOME-alternativo"
