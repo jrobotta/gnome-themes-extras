@@ -1,0 +1,65 @@
+# Chinese (Taiwan) translation for gnome-themes-extras.
+# Copyright (C) 2011 gnome-themes-extras's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-themes-extras package.
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-themes-extras 0.22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-12-13 21:15+0800\n"
+"PO-Revision-Date: 2011-11-11 19:02+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese (Taiwan) <chinese-l10n@googlegroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:1
+msgid "A dark Clearlooks theme"
+msgstr "暗色清晰外觀佈景主題"
+
+#: ../desktop-themes/Darklooks/index.theme.in.h:2
+msgid "Darklooks"
+msgstr "暗色外觀"
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:1
+msgid "A tangonized theme with Bluecurve colors"
+msgstr ""
+
+#: ../icon-themes/Foxtrot/index.theme.in.h:2
+msgid "Foxtrot"
+msgstr "Foxtrot"
+
+#: ../icon-themes/Gion/index.theme.in.h:1
+msgid "Gion"
+msgstr "Gion"
+
+#: ../icon-themes/Gion/index.theme.in.h:2
+msgid "Gion Icon Theme"
+msgstr "Gion 圖示佈景主題"
+
+#: ../icon-themes/Neu/index.theme.in.h:1
+msgid "Dropline Neu!"
+msgstr "Dropline Neu!"
+
+#: ../icon-themes/Neu/index.theme.in.h:2
+msgid "Dropline Neu! Icon Theme"
+msgstr "Dropline Neu! 圖示佈景主題"
+
+#: ../desktop-themes/Unity/index.theme.in.h:1
+msgid "A smooth variation of the Clearlooks theme"
+msgstr "清晰外觀佈景主題的滑順版本"
+
+#: ../desktop-themes/Unity/index.theme.in.h:2
+msgid "Unity"
+msgstr "Unity"
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:1
+msgid "GNOME Icon Theme with alternative folders"
+msgstr ""
+
+#: ../icon-themes/gnome-alternative/index.theme.in.h:2
+msgid "GNOME-Alternative"
+msgstr ""
